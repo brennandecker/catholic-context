@@ -20,7 +20,19 @@ Users and downstream systems must be able to distinguish drafts, community-revie
 
 ### 4. Commercial independence
 
-Commercial products may fund Catholic Context and may build proprietary experiences on top of it. Commercial considerations must not determine the theological conclusions represented by the open context layer.
+Commercial products and managed services may fund Catholic Context and may build proprietary experiences or infrastructure on top of it. Commercial considerations must not determine the theological conclusions represented by the open context layer.
+
+The project's commercial model follows this principle:
+
+> **Catholic teaching is not the product. Convenience, infrastructure, compute, hosting, and applications are the products.**
+
+The open Catholic Context foundation should not be made inaccessible merely to force use of a paid managed service. Developers may choose managed services for convenience while retaining the ability to use the openly licensed foundation subject to applicable licenses and third-party rights.
+
+Commercial success, customer importance, subscription status, API usage, donations, sponsorship, or other financial relationships must not determine theological classification, review outcomes, source authority, correction outcomes, or canonical status.
+
+No customer or donor may purchase a theological conclusion.
+
+See `docs/COMMERCIAL_MODEL.md` for the canonical open/commercial boundary.
 
 ### 5. Theological governance
 
@@ -37,7 +49,17 @@ Until that body and its procedures are established, theological content should b
 
 ### 6. Financial sustainability
 
-The project may be supported by commercial applications, managed infrastructure, donations, grants, sponsorships, or other lawful funding. The project intends for a defined portion of sustainable revenue to support theological governance, source verification, and stewardship of the open context layer.
+The project may be supported by commercial applications, managed infrastructure, donations, grants, sponsorships, or other lawful funding. The project intends for a defined portion of sustainable revenue to support theological governance, source verification, corrections, translations, open-source engineering, and stewardship of the open context layer.
+
+Financial support does not confer theological authority.
+
+### 7. Open contribution without uncontrolled canonical editing
+
+Catholic Context may accept public issues, pull requests, discussions, corrections, and proposals while restricting direct write and merge access to approved maintainers.
+
+Open source does not mean that any contributor can directly modify canonical Catholic Context content or the production CatholicContext.org website.
+
+Canonical changes must pass the applicable technical, maintainer, and theological review processes before merge and publication.
 
 ## Founder authority during the founding stage
 
