@@ -1,0 +1,51 @@
+name: Suggest a correction
+description: Propose a correction or improvement to Catholic Context content
+title: "[Correction]: "
+labels:
+  - correction
+body:
+  - type: input
+    id: context
+    attributes:
+      label: Context object
+      description: Which Catholic Context entry needs attention?
+      placeholder: sacrament.eucharist.real-presence
+    validations:
+      required: true
+  - type: dropdown
+    id: reason
+    attributes:
+      label: What needs attention?
+      options:
+        - Doctrinal accuracy
+        - Citation does not support the claim
+        - Better primary source exists
+        - Missing important context
+        - Unclear language
+        - Historical accuracy
+        - Translation issue
+        - Schema or data issue
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Describe the problem
+      description: Be specific about what is inaccurate, incomplete, unsupported, or unclear.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed correction
+      description: Provide replacement wording or the specific change you recommend.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Supporting sources
+      description: Prefer authoritative Catholic sources and include precise references where possible.
+    validations:
+      required: false
