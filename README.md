@@ -32,11 +32,25 @@ Catholic Context
 1. **Catholic teaching is not determined by popularity.** Community voting can surface problems, usefulness, and review priorities. It does not establish doctrine.
 2. **Provenance matters.** Claims should point to identifiable Catholic sources and distinguish source type, claim classification, review status, and uncertainty.
 3. **Drafts are drafts.** AI-generated, community-contributed, or otherwise unreviewed material must never be presented as theologically reviewed.
-4. **The context layer stays open.** Knowledge, Harness specifications, Evals, schemas, and governance standards are intended to remain freely accessible and reusable.
-5. **Commercial applications may build on the commons.** Hosting, inference, personalization, memory, collaboration, enterprise tooling, and end-user products may be commercial without making Catholic teaching itself proprietary.
+4. **The context layer stays open.** Knowledge, Harness specifications, Evals, schemas, governance standards, and the public website are intended to remain freely accessible and reusable.
+5. **Commercial applications and managed services may build on the commons.** Hosting, managed APIs, search, inference, personalization, memory, collaboration, enterprise tooling, and end-user products may be commercial without making Catholic teaching itself proprietary.
 6. **AI is a tool, not a spiritual authority.** A Catholic-grounded agent must not claim divine revelation, sacramental authority, certainty about God's will, or replacement of conscience, prayer, clergy, or the teaching office of the Church.
 7. **Doctrine and prudential judgment must be distinguished.** The system should clearly distinguish binding teaching, discipline, theological opinion, devotional practice, historical claims, and prudential application.
 8. **Governance must remain accountable.** Commercial incentives, repository ownership, contributor popularity, or model output do not determine Catholic teaching.
+
+## Project & commercial model
+
+Catholic Context follows a simple principle:
+
+> **Catholic teaching is not the product. Convenience, infrastructure, compute, hosting, and applications are the products.**
+
+The open project is intended to include the Catholic knowledge layer, Harness, Evals, schemas, governance standards, public website, public API contracts, and open developer tooling.
+
+Optional commercial services may include a managed Catholic Context Cloud offering hosted APIs, managed search, MCP endpoints, inference, uptime, support, and enterprise infrastructure. Developers should remain free to use or self-host the open foundation rather than purchasing the managed service.
+
+[My Catholic Guide](https://mycatholicguide.com/) is a separate commercial end-user application built on Catholic Context.
+
+See [docs/COMMERCIAL_MODEL.md](docs/COMMERCIAL_MODEL.md) for the canonical commercial/open-source boundary.
 
 ## Project status
 
