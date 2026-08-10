@@ -1,34 +1,59 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://catholiccontext.org/schema/catholic-context.schema.json",
-  "title": "Catholic Context Object",
-  "description": "Initial schema for a source-grounded Catholic Context knowledge object.",
+  "title": "Catholic Context Knowledge Object",
+  "description": "Schema v0.2 for a source-grounded Catholic Context knowledge object. Entity identity is modeled separately from theological claim classification.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "title", "type", "summary", "review", "sources"],
+  "required": ["id", "title", "entity_type", "summary", "review", "sources"],
   "properties": {
     "id": {
       "type": "string",
       "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$"
     },
     "title": { "type": "string", "minLength": 1 },
-    "type": {
+    "entity_type": {
       "type": "string",
       "enum": [
-        "doctrine",
-        "dogma",
-        "discipline",
+        "teaching",
+        "concept",
         "sacrament",
-        "scripture",
-        "liturgy",
+        "person",
         "prayer",
         "devotion",
-        "history",
-        "person",
-        "theological-opinion",
-        "moral-teaching",
-        "concept"
+        "liturgy",
+        "event",
+        "institution",
+        "practice",
+        "document",
+        "source",
+        "other"
       ]
+    },
+    "classification": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "claim_type": {
+          "type": ["string", "null"],
+          "enum": [
+            "dogma",
+            "doctrine",
+            "moral-teaching",
+            "discipline",
+            "theological-opinion",
+            "devotional-practice",
+            "historical-claim",
+            "prudential-judgment",
+            null
+          ]
+        },
+        "certainty": {
+          "type": ["string", "null"],
+          "enum": ["defined", "authoritatively-taught", "provisional", "disputed", "not-applicable", null]
+        },
+        "note": { "type": ["string", "null"] }
+      }
     },
     "summary": { "type": "string", "minLength": 1 },
     "review": {
@@ -47,7 +72,8 @@
         "reviewed_at": {
           "type": ["string", "null"],
           "format": "date-time"
-        }
+        },
+        "review_commit": { "type": ["string", "null"] }
       }
     },
     "sources": {
