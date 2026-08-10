@@ -1,7 +1,13 @@
 # DRAFT — theological review pending
-id: sacrament.eucharist.real-presence
+id: eucharist.real-presence
 title: Real Presence of Christ in the Eucharist
-type: doctrine
+entity_type: teaching
+classification:
+  claim_type: doctrine
+  certainty: null
+  note: >-
+    The exact theological classification and certainty vocabulary are provisional
+    and require qualified theological review.
 summary: >-
   The Catholic Church teaches that Jesus Christ is truly, really, and
   substantially present in the Eucharist. This draft summary is included to
@@ -11,6 +17,7 @@ review:
   status: draft
   reviewed_by: null
   reviewed_at: null
+  review_commit: null
 sources:
   - source_type: catechism
     reference: CCC 1374
