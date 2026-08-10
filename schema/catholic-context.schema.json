@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://catholiccontext.org/schema/catholic-context.schema.json",
+  "title": "Catholic Context Object",
+  "description": "Initial schema for a source-grounded Catholic Context knowledge object.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "type", "summary", "review", "sources"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$"
+    },
+    "title": { "type": "string", "minLength": 1 },
+    "type": {
+      "type": "string",
+      "enum": [
+        "doctrine",
+        "dogma",
+        "discipline",
+        "sacrament",
+        "scripture",
+        "liturgy",
+        "prayer",
+        "devotion",
+        "history",
+        "person",
+        "theological-opinion",
+        "moral-teaching",
+        "concept"
+      ]
+    },
+    "summary": { "type": "string", "minLength": 1 },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["draft", "community-reviewed", "theologically-reviewed"]
+        },
+        "reviewed_by": {
+          "type": ["array", "null"],
+          "items": { "type": "string" }
+        },
+        "reviewed_at": {
+          "type": ["string", "null"],
+          "format": "date-time"
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source_type", "reference"],
+        "properties": {
+          "source_type": {
+            "type": "string",
+            "enum": [
+              "scripture",
+              "ecumenical-council",
+              "magisterium",
+              "catechism",
+              "canon-law",
+              "church-father",
+              "doctor-of-the-church",
+              "saint",
+              "liturgy",
+              "scholarship",
+              "other"
+            ]
+          },
+          "reference": { "type": "string", "minLength": 1 },
+          "url": { "type": ["string", "null"], "format": "uri" },
+          "note": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "relationships": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "broader": { "type": "array", "items": { "type": "string" } },
+        "narrower": { "type": "array", "items": { "type": "string" } },
+        "related": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "notes": { "type": ["string", "null"] }
+  }
+}
