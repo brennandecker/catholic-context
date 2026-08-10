@@ -4,26 +4,62 @@
 
 Build the public website for Catholic Context as the human-readable interface to the open repository. The website should render canonical repository content, expose provenance and review status, support search and browsing, and route community corrections back into the open contribution workflow.
 
-Read `docs/DESIGN_SYSTEM.md` before implementing any UI.
+Before implementing UI, read these in order:
+
+1. `docs/DESIGN_FIDELITY.md`
+2. `docs/DESIGN_SYSTEM.md`
+3. `docs/COMMERCIAL_MODEL.md`
+4. this document
 
 ## Product constraints
 
 1. The Git repository is the canonical record for v0.1.
-2. The website must not silently create a second proprietary source of theological truth.
-3. Knowledge pages must preserve source provenance and review state.
-4. Draft content must never be visually confused with theologically reviewed content.
-5. Voting and popularity must never determine doctrinal status.
-6. The website must not imply endorsement by the Holy See, a diocese, or another ecclesiastical authority.
-7. My Catholic Guide is a separate commercial reference implementation; Catholic Context remains usable without it.
-8. No account is required for the v0.1 public experience.
+2. The website source itself belongs to the open Catholic Context foundation.
+3. The website must not silently create a second proprietary source of theological truth.
+4. Knowledge pages must preserve source provenance and review state.
+5. Draft content must never be visually confused with theologically reviewed content.
+6. Voting and popularity must never determine doctrinal status.
+7. The website must not imply endorsement by the Holy See, a diocese, or another ecclesiastical authority.
+8. My Catholic Guide is a separate commercial reference implementation; Catholic Context remains usable without it.
+9. No account is required for the v0.1 public experience.
+10. Open source does not imply public direct-write access to canonical content.
+11. Commercial managed infrastructure must remain separable from this open website/repository.
+
+## Design fidelity requirement
+
+The website must follow the locked My Catholic Guide-derived fidelity system.
+
+Source precedence:
+
+1. My Catholic Guide production source when available locally.
+2. `docs/DESIGN_FIDELITY.md`.
+3. `docs/DESIGN_SYSTEM.md`.
+
+Do not substitute generic SaaS styling.
+
+Key locked characteristics include:
+
+- paper `#f3ead8`
+- ink `#3d2817`
+- dark heading ink `#2d1810`
+- missal red `#8b2a1f`
+- warm rules/borders
+- zero-radius controls
+- warm subtle shadows
+- paper-grain texture
+- Cormorant Garamond display
+- EB Garamond body
+- IM Fell English SC labels/navigation
+- Caveat marginalia
+- restrained `✠ ✦ ❦ ✟` glyph vocabulary
 
 ## Recommended application architecture
 
-Prefer a modern React framework capable of static generation and server rendering. If the existing project has already chosen a framework, preserve that choice unless there is a material reason to change it.
+Prefer a modern React framework capable of static generation and server rendering. If the project has already chosen a framework, preserve that choice unless there is a material reason to change it.
 
-The application should be designed so repository YAML/JSON/Markdown can be loaded during build or server execution and normalized into a typed internal representation.
+The application should load repository YAML/JSON/Markdown during build or server execution and normalize it into typed internal representations.
 
-Suggested conceptual structure:
+Suggested structure:
 
 ```text
 website/
@@ -42,25 +78,24 @@ Do not move canonical theological content into website source files.
 
 ## Content pipeline
 
-Canonical content lives under repository knowledge/context paths and conforms to the schema under `schema/`.
+The pipeline should:
 
-The website pipeline should:
-
-1. discover supported content files
+1. discover supported canonical content files
 2. parse YAML/JSON/Markdown as applicable
-3. validate structured objects against the repository schema
+3. validate structured objects against repository schemas
 4. fail loudly during development/build for invalid canonical content
 5. normalize content into typed application objects
-6. derive human-readable URLs from stable IDs/slugs
+6. derive stable human-readable routes
 7. generate search documents
 8. generate related-content relationships
 9. expose source and review metadata without mutation
+10. preserve canonical GitHub traceability
 
-Do not fabricate missing review data.
+Do not fabricate missing review data or source metadata.
 
 ## Core routes
 
-Implement these routes first:
+Implement:
 
 ```text
 /
@@ -76,11 +111,9 @@ Implement these routes first:
 /about
 ```
 
-Additional source/harness/eval detail routes can follow the same pattern.
+These correspond to the eleven validated v0.1 screens: Home, Search, Knowledge Index, Knowledge Detail, Sources, Harness, Evals, Governance, Developers, Open, and About.
 
 ## Homepage
-
-Implement the homepage composition defined in `docs/DESIGN_SYSTEM.md`.
 
 Required sections:
 
@@ -88,18 +121,16 @@ Required sections:
 2. search-led hero
 3. suggested knowledge topics
 4. Knowledge / Harness / Evals architecture
-5. governance / "Truth is not determined by popularity"
+5. governance / `Truth is not determined by popularity`
 6. open-source section
 7. My Catholic Guide relationship
 8. footer and independence disclaimer
 
-Search should be the primary CTA.
+Search is the primary CTA.
 
 ## Knowledge index
 
-The knowledge index should support browsing by entity type and major taxonomy where available.
-
-Do not require the taxonomy to be perfect before launch. Unknown or incomplete classifications should degrade gracefully.
+Support browsing by entity type and taxonomy where available.
 
 Each result should expose at minimum:
 
@@ -108,16 +139,18 @@ Each result should expose at minimum:
 - entity type
 - theological claim classification when applicable
 - review status
-- key source references when available
+- key source references
+
+Unknown or incomplete taxonomy should degrade gracefully.
 
 ## Knowledge detail
 
-Required fields/sections:
+Required sections:
 
 - breadcrumb/taxonomy context
 - title
 - entity type
-- theological classification where applicable
+- theological classification when applicable
 - review status
 - canonical summary
 - sources
@@ -130,7 +163,7 @@ Optional explanatory prose must be clearly distinguishable from canonical summar
 
 ## Search
 
-v0.1 search should work without requiring an external paid search vendor.
+v0.1 search must work without requiring a paid external search vendor.
 
 Support:
 
@@ -141,38 +174,42 @@ Support:
 - entity types
 - related terms where available
 
-Natural-language semantic search may be added later. Do not block launch on embeddings or vector infrastructure.
+Do not block launch on embeddings or a vector database.
 
-Search ranking should prioritize direct title and canonical-topic relevance over semantic novelty.
+Search ranking should prioritize direct title and canonical-topic relevance.
 
 ## Source pages
 
-Sources should be treated as first-class objects where the data permits.
+Treat sources as first-class objects where data permits.
 
-Display source type, title/reference, context note, external destination when permitted, and the Catholic Context entries that cite the source.
+Display:
+
+- source type
+- title/reference
+- context note
+- external destination when permitted
+- Catholic Context entries citing the source
 
 Do not reproduce third-party copyrighted text merely because a citation exists.
 
 ## Review status component
 
-Implement one shared component for review state.
-
-Supported states:
+Implement one shared component for:
 
 - `draft`
 - `community-reviewed`
 - `theologically-reviewed`
 
-The component must include text, not color alone.
+Use explicit text, not color alone.
 
-Do not introduce `verified`, `official`, `Church-approved`, or similar states without a governance change.
+Do not introduce `verified`, `official`, `Church-approved`, or similar states without a governance change and actual authority for that terminology.
 
 ## Provenance component
 
 Where available, expose:
 
 - review state
-- reviewers
+- reviewers/reviewer group
 - review date
 - last modification/version
 - canonical file
@@ -182,22 +219,24 @@ GitHub is the canonical public audit trail for v0.1.
 
 ## Correction flow
 
-For v0.1, `Suggest a correction` may link to or generate a GitHub Issue using the repository's structured correction workflow.
+`Suggest a correction` should initially route to or generate a structured GitHub Issue.
 
-The correction flow should request:
+Collect:
 
 - affected context
 - category
 - what is wrong
 - proposed change
 - rationale
-- supporting source(s)
+- supporting sources
 
 Never ask users to vote on whether doctrine is true.
 
+Community proposals do not directly edit canonical content. Approved maintainers control merges; theological changes may require qualified theological review.
+
 ## Harness rendering
 
-Render the public Harness documentation from repository content wherever practical rather than duplicating it manually in the website.
+Render Harness documentation from repository content where practical.
 
 Required themes:
 
@@ -212,7 +251,7 @@ Required themes:
 
 ## Evals rendering
 
-Render eval cases from structured repository data once a machine-readable format exists. Until then, the current repository eval documentation may be presented as documentation.
+Render eval cases from structured repository data once machine-readable fixtures exist. Until then, repository eval documentation may be rendered as documentation.
 
 Future eval detail pages should support:
 
@@ -223,11 +262,11 @@ Future eval detail pages should support:
 - version
 - evaluation family
 
-Do not hard-code model leaderboard claims without reproducible methodology and stored results.
+Do not hard-code leaderboard claims without reproducible methodology and stored results.
 
 ## Governance rendering
 
-The governance page should be generated from or tightly aligned with the repository governance documents.
+The governance page should remain tightly aligned with repository governance documents.
 
 It must prominently explain:
 
@@ -237,41 +276,46 @@ It must prominently explain:
 - disputes/re-review
 - commercial independence
 - repository ownership does not confer theological authority
+- financial support does not purchase theological conclusions
 
 ## Developers page
 
 Clearly distinguish current functionality from roadmap.
 
-Available now should reflect only repository capabilities that actually exist.
+Public/open interfaces may be documented here, including future OpenAPI contracts and SDKs.
 
-Planned capabilities may include API, MCP, SDK, managed search, and hosted Context services, but must be labeled planned until shipped.
+A future paid managed API should be described as an optional hosted service rather than the only way to access Catholic Context.
+
+Read `COMMERCIAL_MODEL.md` before implementing commercial/API messaging.
+
+## Open-source page
+
+Explain that the open foundation includes:
+
+- Knowledge
+- Harness
+- Evals
+- schemas
+- governance
+- public documentation
+- CatholicContext.org source
+- public API specifications/open tooling when created
+
+Also explain that public access permits inspection, forking, reuse, issues, and pull requests — not uncontrolled direct modification of canonical content.
+
+## Commercial boundary
+
+Do not add production billing, proprietary metering, customer records, production credentials, payment configuration, commercial account management, or private enterprise integrations to this repository unless there is an explicit future decision to open-source them.
+
+The website may document managed offerings without embedding the proprietary managed-service implementation.
 
 ## GitHub integration
 
-The website should link directly to canonical repository files and contribution workflows.
+Link directly to canonical repository files and contribution workflows.
 
 Do not require GitHub API authentication for ordinary public browsing.
 
-If GitHub API calls are needed, prefer server-side use and graceful failure behavior.
-
-## Design-system reuse
-
-MyCatholicGuide.com is the visual reference implementation.
-
-If the My Catholic Guide source repository is available locally to the developer, inspect its actual:
-
-- fonts
-- CSS variables/design tokens
-- spacing
-- buttons
-- navigation
-- typography
-- border treatments
-- responsive behavior
-
-Reuse/adapt those values rather than approximating from screenshots or inventing a second brand.
-
-Do not create a shared npm package solely for v0.1 unless both codebases already justify it. Copying a small documented token set is acceptable initially; centralize later when drift becomes a real problem.
+If GitHub API calls are needed, prefer server-side use with graceful failure behavior.
 
 ## Accessibility
 
@@ -297,7 +341,7 @@ Avoid unnecessary client-side hydration.
 
 Do not ship a heavy JavaScript application merely to render mostly static theological content.
 
-Optimize font loading and images.
+Optimize font loading, paper texture assets, and images.
 
 ## SEO
 
@@ -308,7 +352,7 @@ Implement:
 - canonical URLs
 - sitemap
 - robots.txt
-- Open Graph metadata
+- Open Graph
 - useful title/description
 - JSON-LD where semantically appropriate
 
@@ -318,11 +362,11 @@ Do not manufacture structured-data claims of official ecclesiastical authority.
 
 Analytics are optional for v0.1. If added, prefer privacy-conscious collection and document it.
 
-Do not add invasive tracking to an open knowledge project without a clear product need.
+Do not add invasive tracking without a clear product need.
 
 ## Security
 
-Treat repository content as untrusted input at render boundaries even though it is reviewed through Git.
+Treat repository content as untrusted at render boundaries even though it is reviewed through Git.
 
 - sanitize rendered Markdown/HTML
 - do not execute arbitrary content
@@ -343,11 +387,14 @@ A v0.1 launch is acceptable when:
 6. related context works where data exists
 7. provenance links to canonical GitHub content
 8. correction CTA works
-9. Harness, Evals, Governance, Developers, Open, and About are readable
+9. all eleven validated screens are represented
 10. the site visually belongs to the My Catholic Guide family
-11. mobile reading is excellent
-12. the site makes no false claim of ecclesiastical endorsement
-13. build validation catches malformed canonical content
+11. locked design fidelity is respected
+12. mobile reading is excellent
+13. the site makes no false claim of ecclesiastical endorsement
+14. build validation catches malformed canonical content
+15. public contribution does not permit uncontrolled canonical editing
+16. the open/commercial boundary is preserved
 
 ## Non-goals for v0.1
 
@@ -358,27 +405,28 @@ Do not block launch on:
 - vector database
 - embeddings
 - AI chat
-- managed API
-- MCP server
+- managed commercial API implementation
+- MCP hosting
 - subscriptions
 - parish accounts
 - model leaderboards
 - complex CMS
 - custom moderation backend
-
-Those are later layers.
+- production billing/metering
 
 ## Build priority
 
-1. extract/adapt My Catholic Guide visual tokens
-2. build content loader + schema validation
-3. build global layout
-4. build homepage
-5. build knowledge index/detail
-6. build search
-7. build source/review/provenance components
-8. wire correction workflow
-9. render Harness/Evals/Governance docs
-10. add SEO/accessibility/performance polish
-11. deploy preview
-12. conduct design and content-integrity review before public launch
+1. inspect/reuse My Catholic Guide production tokens when available
+2. implement locked fidelity tokens and typography
+3. build content loader + schema validation
+4. build global shell
+5. build homepage
+6. build knowledge index/detail
+7. build search
+8. build source/review/provenance components
+9. wire correction workflow
+10. render Harness/Evals/Governance docs
+11. add Open/Developers/About pages
+12. add SEO/accessibility/performance polish
+13. deploy preview
+14. perform design-fidelity and content-integrity review before public launch
