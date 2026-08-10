@@ -1,0 +1,34 @@
+name: Propose new context
+description: Propose a new Catholic Context knowledge object
+title: "[New Context]: "
+labels:
+  - new-context
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Proposed topic
+      placeholder: Apostolic Succession
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: What should this object explain?
+      description: Define the concept narrowly enough to be represented and sourced clearly.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Suggested authoritative sources
+      description: Include Catechism paragraphs, Scripture, councils, magisterial documents, canon law, or other relevant sources.
+    validations:
+      required: false
+  - type: textarea
+    id: relationships
+    attributes:
+      label: Related Catholic Context topics
+      description: List broader, narrower, or related concepts if known.
+    validations:
+      required: false
