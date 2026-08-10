@@ -1,0 +1,31 @@
+# Catholic Context source registry
+#
+# This file identifies source families and metadata conventions. It does not
+# grant redistribution rights to the underlying texts.
+
+sources:
+  - id: catechism-catholic-church
+    name: Catechism of the Catholic Church
+    type: catechism
+    publisher: Holy See
+    notes: Cite paragraph numbers. Do not assume permission to reproduce full text.
+
+  - id: sacred-scripture
+    name: Sacred Scripture
+    type: scripture
+    notes: Record book, chapter, and verse. Translation copyright must be handled separately.
+
+  - id: ecumenical-councils
+    name: Ecumenical Councils
+    type: ecumenical-council
+    notes: Identify council, document/session where applicable, and section/canon.
+
+  - id: magisterial-documents
+    name: Magisterial Documents
+    type: magisterium
+    notes: Identify authoring authority, document title, date where useful, and paragraph/section.
+
+  - id: code-canon-law
+    name: Code of Canon Law
+    type: canon-law
+    notes: Cite canon number and applicable code/edition.
