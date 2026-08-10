@@ -4,23 +4,44 @@
 
 Catholic Context is the open knowledge and AI-grounding infrastructure for Catholicism.
 
-It has three layers:
+It has three public layers:
 
 - **Knowledge** — What does the Catholic Church teach?
 - **Harness** — How should Catholic-grounded AI reason and behave?
 - **Evals** — Does the AI faithfully represent Catholic teaching?
 
-CatholicContext.org is the human-readable interface into these systems.
+CatholicContext.org is the human-readable interface to those systems.
 
-## 2. Relationship to My Catholic Guide
+## 2. Design source-of-truth precedence
 
-**MyCatholicGuide.com is the canonical visual reference implementation.** Catholic Context should immediately feel like it belongs to the same product family.
+This document defines product and UX principles, but visual fidelity is governed in this order:
 
-My Catholic Guide is personal, guided, devotional, educational, conversational, and journey-oriented.
+1. My Catholic Guide production source when locally available (`brennandecker/mycatholicguide`, especially `docs/` and `apps/web/app/`).
+2. [`DESIGN_FIDELITY.md`](DESIGN_FIDELITY.md).
+3. This document.
+4. [`WEBSITE_IMPLEMENTATION.md`](WEBSITE_IMPLEMENTATION.md).
 
-Catholic Context is scholarly, structured, transparent, source-grounded, collaborative, technical when necessary, and open-source.
+If an older recommendation conflicts with the locked tokens, type stack, zero-radius rule, or paper treatment in `DESIGN_FIDELITY.md`, the fidelity document wins.
 
-The relationship is:
+## 3. Relationship to My Catholic Guide
+
+My Catholic Guide and Catholic Context are one design family with different jobs.
+
+### My Catholic Guide
+
+Personal, guided, devotional, educational, conversational, and journey-oriented.
+
+It answers:
+
+> How do I understand and live the Catholic faith?
+
+### Catholic Context
+
+Scholarly, structured, transparent, source-grounded, collaborative, technical when necessary, and open-source.
+
+It answers:
+
+> What does the Catholic Church teach, where does that teaching come from, and how can humans and software faithfully use it?
 
 ```text
 Catholic Context
@@ -30,11 +51,11 @@ My Catholic Guide
 Personal Catholic experience
 ```
 
-Catholic Context should feel like the scholarly/open-source sibling of My Catholic Guide — not like a separate SaaS brand.
+Catholic Context must look unmistakably related to My Catholic Guide without cloning its consumer page layouts.
 
-## 3. Design north star
+## 4. Design north star
 
-> A modern Catholic library built for the AI era.
+> **A modern Catholic library built for the AI era.**
 
 The interface should communicate:
 
@@ -43,90 +64,173 @@ The interface should communicate:
 - scholarship without academic intimidation
 - technology without looking like a technology startup
 - Catholic identity without visual cliché
+- openness without looking like developer tooling
 
-## 4. Visual language
+Avoid generic SaaS, GitHub-like, Wikipedia-like, dashboard-heavy, chatbot-first, parish-bulletin, or Vatican-imitation aesthetics.
 
-Inherit the visual DNA of My Catholic Guide:
+## 5. Locked visual language
 
-- editorial
-- spacious
-- monochromatic
-- serif-forward
-- minimal
-- high-contrast
-- deliberate
-- quiet
-- premium without luxury signaling
+Catholic Context inherits the validated My Catholic Guide visual system.
 
-Use whitespace aggressively. Prefer typography and spacing over boxes. Prefer horizontal rules over card grids. Prefer editorial sections over dashboards.
+Core characteristics:
 
-Do not make the site look like GitHub, Wikipedia, Stripe docs, a parish website, a Vatican imitation, a church bulletin, a social network, or an AI chatbot landing page.
+- warm paper surfaces
+- brown ink rather than sterile black
+- missal-red accents
+- serif/editorial typography
+- zero-radius controls
+- fine rules and borders
+- warm subtle shadows
+- paper-grain texture
+- liturgical glyph punctuation
+- generous whitespace
+- print/editorial information hierarchy
 
-## 5. Color system
+Prefer typography, spacing, and rules over containers. Prefer editorial sections over card grids. Prefer source-led reading layouts over dashboards.
 
-Use the actual My Catholic Guide tokens if available. Until then, approximate with:
+## 6. Locked color system
 
-- Background: `#FAF9F6`
-- Primary text: `#171717`
-- Secondary text: `#66635F`
-- Borders: `#DDDAD4`
-- Secondary surface: `#F4F2EE`
+Use these tokens unless the current My Catholic Guide production source intentionally changes them:
 
-Catholic Context should remain primarily monochromatic. Do not introduce Vatican yellow, liturgical red, royal purple, gold, or blue as dominant brand colors.
+```text
+Paper / primary background      #f3ead8
+Ink / primary body              #3d2817
+Dark heading ink                #2d1810
+Missal red / primary accent     #8b2a1f
+Muted brown                     #6b4a30
+Rule / strong border            #c19a6b
+Soft rule                       #d4b896
+Light surface                   #faf3e0
+Warm highlight                  #e8d5a8
+Secondary brown                 #8b5a3c
+Optional near-paper surface     #fbf6e9
+```
 
-Semantic states may use subtle color, but never rely on color alone.
+Missal red is part of the family and may be used for primary actions, active states, selected editorial accents, key links, and important labels. Use it with restraint.
 
-## 6. Typography
+Do not create a new independent Catholic Context palette.
 
-Use the same font families as My Catholic Guide whenever technically possible.
+## 7. Locked typography
 
-### Display typography
+Use the validated four-font hierarchy:
 
-Use the My Catholic Guide serif for:
+### Cormorant Garamond
 
-- H1
-- H2
-- major theological statements
-- article titles
-- quotations
-- section introductions
+Italic-forward display type for:
 
-### Interface typography
+- hero statements
+- expressive section introductions
+- major quotations
+- signature editorial moments
 
-Use the My Catholic Guide sans-serif for:
+### EB Garamond
+
+Primary long-form reading type for:
+
+- body copy
+- theological summaries
+- source explanations
+- knowledge pages
+- governance prose
+
+### IM Fell English SC
+
+Small-cap/editorial interface type for:
 
 - navigation
-- labels
-- metadata
-- buttons
-- badges
-- search
-- filters
-- technical information
+- section labels
+- eyebrows
+- metadata labels
+- buttons where appropriate
+- classification labels
 
-Recommended scale:
+### Caveat
 
-- Hero: 48–72px serif
-- H1: 40–52px serif
-- H2: 30–38px serif
-- H3: 22–28px serif
+Marginalia/handwritten annotations only. Use sparingly and never for essential interface content.
+
+Do not replace this hierarchy with a generic modern sans-serif design system.
+
+## 8. Type scale
+
+Use responsive values consistent with My Catholic Guide. Starting guidance:
+
+- Hero: 48–72px
+- H1: 40–52px
+- H2: 30–38px
+- H3: 22–28px
 - Body large: 18–20px
 - Body: 16–18px
 - Metadata: 13–14px
-- Eyebrow: 11–13px uppercase with tracking
+- Eyebrow/small caps: 11–13px with deliberate tracking
 
-Long theological content should use a reading width of roughly 680–780px.
+Long theological reading columns should generally remain around 680–780px.
 
-## 7. Editorial pattern
+## 9. Shape language
 
-A core pattern is:
+**Zero radius is the default.**
+
+Buttons, inputs, search fields, bordered surfaces, chips, and content panels should generally use square corners.
+
+Do not introduce rounded SaaS cards, pill controls, or bubbly UI patterns.
+
+## 10. Borders, rules, and shadows
+
+Use thin warm rules, typically based on `#c19a6b` or `#d4b896`.
+
+Horizontal rules are a primary organizational device.
+
+Use warm, restrained shadows where needed. The effect should feel like paper or physical print, not floating dashboard cards.
+
+Avoid neon, colored glows, large blurred shadows, or heavy elevation systems.
+
+## 11. Paper texture
+
+Use the paper-grain overlay from the My Catholic Guide/fidelity system.
+
+Texture must remain subtle enough that:
+
+- body copy is highly readable
+- contrast meets accessibility requirements
+- the page feels editorial rather than skeuomorphic
+
+## 12. Liturgical glyph vocabulary
+
+Approved glyphs:
 
 ```text
-✦ SMALL UPPERCASE CONTEXT
+✠  ✦  ❦  ✟
+```
 
-Large Serif Statement
+Use sparingly as editorial punctuation, section markers, or visual rhythm.
 
-Short, restrained explanatory copy.
+Avoid emoji-style religious imagery.
+
+## 13. Layout
+
+Recommended maximum shell width: 1200–1280px.
+
+Reading column: 680–780px.
+
+Technical/reference surfaces may expand to approximately 900–1100px.
+
+Spacing should remain generous and editorial. A useful scale is:
+
+```text
+4  8  12  16  24  32  48  64  96  128
+```
+
+Major homepage sections may use 96–128px vertical separation on desktop.
+
+## 14. Editorial composition pattern
+
+A recurring pattern:
+
+```text
+✦ SMALL-CAP CONTEXT
+
+Large Editorial Statement
+
+Short explanatory copy in a readable measure.
 
 Primary action →
 ```
@@ -145,107 +249,80 @@ with transparent citations and review history.
 [ Search Catholic Context ]
 ```
 
-## 8. Catholic symbol language
+## 15. Buttons and links
 
-Use restrained editorial symbols such as `✦`, `✠`, `✟`, and `❦` sparingly.
+Follow My Catholic Guide production treatment.
 
-Do not decorate every heading. Avoid emoji-style religious iconography.
+### Primary
 
-## 9. Imagery
-
-Catholic Context should be less image-heavy than My Catholic Guide.
-
-When imagery is useful, prefer:
-
-- sacred art
-- historical manuscripts
-- church architecture
-- iconography
-- archival Catholic materials
-- public-domain historical works
-
-Avoid generic stock photography. Do not present AI-generated sacred imagery as historical Catholic art.
-
-## 10. Layout
-
-Recommended maximum page width: 1200–1280px.
-
-Reading column: 680–780px.
-
-Technical/reference pages may expand to 900–1100px.
-
-Do not allow theological prose to span the full desktop width.
-
-Spacing should feel editorial. Recommended scale: `4, 8, 12, 16, 24, 32, 48, 64, 96, 128`.
-
-Major homepage sections should commonly use 96–128px vertical separation on desktop.
-
-## 11. Borders, radius, and shadows
-
-Use thin neutral borders, typically 1px.
-
-Use restrained radii:
-
-- controls: 4–6px
-- search: 6–8px
-- cards: 6–8px
-
-Avoid large pill shapes and excessive 16–32px SaaS-style rounding.
-
-Use shadows extremely sparingly. Hierarchy should come from typography, spacing, borders, and background contrast.
-
-## 12. Buttons
-
-Match My Catholic Guide.
-
-Primary: dark background, light text, minimal radius.
-
-Secondary: transparent/light background, thin border.
-
-Tertiary: text link.
+Missal-red or dark-ink treatment depending on context, square corners, small-cap/editorial label.
 
 Examples:
 
 - `EXPLORE CATHOLIC CONTEXT →`
-- `VIEW ON GITHUB →`
-- `Read the governance model →`
+- `SEARCH →`
 
-Avoid oversized pill buttons.
+### Secondary
 
-## 13. Navigation
+Paper/light-surface background, warm border, square corners.
 
-Desktop:
+### Tertiary
+
+Editorial text link with arrow.
+
+Avoid oversized pill buttons and generic app-store-style CTAs.
+
+## 16. Navigation
+
+Desktop target:
 
 ```text
 Catholic Context
 Explore  Sources  Harness  Evals  Governance  Developers   GitHub ↗
 ```
 
-Search should always be easy to access.
+Search must remain easy to access.
 
-Mobile should collapse cleanly without losing search discoverability.
+Mobile navigation should collapse cleanly while preserving search discoverability.
 
-## 14. Homepage
+## 17. Homepage
 
-The homepage must explain Catholic Context within roughly ten seconds.
+The homepage must explain the project in roughly ten seconds.
 
 ### Hero
 
-Eyebrow: `✦ OPEN CATHOLIC KNOWLEDGE`
+Eyebrow:
 
-Headline: `What does the Catholic Church teach?`
+`✦ OPEN CATHOLIC KNOWLEDGE`
 
-Supporting copy: `Explore source-grounded Catholic teaching with transparent citations, provenance, and theological review.`
+Headline:
 
-Primary search field placeholder: `Search Catholic teaching, Scripture, sacraments, saints...`
+`What does the Catholic Church teach?`
 
-Supporting statement: `Free · Open Source · Built for Humans and AI`
+Supporting copy:
 
-Suggested editorial links: Eucharist, Mary, Confession, Purgatory, Salvation, Papacy.
+`Explore source-grounded Catholic teaching with transparent citations, provenance, and theological review.`
 
-### Three layers
+Search placeholder:
 
-Avoid three giant SaaS cards. Use editorial columns with subtle separators.
+`Search Catholic teaching, Scripture, sacraments, saints...`
+
+Supporting statement:
+
+`Free · Open Source · Built for Humans and AI`
+
+Suggested editorial topic links:
+
+- Eucharist
+- Mary
+- Confession
+- Purgatory
+- Salvation
+- Papacy
+
+### Three-layer section
+
+Use editorial columns or rule-separated sections rather than oversized cards.
 
 **Knowledge** — What does the Church teach?
 
@@ -255,9 +332,11 @@ Avoid three giant SaaS cards. Use editorial columns with subtle separators.
 
 ### Governance section
 
-Headline: `Truth is not determined by popularity.`
+Headline:
 
-Show:
+`Truth is not determined by popularity.`
+
+Visual sequence:
 
 ```text
 Catholic Sources
@@ -271,33 +350,41 @@ Theological Review
 Open Versioned Knowledge
 ```
 
-### Open-source section
+### Open section
 
-Headline: `Catholic knowledge should be inspectable.`
+Headline:
 
-Users should understand they can read, inspect, download, fork, build, suggest corrections, contribute, and inspect revision history.
+`Catholic knowledge should be inspectable.`
+
+Communicate that users may read, inspect, download, fork, build, propose corrections, and inspect revision history.
 
 ### My Catholic Guide section
 
-Eyebrow: `✦ EXPERIENCE THE FAITH`
+Eyebrow:
 
-Headline: `Looking for a personal guide?`
+`✦ EXPERIENCE THE FAITH`
 
-Copy should explain that My Catholic Guide is the personal formation and prayer experience powered by Catholic Context.
+Headline:
 
-## 15. Search
+`Looking for a personal guide?`
+
+Explain that My Catholic Guide is the personal formation/prayer product built on Catholic Context.
+
+## 18. Search
 
 Search is the primary interaction.
 
 Support:
 
-- keyword search
+- keywords
 - natural-language questions
 - titles
+- IDs/slugs
 - source references
 - related concepts
+- entity types
 
-Search results should feel editorial, not like generic cards.
+Search results should read like an editorial index, not a grid of product cards.
 
 Example:
 
@@ -314,13 +401,11 @@ CCC 956 · CCC 2677
 Mary · Communion of Saints · Intercession
 ```
 
-Filters may include entity type and review state. Review state should influence presentation but should not silently hide drafts.
+## 19. Knowledge detail page
 
-## 16. Knowledge detail page
+This is the central product experience.
 
-This is the central Catholic Context experience.
-
-Recommended structure:
+Recommended order:
 
 ```text
 SACRAMENTS / EUCHARIST
@@ -344,82 +429,61 @@ Provenance
 Suggest a Correction
 ```
 
-The canonical summary should appear immediately. Do not bury it beneath metadata.
+The canonical summary must appear before deep metadata.
 
-## 17. Review status
+## 20. Review states
 
-Review status must always be visible.
+Always show explicit text, not color alone.
 
 ### Draft
 
 `DRAFT — THEOLOGICAL REVIEW PENDING`
 
-Explanation: `This entry has not completed Catholic Context's theological review process.`
-
 ### Community reviewed
 
 `COMMUNITY REVIEWED`
-
-Explanation: `Contributors have reviewed this entry. Community review does not itself constitute theological approval.`
 
 ### Theologically reviewed
 
 `THEOLOGICALLY REVIEWED`
 
-Explanation: `This entry has completed the applicable Catholic Context theological review process.`
+Never use `Verified`, `Official`, `Church Approved`, or `Vatican Approved` without a real ecclesiastical process authorizing such language.
 
-Never use `Verified`, `Official`, `Church Approved`, or `Vatican Approved` unless an actual ecclesiastical relationship explicitly permits it.
+## 21. Sources
 
-## 18. Sources
+Sources are first-class content, not hidden footnotes.
 
-Sources are a primary feature, not footnotes.
-
-Each source should show:
+Each source should expose:
 
 - source type
-- title
+- title/name
 - exact reference
-- short context note
+- optional context note
 - external link where appropriate
 
 Do not invent numerical authority scores.
 
-## 19. Related context
-
-Use editorial links, not recommendation carousels.
-
-Example:
-
-```text
-RELATED CONTEXT
-
-Transubstantiation →
-The Eucharist →
-The Mass →
-Sacraments →
-```
-
-## 20. Provenance
+## 22. Provenance
 
 Every knowledge entry should eventually expose:
 
-- review status
-- reviewed by
+- review state
+- reviewer or reviewer group
 - review date
-- version
+- version/revision
 - last updated
 - canonical GitHub file
 - revision history
 
 Transparency is a core product feature.
 
-## 21. Corrections and community feedback
+## 23. Corrections and feedback
 
-Every knowledge page must include `SUGGEST A CORRECTION →`.
+Every knowledge page should provide `SUGGEST A CORRECTION →`.
 
-Initial implementation may create a structured GitHub Issue.
+Initial flow may create a structured GitHub Issue.
 
-Correction categories:
+Correction categories may include:
 
 - doctrinal accuracy
 - citation problem
@@ -431,121 +495,127 @@ Correction categories:
 - schema/data
 - other
 
-Do not ask `Is this Catholic teaching true?` with voting.
+Never ask users to vote on whether Catholic teaching is true.
 
-Use feedback framing such as:
+Good feedback framing:
 
 - `Was this explanation helpful?`
 - `Should reviewers consider this change?`
 
-Voting prioritizes review. Voting does not determine doctrine.
+Voting may prioritize review; it does not determine doctrine.
 
-## 22. Harness
+## 24. Harness
 
 Route: `/harness`
 
-Eyebrow: `✦ CATHOLIC HARNESS`
+Eyebrow:
 
-Headline: `How should Catholic-grounded AI behave?`
+`✦ CATHOLIC HARNESS`
 
-The page should explain source grounding, authority, moral reasoning, uncertainty, citations, pastoral boundaries, and human escalation.
+Headline:
 
-A central principle must be visible:
+`How should Catholic-grounded AI behave?`
+
+Explain:
+
+- source grounding
+- authority
+- theological distinctions
+- moral reasoning
+- uncertainty
+- citations
+- pastoral boundaries
+- escalation to human guidance
+
+The foundational boundary must be visible:
 
 > Catholic Context assists human beings in understanding Catholic teaching and applying Catholic moral principles. It does not possess spiritual authority, administer sacraments, replace conscience, or claim knowledge of God's particular will for an individual.
 
-## 23. Moral reasoning
-
-The Harness page may show the reasoning scaffold:
-
-```text
-QUESTION
-   ↓
-MORAL OBJECT
-   ↓
-INTENTION
-   ↓
-CIRCUMSTANCES
-   ↓
-RELEVANT TEACHING
-   ↓
-HUMAN DIGNITY
-   ↓
-VIRTUE / JUSTICE / COMMON GOOD
-   ↓
-PRUDENTIAL JUDGMENT
-   ↓
-SOURCES + CONCLUSION
-```
-
-Clearly identify it as a framework subject to theological governance.
-
-## 24. Evals
+## 25. Evals
 
 Route: `/evals`
 
-Eyebrow: `✦ CATHOLIC EVALS`
+Eyebrow:
 
-Headline: `Does the AI behave faithfully?`
+`✦ CATHOLIC EVALS`
 
-Show evaluation families including doctrine, moral reasoning, source fidelity, authority, hallucination resistance, and pastoral boundaries.
+Headline:
 
-Each eval should show prompt, expected characteristics, failure conditions, and sources.
+`Does the AI behave faithfully?`
 
-Any future model scoring should be presented like research results, not gamified leaderboards.
+Evaluation families include:
 
-## 25. Governance
+- doctrine
+- moral reasoning
+- source fidelity
+- authority
+- hallucination resistance
+- pastoral boundaries
+
+Model results, if added, should read like research findings rather than a gamified leaderboard.
+
+## 26. Governance
 
 Route: `/governance`
 
-Eyebrow: `✦ ACCOUNTABLE BY DESIGN`
+Eyebrow:
 
-Headline: `Catholic teaching is not ours to redefine.`
+`✦ ACCOUNTABLE BY DESIGN`
 
-Explain theological review, reviewer qualification, contribution governance, disputes, re-review, commercial independence, financial support, and revision history.
+Headline:
+
+`Catholic teaching is not ours to redefine.`
 
 Core statement:
 
 > Repository ownership, commercial funding, contributor popularity, and AI output do not determine Catholic teaching.
 
-## 26. Developers
+## 27. Developers
 
 Route: `/developers`
 
-Eyebrow: `✦ BUILD WITH CATHOLIC CONTEXT`
+Eyebrow:
 
-Headline: `Catholic context for any application.`
+`✦ BUILD WITH CATHOLIC CONTEXT`
 
-Clearly mark status:
+Headline:
+
+`Catholic context for any application.`
+
+Clearly separate shipping capabilities from roadmap.
+
+Examples:
 
 - Git repository — Available now
 - Structured YAML/JSON — Available now
 - JSON Schema — Available now
 - Harness — Early development
 - Evals — Early development
-- API — Planned
-- MCP Server — Planned
-- SDK — Planned
+- Managed API — Planned
+- MCP hosting — Planned
+- SDKs — Planned/when actually shipped
 
-Never imply a feature exists before it ships.
+The open/commercial boundary is defined in `COMMERCIAL_MODEL.md`.
 
-## 27. Open source
+## 28. Open source page
 
 Route: `/open`
 
-Headline: `Built in the open.`
+Headline:
 
-Explain that Catholic Context exists so Catholic knowledge infrastructure does not have to belong to one company or AI provider.
+`Built in the open.`
 
-Prominent CTA: `VIEW ON GITHUB →`
+Explain that the knowledge, Harness, Evals, schemas, public website, and public interfaces belong to the open foundation.
 
-## 28. About
+Also explain that open source does not mean uncontrolled direct editing of canonical Catholic Context.
+
+## 29. About
 
 Explain mission, origin, relationship to My Catholic Guide, governance philosophy, open-source commitment, and theological humility.
 
-Do not make the founder the centerpiece. The institution and mission should be larger than an individual contributor.
+Do not make the founder the visual or institutional centerpiece.
 
-## 29. Footer
+## 30. Footer
 
 Suggested structure:
 
@@ -574,28 +644,28 @@ MCP
 MY CATHOLIC GUIDE →
 ```
 
-Disclaimer:
+Include:
 
 `Catholic Context is an independent open-source project. It does not claim official endorsement by the Holy See, a diocese, or another ecclesiastical authority unless explicitly stated.`
 
-## 30. Accessibility
+## 31. Accessibility
 
 Target WCAG 2.2 AA.
 
-Requirements:
+Requirements include:
 
 - semantic HTML
 - keyboard navigation
 - visible focus states
 - correct heading hierarchy
-- sufficient color contrast
+- sufficient contrast
 - screen-reader labels
 - reduced-motion support
-- no color-only status signaling
+- no color-only state signaling
 - accessible forms
 - comfortable touch targets
 
-## 31. Responsive behavior
+## 32. Responsive design
 
 Breakpoints:
 
@@ -606,169 +676,66 @@ Breakpoints:
 
 Knowledge pages must be exceptionally readable on phones. Do not depend on desktop-only sidebars.
 
-## 32. Motion
+## 33. Motion
 
-Motion should be restrained: subtle fades, small hover transitions, accordion transitions, and search-state transitions only.
+Keep motion quiet and editorial.
 
-Avoid parallax, dramatic scroll effects, bouncing CTAs, animated religious imagery, and excessive page transitions.
+Allowed:
 
-## 33. Performance
+- subtle fades
+- small hover transitions
+- accordion/disclosure transitions
+- search-state transitions
 
-Prefer server rendering/static generation, minimal client JavaScript, optimized fonts and images, efficient search indexing, and excellent Core Web Vitals.
+Avoid parallax, dramatic scroll animation, bouncing CTAs, animated religious imagery, or excessive page transitions.
 
-## 34. SEO
+## 34. Performance and SEO
 
-Knowledge pages should be highly indexable with canonical URLs, sitemap, robots.txt, Open Graph, structured metadata, and JSON-LD where appropriate.
+Prefer static generation/server rendering for stable knowledge content, minimal client JavaScript, optimized font loading, image optimization, efficient search indexing, and strong Core Web Vitals.
 
-Example title:
+Knowledge pages should implement canonical URLs, sitemap, robots.txt, useful metadata, Open Graph, and JSON-LD where semantically appropriate.
 
-`Real Presence of Christ in the Eucharist | Catholic Context`
+Do not manufacture structured-data claims of ecclesiastical authority.
 
-## 35. URL architecture
+## 35. MVP pages
 
-Recommended:
+Version 0.1 should cover all eleven validated screens:
 
-```text
-/
-/search
-/knowledge
-/knowledge/eucharist
-/knowledge/eucharist/real-presence
-/sources
-/sources/catechism
-/harness
-/harness/moral-reasoning
-/harness/pastoral-boundaries
-/evals
-/evals/doctrine
-/evals/boundary/gods-will
-/governance
-/developers
-/open
-/about
-```
-
-Use stable, human-readable URLs.
-
-## 36. MVP pages
-
-Version 0.1 should ship:
-
-1. Homepage
+1. Home
 2. Search
-3. Knowledge index
-4. Knowledge detail
+3. Knowledge Index
+4. Knowledge Detail
 5. Sources
 6. Harness
 7. Evals
 8. Governance
 9. Developers
-10. Open Source
+10. Open
 11. About
 
-## 37. MVP capabilities
+## 36. Commercial boundary
 
-Users should be able to:
+Catholic Context should never imply that a user must subscribe to learn what Catholicism teaches.
 
-- search Catholic Context
-- browse knowledge
-- inspect sources
-- see theological classification
-- see review status
-- explore related concepts
-- inspect provenance
-- view canonical GitHub content
-- suggest corrections
-- propose content
-- inspect Harness principles
-- inspect Evals
-- understand governance
-- download/fork the project
+The open foundation includes the public knowledge layer and website.
 
-No account is required for v0.1.
+Commercial services may monetize managed hosting, APIs, search, inference, compute, operational convenience, enterprise infrastructure, and separate products such as My Catholic Guide.
 
-## 38. Tone of voice
+See `COMMERCIAL_MODEL.md`.
 
-Catholic Context should communicate with precision, humility, confidence, clarity, reverence, intellectual seriousness, and accessibility.
+## 37. Design review requirement
 
-Avoid culture-war language, partisan framing, internet-apologetics rhetoric, triumphalism, unnecessary defensiveness, AI hype, startup jargon, or excessive theological jargon without explanation.
+Every new interface must pass these checks:
 
-Prefer wording such as:
-
-- `The Catholic Church teaches...`
-- `Catholic teaching distinguishes...`
-- `The Catechism states...`
-- `Catholic theologians have differed regarding...`
-- `This question involves prudential judgment...`
-- `Catholic Context has not yet completed theological review of this entry.`
-
-## 39. AI boundary
-
-The website must never present Catholic Context or an AI implementation as a priest, confessor, spiritual director, bishop, the Magisterium, oracle, God's voice, or replacement for conscience.
-
-## 40. Commercial boundary
-
-Users should never get the impression that they need to subscribe to learn what Catholicism teaches.
-
-Monetize personalized experiences, compute, inference, memory, convenience, premium applications, collaboration, hosting, and enterprise infrastructure — not foundational Catholic Context knowledge.
-
-## 41. Component philosophy
-
-Before creating a component, ask whether typography and spacing can solve the problem.
-
-Preferred components:
-
-- Header
-- Footer
-- Search
-- Breadcrumb
-- Editorial section
-- Source reference
-- Review status
-- Metadata row
-- Related context link
-- Citation
-- Correction CTA
-- Code block
-- Eval case
-- Disclosure
-- Button
-- Text link
-
-Avoid an enormous component library.
-
-## 42. Shared design tokens
-
-Where possible, extract the actual My Catholic Guide design tokens and reuse them across both codebases.
-
-Long-term shared token categories:
-
-```text
-font.serif
-font.sans
-color.background
-color.surface
-color.foreground
-color.muted
-color.border
-spacing.*
-radius.*
-typography.*
-button.*
-breakpoint.*
-```
-
-A future shared package may be appropriate, but do not create one until the codebases make that worthwhile.
-
-## 43. Design review requirement
-
-Every interface should pass two tests:
-
-1. Would a My Catholic Guide user immediately recognize this as belonging to the same family?
-2. Does Catholic Context feel more scholarly and infrastructural than My Catholic Guide without becoming cold or technical?
-
-Both conditions must be satisfied.
+1. Would a My Catholic Guide user recognize the same design family?
+2. Does Catholic Context feel more scholarly and infrastructural without becoming cold or generic?
+3. Does it use the locked warm paper/ink/missal-red system?
+4. Are controls square/zero-radius?
+5. Is the Cormorant Garamond / EB Garamond / IM Fell English SC / Caveat hierarchy intact?
+6. Is paper texture subtle and readable?
+7. Are liturgical glyphs restrained?
+8. Are sources, provenance, and review state visually clearer than social engagement signals?
 
 ## Canonical design statement
 
-> CatholicContext.org should feel like a modern Catholic library built for the AI era: open, quiet, beautiful, source-grounded, accountable, and unmistakably part of the My Catholic Guide family.
+> **CatholicContext.org should feel like a modern Catholic library built for the AI era: open, quiet, beautiful, source-grounded, accountable, and unmistakably part of the My Catholic Guide family.**
