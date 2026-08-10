@@ -1,19 +1,27 @@
 # Licensing
 
-Catholic Context contains different categories of material that may require different licensing treatment.
+Catholic Context contains different categories of material and therefore uses a split licensing model.
 
-## Current status
+## Intended project licensing
 
-The project is establishing its final licensing structure. Until explicit license files are added, do not assume that third-party source material is licensed by Catholic Context.
+Subject to adding the corresponding license texts before a public release is declared stable:
 
-The intended model is:
+- **Original Catholic Context software, schemas, Harness tooling, SDKs, and executable technical code:** Apache License 2.0.
+- **Original Catholic Context knowledge content, documentation, structured summaries, relationships, and original evaluation content:** Creative Commons Attribution 4.0 International (CC BY 4.0).
+- **Third-party materials:** governed by their respective copyright and licensing terms and are not relicensed merely because Catholic Context cites, indexes, links to, or describes them.
 
-- **Catholic Context original data/content:** an open content license suitable for broad reuse with clear attribution requirements.
-- **Catholic Context software/tooling:** an OSI-approved open-source software license.
-- **Third-party materials:** governed by their respective copyright and licensing terms.
+This split is intended to permit broad commercial and noncommercial reuse while preserving attribution for original Catholic Context content.
 
-Catholic Context does not claim ownership of Scripture translations, Catechism text, conciliar documents, papal documents, liturgical texts, or other third-party works merely because the project cites or indexes them.
+## Third-party Catholic sources
 
-Where possible, the project should store original summaries, structured metadata, citations, identifiers, relationships, and links rather than reproducing copyrighted source texts unnecessarily.
+Catholic Context does not claim ownership of Scripture translations, Catechism text, conciliar documents, papal documents, liturgical texts, canon-law publications, theological works, or other third-party materials merely because the project cites or indexes them.
 
-A final code/content licensing decision will be made before the project is represented as fully licensed for unrestricted downstream reuse.
+Where possible, Catholic Context should store original summaries, structured metadata, citations, identifiers, relationships, and links rather than reproducing copyrighted source texts unnecessarily.
+
+A citation to a source is not a grant of permission to reproduce the underlying source.
+
+## Current release status
+
+The repository remains **pre-alpha**. The intended Apache-2.0 / CC BY 4.0 model is documented here, but the corresponding complete license notices/texts and file-level conventions should be finalized before the project describes a stable release as fully licensed for unrestricted downstream reuse.
+
+Contributors are responsible for contributing only material they have the right to contribute.
