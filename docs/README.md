@@ -17,6 +17,7 @@ Recommended reading order:
 7. [`../GOVERNANCE.md`](../GOVERNANCE.md) — founding governance principles
 8. [`theological-review.md`](theological-review.md) — theological review workflow
 9. [`authority-model.md`](authority-model.md) — source/authority modeling approach
+9a. [`theological-review.md`](theological-review.md) — governance review states plus source-fidelity assessment (confidence / needs-review tagging)
 10. [`../harness/README.md`](../harness/README.md) — Catholic Harness foundation
 11. [`../evals/README.md`](../evals/README.md) — Catholic Evals foundation
 12. [`../schema/catholic-context.schema.json`](../schema/catholic-context.schema.json) — canonical knowledge-object schema

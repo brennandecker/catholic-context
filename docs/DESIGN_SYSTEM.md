@@ -449,6 +449,17 @@ Always show explicit text, not color alone.
 
 Never use `Verified`, `Official`, `Church Approved`, or `Vatican Approved` without a real ecclesiastical process authorizing such language.
 
+### Source-fidelity assessment (separate from review state)
+
+Where present, also expose source-fidelity metadata:
+
+- representation type (`direct-citation`, `paraphrase`, `summary`, `synthesis`, `entity-metadata`)
+- confidence score for source match (not doctrinal certainty)
+- whether theological review is needed
+- whether sources are linkable
+
+Do not present a high source-fidelity confidence score as Church approval or theological review.
+
 ## 21. Sources
 
 Sources are first-class content, not hidden footnotes.

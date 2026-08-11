@@ -32,6 +32,25 @@ export interface KnowledgeSource {
   note?: string | null;
 }
 
+export type SourceRepresentation =
+  | 'direct-citation'
+  | 'paraphrase'
+  | 'summary'
+  | 'synthesis'
+  | 'entity-metadata';
+
+export interface SourceFidelity {
+  representation: SourceRepresentation;
+  /** Confidence the wording matches cited sources (0-1). Not doctrinal certainty. */
+  confidence: number;
+  needs_theological_review: boolean;
+  linkable_sources: boolean;
+  assessed_by?: string | null;
+  assessed_at?: string | null;
+  rationale?: string | null;
+  unresolved_issues?: string[] | null;
+}
+
 export interface KnowledgeObject {
   id: string;
   title: string;
@@ -48,6 +67,7 @@ export interface KnowledgeObject {
     reviewed_at?: string | null;
     review_commit?: string | null;
   };
+  source_fidelity?: SourceFidelity | null;
   sources: KnowledgeSource[];
   relationships?: {
     broader?: string[];

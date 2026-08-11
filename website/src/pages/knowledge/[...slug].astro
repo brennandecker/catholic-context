@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ReviewBadge from '../../components/ReviewBadge.astro';
 import SourceList from '../../components/SourceList.astro';
+import SourceFidelity from '../../components/SourceFidelity.astro';
 import Provenance from '../../components/Provenance.astro';
 import {
   formatClaimType,
@@ -104,6 +105,10 @@ const related = relatedIds
         </p>
       )}
     </section>
+
+    <hr class="rule-soft" />
+
+    <SourceFidelity fidelity={object.source_fidelity} />
 
     <hr class="rule-soft" />
 

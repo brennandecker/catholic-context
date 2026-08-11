@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://catholiccontext.org/schema/catholic-context.schema.json",
   "title": "Catholic Context Knowledge Object",
-  "description": "Schema v0.2 for a source-grounded Catholic Context knowledge object. Entity identity is modeled separately from theological claim classification.",
+  "description": "Schema v0.3 for a source-grounded Catholic Context knowledge object. Entity identity is modeled separately from theological claim classification. Source-fidelity assessment is separate from theological review.",
   "type": "object",
   "additionalProperties": false,
   "required": ["id", "title", "entity_type", "summary", "review", "sources"],
@@ -63,7 +63,8 @@
       "properties": {
         "status": {
           "type": "string",
-          "enum": ["draft", "community-reviewed", "theologically-reviewed"]
+          "enum": ["draft", "community-reviewed", "theologically-reviewed"],
+          "description": "Human/governance review state. Agents must not set theologically-reviewed."
         },
         "reviewed_by": {
           "type": ["array", "null"],
@@ -74,6 +75,59 @@
           "format": "date-time"
         },
         "review_commit": { "type": ["string", "null"] }
+      }
+    },
+    "source_fidelity": {
+      "type": ["object", "null"],
+      "description": "Machine or maintainer assessment of how faithfully the entry represents cited sources. This is not theological approval and not a score of whether the doctrine is true.",
+      "additionalProperties": false,
+      "required": [
+        "representation",
+        "confidence",
+        "needs_theological_review",
+        "linkable_sources"
+      ],
+      "properties": {
+        "representation": {
+          "type": "string",
+          "enum": [
+            "direct-citation",
+            "paraphrase",
+            "summary",
+            "synthesis",
+            "entity-metadata"
+          ],
+          "description": "How the entry relates to its cited sources."
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Confidence that the entry's wording matches the cited sources (0-1). Not doctrinal certainty."
+        },
+        "needs_theological_review": {
+          "type": "boolean",
+          "description": "True when synthesis, contested classification, weak linkage, or interpretive risk requires human theological review."
+        },
+        "linkable_sources": {
+          "type": "boolean",
+          "description": "True when primary official sources have resolvable outbound URLs or stable public locators."
+        },
+        "assessed_by": {
+          "type": ["string", "null"],
+          "description": "Agent id, skill name, or human maintainer identifier."
+        },
+        "assessed_at": {
+          "type": ["string", "null"],
+          "format": "date-time"
+        },
+        "rationale": {
+          "type": ["string", "null"]
+        },
+        "unresolved_issues": {
+          "type": ["array", "null"],
+          "items": { "type": "string" }
+        }
       }
     },
     "sources": {

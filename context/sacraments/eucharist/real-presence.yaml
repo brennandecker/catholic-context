@@ -18,6 +18,20 @@ review:
   reviewed_by: null
   reviewed_at: null
   review_commit: null
+source_fidelity:
+  representation: summary
+  confidence: 0.72
+  needs_theological_review: true
+  linkable_sources: false
+  assessed_by: review-context-entry
+  assessed_at: "2026-08-11T20:27:00Z"
+  rationale: >-
+    Summary is broadly consistent with CCC 1374's Real Presence teaching, but the
+    entry lacks an outbound source URL, includes provisional classification notes,
+    and should receive human theological review before any promotion.
+  unresolved_issues:
+    - Missing URL for CCC 1374
+    - Classification certainty is explicitly provisional
 sources:
   - source_type: catechism
     reference: CCC 1374

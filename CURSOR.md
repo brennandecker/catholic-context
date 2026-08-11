@@ -89,6 +89,20 @@ Read `docs/COMMERCIAL_MODEL.md` before implementing API, cloud, billing, or ente
 11. If the data cannot support a theological claim or classification, represent uncertainty rather than inventing certainty.
 12. Commercial customers, donors, sponsors, or users may not purchase theological outcomes or canonical status.
 
+## Source-fidelity assessment
+
+Knowledge objects may include a `source_fidelity` block that records whether an entry is a direct citation, paraphrase, summary, synthesis, or entity metadata; a 0–1 confidence score for source match; whether sources are linkable; and whether theological review is needed.
+
+This assessment may be produced by the project skill `.cursor/skills/review-context-entry/SKILL.md`.
+
+Hard rules:
+
+- source-fidelity confidence is **not** doctrinal certainty
+- agents/skills must **never** set `review.status: theologically-reviewed`
+- synthesis, weak linkage, or interpretive surplus should set `needs_theological_review: true`
+
+Read `docs/theological-review.md` before changing review or source-fidelity behavior.
+
 ## Design constraint
 
 **My Catholic Guide is the canonical visual reference implementation.**

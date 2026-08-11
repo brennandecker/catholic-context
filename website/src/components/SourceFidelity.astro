@@ -1,0 +1,54 @@
+---
+import type { SourceFidelity } from '../lib/types';
+
+interface Props {
+  fidelity?: SourceFidelity | null;
+}
+
+const { fidelity } = Astro.props;
+
+function percent(confidence: number): string {
+  return `${Math.round(confidence * 100)}%`;
+}
+
+function representationLabel(value: string): string {
+  return value.replace(/-/g, ' ');
+}
+---
+
+<section aria-labelledby="source-fidelity-heading">
+  <h2 class="h3" id="source-fidelity-heading">Source fidelity</h2>
+  {!fidelity ? (
+    <p>
+      No source-fidelity assessment yet. This checks whether the entry matches its cited
+      sources — it is not theological approval.
+    </p>
+  ) : (
+    <>
+      <div class="index-row__meta" style="margin: var(--space-3) 0 var(--space-4);">
+        <span class="badge">{representationLabel(fidelity.representation)}</span>
+        <span class="badge">Confidence {percent(fidelity.confidence)}</span>
+        <span class={fidelity.needs_theological_review ? 'badge badge-draft' : 'badge badge-community'}>
+          {fidelity.needs_theological_review
+            ? 'Needs theological review'
+            : 'Theological review not flagged by source check'}
+        </span>
+        <span class="badge">
+          {fidelity.linkable_sources ? 'Sources linkable' : 'Sources not fully linkable'}
+        </span>
+      </div>
+      {fidelity.rationale && <p>{fidelity.rationale}</p>}
+      {fidelity.unresolved_issues && fidelity.unresolved_issues.length > 0 && (
+        <ul>
+          {fidelity.unresolved_issues.map((issue) => (
+            <li>{issue}</li>
+          ))}
+        </ul>
+      )}
+      <p class="meta" style="margin-top: var(--space-3);">
+        Source-fidelity confidence measures match to cited texts, not whether doctrine is true.
+        {fidelity.assessed_by ? ` Assessed by ${fidelity.assessed_by}.` : ''}
+      </p>
+    </>
+  )}
+</section>
