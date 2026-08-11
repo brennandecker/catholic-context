@@ -204,6 +204,14 @@ Use explicit text, not color alone.
 
 Do not introduce `verified`, `official`, `Church-approved`, or similar states without a governance change and actual authority for that terminology.
 
+## Source-fidelity component
+
+Where `source_fidelity` is present, display representation type, source-match confidence, whether theological review is needed, and linkability.
+
+Make clear that confidence measures match to cited sources, not doctrinal certainty, and that the assessment is not theological approval.
+
+See `docs/theological-review.md` and `.cursor/skills/review-context-entry/SKILL.md`.
+
 ## Provenance component
 
 Where available, expose:
