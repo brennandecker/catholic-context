@@ -17,7 +17,12 @@ const {
 } = Astro.props;
 
 const pageTitle = title ? `${title} · ${SITE.name}` : `${SITE.name} — ${SITE.tagline}`;
-const canonical = new URL(canonicalPath, SITE.url).toString();
+const normalizedPath =
+  canonicalPath === '/' || canonicalPath === '/index.html'
+    ? '/'
+    : canonicalPath.replace(/\/index\.html$/, '').replace(/\.html$/, '').replace(/\/$/, '');
+const canonical = new URL(normalizedPath === '/' ? '/' : normalizedPath, SITE.url).toString();
+
 ---
 
 <!doctype html>

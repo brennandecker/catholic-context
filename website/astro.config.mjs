@@ -8,7 +8,7 @@ export default defineConfig({
   output: 'static',
   trailingSlash: 'never',
   build: {
-    format: 'file',
+    format: 'directory',
   },
   vite: {
     server: {
@@ -19,3 +19,4 @@ export default defineConfig({
     },
   },
 });
+
