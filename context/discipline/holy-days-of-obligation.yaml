@@ -1,0 +1,72 @@
+# Source-linked paraphrase of CIC cann. 1246-1247 and CCC 2177, 2180
+id: discipline.holy-days-of-obligation
+title: Holy Days of Obligation
+entity_type: practice
+classification:
+  claim_type: discipline
+  certainty: authoritatively-taught
+  note: The universal list and Mass obligation are set in canon law and the Catechism. Which
+    particular holy days bind in a given country may be modified by the conference of bishops
+    with prior approval of the Apostolic See (can. 1246 §2).
+summary: 'Sunday must be observed in the universal Church as the primordial holy day of obligation.
+  The following days must also be observed: the Nativity of our Lord Jesus Christ, the Epiphany,
+  the Ascension, the Body and Blood of Christ, Holy Mary the Mother of God, her Immaculate
+  Conception, her Assumption, Saint Joseph, Saint Peter and Saint Paul the Apostles, and All
+  Saints. With prior approval of the Apostolic See, the conference of bishops can suppress
+  some of these holy days or transfer them to a Sunday. On Sundays and other holy days of
+  obligation, the faithful are obliged to participate in the Mass and to abstain from works
+  and affairs which hinder the worship owed to God, the joy proper to the Lord’s day, or suitable
+  rest of mind and body.'
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+source_fidelity:
+  representation: paraphrase
+  confidence: 0.94
+  needs_theological_review: true
+  linkable_sources: true
+  assessed_by: review-context-entry
+  assessed_at: '2026-08-11T23:20:00Z'
+  rationale: Summary closely tracks CIC can. 1246 §§1–2 and can. 1247, with parallel catechetical
+    statements in CCC 2177 and 2180, and uses official Vatican / Catechism locators. Theological
+    review remains flagged for Catholic Context’s discipline taxonomy label and for pastoral
+    presentation of local conference norms.
+  unresolved_issues:
+  - Local episcopal-conference calendars (e.g., United States observances) are not enumerated
+    in this universal entry
+sources:
+- source_type: canon-law
+  reference: CIC, can. 1246
+  url: https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib4-cann1244-1253_en.html
+  note: Universal holy days of obligation and authority of episcopal conferences to suppress
+    or transfer days with Apostolic See approval.
+- source_type: canon-law
+  reference: CIC, can. 1247
+  url: https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib4-cann1244-1253_en.html
+  note: Obligation to participate in Mass and to rest from work that hinders worship.
+- source_type: catechism
+  reference: CCC 2177
+  url: https://www.scborromeo.org/ccc/para/2177.htm
+  note: Catechetical restatement of Sunday as foremost holy day and the universal list.
+- source_type: catechism
+  reference: CCC 2180
+  url: https://www.scborromeo.org/ccc/para/2180.htm
+  note: Catechetical restatement of the Mass obligation on Sundays and holy days.
+- source_type: catechism
+  reference: CCC 2042
+  url: https://www.scborromeo.org/ccc/para/2042.htm
+  note: 'First precept of the Church: attend Mass on Sundays and holy days of obligation.'
+relationships:
+  broader:
+  - liturgy.sunday
+  narrower: []
+  related:
+  - liturgy.mass
+  - eucharist.real-presence
+  - doctrine.mary.immaculate-conception
+  - person.blessed-virgin-mary
+notes: Universal discipline entry. For a particular country or diocese, consult the local
+  conference of bishops’ norms implementing can. 1246 §2. Catholic Context paraphrase of official
+  sources; the Church’s law stands on its own authority.

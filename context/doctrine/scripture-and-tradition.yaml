@@ -5,36 +5,46 @@ entity_type: teaching
 classification:
   claim_type: doctrine
   certainty: null
-  note: >-
-    The exact theological classification and certainty vocabulary are provisional and require qualified theological review.
-summary: >-
-  The Word of God is transmitted in Sacred Scripture and Sacred Tradition as
-  one sacred deposit of faith. The Magisterium authentically interprets that
-  deposit as its servant, not its master.
+  note: The exact theological classification and certainty vocabulary are provisional and
+    require qualified theological review.
+summary: The Word of God is transmitted in Sacred Scripture and Sacred Tradition as one sacred
+  deposit of faith. The Magisterium authentically interprets that deposit as its servant,
+  not its master.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: catechism
-    reference: CCC 80-82
-    url: null
-    note: >-
-      Relation of Scripture, Tradition, and the Magisterium.
-  - source_type: ecumenical-council
-    reference: Dei Verbum (Vatican II)
-    url: null
-    note: >-
-      Dogmatic constitution on divine revelation.
+- source_type: catechism
+  reference: CCC 80-82
+  url: https://www.scborromeo.org/ccc/para/80.htm
+  note: Relation of Scripture, Tradition, and the Magisterium.
+- source_type: ecumenical-council
+  reference: Dei Verbum (Vatican II)
+  url: null
+  note: Dogmatic constitution on divine revelation.
 relationships:
   broader:
-    - doctrine.revelation
+  - doctrine.revelation
   narrower: []
   related:
-    - event.second-vatican-council
-    - doctrine.magisterium
-notes: >-
-  Draft seed object distilled for Catholic Context from My Catholic Guide /
-  Supabase metadata (not a full narrative import). Presence here does not
-  imply ecclesiastical approval or completed theological review.
+  - event.second-vatican-council
+  - doctrine.magisterium
+notes: Draft seed object distilled for Catholic Context from My Catholic Guide / Supabase
+  metadata (not a full narrative import). Presence here does not imply ecclesiastical approval
+  or completed theological review.
+source_fidelity:
+  representation: summary
+  confidence: 0.88
+  needs_theological_review: true
+  linkable_sources: true
+  assessed_by: review-context-entry
+  assessed_at: '2026-08-11T23:20:00Z'
+  rationale: Assessed as summary for a teaching entry. 1 official source URL(s) resolved.
+    The Church’s teaching stands on its own authority; this score grades Catholic Context’s
+    fidelity to cited sources. Flagged for theological review of Catholic Context framing
+    and/or classification.
+  unresolved_issues:
+  - Claim classification taxonomy awaiting qualified theological review
+  - 'Missing URL for ecumenical-council: Dei Verbum (Vatican II)'

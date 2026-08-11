@@ -3,40 +3,42 @@ id: person.st-john-paul-ii
 title: St. John Paul II
 entity_type: person
 classification: null
-summary: >-
-  Pope from 1978 to 2005 (Karol Wojtyła). Major themes of his pontificate
-  include the dignity of the human person, the theology of the body, the new
-  evangelization, and engagement with the modern world.
+summary: Pope from 1978 to 2005 (Karol Wojtyła). Major themes of his pontificate include the
+  dignity of the human person, the theology of the body, the new evangelization, and engagement
+  with the modern world.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: magisterium
-    reference: John Paul II, Veritatis Splendor (1993)
-    url: null
-    note: >-
-      Encyclical on moral truth.
-  - source_type: magisterium
-    reference: John Paul II, Evangelium Vitae (1995)
-    url: null
-    note: >-
-      Encyclical on the value of human life.
-  - source_type: other
-    reference: My Catholic Guide popes record `st-john-paul-ii`
-    url: null
-    note: >-
-      Imported biographical summary seed.
+- source_type: magisterium
+  reference: John Paul II, Veritatis Splendor (1993)
+  url: https://www.vatican.va/content/john-paul-ii/en/encyclicals/documents/hf_jp-ii_enc_06081993_veritatis-splendor.html
+  note: Encyclical on the splendor of moral truth.
+- source_type: magisterium
+  reference: John Paul II, Evangelium Vitae (1995)
+  url: https://www.vatican.va/content/john-paul-ii/en/encyclicals/documents/hf_jp-ii_enc_25031995_evangelium-vitae.html
+  note: Encyclical on the value and inviolability of human life.
 relationships:
-  broader:
-    []
+  broader: []
   narrower: []
   related:
-    - event.second-vatican-council
-    - doctrine.grace
-notes: >-
-  Entity summary adapted from My Catholic Guide popes record `st-john-paul-
-  ii`. Draft seed object distilled for Catholic Context from My Catholic Guide
-  / Supabase metadata (not a full narrative import). Presence here does not
-  imply ecclesiastical approval or completed theological review.
+  - event.second-vatican-council
+  - doctrine.grace
+notes: Entity summary adapted from My Catholic Guide popes record `st-john-paul- ii`. Draft
+  seed object distilled for Catholic Context from My Catholic Guide / Supabase metadata (not
+  a full narrative import). Presence here does not imply ecclesiastical approval or completed
+  theological review.
+source_fidelity:
+  representation: entity-metadata
+  confidence: 0.83
+  needs_theological_review: true
+  linkable_sources: true
+  assessed_by: review-context-entry
+  assessed_at: '2026-08-11T23:25:00Z'
+  rationale: Assessed as entity-metadata. Official locators added where available. The Church’s
+    teaching stands on its own authority; this score grades how faithfully Catholic Context
+    restates or identifies the cited sources.
+  unresolved_issues:
+  - Entity metadata supported by linked sources; fuller biographical sourcing still open.

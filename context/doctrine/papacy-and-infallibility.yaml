@@ -5,39 +5,47 @@ entity_type: teaching
 classification:
   claim_type: dogma
   certainty: null
-  note: >-
-    The exact theological classification and certainty vocabulary are provisional and require qualified theological review.
-summary: >-
-  The Pope, as successor of Peter, holds a primacy of jurisdiction in the
-  Church. Papal infallibility is a narrowly defined charism: when the Pope
-  speaks ex cathedra defining a doctrine of faith or morals for the universal
-  Church, he is preserved from error. It is not a claim of personal
-  impeccability.
+  note: The exact theological classification and certainty vocabulary are provisional and
+    require qualified theological review.
+summary: 'The Pope, as successor of Peter, holds a primacy of jurisdiction in the Church.
+  Papal infallibility is a narrowly defined charism: when the Pope speaks ex cathedra defining
+  a doctrine of faith or morals for the universal Church, he is preserved from error. It is
+  not a claim of personal impeccability.'
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: ecumenical-council
-    reference: Vatican I, Pastor Aeternus
-    url: null
-    note: >-
-      Definition of papal primacy and infallibility.
-  - source_type: catechism
-    reference: CCC 891
-    url: null
-    note: >-
-      Catechetical presentation of the Church's infallibility including the
-      Pope.
+- source_type: ecumenical-council
+  reference: Vatican I, Pastor Aeternus
+  url: null
+  note: Definition of papal primacy and infallibility.
+- source_type: catechism
+  reference: CCC 891
+  url: https://www.scborromeo.org/ccc/para/891.htm
+  note: Catechetical presentation of the Church's infallibility including the Pope.
 relationships:
   broader:
-    - doctrine.magisterium
+  - doctrine.magisterium
   narrower: []
   related:
-    - person.st-peter-the-apostle
-    - event.vatican-i
-notes: >-
-  Draft seed object distilled for Catholic Context from My Catholic Guide /
-  Supabase metadata (not a full narrative import). Presence here does not
-  imply ecclesiastical approval or completed theological review.
+  - person.st-peter-the-apostle
+  - event.vatican-i
+notes: Draft seed object distilled for Catholic Context from My Catholic Guide / Supabase
+  metadata (not a full narrative import). Presence here does not imply ecclesiastical approval
+  or completed theological review.
+source_fidelity:
+  representation: summary
+  confidence: 0.88
+  needs_theological_review: true
+  linkable_sources: true
+  assessed_by: review-context-entry
+  assessed_at: '2026-08-11T23:20:00Z'
+  rationale: Assessed as summary for a teaching entry. 1 official source URL(s) resolved.
+    The Church’s teaching stands on its own authority; this score grades Catholic Context’s
+    fidelity to cited sources. Flagged for theological review of Catholic Context framing
+    and/or classification.
+  unresolved_issues:
+  - Claim classification taxonomy awaiting qualified theological review
+  - 'Missing URL for ecumenical-council: Vatican I, Pastor Aeternus'

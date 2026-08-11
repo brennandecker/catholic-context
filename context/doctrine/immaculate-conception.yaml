@@ -5,37 +5,47 @@ entity_type: teaching
 classification:
   claim_type: dogma
   certainty: null
-  note: >-
-    The exact theological classification and certainty vocabulary are provisional and require qualified theological review.
-summary: >-
-  The Church defines that the Blessed Virgin Mary was, from the first moment
-  of her conception, preserved immune from all stain of original sin by a
-  singular grace and privilege of God, in view of the merits of Jesus Christ.
+  note: The exact theological classification and certainty vocabulary are provisional and
+    require qualified theological review.
+summary: The Church defines that the Blessed Virgin Mary was, from the first moment of her
+  conception, preserved immune from all stain of original sin by a singular grace and privilege
+  of God, in view of the merits of Jesus Christ.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: magisterium
-    reference: Pius IX, Ineffabilis Deus (1854)
-    url: null
-    note: >-
-      Dogmatic definition of the Immaculate Conception.
-  - source_type: catechism
-    reference: CCC 491
-    url: null
-    note: >-
-      Catechetical presentation of the Immaculate Conception.
+- source_type: magisterium
+  reference: Pius IX, Ineffabilis Deus (1854)
+  url: null
+  note: Dogmatic definition of the Immaculate Conception.
+- source_type: catechism
+  reference: CCC 491
+  url: https://www.scborromeo.org/ccc/para/491.htm
+  note: Catechetical presentation of the Immaculate Conception.
 relationships:
   broader:
-    - person.blessed-virgin-mary
+  - person.blessed-virgin-mary
   narrower: []
   related:
-    - doctrine.mary.theotokos
-    - person.blessed-virgin-mary
-    - event.vatican-i
-notes: >-
-  Draft seed object distilled for Catholic Context from My Catholic Guide /
-  Supabase metadata (not a full narrative import). Presence here does not
-  imply ecclesiastical approval or completed theological review.
+  - doctrine.mary.theotokos
+  - person.blessed-virgin-mary
+  - event.vatican-i
+notes: Draft seed object distilled for Catholic Context from My Catholic Guide / Supabase
+  metadata (not a full narrative import). Presence here does not imply ecclesiastical approval
+  or completed theological review.
+source_fidelity:
+  representation: paraphrase
+  confidence: 0.9
+  needs_theological_review: true
+  linkable_sources: true
+  assessed_by: review-context-entry
+  assessed_at: '2026-08-11T23:20:00Z'
+  rationale: Assessed as paraphrase for a teaching entry. 1 official source URL(s) resolved.
+    The Church’s teaching stands on its own authority; this score grades Catholic Context’s
+    fidelity to cited sources. Flagged for theological review of Catholic Context framing
+    and/or classification.
+  unresolved_issues:
+  - Claim classification taxonomy awaiting qualified theological review
+  - 'Missing URL for magisterium: Pius IX, Ineffabilis Deus (1854)'

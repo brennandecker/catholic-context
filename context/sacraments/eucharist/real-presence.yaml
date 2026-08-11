@@ -5,16 +5,14 @@ entity_type: teaching
 classification:
   claim_type: doctrine
   certainty: authoritatively-taught
-  note: >-
-    CCC 1374 presents this as the Church's teaching on Eucharistic presence,
-    citing the Council of Trent. Exact claim_type/certainty labels remain
-    subject to qualified theological review of Catholic Context's taxonomy.
-summary: >-
-  In the most blessed sacrament of the Eucharist, the body and blood, together
-  with the soul and divinity, of our Lord Jesus Christ—and therefore the whole
-  Christ—is truly, really, and substantially contained. This presence is called
-  real because it is presence in the fullest sense: a substantial presence by
-  which Christ, God and man, makes himself wholly and entirely present.
+  note: CCC 1374 presents this as the Church's teaching on Eucharistic presence, citing the
+    Council of Trent. Exact claim_type/certainty labels remain subject to qualified theological
+    review of Catholic Context's taxonomy.
+summary: 'In the most blessed sacrament of the Eucharist, the body and blood, together with
+  the soul and divinity, of our Lord Jesus Christ—and therefore the whole Christ—is truly,
+  really, and substantially contained. This presence is called real because it is presence
+  in the fullest sense: a substantial presence by which Christ, God and man, makes himself
+  wholly and entirely present.'
 review:
   status: draft
   reviewed_by: null
@@ -26,33 +24,29 @@ source_fidelity:
   needs_theological_review: true
   linkable_sources: true
   assessed_by: review-context-entry
-  assessed_at: "2026-08-11T20:30:00Z"
-  rationale: >-
-    Summary closely tracks CCC 1374's wording on substantial Eucharistic presence
-    and the meaning of “real” presence, with a resolvable Vatican Catechism locator.
-    Theological review remains flagged only for Catholic Context's claim_type /
-    certainty taxonomy labels—not because the catechetical content is uncited.
+  assessed_at: '2026-08-11T20:30:00Z'
+  rationale: Summary closely tracks CCC 1374's wording on substantial Eucharistic presence
+    and the meaning of “real” presence, with a resolvable Vatican Catechism locator. Theological
+    review remains flagged only for Catholic Context's claim_type / certainty taxonomy labels—not
+    because the catechetical content is uncited.
   unresolved_issues:
-    - Claim classification taxonomy still awaiting qualified theological review
+  - Claim classification taxonomy still awaiting qualified theological review
 sources:
-  - source_type: catechism
-    reference: CCC 1374
-    url: https://www.vatican.va/archive/ENG0015/__P41.HTM
-    note: >-
-      Primary catechetical paragraph paraphrased in the summary. Vatican IntraText
-      page includes CCC 1374 within the Eucharist article.
-  - source_type: ecumenical-council
-    reference: Council of Trent (1551), DS 1651
-    url: null
-    note: >-
-      Cited by CCC 1374 for the formula “truly, really, and substantially contained.”
+- source_type: catechism
+  reference: CCC 1374
+  url: https://www.vatican.va/archive/ENG0015/__P41.HTM
+  note: Primary catechetical paragraph paraphrased in the summary. Vatican IntraText page
+    includes CCC 1374 within the Eucharist article.
+- source_type: ecumenical-council
+  reference: Council of Trent (1551), DS 1651
+  url: null
+  note: Cited by CCC 1374 for the formula “truly, really, and substantially contained.”
 relationships:
   broader:
-    - sacrament.eucharist
+  - sacrament.eucharist
   narrower: []
   related:
-    - doctrine.transubstantiation
-    - liturgy.mass
-notes: >-
-  Catholic Context paraphrase of an official catechetical source. Presence in this
-  repository does not imply a separate ecclesiastical endorsement beyond the cited texts.
+  - doctrine.transubstantiation
+  - liturgy.mass
+notes: Catholic Context paraphrase of an official catechetical source. Presence in this repository
+  does not imply a separate ecclesiastical endorsement beyond the cited texts.

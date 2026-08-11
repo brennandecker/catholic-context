@@ -22,8 +22,8 @@ export const TOPIC_LINKS = [
   { href: '/knowledge/sacraments/eucharist/real-presence', label: 'Eucharist' },
   { href: '/knowledge/doctrine/mary-theotokos', label: 'Mary' },
   { href: '/knowledge/sacraments/penance/reconciliation', label: 'Confession' },
+  { href: '/knowledge/discipline/holy-days-of-obligation', label: 'Holy Days' },
   { href: '/knowledge/doctrine/purgatory', label: 'Purgatory' },
-  { href: '/knowledge/doctrine/grace', label: 'Grace' },
   { href: '/knowledge/doctrine/papacy-and-infallibility', label: 'Papacy' },
 ] as const;
 

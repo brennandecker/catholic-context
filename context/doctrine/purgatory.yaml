@@ -5,36 +5,46 @@ entity_type: teaching
 classification:
   claim_type: doctrine
   certainty: null
-  note: >-
-    The exact theological classification and certainty vocabulary are provisional and require qualified theological review.
-summary: >-
-  Those who die in God's friendship but are still imperfectly purified undergo
-  final purification (purgatory). The Church's prayers and the offering of the
-  Mass aid the faithful departed.
+  note: The exact theological classification and certainty vocabulary are provisional and
+    require qualified theological review.
+summary: Those who die in God's friendship but are still imperfectly purified undergo final
+  purification (purgatory). The Church's prayers and the offering of the Mass aid the faithful
+  departed.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: catechism
-    reference: CCC 1030-1032
-    url: null
-    note: >-
-      Final purification / purgatory and the Church's suffrages.
-  - source_type: ecumenical-council
-    reference: Council of Trent, Decree on Purgatory
-    url: null
-    note: >-
-      Reaffirmation of the Church's teaching on purgatory.
+- source_type: catechism
+  reference: CCC 1030-1032
+  url: https://www.scborromeo.org/ccc/para/1030.htm
+  note: Final purification / purgatory and the Church's suffrages.
+- source_type: ecumenical-council
+  reference: Council of Trent, Decree on Purgatory
+  url: null
+  note: Reaffirmation of the Church's teaching on purgatory.
 relationships:
   broader:
-    - doctrine.last-things
+  - doctrine.last-things
   narrower: []
   related:
-    - doctrine.communion-of-saints
-    - liturgy.mass
-notes: >-
-  Draft seed object distilled for Catholic Context from My Catholic Guide /
-  Supabase metadata (not a full narrative import). Presence here does not
-  imply ecclesiastical approval or completed theological review.
+  - doctrine.communion-of-saints
+  - liturgy.mass
+notes: Draft seed object distilled for Catholic Context from My Catholic Guide / Supabase
+  metadata (not a full narrative import). Presence here does not imply ecclesiastical approval
+  or completed theological review.
+source_fidelity:
+  representation: summary
+  confidence: 0.89
+  needs_theological_review: true
+  linkable_sources: true
+  assessed_by: review-context-entry
+  assessed_at: '2026-08-11T23:20:00Z'
+  rationale: Assessed as summary for a teaching entry. 1 official source URL(s) resolved.
+    The Church’s teaching stands on its own authority; this score grades Catholic Context’s
+    fidelity to cited sources. Flagged for theological review of Catholic Context framing
+    and/or classification.
+  unresolved_issues:
+  - Claim classification taxonomy awaiting qualified theological review
+  - 'Missing URL for ecumenical-council: Council of Trent, Decree on Purgatory'
