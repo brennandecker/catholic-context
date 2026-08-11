@@ -20,6 +20,10 @@ Where possible, Catholic Context should store original summaries, structured met
 
 A citation to a source is not a grant of permission to reproduce the underlying source.
 
+The *Catechism of the Catholic Church* is specifically treated as third-party copyrighted material. The complete Catechism text must not be imported into the openly licensed Catholic Context corpus unless the project has verified and documented sufficient rights for that use.
+
+See [`docs/SOURCE_RIGHTS.md`](docs/SOURCE_RIGHTS.md) for the repository-wide policy governing copyrighted sources, excerpts, public-domain determinations, open licenses, automated ingestion, website/API behavior, and contributor review.
+
 ## Current release status
 
 The repository remains **pre-alpha**. The intended Apache-2.0 / CC BY 4.0 model is documented here, but the corresponding complete license notices/texts and file-level conventions should be finalized before the project describes a stable release as fully licensed for unrestricted downstream reuse.
