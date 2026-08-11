@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ReviewBadge from '../../components/ReviewBadge.astro';
+import SourceMatchMeter from '../../components/SourceMatchMeter.astro';
 import SourceList from '../../components/SourceList.astro';
 import SourceFidelity from '../../components/SourceFidelity.astro';
 import Provenance from '../../components/Provenance.astro';
@@ -57,11 +58,17 @@ const related = relatedIds
 
     <h1 class="h1" style="max-width: 16ch;">{object.title}</h1>
 
-    <div class="index-row__meta" style="margin-bottom: var(--space-6);">
+    <div class="index-row__meta" style="margin-bottom: var(--space-5);">
       <span class="meta">{object.entity_type}</span>
       {claim && <span class="meta">{claim}</span>}
       <ReviewBadge status={object.review.status} />
     </div>
+
+    {object.source_fidelity && (
+      <div style="max-width: 28rem; margin-bottom: var(--space-6);">
+        <SourceMatchMeter confidence={object.source_fidelity.confidence} />
+      </div>
+    )}
 
     <section aria-labelledby="summary-heading" class="prose">
       <h2 class="h3" id="summary-heading">Summary</h2>

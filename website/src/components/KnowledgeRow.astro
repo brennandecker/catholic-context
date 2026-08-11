@@ -1,5 +1,6 @@
 ---
 import ReviewBadge from './ReviewBadge.astro';
+import SourceMatchMeter from './SourceMatchMeter.astro';
 import { formatClaimType } from '../lib/content';
 import type { KnowledgeEntry } from '../lib/types';
 
@@ -17,12 +18,19 @@ const sourcePreview = object.sources
 ---
 
 <a class="index-row fade-in" href={`/knowledge/${slug}`}>
-  <h2 class="index-row__title">{object.title}</h2>
-  <p class="index-row__summary">{object.summary}</p>
-  <div class="index-row__meta">
-    <span class="meta">{object.entity_type}</span>
-    {claim && <span class="meta">{claim}</span>}
-    <ReviewBadge status={object.review.status} />
-    {sourcePreview && <span class="meta">{sourcePreview}</span>}
+  <div class="index-row__main">
+    <h2 class="index-row__title">{object.title}</h2>
+    <p class="index-row__summary">{object.summary}</p>
+    <div class="index-row__meta">
+      <span class="meta">{object.entity_type}</span>
+      {claim && <span class="meta">{claim}</span>}
+      <ReviewBadge status={object.review.status} />
+      {sourcePreview && <span class="meta">{sourcePreview}</span>}
+    </div>
   </div>
+  {object.source_fidelity && (
+    <div class="index-row__meter" onclick="event.preventDefault()">
+      <SourceMatchMeter confidence={object.source_fidelity.confidence} compact />
+    </div>
+  )}
 </a>

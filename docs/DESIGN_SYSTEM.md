@@ -458,7 +458,9 @@ Where present, also expose source-fidelity metadata:
 - whether theological review is needed
 - whether sources are linkable
 
-Do not present a high source-fidelity confidence score as Church approval or theological review.
+Visualize source-match confidence with an editorial meter (square track, missal-red fill, small-cap “Source match” label, percentage).
+
+**Labeling rule:** call it source match / source fidelity. Never present the meter as “confidence this teaching is true,” Church approval, or theological review.
 
 ## 21. Sources
 

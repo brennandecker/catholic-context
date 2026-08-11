@@ -511,7 +511,9 @@ a:hover {
 }
 
 .index-row {
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
   padding: var(--space-5) 0;
   border-bottom: 1px solid var(--rule-soft);
   text-decoration: none;
@@ -519,8 +521,109 @@ a:hover {
   transition: background-color 160ms ease;
 }
 
+@media (min-width: 900px) {
+  .index-row {
+    grid-template-columns: 1fr min(220px, 28%);
+    align-items: start;
+  }
+}
+
 .index-row:hover {
   background: color-mix(in srgb, var(--highlight) 35%, transparent);
+}
+
+.index-row__meter {
+  pointer-events: none;
+}
+
+.source-meter {
+  margin: 0;
+  padding: var(--space-4);
+  border: 1px solid var(--rule-soft);
+  background: var(--surface);
+  box-shadow: var(--shadow-paper);
+}
+
+.source-meter--compact {
+  padding: var(--space-3);
+}
+
+.source-meter__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.source-meter__caption {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.source-meter__glyph {
+  color: var(--missal);
+  margin-right: 0.35rem;
+}
+
+.source-meter__score {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.5rem;
+  color: var(--ink-dark);
+  line-height: 1;
+}
+
+.source-meter--compact .source-meter__score {
+  font-size: 1.25rem;
+}
+
+.source-meter__track {
+  position: relative;
+  height: 10px;
+  border: 1px solid var(--rule);
+  background: color-mix(in srgb, var(--near-paper) 80%, white);
+  overflow: hidden;
+}
+
+.source-meter__fill {
+  height: 100%;
+  background: var(--missal);
+  transition: width 420ms ease;
+}
+
+.source-meter--medium .source-meter__fill {
+  background: var(--brown);
+}
+
+.source-meter--low .source-meter__fill {
+  background: var(--muted);
+}
+
+.source-meter__ticks {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  pointer-events: none;
+}
+
+.source-meter__ticks i {
+  border-right: 1px solid color-mix(in srgb, var(--rule) 55%, transparent);
+}
+
+.source-meter__ticks i:last-child {
+  border-right: 0;
+}
+
+.source-meter__note {
+  margin: var(--space-3) 0 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+  max-width: 36rem;
 }
 
 .index-row__title {

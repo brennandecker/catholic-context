@@ -1,4 +1,5 @@
 ---
+import SourceMatchMeter from './SourceMatchMeter.astro';
 import type { SourceFidelity } from '../lib/types';
 
 interface Props {
@@ -6,10 +7,6 @@ interface Props {
 }
 
 const { fidelity } = Astro.props;
-
-function percent(confidence: number): string {
-  return `${Math.round(confidence * 100)}%`;
-}
 
 function representationLabel(value: string): string {
   return value.replace(/-/g, ' ');
@@ -21,23 +18,26 @@ function representationLabel(value: string): string {
   {!fidelity ? (
     <p>
       No source-fidelity assessment yet. This checks whether the entry matches its cited
-      sources — it is not theological approval.
+      sources — it is not a judgment that the teaching is true, and it is not theological approval.
     </p>
   ) : (
     <>
-      <div class="index-row__meta" style="margin: var(--space-3) 0 var(--space-4);">
+      <SourceMatchMeter confidence={fidelity.confidence} />
+
+      <div class="index-row__meta" style="margin: var(--space-4) 0;">
         <span class="badge">{representationLabel(fidelity.representation)}</span>
-        <span class="badge">Confidence {percent(fidelity.confidence)}</span>
         <span class={fidelity.needs_theological_review ? 'badge badge-draft' : 'badge badge-community'}>
           {fidelity.needs_theological_review
             ? 'Needs theological review'
-            : 'Theological review not flagged by source check'}
+            : 'Not flagged for theological review'}
         </span>
         <span class="badge">
           {fidelity.linkable_sources ? 'Sources linkable' : 'Sources not fully linkable'}
         </span>
       </div>
+
       {fidelity.rationale && <p>{fidelity.rationale}</p>}
+
       {fidelity.unresolved_issues && fidelity.unresolved_issues.length > 0 && (
         <ul>
           {fidelity.unresolved_issues.map((issue) => (
@@ -45,8 +45,9 @@ function representationLabel(value: string): string {
           ))}
         </ul>
       )}
+
       <p class="meta" style="margin-top: var(--space-3);">
-        Source-fidelity confidence measures match to cited texts, not whether doctrine is true.
+        Transparent by design: the meter shows source-match confidence only.
         {fidelity.assessed_by ? ` Assessed by ${fidelity.assessed_by}.` : ''}
       </p>
     </>
