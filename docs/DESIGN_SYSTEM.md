@@ -454,13 +454,13 @@ Never use `Verified`, `Official`, `Church Approved`, or `Vatican Approved` witho
 Where present, also expose source-fidelity metadata:
 
 - representation type (`direct-citation`, `paraphrase`, `summary`, `synthesis`, `entity-metadata`)
-- confidence score for source match (not doctrinal certainty)
+- confidence score for source match (fidelity of our restatement to the cited text)
 - whether theological review is needed
 - whether sources are linkable
 
 Visualize source-match confidence with an editorial meter (square track, missal-red fill, small-cap “Source match” label, percentage).
 
-**Labeling rule:** call it source match / source fidelity. Never present the meter as “confidence this teaching is true,” Church approval, or theological review.
+**Labeling rule:** The Church’s teaching stands on its own authority. Call the meter source match / source fidelity — how faithfully Catholic Context restates the cited source. Never present it as Catholic Context voting on doctrine, granting Church approval, or completing theological review.
 
 ## 21. Sources
 

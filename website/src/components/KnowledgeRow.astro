@@ -29,7 +29,7 @@ const sourcePreview = object.sources
     </div>
   </div>
   {object.source_fidelity && (
-    <div class="index-row__meter" onclick="event.preventDefault()">
+    <div class="index-row__meter">
       <SourceMatchMeter confidence={object.source_fidelity.confidence} compact />
     </div>
   )}

@@ -208,7 +208,7 @@ Do not introduce `verified`, `official`, `Church-approved`, or similar states wi
 
 Where `source_fidelity` is present, display representation type, source-match confidence, whether theological review is needed, and linkability.
 
-Make clear that confidence measures match to cited sources, not doctrinal certainty, and that the assessment is not theological approval.
+Make clear that the Church’s teaching stands on its own authority, and that the meter only grades how faithfully Catholic Context restates the cited source. The assessment is not theological approval of Catholic Context’s framing.
 
 See `docs/theological-review.md` and `.cursor/skills/review-context-entry/SKILL.md`.
 

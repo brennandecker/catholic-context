@@ -17,8 +17,8 @@ function representationLabel(value: string): string {
   <h2 class="h3" id="source-fidelity-heading">Source fidelity</h2>
   {!fidelity ? (
     <p>
-      No source-fidelity assessment yet. This checks whether the entry matches its cited
-      sources — it is not a judgment that the teaching is true, and it is not theological approval.
+      No source-fidelity assessment yet. This checks how faithfully the entry restates its
+      cited Church sources. It does not replace theological review of Catholic Context’s framing.
     </p>
   ) : (
     <>
@@ -47,7 +47,7 @@ function representationLabel(value: string): string {
       )}
 
       <p class="meta" style="margin-top: var(--space-3);">
-        Transparent by design: the meter shows source-match confidence only.
+        Transparent by design: we show how closely this page matches the cited source.
         {fidelity.assessed_by ? ` Assessed by ${fidelity.assessed_by}.` : ''}
       </p>
     </>

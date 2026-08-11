@@ -97,7 +97,7 @@ This assessment may be produced by the project skill `.cursor/skills/review-cont
 
 Hard rules:
 
-- source-fidelity confidence is **not** doctrinal certainty
+- source-fidelity confidence grades our restatement of cited Church sources; it does not put Catholic teaching itself on trial
 - agents/skills must **never** set `review.status: theologically-reviewed`
 - synthesis, weak linkage, or interpretive surplus should set `needs_theological_review: true`
 
