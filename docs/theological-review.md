@@ -39,9 +39,9 @@ It records a machine or maintainer assessment of representation quality. It does
 
 It means:
 
-> Confidence that the entry's wording matches the cited sources.
+> Confidence that Catholic Context's wording faithfully restates the cited Church sources.
 
-It does **not** mean doctrinal certainty, popularity, or model self-confidence about Catholic teaching.
+The Church’s teaching stands on its own authority. This score grades **our fidelity to the source**, not whether Scripture, the Catechism, or the Magisterium is trustworthy.
 
 Suggested bands:
 

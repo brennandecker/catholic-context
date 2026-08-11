@@ -30,7 +30,7 @@ const label =
     aria-valuemin="0"
     aria-valuemax="100"
     aria-valuenow={percent}
-    aria-valuetext={`${percent} percent source match. ${label}. This measures fidelity to cited sources, not whether a teaching is true.`}
+    aria-valuetext={`${percent} percent source match. ${label}. Grades how faithfully Catholic Context restates the cited Church source.`}
   >
     <div class="source-meter__fill" style={`width: ${percent}%`}></div>
     <span class="source-meter__ticks" aria-hidden="true">
@@ -39,8 +39,8 @@ const label =
   </div>
   {!compact && (
     <p class="source-meter__note">
-      {label}. This score measures how closely Catholic Context matches the cited sources —
-      not whether the doctrine itself is true.
+      {label}. The Church’s teaching stands on its own authority. This meter only grades how
+      faithfully Catholic Context restates the cited source.
     </p>
   )}
 </figure>
