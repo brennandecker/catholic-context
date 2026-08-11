@@ -1,0 +1,51 @@
+---
+import { SITE } from '../lib/site';
+---
+
+<footer class="site-footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <p class="footer-brand">Catholic Context</p>
+        <p>{SITE.tagline}</p>
+      </div>
+
+      <div class="footer-col">
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="/knowledge">Knowledge</a></li>
+          <li><a href="/sources">Sources</a></li>
+          <li><a href="/harness">Harness</a></li>
+          <li><a href="/evals">Evals</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>Project</h2>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/governance">Governance</a></li>
+          <li><a href="/open">Contribute</a></li>
+          <li><a href={SITE.githubUrl} rel="noopener noreferrer" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>Developers</h2>
+        <ul>
+          <li><a href="/developers">Documentation</a></li>
+          <li><a href={`${SITE.githubUrl}/tree/main/schema`} rel="noopener noreferrer" target="_blank">Schema</a></li>
+          <li><a href="/developers">API</a></li>
+          <li><a href="/developers">MCP</a></li>
+          <li><a href={SITE.myCatholicGuideUrl} rel="noopener noreferrer" target="_blank">My Catholic Guide →</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="disclaimer">
+      Catholic Context is an independent open-source project. It does not claim official
+      endorsement by the Holy See, a diocese, or another ecclesiastical authority unless
+      explicitly stated.
+    </p>
+  </div>
+</footer>

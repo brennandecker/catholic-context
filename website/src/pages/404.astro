@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Not Found" description="The requested page was not found.">
+  <section class="section shell fade-in">
+    <p class="eyebrow">✦ Not Found</p>
+    <h1 class="h1">This page is not in the archive.</h1>
+    <p class="lede">
+      The path you requested is not part of Catholic Context. Try search, or return home.
+    </p>
+    <div style="display:flex; flex-wrap:wrap; gap: var(--space-3); margin-top: var(--space-6);">
+      <a class="btn btn-primary" href="/search">Search →</a>
+      <a class="btn btn-secondary" href="/">Home</a>
+    </div>
+  </section>
+</BaseLayout>

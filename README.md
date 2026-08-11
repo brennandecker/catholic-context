@@ -17,12 +17,14 @@ Catholic Context does not create Catholic teaching, replace the Magisterium, exe
 ```text
 Catholic Context
 │
-├── knowledge/      Structured Catholic knowledge, sources, and provenance
+├── context/        Structured Catholic knowledge objects (canonical YAML)
+├── knowledge/      Knowledge-layer documentation
 ├── harness/        Model-agnostic behavioral and reasoning framework
 ├── evals/          Theological, source-fidelity, and boundary evaluations
 ├── schema/         Machine-readable specifications
 ├── governance/     Theological integrity and review governance
 ├── sources/        Source registry and metadata
+├── website/        CatholicContext.org (Astro → Cloudflare Workers)
 ├── docs/           Architecture and design documentation
 └── .github/        Contribution and review workflows
 ```

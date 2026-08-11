@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { loadKnowledgeEntries, loadSourceRegistry } from '../lib/content';
+
+const registry = loadSourceRegistry();
+const entries = loadKnowledgeEntries();
+
+function citingEntries(sourceType: string) {
+  return entries.filter((entry) =>
+    entry.object.sources.some((s) => s.source_type === sourceType || s.source_type.replace(/_/g, '-') === sourceType),
+  );
+}
+---
+
+<BaseLayout
+  title="Sources"
+  description="Catholic Context treats sources as first-class objects with provenance and citation discipline."
+>
+  <section class="section-tight shell fade-in">
+    <p class="eyebrow">✦ Sources</p>
+    <h1 class="h1">Sources are first-class content.</h1>
+    <p class="lede">
+      Citations identify source families and exact references. Catholic Context does not
+      claim redistribution rights to third-party texts merely because a citation exists.
+    </p>
+  </section>
+
+  <section class="shell" style="padding-bottom: var(--space-9);">
+    {registry.map((source) => {
+      const cited = citingEntries(source.type);
+      return (
+        <article class="source-item">
+          <p class="meta">{source.type.replace(/-/g, ' ')}</p>
+          <h2 class="source-item__ref">{source.name}</h2>
+          {source.publisher && <p class="meta">Publisher: {source.publisher}</p>}
+          {source.notes && <p>{source.notes}</p>}
+          <p class="meta" style="margin-top: var(--space-3);">
+            Cited by {cited.length} Catholic Context entr{cited.length === 1 ? 'y' : 'ies'}
+          </p>
+          {cited.length > 0 && (
+            <ul style="margin: var(--space-3) 0 0; padding-left: 1.1rem;">
+              {cited.map((entry) => (
+                <li>
+                  <a href={`/knowledge/${entry.slug}`}>{entry.object.title}</a>
+                  {' — '}
+                  {entry.object.sources
+                    .filter((s) => s.source_type === source.type)
+                    .map((s) => s.reference)
+                    .join(', ')}
+                </li>
+              ))}
+            </ul>
+          )}
+        </article>
+      );
+    })}
+  </section>
+</BaseLayout>

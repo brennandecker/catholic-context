@@ -1,0 +1,23 @@
+---
+interface Props {
+  query?: string;
+  autofocus?: boolean;
+}
+
+const { query = '', autofocus = false } = Astro.props;
+---
+
+<form class="search-bar" action="/search" method="get" role="search">
+  <label class="sr-only" for="q">Search Catholic Context</label>
+  <input
+    class="field"
+    id="q"
+    name="q"
+    type="search"
+    value={query}
+    placeholder="Search Catholic teaching, Scripture, sacraments, saints..."
+    autocomplete="off"
+    autofocus={autofocus}
+  />
+  <button class="btn btn-primary" type="submit">Search →</button>
+</form>

@@ -1,0 +1,53 @@
+---
+import { githubFileUrl } from '../lib/site';
+import { reviewLabel } from '../lib/content';
+import type { KnowledgeEntry } from '../lib/types';
+
+interface Props {
+  entry: KnowledgeEntry;
+}
+
+const { entry } = Astro.props;
+const { object, repoPath } = entry;
+const reviewers = object.review.reviewed_by?.length
+  ? object.review.reviewed_by.join(', ')
+  : 'Not yet assigned';
+---
+
+<section aria-labelledby="provenance-heading">
+  <h2 class="h3" id="provenance-heading">Provenance</h2>
+  <dl class="provenance-grid">
+    <div>
+      <dt>Review state</dt>
+      <dd>{reviewLabel(object.review.status)}</dd>
+    </div>
+    <div>
+      <dt>Reviewer</dt>
+      <dd>{reviewers}</dd>
+    </div>
+    <div>
+      <dt>Review date</dt>
+      <dd>{object.review.reviewed_at ?? 'Pending'}</dd>
+    </div>
+    <div>
+      <dt>Canonical file</dt>
+      <dd>
+        <a href={githubFileUrl(repoPath)} rel="noopener noreferrer" target="_blank">
+          {repoPath} ↗
+        </a>
+      </dd>
+    </div>
+    <div>
+      <dt>Revision history</dt>
+      <dd>
+        <a
+          href={`https://github.com/brennandecker/catholic-context/commits/main/${repoPath}`}
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          View on GitHub ↗
+        </a>
+      </dd>
+    </div>
+  </dl>
+</section>

@@ -1,0 +1,170 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SearchForm from '../components/SearchForm.astro';
+import ReviewBadge from '../components/ReviewBadge.astro';
+import { buildSearchDocuments } from '../lib/content';
+import { searchKnowledge } from '../lib/search';
+import { formatClaimType } from '../lib/content';
+import type { ReviewStatus } from '../lib/types';
+
+const documents = buildSearchDocuments();
+const initialQuery = Astro.url.searchParams.get('q') ?? '';
+const initialResults = searchKnowledge(documents, initialQuery);
+---
+
+<BaseLayout
+  title={initialQuery ? `Search: ${initialQuery}` : 'Search'}
+  description="Search source-grounded Catholic Context knowledge by topic, source, or natural-language question."
+>
+  <section class="section-tight shell fade-in">
+    <p class="eyebrow">✦ Search</p>
+    <h1 class="h1">Search Catholic Context</h1>
+    <p class="lede">
+      Find teachings, concepts, and source-grounded explanations. Results read like an
+      editorial index — not a product card grid.
+    </p>
+    <SearchForm query={initialQuery} autofocus />
+  </section>
+
+  <section class="shell" style="padding-bottom: var(--space-9);" aria-live="polite">
+    <p class="meta" id="result-count" data-result-count>
+      {initialQuery
+        ? `${initialResults.length} result${initialResults.length === 1 ? '' : 's'} for “${initialQuery}”`
+        : `${documents.length} entr${documents.length === 1 ? 'y' : 'ies'} available`}
+    </p>
+    <hr class="rule-soft" />
+
+    <div id="results" data-results>
+      {initialResults.map((doc) => (
+        <a class="index-row" href={`/knowledge/${doc.slug}`}>
+          <h2 class="index-row__title">{doc.title}</h2>
+          <p class="index-row__summary">{doc.summary}</p>
+          <div class="index-row__meta">
+            <span class="meta">{doc.entity_type}</span>
+            {doc.claim_type && <span class="meta">{formatClaimType(doc.claim_type)}</span>}
+            <ReviewBadge status={doc.review_status as ReviewStatus} />
+            {doc.sources.length > 0 && <span class="meta">{doc.sources.join(' · ')}</span>}
+          </div>
+        </a>
+      ))}
+    </div>
+
+    {initialResults.length === 0 && (
+      <p id="empty-state">No matching entries yet. Try a broader term, or browse the knowledge index.</p>
+    )}
+  </section>
+</BaseLayout>
+
+<script define:vars={{ documents }}>
+  function normalize(value) {
+    return value.toLowerCase().normalize('NFKD');
+  }
+
+  function scoreDocument(doc, query) {
+    const q = normalize(query.trim());
+    if (!q) return 1;
+    const title = normalize(doc.title);
+    const summary = normalize(doc.summary);
+    const id = normalize(doc.id);
+    const slug = normalize(doc.slug);
+    const sources = normalize(doc.sources.join(' '));
+    const related = normalize(doc.related.join(' '));
+    const entity = normalize(doc.entity_type);
+    const claim = normalize(doc.claim_type ?? '');
+    let score = 0;
+    if (title === q || id === q || slug === q) score += 100;
+    if (title.startsWith(q)) score += 60;
+    if (title.includes(q)) score += 40;
+    if (id.includes(q) || slug.includes(q)) score += 35;
+    if (sources.includes(q)) score += 30;
+    if (entity.includes(q) || claim.includes(q)) score += 20;
+    if (related.includes(q)) score += 15;
+    if (summary.includes(q)) score += 10;
+    for (const token of q.split(/\s+/).filter((t) => t.length > 2)) {
+      if (title.includes(token)) score += 8;
+      if (summary.includes(token)) score += 3;
+      if (sources.includes(token)) score += 4;
+    }
+    return score;
+  }
+
+  function reviewLabel(status) {
+    if (status === 'draft') return 'DRAFT — THEOLOGICAL REVIEW PENDING';
+    if (status === 'community-reviewed') return 'COMMUNITY REVIEWED';
+    if (status === 'theologically-reviewed') return 'THEOLOGICALLY REVIEWED';
+    return status.toUpperCase();
+  }
+
+  function badgeClass(status) {
+    if (status === 'draft') return 'badge badge-draft';
+    if (status === 'community-reviewed') return 'badge badge-community';
+    return 'badge badge-reviewed';
+  }
+
+  function formatClaim(claim) {
+    return claim ? claim.replace(/-/g, ' ').toUpperCase() : '';
+  }
+
+  function render(results, query) {
+    const root = document.querySelector('[data-results]');
+    const count = document.querySelector('[data-result-count]');
+    if (!(root instanceof HTMLElement) || !(count instanceof HTMLElement)) return;
+
+    count.textContent = query
+      ? `${results.length} result${results.length === 1 ? '' : 's'} for “${query}”`
+      : `${documents.length} entr${documents.length === 1 ? 'y' : 'ies'} available`;
+
+    if (results.length === 0) {
+      root.innerHTML = '<p>No matching entries yet. Try a broader term, or browse the knowledge index.</p>';
+      return;
+    }
+
+    root.innerHTML = results
+      .map((doc) => {
+        const claim = formatClaim(doc.claim_type);
+        const sources = doc.sources.length ? `<span class="meta">${doc.sources.join(' · ')}</span>` : '';
+        return `
+          <a class="index-row" href="/knowledge/${doc.slug}">
+            <h2 class="index-row__title">${doc.title}</h2>
+            <p class="index-row__summary">${doc.summary}</p>
+            <div class="index-row__meta">
+              <span class="meta">${doc.entity_type}</span>
+              ${claim ? `<span class="meta">${claim}</span>` : ''}
+              <span class="${badgeClass(doc.review_status)}">${reviewLabel(doc.review_status)}</span>
+              ${sources}
+            </div>
+          </a>
+        `;
+      })
+      .join('');
+  }
+
+  const form = document.querySelector('form[role="search"]');
+  const input = document.querySelector('#q');
+  if (form instanceof HTMLFormElement && input instanceof HTMLInputElement) {
+    const run = () => {
+      const query = input.value.trim();
+      const results = !query
+        ? documents
+        : documents
+            .map((doc) => ({ doc, score: scoreDocument(doc, query) }))
+            .filter((row) => row.score > 0)
+            .sort((a, b) => b.score - a.score || a.doc.title.localeCompare(b.doc.title))
+            .map((row) => row.doc);
+      const url = new URL(window.location.href);
+      if (query) url.searchParams.set('q', query);
+      else url.searchParams.delete('q');
+      history.replaceState({}, '', url);
+      render(results, query);
+    };
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      run();
+    });
+    input.addEventListener('input', () => {
+      window.clearTimeout(input._debounce);
+      input._debounce = window.setTimeout(run, 180);
+    });
+  }
+</script>

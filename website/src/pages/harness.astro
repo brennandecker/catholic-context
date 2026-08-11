@@ -1,0 +1,81 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { loadHarnessPrinciples } from '../lib/content';
+import { SITE } from '../lib/site';
+
+const harness = loadHarnessPrinciples();
+const principles = harness.principles ?? [];
+---
+
+<BaseLayout
+  title="Harness"
+  description="How should Catholic-grounded AI reason, cite, express uncertainty, and respect pastoral boundaries?"
+>
+  <section class="section-tight shell fade-in">
+    <p class="eyebrow">✦ Catholic Harness</p>
+    <h1 class="h1">How should Catholic-grounded AI behave?</h1>
+    <p class="lede">
+      The Harness is a model-agnostic framework for source grounding, authority,
+      theological distinctions, moral reasoning, uncertainty, citations, pastoral
+      boundaries, and escalation to human guidance.
+    </p>
+  </section>
+
+  <section class="shell" style="padding-bottom: var(--space-7);">
+    <blockquote class="quote">
+      Catholic Context assists human beings in understanding Catholic teaching and applying
+      Catholic moral principles. It does not possess spiritual authority, administer
+      sacraments, replace conscience, or claim knowledge of God's particular will for an
+      individual.
+    </blockquote>
+  </section>
+
+  <section class="section shell" aria-labelledby="humanitas-heading">
+    <p class="eyebrow">✦ Magnifica Humanitas</p>
+    <h2 class="h2" id="humanitas-heading">Human-centered principles for the AI era</h2>
+    <p class="lede">
+      Draft principles derived from <em>{String(harness.document?.title ?? 'Magnifica Humanitas')}</em>
+      {' '}translate Catholic sources into inspectable engineering requirements. Status:
+      {` ${String(harness.status?.maturity ?? 'draft')} · theological review ${String(harness.status?.theological_review ?? 'pending')}`}.
+    </p>
+
+    <div style="margin-top: var(--space-7);">
+      {principles.slice(0, 8).map((principle) => (
+        <article class="source-item">
+          <p class="meta">{String(principle.id)}</p>
+          <h3 class="source-item__ref">{String(principle.title)}</h3>
+          <p>{String(principle.interpretation)}</p>
+        </article>
+      ))}
+    </div>
+
+    <p style="margin-top: var(--space-6);">
+      <a
+        class="btn btn-secondary"
+        href={`${SITE.githubUrl}/blob/main/harness/principles/magnifica-humanitas.yaml`}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Read full principles on GitHub ↗
+      </a>
+    </p>
+  </section>
+
+  <section class="section shell">
+    <h2 class="h2">Conformance themes</h2>
+    <div class="columns-3" style="margin-top: var(--space-6);">
+      <article>
+        <h3 class="h3">Source grounding</h3>
+        <p>Substantive claims should point to identifiable Catholic sources when available.</p>
+      </article>
+      <article>
+        <h3 class="h3">Authority & uncertainty</h3>
+        <p>Doctrine, discipline, opinion, and prudential judgment must remain distinguishable.</p>
+      </article>
+      <article>
+        <h3 class="h3">Pastoral boundaries</h3>
+        <p>Escalate to human guidance for sacraments, conscience, and individual canonical status.</p>
+      </article>
+    </div>
+  </section>
+</BaseLayout>

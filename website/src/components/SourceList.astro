@@ -1,0 +1,34 @@
+---
+import type { KnowledgeSource } from '../lib/types';
+
+interface Props {
+  sources: KnowledgeSource[];
+}
+
+const { sources } = Astro.props;
+---
+
+<section aria-labelledby="sources-heading">
+  <h2 class="h3" id="sources-heading">Sources</h2>
+  {sources.length === 0 ? (
+    <p>No sources recorded for this entry yet.</p>
+  ) : (
+    <div>
+      {sources.map((source) => (
+        <article class="source-item">
+          <p class="meta">{source.source_type.replace(/-/g, ' ')}</p>
+          <h3 class="source-item__ref">
+            {source.url ? (
+              <a href={source.url} rel="noopener noreferrer" target="_blank">
+                {source.reference}
+              </a>
+            ) : (
+              source.reference
+            )}
+          </h3>
+          {source.note && <p>{source.note}</p>}
+        </article>
+      ))}
+    </div>
+  )}
+</section>

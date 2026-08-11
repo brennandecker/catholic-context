@@ -1,0 +1,62 @@
+---
+import { NAV, SITE } from '../lib/site';
+
+const pathname = Astro.url.pathname.replace(/\/$/, '') || '/';
+
+function isCurrent(href: string): boolean {
+  if (href === '/') return pathname === '/';
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
+---
+
+<header class="site-header">
+  <div class="shell site-header__inner">
+    <a class="brand" href="/">{SITE.name}</a>
+
+    <nav class="nav nav-desktop" aria-label="Primary">
+      {NAV.map((item) => (
+        <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
+          {item.label}
+        </a>
+      ))}
+      <a href={SITE.githubUrl} rel="noopener noreferrer" target="_blank">
+        GitHub ↗
+      </a>
+      <a class="btn btn-secondary" href="/search">Search</a>
+    </nav>
+
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-nav"
+      data-nav-toggle
+    >
+      Menu
+    </button>
+
+    <nav class="nav nav-mobile" id="mobile-nav" aria-label="Mobile" data-mobile-nav>
+      {NAV.map((item) => (
+        <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
+          {item.label}
+        </a>
+      ))}
+      <a href="/search">Search</a>
+      <a href={SITE.githubUrl} rel="noopener noreferrer" target="_blank">
+        GitHub ↗
+      </a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const toggle = document.querySelector('[data-nav-toggle]');
+  const menu = document.querySelector('[data-mobile-nav]');
+  if (toggle instanceof HTMLButtonElement && menu instanceof HTMLElement) {
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.textContent = open ? 'Close' : 'Menu';
+    });
+  }
+</script>
