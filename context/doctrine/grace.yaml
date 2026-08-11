@@ -1,0 +1,40 @@
+# DRAFT — theological review pending
+id: doctrine.grace
+title: Grace
+entity_type: teaching
+classification:
+  claim_type: doctrine
+  certainty: null
+  note: >-
+    The exact theological classification and certainty vocabulary are provisional and require qualified theological review.
+summary: >-
+  Grace is the free and undeserved help God gives so that persons may respond
+  to his call and share in his divine life. Salvation is by grace; faith
+  working through love bears fruit.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: catechism
+    reference: CCC 1996-2005
+    url: null
+    note: >-
+      Grace and justification.
+  - source_type: scripture
+    reference: Ephesians 2:8-10
+    url: null
+    note: >-
+      Saved by grace through faith, created for good works.
+relationships:
+  broader:
+    - doctrine.salvation
+  narrower: []
+  related:
+    - sacrament.baptism
+    - sacrament.penance
+notes: >-
+  Draft seed object distilled for Catholic Context from My Catholic Guide /
+  Supabase metadata (not a full narrative import). Presence here does not
+  imply ecclesiastical approval or completed theological review.

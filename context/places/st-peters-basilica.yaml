@@ -1,0 +1,36 @@
+# DRAFT — theological review pending
+id: place.st-peters-basilica
+title: St. Peter's Basilica
+entity_type: institution
+classification: null
+summary: >-
+  The major basilica in Vatican City traditionally associated with the tomb of
+  St. Peter. It is a principal place of Catholic pilgrimage and papal liturgy,
+  distinct from the Pope's cathedral church (St. John Lateran).
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: other
+    reference: My Catholic Guide churches record `st-peters-basilica`
+    url: null
+    note: >-
+      Imported place summary seed.
+  - source_type: other
+    reference: Vatican City / Diocese of Rome
+    url: null
+    note: >-
+      Institutional location context.
+relationships:
+  broader:
+    []
+  narrower: []
+  related:
+    - person.st-peter-the-apostle
+    - place.basilica-of-st-john-lateran
+notes: >-
+  Draft seed object distilled for Catholic Context from My Catholic Guide /
+  Supabase metadata (not a full narrative import). Presence here does not
+  imply ecclesiastical approval or completed theological review.

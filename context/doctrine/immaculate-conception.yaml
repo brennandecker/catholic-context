@@ -1,0 +1,41 @@
+# DRAFT — theological review pending
+id: doctrine.mary.immaculate-conception
+title: Immaculate Conception of Mary
+entity_type: teaching
+classification:
+  claim_type: dogma
+  certainty: null
+  note: >-
+    The exact theological classification and certainty vocabulary are provisional and require qualified theological review.
+summary: >-
+  The Church defines that the Blessed Virgin Mary was, from the first moment
+  of her conception, preserved immune from all stain of original sin by a
+  singular grace and privilege of God, in view of the merits of Jesus Christ.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: magisterium
+    reference: Pius IX, Ineffabilis Deus (1854)
+    url: null
+    note: >-
+      Dogmatic definition of the Immaculate Conception.
+  - source_type: catechism
+    reference: CCC 491
+    url: null
+    note: >-
+      Catechetical presentation of the Immaculate Conception.
+relationships:
+  broader:
+    - person.blessed-virgin-mary
+  narrower: []
+  related:
+    - doctrine.mary.theotokos
+    - person.blessed-virgin-mary
+    - event.vatican-i
+notes: >-
+  Draft seed object distilled for Catholic Context from My Catholic Guide /
+  Supabase metadata (not a full narrative import). Presence here does not
+  imply ecclesiastical approval or completed theological review.

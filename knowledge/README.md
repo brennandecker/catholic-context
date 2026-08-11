@@ -14,19 +14,20 @@ Examples:
 
 This avoids forcing concepts such as `person`, `sacrament`, `dogma`, and `discipline` into one mutually exclusive field.
 
-## Planned structure
+## Canonical files
+
+Machine-readable knowledge objects currently live under [`context/`](../context/) and are validated against [`schema/catholic-context.schema.json`](../schema/catholic-context.schema.json).
 
 ```text
-knowledge/
-├── teachings/
-├── concepts/
-├── sacraments/
-├── persons/
-├── prayers/
-├── devotions/
-├── liturgy/
-├── history/
-└── documents/
+context/
+├── doctrine/       Claim-level teachings (draft unless reviewed)
+├── sacraments/     Sacrament entities and related teachings
+├── liturgy/        Liturgical realities (e.g., the Mass)
+├── persons/        People (saints, popes, biblical figures)
+├── events/         Councils and historical events
+└── places/         Churches and institutional places
 ```
 
-All substantive theological knowledge should carry explicit review metadata and source provenance. The current machine-readable schema lives under `schema/` while the format remains pre-alpha.
+Catholic Context prefers catechetical / juridical / entity records over narrative formation guides. Narrative “how-to” and seasonal storytelling content belongs in applications such as My Catholic Guide.
+
+All substantive theological knowledge should carry explicit review metadata and source provenance. The format remains pre-alpha: new objects default to `review.status: draft`.

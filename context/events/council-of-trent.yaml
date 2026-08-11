@@ -1,0 +1,41 @@
+# DRAFT — theological review pending
+id: event.council-of-trent
+title: Council of Trent (1545–1563)
+entity_type: event
+classification:
+  claim_type: historical-claim
+  certainty: null
+  note: >-
+    The exact theological classification and certainty vocabulary are provisional and require qualified theological review.
+summary: >-
+  The Catholic Church's principal response to the Protestant Reformation:
+  clarifying doctrine (including sacraments, justification, and
+  Scripture/Tradition) and enacting reforms.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: ecumenical-council
+    reference: Council of Trent (1545–1563)
+    url: null
+    note: >-
+      Primary conciliar acts.
+  - source_type: other
+    reference: My Catholic Guide key_events `council-of-trent`
+    url: null
+    note: >-
+      Imported historical summary seed.
+relationships:
+  broader:
+    []
+  narrower: []
+  related:
+    - doctrine.grace
+    - doctrine.scripture-and-tradition
+    - eucharist.real-presence
+notes: >-
+  Draft seed object distilled for Catholic Context from My Catholic Guide /
+  Supabase metadata (not a full narrative import). Presence here does not
+  imply ecclesiastical approval or completed theological review.

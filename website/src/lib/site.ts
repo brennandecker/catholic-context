@@ -20,11 +20,11 @@ export const NAV = [
 
 export const TOPIC_LINKS = [
   { href: '/knowledge/sacraments/eucharist/real-presence', label: 'Eucharist' },
-  { href: '/knowledge', label: 'Mary' },
-  { href: '/knowledge', label: 'Confession' },
-  { href: '/knowledge', label: 'Purgatory' },
-  { href: '/knowledge', label: 'Salvation' },
-  { href: '/knowledge', label: 'Papacy' },
+  { href: '/knowledge/doctrine/mary-theotokos', label: 'Mary' },
+  { href: '/knowledge/sacraments/penance/reconciliation', label: 'Confession' },
+  { href: '/knowledge/doctrine/purgatory', label: 'Purgatory' },
+  { href: '/knowledge/doctrine/grace', label: 'Grace' },
+  { href: '/knowledge/doctrine/papacy-and-infallibility', label: 'Papacy' },
 ] as const;
 
 export function githubFileUrl(relativePath: string): string {
