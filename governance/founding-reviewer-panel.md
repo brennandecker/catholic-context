@@ -10,6 +10,14 @@ Appointment here is a **project governance** act. It does not claim Church offic
 
 During the founding stage, the repository founder manually approves every reviewer. See [`docs/REVIEWER_CORRECTION_WORKFLOW.md`](../docs/REVIEWER_CORRECTION_WORKFLOW.md).
 
+## Identity on the panel
+
+Reviewers use **Catholic Context platform accounts**. They do **not** need GitHub accounts.
+
+- Each reviewer receives a unique **platform public username** (assigned by the platform).
+- GitHub pull requests are opened by a project bot for change management and open-source visibility.
+- PRs and provenance attribute actions to that platform public username, not to a GitHub login.
+
 ## Founding panel
 
 | Name | Role | Status | Notes |
@@ -21,13 +29,15 @@ During the founding stage, the repository founder manually approves every review
 - **Appointed by:** Founder (manual approval)
 - **Appointed as:** Founding theological reviewer
 - **Competence emphasis:** General theological review; founder may refine tags later
-- **GitHub allowlist id:** *to be added when Phase 1 auth ships* (do not invent)
+- **Platform public username:** *to be assigned when his platform account is created* (do not invent)
+- **Platform user id:** *to be assigned at account creation*
+- **GitHub account:** Not required
 - **Persona IDV:** Not required until Phase 4; appointment stands without IDV
 - **Public listing:** Opt-in later; this file is the internal governance record
 
 ## Admission rule (reminder)
 
-No one joins this panel by application alone, GitHub org membership, credentials upload, or identity verification. Only founder approval admits a reviewer. Removal is likewise manual during the founding stage.
+No one joins this panel by application alone, credentials upload, identity verification, or holding a GitHub account. Only founder approval admits a reviewer. Removal is likewise manual during the founding stage.
 
 ## Lay reviewers
 

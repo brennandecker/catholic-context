@@ -27,13 +27,15 @@ Git remains the source of truth. The website never silently mutates doctrine.
 | Tier | Who | Can do | How admitted |
 |---|---|---|---|
 | **Public** | Anyone | Suggest correction → GitHub Issue (current) | None |
-| **Authenticated contributor** | Signed-in user | Richer proposal form; draft PR via bot | GitHub OAuth |
-| **Maintainer** | Repo maintainers | Merge technical/safe changes; administer infra | GitHub team |
-| **Community reviewer** | Appointed | Approve non-doctrinal / source-structure improvements; may set path toward `community-reviewed` | **Founder manual approval** → allowlist |
+| **Platform account** | Signed-in Catholic Context user | Propose corrections in UI (if appointed); review queue (if appointed) | Platform auth (not GitHub) |
+| **Maintainer** | Repo maintainers | Merge PRs; administer infra | GitHub team (maintainers only — not reviewers) |
+| **Community reviewer** | Appointed platform user | Approve non-doctrinal / source-structure improvements; may set path toward `community-reviewed` | **Founder manual approval** → platform allowlist |
 | **Theological reviewer** | Qualified panelist | Approve representation/classification/framing; may set `theologically-reviewed` when process allows | **Founder manual approval** (+ later Persona IDV after appointment) |
 | **Verified theological reviewer** (long-term) | Panelist with completed IDV | Same as theological reviewer; UI shows verified identity badge on *panel membership*, not on doctrine | Founder-appointed **and** Persona inquiry passed |
 
-**Founding-stage decision (locked):** the repository founder **manually approves every reviewer**. No self-serve elevation, no automatic admission from IDV, credentials upload, or GitHub org membership alone.
+**Founding-stage decision (locked):** the repository founder **manually approves every reviewer**. No self-serve elevation, no automatic admission from IDV, credentials upload, or GitHub accounts.
+
+**Identity decision (locked):** **Reviewers do not need GitHub accounts.** They sign in on Catholic Context. GitHub pull requests exist for change management and open-source visibility only. Every PR attributes work to a **platform public username** — a unique ID assigned by Catholic Context — not a GitHub login.
 
 Badge copy must never imply “Church-approved” or “Vatican-verified.” Prefer: **“Identity verified · Project panelist.”**
 
@@ -41,19 +43,20 @@ Badge copy must never imply “Church-approved” or “Vatican-verified.” Pre
 
 ### A. Propose a correction (UI)
 
-1. Reviewer opens a knowledge object → **Propose correction**.
-2. Structured form (not free HTML): affected fields, category, proposed text, rationale, supporting sources, “material change?” flag.
-3. Submit creates a **Proposal** record (private store) and asks a **GitHub App** to open a branch + PR patching `context/**/*.yaml`.
-4. PR body uses the project PR template + review-impact checklist.
-5. Site shows proposal status: `draft` → `pr-open` → `changes-requested` → `approved` → `merged` / `closed`.
+1. Reviewer signs in on Catholic Context (platform session — **not** GitHub OAuth).
+2. Opens a knowledge object → **Propose correction**.
+3. Structured form (not free HTML): affected fields, category, proposed text, rationale, supporting sources, “material change?” flag.
+4. Submit creates a **Proposal** record (private store) and asks a **GitHub App** (bot) to open a branch + PR patching `context/**/*.yaml`.
+5. PR title/body always include the proposer’s **platform public username** (unique platform ID) and opaque platform user id for audit.
+6. Site shows proposal status: `draft` → `pr-open` → `changes-requested` → `approved` → `merged` / `closed`.
 
 ### B. Review a proposal (UI)
 
-1. `/review` queue lists open PRs that touch knowledge (and optionally harness/evals).
+1. Appointed reviewers use `/review` on the site (platform auth). They never need a GitHub login.
 2. Diff view: current vs proposed YAML rendered as human-readable sections + raw diff.
 3. Checklist: source fidelity, claim classification, framing, pastoral boundaries, re-review trigger.
-4. Actions map to GitHub: comment, request changes, approve.
-5. **Merge** remains maintainer-controlled (or required dual approval: maintainer + theological reviewer for material doctrinal changes).
+4. UI actions (approve / request changes / comment) are recorded in the platform and mirrored onto the PR by the GitHub App as bot comments/reviews that name the reviewer’s **platform public username**.
+5. **Merge** remains maintainer-controlled on GitHub (maintainers may use GitHub; reviewers do not have to).
 
 ### C. Write-back on merge
 
@@ -61,7 +64,7 @@ On merge (GitHub webhook → Worker):
 
 - Rebuild/deploy site from repo (existing static path)
 - Ensure YAML carries updated `review.*` and refreshed `source_fidelity` when material
-- Provenance shows `reviewed_by`, `reviewed_at`, `review_commit`
+- Provenance shows `reviewed_by` as the **platform public username** (or panel group id), plus `reviewed_at`, `review_commit`
 
 ### D. Panel onboarding (long-term + Persona)
 
@@ -93,15 +96,16 @@ Keep current public Issue CTA. Add reviewer path:
 
 | Piece | Notes |
 |---|---|
-| GitHub OAuth on site | Login for contributors/reviewers |
-| Allowlist of reviewer GitHub usernames | Private config; **only founder-approved** accounts; no auto-add from applications |
+| Platform auth | Email magic-link or passwordless session on Catholic Context — **no GitHub account required for reviewers** |
+| Platform public username | Unique, immutable (or tightly controlled) handle assigned by the platform at account creation / appointment (e.g. `cc_u_…` or chosen unique slug); used on PRs and provenance |
+| Founder allowlist | Private store of platform user ids the founder has approved — not GitHub usernames |
 | Correction form on knowledge pages | Prefills context id/slug; validates required fields |
-| GitHub App | Opens PR from bot account; labels `correction`, `needs-theological-review` when flagged |
-| Minimal `/review` page | Lists open correction PRs via GitHub API; links to GitHub for approve/merge if UI actions not ready |
+| GitHub App (bot only) | Opens/updates PRs; PR body credits `Proposed by: @<platform-public-username>`; labels `correction`, `needs-theological-review` when flagged |
+| Minimal `/review` page | Lists open correction PRs for appointed platform users; optional read-only link to GitHub for the public |
 
 **Exit criteria**
 
-- An allowlisted reviewer can submit a UI proposal that opens a real PR
+- A founder-approved platform user (no GitHub account) can submit a UI proposal that opens a real PR attributed to their platform public username
 - Public users still use Issues without auth
 
 ### Phase 2 — In-UI review actions
@@ -109,10 +113,10 @@ Keep current public Issue CTA. Add reviewer path:
 | Piece | Notes |
 |---|---|
 | Side-by-side rendered diff | Summary/sources/classification |
-| Approve / request changes from UI | GitHub GraphQL/REST under App installation |
-| Required checks | Branch protection: 1 maintainer review; theological label requires panelist approval |
-| Write-back helper | PR may include suggested `review` metadata; merge bot validates only humans set `theologically-reviewed` |
-| Audit log | Private: who acted, when, PR URL |
+| Approve / request changes from UI | Platform records the action under the reviewer’s platform id; GitHub App mirrors a bot review/comment naming that public username |
+| Required checks | Branch protection for maintainers; theological gate is platform allowlist + UI approval, not GitHub CODEOWNERS for theologians |
+| Write-back helper | PR may include suggested `review` metadata using platform public username; merge bot validates only humans set `theologically-reviewed` |
+| Audit log | Private: platform user id, public username, when, PR URL |
 
 **Exit criteria**
 
@@ -195,17 +199,18 @@ Volume estimate (honest, low):
 
 ```text
 Browser (CatholicContext.org)
-    │  GitHub OAuth / session
+    │  Platform session (not GitHub)
     ▼
 Cloudflare Worker (or equivalent BFF)
     │
+    ├── Platform accounts (id + public username + auth)
     ├── Proposal store (private DB: Supabase/D1/KV)
-    ├── Reviewer directory (private; roles, Persona refs)
-    ├── GitHub App (PRs, checks, webhooks)
+    ├── Reviewer directory (private; roles, Persona refs, founder allowlist)
+    ├── GitHub App bot (PRs / mirrored comments — change management + visibility)
     └── Persona API (Inquiries / Workflows)  [Phase 4]
             │
             ▼
-      GitHub repo (canonical YAML)
+      GitHub repo (canonical YAML; PRs show platform public usernames)
             │
             ▼
       Static site build / deploy
@@ -215,9 +220,16 @@ Cloudflare Worker (or equivalent BFF)
 
 | Open repo | Private / managed |
 |---|---|
-| Knowledge YAML, schemas, site source | OAuth sessions, allowlists, Persona inquiry ids |
-| Governance standards (qualifications text) | COI private filings, IDV raw results |
-| PR/issue history (public) | Moderator audit logs if sensitive |
+| Knowledge YAML, schemas, site source | Platform accounts, sessions, founder allowlist, Persona inquiry ids |
+| Governance standards (qualifications text) | COI private filings, IDV raw results, email addresses |
+| PR/issue history (public), attributed by platform public username | Moderator audit logs if sensitive |
+
+### Platform public username
+
+- Assigned by Catholic Context; globally unique within the platform
+- Appears on every bot-opened PR and in `review.reviewed_by` / proposal headers
+- Stable identifier for open-source visibility without requiring GitHub
+- Legal name may stay private; public username is the attribution handle (display name optional and separate)
 
 ## Schema / metadata additions (later)
 
@@ -226,12 +238,12 @@ Keep knowledge objects free of PII. Prefer:
 ```yaml
 review:
   status: theologically-reviewed
-  reviewed_by: panel:liturgy-2026   # opaque panel/group id, not email
+  reviewed_by: cc_u_channing   # platform public username (not GitHub, not email)
   reviewed_at: "..."
   review_commit: "abc123"
 ```
 
-Private directory maps `panel:liturgy-2026` → people. Optional public display names resolved at render time.
+Private directory maps platform public username → internal user id, appointment, Persona refs. Optional legal/display names are private or opt-in public.
 
 ## Governance work to unblock Phase 2–4
 
@@ -251,13 +263,15 @@ Until those land, keep `theologically-reviewed` rare and conservative ([theologi
 
 Ship Phase 1 only:
 
-1. GitHub OAuth + session cookies on the Worker-backed site routes that need auth (static pages can deep-link into authenticated app section)
-2. Env allowlist `REVIEWER_GITHUB_IDS`
-3. `/propose/[...slug]` form → GitHub App creates PR
-4. `/review` index of open PRs
+1. Platform accounts + sessions (magic link); each user gets a unique **platform public username**
+2. Founder allowlist of platform user ids (start with Channing Decker once his account exists)
+3. `/propose/[...slug]` form → GitHub App bot creates PR credited to that public username
+4. `/review` index for appointed platform users (no GitHub login)
 5. Keep public **Suggest a Correction → Issue** for everyone else
 
 Defer Persona until a real candidate panel exists — IDV before process would only verify strangers.
+
+**Still needed from maintainers (not reviewers):** GitHub App credentials so the bot can open PRs. Reviewers never see that.
 
 ## Persona outreach checklist
 
@@ -289,6 +303,8 @@ Not success metrics: upvotes, likes, or traffic-weighted doctrine.
 | Founding appointing authority | **Founder manually approves everyone** (no auto-admission) |
 | Lay theologians | **May serve** — clerical status not required |
 | First appointed reviewer | **Channing Decker** — founding theological reviewer (see [`governance/founding-reviewer-panel.md`](../governance/founding-reviewer-panel.md)) |
+| Reviewer accounts | **No GitHub required** — platform auth only; GitHub PRs are bot-managed for visibility/change control |
+| PR attribution | Every PR names the actor’s **platform public username** (unique platform ID) |
 
 ## Open questions
 
