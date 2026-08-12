@@ -287,13 +287,14 @@ Not success metrics: upvotes, likes, or traffic-weighted doctrine.
 | Topic | Decision |
 |---|---|
 | Founding appointing authority | **Founder manually approves everyone** (no auto-admission) |
+| Lay theologians | **May serve** — clerical status not required |
+| First appointed reviewer | **Channing Decker** — founding theological reviewer (see [`governance/founding-reviewer-panel.md`](../governance/founding-reviewer-panel.md)) |
 
 ## Open questions
 
-1. Must theological reviewers be clergy, or may qualified lay theologians serve?
-2. Public visibility of individual reviewer names on each object vs panel-level attribution?
-3. Host proposal UI on the open Worker vs a small private “review console” app?
-4. Dual approval rule for material doctrinal edits — hard requirement from day one of Phase 2?
+1. Public visibility of individual reviewer names on each object vs panel-level attribution?
+2. Host proposal UI on the open Worker vs a small private “review console” app?
+3. Dual approval rule for material doctrinal edits — hard requirement from day one of Phase 2?
 
 ## Related documents
 

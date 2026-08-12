@@ -23,4 +23,8 @@ Product/engineering plan for the UI correction → GitHub PR → in-UI review lo
 
 - [`docs/REVIEWER_CORRECTION_WORKFLOW.md`](../docs/REVIEWER_CORRECTION_WORKFLOW.md)
 
+Founding panel appointments (founder-approved):
+
+- [`founding-reviewer-panel.md`](founding-reviewer-panel.md) — currently includes **Channing Decker** as first theological reviewer
+
 Until these standards are established, theological material should be treated conservatively and labeled according to its actual review status.
