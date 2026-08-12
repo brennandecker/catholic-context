@@ -18,4 +18,10 @@ Planned standards include:
 - relationship between community voting and formal review
 - financial independence of theological governance
 
+Founding panel appointments:
+
+- [`founding-reviewer-panel.md`](founding-reviewer-panel.md) — **Channing Decker** first theological reviewer (platform auth; no GitHub required)
+
+Reviewer platform implementation notes: [`website/README.md`](../website/README.md)
+
 Until these standards are established, theological material should be treated conservatively and labeled according to its actual review status.

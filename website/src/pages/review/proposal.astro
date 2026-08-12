@@ -1,0 +1,100 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Review proposal" description="Review a correction proposal.">
+  <article class="section-tight shell fade-in reading">
+    <p class="eyebrow">REVIEWER TOOLS</p>
+    <h1 class="h1">Proposal</h1>
+    <p class="marginalia">Id: <span id="proposal-id"></span></p>
+    <div id="detail-root" style="margin-top: var(--space-5);">
+      <p>Loading…</p>
+    </div>
+  </article>
+</BaseLayout>
+
+<script>
+  import { apiFetch, getSupabaseBrowserClient, hasSupabaseConfig } from '../../lib/supabaseBrowser';
+
+  const root = document.getElementById('detail-root');
+  const idEl = document.getElementById('proposal-id');
+  const pathId = new URLSearchParams(window.location.search).get('id') || '';
+  if (idEl) idEl.textContent = pathId;
+
+  function escapeHtml(value: string) {
+    return value
+      .replaceAll('&', '&amp;')
+      .replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;')
+      .replaceAll('"', '&quot;')
+      .replaceAll('\n', '<br>');
+  }
+
+  if (!(root instanceof HTMLElement)) {
+    // no-op
+  } else if (!hasSupabaseConfig() || !pathId) {
+    root.innerHTML = '<p>Missing proposal id. <a href="/review">Back to queue</a></p>';
+  } else {
+    const supabase = getSupabaseBrowserClient();
+    const { data } = await supabase.auth.getSession();
+    if (!data.session) {
+      root.innerHTML = '<p>Sign in required. <a href="/login">Sign in</a>.</p>';
+    } else {
+      async function load() {
+        const res = await apiFetch(`/api/proposals/${pathId}`);
+        const payload = await res.json();
+        if (!res.ok) {
+          root.innerHTML = `<p>${payload.error || 'Not found'}</p>`;
+          return;
+        }
+        const p = payload.proposal;
+        root.innerHTML = `
+          <p class="meta">${String(p.status).replaceAll('_', ' ')} · @${p.proposer_public_username}</p>
+          <h2 class="h2">${p.context_title || p.context_slug}</h2>
+          <p><a href="/knowledge/${p.context_slug}">View knowledge page</a>
+          ${p.github_pr_url ? ` · <a href="${p.github_pr_url}" target="_blank" rel="noopener">GitHub PR</a>` : ''}</p>
+          ${p.github_error ? `<p class="marginalia">GitHub note: ${escapeHtml(p.github_error)}</p>` : ''}
+          <hr class="rule-soft" />
+          <h3 class="h3">Category</h3><p>${escapeHtml(p.category)}</p>
+          <h3 class="h3">What is wrong</h3><p>${escapeHtml(p.problem)}</p>
+          <h3 class="h3">Proposed change</h3><p>${escapeHtml(p.proposed_change)}</p>
+          <h3 class="h3">Rationale</h3><p>${escapeHtml(p.rationale)}</p>
+          <h3 class="h3">Supporting sources</h3><p>${escapeHtml(p.supporting_sources || '—')}</p>
+          <p class="marginalia">Material change: ${p.material_change ? 'yes' : 'no'}</p>
+          <hr class="rule-soft" />
+          <label class="meta" for="notes">Review notes</label>
+          <textarea class="field" id="notes" rows="4">${escapeHtml(p.review_notes || '')}</textarea>
+          <p style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:var(--space-4);">
+            <button class="btn btn-primary" data-action="approve" type="button">Approve</button>
+            <button class="btn btn-secondary" data-action="request_changes" type="button">Request changes</button>
+            <button class="btn btn-secondary" data-action="comment" type="button">Comment on PR</button>
+          </p>
+          <p id="action-status" class="marginalia" role="status"></p>
+        `;
+
+        root.querySelectorAll('[data-action]').forEach((btn) => {
+          btn.addEventListener('click', async () => {
+            const action = btn.getAttribute('data-action');
+            const notes =
+              (document.getElementById('notes') as HTMLTextAreaElement | null)?.value || '';
+            const statusEl = document.getElementById('action-status');
+            if (statusEl) statusEl.textContent = 'Saving…';
+            const patch = await apiFetch(`/api/proposals/${pathId}`, {
+              method: 'PATCH',
+              body: JSON.stringify({ action, review_notes: notes }),
+            });
+            const result = await patch.json();
+            if (!patch.ok) {
+              if (statusEl) statusEl.textContent = result.error || 'Failed';
+              return;
+            }
+            if (statusEl) statusEl.textContent = 'Updated.';
+            await load();
+          });
+        });
+      }
+
+      await load();
+    }
+  }
+</script>

@@ -2,6 +2,8 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "catholiccontext",
   "compatibility_date": "2026-08-10",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "src/worker/index.ts",
   "workers_dev": true,
   "preview_urls": true,
   "routes": [
@@ -14,10 +16,18 @@
       "custom_domain": true
     }
   ],
+  "vars": {
+    "PUBLIC_SUPABASE_URL": "https://ewpehbytlngdgbylwgcz.supabase.co",
+    "PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV3cGVoYnl0bG5nZGdieWx3Z2N6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ3NDkwNTksImV4cCI6MjA5MDMyNTA1OX0.RoqkWYARQdfHIXUR7fUHpuj4aU-LxqTLECgMH9RiONc",
+    "GITHUB_REPO": "brennandecker/catholic-context",
+    "GITHUB_PR_BASE": "main"
+  },
   "assets": {
     "directory": "./dist",
+    "binding": "ASSETS",
     "not_found_handling": "404-page",
-    "html_handling": "drop-trailing-slash"
+    "html_handling": "drop-trailing-slash",
+    "run_worker_first": ["/api/*"]
   },
   "observability": {
     "enabled": true
