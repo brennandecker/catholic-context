@@ -1,37 +1,36 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.church-of-the-gesu-montreal
 title: Church of the Gesù (Église du Gesù)
 entity_type: institution
 classification: null
 summary: A mid-nineteenth-century Jesuit church in downtown Montreal, one of the city's
-  architectural landmarks, with a richly decorated Baroque-inspired interior and a long history
-  as a center of French-Canadian Catholic intellectual life.
+  architectural landmarks, with a richly decorated Baroque-inspired interior and a long history as a
+  center of French-Canadian Catholic intellectual life.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.church-of-the-gesu-montreal
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, 'Montreal'
+    url: https://www.newadvent.org/cathen/10547b.htm
+    note: Mentions the Gesu in Montreal in connection with Lenten lectures and Catholic intellectual
+      life in the archdiocese.
 relationships:
   broader: []
   narrower: []
   related:
     - person.st-ignatius-of-loyola
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.884Z
+  rationale: Verified approved New Advent URL (HTTP 200); supports the church's identity in Montreal's
+    Catholic history.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

@@ -1,4 +1,3 @@
-# DRAFT — imported from Supabase; theological review pending
 id: event.dogma-of-the-assumption
 title: Dogma of the Assumption
 entity_type: event
@@ -6,35 +5,34 @@ classification:
   claim_type: historical-claim
   certainty: not-applicable
   note: null
-summary: Pope Pius XII solemnly defined that Mary was taken up body and soul into heaven at the
-  end of her earthly life, the only exercise of papal infallibility since Vatican I formally
-  defined the power.
+summary: Pope Pius XII solemnly defined that Mary was taken up body and soul into heaven at the end
+  of her earthly life, the only exercise of papal infallibility since Vatican I formally defined the
+  power.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from key_events.dogma-of-the-assumption
+  - source_type: scholarship
+    reference: Pius XII, 'Munificentissimus Deus' (1 November 1950)
+    url: https://www.vatican.va/content/pius-xii/en/apost_constitutions/documents/hf_p-xii_apc_19501101_munificentissimus-deus.html
+    note: Official apostolic constitution defining the bodily Assumption of the Blessed Virgin Mary as a
+      dogma of faith.
 relationships:
   broader: []
   narrower: []
   related:
     - person.pope-pius-xii
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.887Z
+  rationale: Verified approved Vatican URL (HTTP 200); primary source for the dogmatic definition.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

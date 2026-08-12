@@ -1,49 +1,48 @@
-# DRAFT — theological review pending
+# DRAFT — source locators pending; theological review pending
 id: sacrament.baptism
 title: Baptism
 entity_type: sacrament
 classification:
   claim_type: doctrine
   certainty: null
-  note: The exact theological classification and certainty vocabulary are provisional and
-    require qualified theological review.
+  note: The exact theological classification and certainty vocabulary are provisional and require
+    qualified theological review.
 summary: Baptism is the sacrament of entrance into the life of Christ and his Church. It washes
-  away original sin (and personal sin in those able to commit it), incorporates the person
-  into Christ, and makes one a member of the Church.
+  away original sin (and personal sin in those able to commit it), incorporates the person into
+  Christ, and makes one a member of the Church.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-- source_type: catechism
-  reference: CCC 1213
-  url: https://www.scborromeo.org/ccc/para/1213.htm
-  note: Baptism as the basis of the Christian life.
-- source_type: catechism
-  reference: CCC 1263-1267
-  url: https://www.scborromeo.org/ccc/para/1263.htm
-  note: Effects of Baptism.
+  - source_type: catechism
+    reference: CCC 1213
+    url: https://www.scborromeo.org/ccc/para/1213.htm
+    note: Baptism as the basis of the Christian life.
+  - source_type: catechism
+    reference: CCC 1263-1267
+    url: https://www.scborromeo.org/ccc/para/1263.htm
+    note: Effects of Baptism.
 relationships:
   broader:
-  - concept.sacrament
+    - concept.sacrament
   narrower: []
   related:
-  - sacrament.confirmation
-  - liturgy.mass
-notes: Draft seed object distilled for Catholic Context from My Catholic Guide / Supabase
-  metadata (not a full narrative import). Presence here does not imply ecclesiastical approval
-  or completed theological review.
+    - sacrament.confirmation
+    - liturgy.mass
+notes: Draft entity metadata. Requires approved public source locators and theological review
+  before promotion. Catholic Context does not cite product databases as sources.
 source_fidelity:
   representation: paraphrase
   confidence: 0.9
   needs_theological_review: true
   linkable_sources: true
   assessed_by: review-context-entry
-  assessed_at: '2026-08-11T23:20:00Z'
-  rationale: Assessed as paraphrase for a sacrament entry. 2 official source URL(s) resolved.
-    The Church’s teaching stands on its own authority; this score grades Catholic Context’s
-    fidelity to cited sources. Flagged for theological review of Catholic Context framing
-    and/or classification.
+  assessed_at: 2026-08-11T23:20:00Z
+  rationale: Assessed as paraphrase for a sacrament entry. 2 official source URL(s) resolved. The
+    Church’s teaching stands on its own authority; this score grades Catholic Context’s fidelity
+    to cited sources. Flagged for theological review of Catholic Context framing and/or
+    classification.
   unresolved_issues:
-  - Claim classification taxonomy awaiting qualified theological review
+    - Claim classification taxonomy awaiting qualified theological review

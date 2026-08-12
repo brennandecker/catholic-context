@@ -1,4 +1,3 @@
-# DRAFT — imported from Supabase; theological review pending
 id: event.east-west-schism
 title: East-West Schism
 entity_type: event
@@ -6,34 +5,38 @@ classification:
   claim_type: historical-claim
   certainty: not-applicable
   note: null
-summary: Cardinal Humbert excommunicated the Patriarch of Constantinople, and the Patriarch
-  returned the favor, formally splitting Christianity into Catholic and Orthodox churches.
+summary: Cardinal Humbert excommunicated the Patriarch of Constantinople, and the Patriarch returned
+  the favor, formally splitting Christianity into Catholic and Orthodox churches.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from key_events.east-west-schism
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, 'Eastern Schism'
+    url: https://www.newadvent.org/cathen/13535a.htm
+    note: Explains the Eastern Schism as the separation that produced the separated Orthodox Church,
+      with focus on 1054 and Michael Caerularius.
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, 'Orthodox Church'
+    url: https://www.newadvent.org/cathen/11329a.htm
+    note: Describes Orthodox churches as not in communion with the Catholic Church as a result of the
+      schisms of Photius and Cerularius.
 relationships:
   broader: []
   narrower: []
   related:
     - person.pope-leo-ix
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.85
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.987Z
+  rationale: Catholic Encyclopedia sources directly discuss the schism and its ecclesial consequences.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

@@ -1,35 +1,33 @@
-# DRAFT — imported from Supabase; theological review pending
 id: person.st-wenceslaus
 title: St. Wenceslaus
 entity_type: person
 classification: null
-summary: "The Christmas carol gets one thing right: he really did walk through the snow to feed
-  the poor. His brother murdered him for it."
+summary: "The Christmas carol gets one thing right: he really did walk through the snow to feed the
+  poor. His brother murdered him for it."
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from saints.st-wenceslaus
+  - source_type: scholarship
+    reference: New Advent Catholic Encyclopedia, "St. Wenceslaus"
+    url: https://www.newadvent.org/cathen/15587b.htm
+    note: Supports Wenceslaus as duke, martyr, patron of Bohemia, and victim of his brother Boleslaw.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:49:18.743Z
+  rationale: Approved source supports the historical core; the carol-specific snow/poor detail is not
+    the focus of this source.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

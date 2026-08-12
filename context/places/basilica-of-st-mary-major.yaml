@@ -1,37 +1,40 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.basilica-of-st-mary-major
 title: Basilica of St. Mary Major
 entity_type: institution
 classification: null
-summary: The largest church in Rome dedicated to the Blessed Virgin Mary, preserving relics of
-  the holy manger from Bethlehem.
+summary: The largest church in Rome dedicated to the Blessed Virgin Mary, preserving relics of the
+  holy manger from Bethlehem.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.basilica-of-st-mary-major
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, 'Basilica'
+    url: https://www.newadvent.org/cathen/02325a.htm
+    note: Names St. Mary Major among the four great major basilicas of Rome.
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, 'Our Lady of the Snow'
+    url: https://www.newadvent.org/cathen/11361c.htm
+    note: Identifies Santa Maria Maggiore on the Esquiline, its Liberian origin tradition, Sixtus III
+      restoration, and Marian dedication.
 relationships:
   broader: []
   narrower: []
   related:
     - person.blessed-virgin-mary
     - person.pope-sixtus-iii
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.85
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.984Z
+  rationale: Approved sources directly support the basilica's identity, status, dedication, and
+    historical development.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

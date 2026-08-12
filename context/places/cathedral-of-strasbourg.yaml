@@ -1,4 +1,3 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.cathedral-of-strasbourg
 title: Cathedral of Notre-Dame de Strasbourg
 entity_type: institution
@@ -11,25 +10,24 @@ review:
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.cathedral-of-strasbourg
+  - source_type: scholarship
+    reference: Joseph Lins, "Strasburg," The Catholic Encyclopedia, New Advent
+    url: https://www.newadvent.org/cathen/14313c.htm
+    note: Article identifies the Strasburg minster/cathedral as the most important church of the diocese
+      and describes its Romanesque and Gothic portions.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:49:18.629Z
+  rationale: New Advent source directly supports the Strasbourg Cathedral entity.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

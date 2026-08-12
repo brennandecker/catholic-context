@@ -1,36 +1,34 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.cathedral-of-sucre-bolivia
 title: Metropolitan Cathedral of Sucre
 entity_type: institution
 classification: null
-summary: The metropolitan cathedral of Bolivia, a whitewashed colonial church in the
-  constitutional capital that holds the country's most venerated Marian image.
+summary: The metropolitan cathedral of Bolivia, a whitewashed colonial church in the constitutional
+  capital that holds the country's most venerated Marian image.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.cathedral-of-sucre-bolivia
+  - source_type: scholarship
+    reference: "Catholic Encyclopedia: La Plata (Bolivia)"
+    url: https://www.newadvent.org/cathen/08798b.htm
+    note: Identifies Sucre, formerly La Plata or Charcas, and names the Cathedral of Nuestra Senora de
+      Guadalupe as the city's notable cathedral with an imposing tower and important treasures.
 relationships:
   broader: []
   narrower: []
   related:
     - person.blessed-virgin-mary
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:49:18.661Z
+  rationale: Approved New Advent source directly supports the Sucre cathedral entity.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

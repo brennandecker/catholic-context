@@ -1,48 +1,46 @@
-# DRAFT — theological review pending
+# DRAFT — source locators pending; theological review pending
 id: person.st-augustine-of-hippo
 title: St. Augustine of Hippo
 entity_type: person
 classification: null
 summary: Bishop and Doctor of the Church (354–430). His Confessions and theological writings
-  deeply shaped Western Christian teaching on grace, the Church, and the human heart's rest
-  in God.
+  deeply shaped Western Christian teaching on grace, the Church, and the human heart's rest in
+  God.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-- source_type: doctor-of-the-church
-  reference: St. Augustine of Hippo
-  url: https://www.scborromeo.org/ccc/para/30.htm
-  note: CCC 30 cites Augustine’s Confessions on the restless heart.
-- source_type: catechism
-  reference: CCC 30
-  url: https://www.scborromeo.org/ccc/para/30.htm
-  note: Catechetical use of Augustine’s Confessions.
-- source_type: church-father
-  reference: Augustine, Confessions
-  url: https://www.newadvent.org/fathers/1101.htm
-  note: Public-domain English text of the Confessions.
+  - source_type: doctor-of-the-church
+    reference: St. Augustine of Hippo
+    url: https://www.scborromeo.org/ccc/para/30.htm
+    note: CCC 30 cites Augustine’s Confessions on the restless heart.
+  - source_type: catechism
+    reference: CCC 30
+    url: https://www.scborromeo.org/ccc/para/30.htm
+    note: Catechetical use of Augustine’s Confessions.
+  - source_type: church-father
+    reference: Augustine, Confessions
+    url: https://www.newadvent.org/fathers/1101.htm
+    note: Public-domain English text of the Confessions.
 relationships:
   broader: []
   narrower: []
   related:
-  - doctrine.grace
-  - event.council-of-ephesus
-notes: Entity summary adapted from My Catholic Guide saints record `st-augustine- of-hippo`.
-  Draft seed object distilled for Catholic Context from My Catholic Guide / Supabase metadata
-  (not a full narrative import). Presence here does not imply ecclesiastical approval or completed
-  theological review.
+    - doctrine.grace
+    - event.council-of-ephesus
+notes: Draft entity metadata. Requires approved public source locators and theological review
+  before promotion. Catholic Context does not cite product databases as sources.
 source_fidelity:
   representation: entity-metadata
   confidence: 0.8
   needs_theological_review: true
   linkable_sources: true
   assessed_by: review-context-entry
-  assessed_at: '2026-08-11T23:25:00Z'
+  assessed_at: 2026-08-11T23:25:00Z
   rationale: Assessed as entity-metadata. Official locators added where available. The Church’s
     teaching stands on its own authority; this score grades how faithfully Catholic Context
     restates or identifies the cited sources.
   unresolved_issues:
-  - Entity metadata supported by linked sources; fuller biographical sourcing still open.
+    - Entity metadata supported by linked sources; fuller biographical sourcing still open.

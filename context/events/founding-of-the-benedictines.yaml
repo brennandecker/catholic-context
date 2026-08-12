@@ -1,4 +1,3 @@
-# DRAFT — imported from Supabase; theological review pending
 id: event.founding-of-the-benedictines
 title: Founding of the Benedictines
 entity_type: event
@@ -6,35 +5,35 @@ classification:
   claim_type: historical-claim
   certainty: not-applicable
   note: null
-summary: Benedict of Nursia established a monastery at Monte Cassino and wrote a Rule for
-  communal religious life that became the blueprint for Western monasticism.
+summary: Benedict of Nursia established a monastery at Monte Cassino and wrote a Rule for communal
+  religious life that became the blueprint for Western monasticism.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from key_events.founding-of-the-benedictines
+  - source_type: scholarship
+    reference: "Catholic Encyclopedia: The Benedictine Order"
+    url: https://www.newadvent.org/cathen/02443a.htm
+    note: New Advent discusses St. Benedict's foundations, Monte Cassino, and how his Rule and institute
+      spread as the Benedictine Order.
 relationships:
   broader: []
   narrower: []
   related:
     - person.benedict-of-nursia
     - person.scholastica
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:57.021Z
+  rationale: Approved New Advent locator supports the Benedictine founding/development event while
+    noting that Benedict did not found a later centralized order in the modern sense.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

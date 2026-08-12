@@ -1,35 +1,33 @@
-# DRAFT — imported from Supabase; theological review pending
 id: person.st-martin-de-porres
 title: St. Martin de Porres
 entity_type: person
 classification: null
-summary: The illegitimate son of a Spanish knight and a freed slave who wasn’t allowed to become
-  a full friar — so he asked to be the monastery’s servant instead.
+summary: The illegitimate son of a Spanish knight and a freed slave who wasn’t allowed to become a
+  full friar — so he asked to be the monastery’s servant instead.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from saints.st-martin-de-porres
+  - source_type: scholarship
+    reference: Congregation for the Doctrine of the Faith, "Eucharist, Communion and Solidarity"
+    url: https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20020602_ratzinger-eucharistic-congress_en.html
+    note: Vatican text identifies Martin de Porres as born in Lima to an Afro-American mother and
+      Spanish nobleman and highlights his care for the sick and socially outcast.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:49:18.741Z
+  rationale: Approved Vatican source supports the central biographical and charitable-service claims.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

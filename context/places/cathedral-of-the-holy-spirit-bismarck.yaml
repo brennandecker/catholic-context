@@ -1,36 +1,35 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.cathedral-of-the-holy-spirit-bismarck
 title: Cathedral of the Holy Spirit
 entity_type: institution
 classification: null
 summary: The cathedral of the Diocese of Bismarck, a striking modern church in North Dakota's
-  capital that replaced an older building in 1945 and serves the Catholic communities of the
-  western Dakota prairie.
+  capital that replaced an older building in 1945 and serves the Catholic communities of the western
+  Dakota prairie.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.cathedral-of-the-holy-spirit-bismarck
+  - source_type: scholarship
+    reference: "Catholic Culture: Here I Am, Lord, I Come to Do Your Will"
+    url: https://www.catholicculture.org/culture/library/view.cfm?recnum=7439
+    note: Identifies the Cathedral of the Holy Spirit in Bismarck as the site of Bishop Aquila's
+      Catholic Legislative Mass homily on 18 January 2007.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:57.036Z
+  rationale: Approved source directly names the Cathedral of the Holy Spirit in Bismarck; it does not
+    address the building-history details in the draft summary.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

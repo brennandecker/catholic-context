@@ -1,37 +1,41 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.nidaros-cathedral-trondheim
 title: Nidaros Cathedral
 entity_type: institution
 classification: null
-summary: The northernmost medieval cathedral in the world, built over the burial site of St.
-  Olav in Trondheim, Norway — once the greatest pilgrimage destination in Scandinavia and now a
-  national landmark where Norwegian kings are consecrated.
+summary: The northernmost medieval cathedral in the world, built over the burial site of St. Olav in
+  Trondheim, Norway — once the greatest pilgrimage destination in Scandinavia and now a national
+  landmark where Norwegian kings are consecrated.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.nidaros-cathedral-trondheim
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, 'Ancient See of Trondhjem'
+    url: https://www.newadvent.org/cathen/15064a.htm
+    note: Describes Nidaros/Trondhjem as the medieval ecclesiastical center where St. Olaf's tomb rested
+      in the cathedral.
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, 'Norway'
+    url: https://www.newadvent.org/cathen/11117b.htm
+    note: States the cathedral at Trondhjem was built over St. Olaf's bones, became a pilgrimage site
+      after Nidaros became an archdiocese, and was later restored.
 relationships:
   broader: []
   narrower: []
   related:
     - person.st-olav
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.85
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.992Z
+  rationale: Approved sources directly support Nidaros Cathedral's medieval Catholic significance and
+    St. Olaf association.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

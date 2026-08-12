@@ -1,35 +1,39 @@
-# DRAFT — imported from Supabase; theological review pending
 id: person.st-polycarp-of-smyrna
 title: St. Polycarp of Smyrna
 entity_type: person
 classification: null
-summary: The eighty-six-year-old bishop who told the proconsul he would not curse the King who
-  had never wronged him.
+summary: The eighty-six-year-old bishop who told the proconsul he would not curse the King who had
+  never wronged him.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from saints.st-polycarp-of-smyrna
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, 'St. Polycarp'
+    url: https://www.newadvent.org/cathen/12219b.htm
+    note: Summarizes sources for Polycarp's life and martyrdom, including Ignatius, Polycarp's epistle,
+      Irenaeus, and the Smyrnaean letter.
+  - source_type: church-father
+    reference: New Advent Fathers, 'The Martyrdom of Polycarp'
+    url: https://www.newadvent.org/fathers/0102.htm
+    note: Primary patristic martyrdom text describing Polycarp as an illustrious teacher and pre-eminent
+      martyr.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.85
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.996Z
+  rationale: Approved encyclopedia and patristic sources directly support Polycarp's identity as
+    bishop/martyr of Smyrna.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

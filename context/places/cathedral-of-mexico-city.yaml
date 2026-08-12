@@ -1,36 +1,35 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.cathedral-of-mexico-city
 title: Metropolitan Cathedral of the Assumption (Mexico City)
 entity_type: institution
 classification: null
-summary: The largest cathedral in the Americas, built over two and a half centuries on the ruins
-  of the Aztec sacred precinct.
+summary: The largest cathedral in the Americas, built over two and a half centuries on the ruins of
+  the Aztec sacred precinct.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.cathedral-of-mexico-city
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, "Archdiocese of Mexico," New Advent
+    url: https://www.newadvent.org/cathen/10269a.htm
+    note: Article identifies the Archdiocese of Mexico and the cathedral context of the metropolitan see
+      in Mexico City.
 relationships:
   broader: []
   narrower: []
   related:
     - person.blessed-virgin-mary
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:49:18.724Z
+  rationale: Verified approved-host URL and article title. Supports the cathedral through the
+    archdiocesan article.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

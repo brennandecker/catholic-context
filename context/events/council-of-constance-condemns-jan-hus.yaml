@@ -1,4 +1,3 @@
-# DRAFT — imported from Supabase; theological review pending
 id: event.council-of-constance-condemns-jan-hus
 title: Council of Constance Condemns and Burns Jan Hus
 entity_type: event
@@ -7,33 +6,32 @@ classification:
   certainty: not-applicable
   note: null
 summary: On July 6, 1415, the Council of Constance condemned the Bohemian priest Jan Hus as a
-  heretic and burned him at the stake, sparking the Hussite Wars and foreshadowing the
-  Protestant Reformation by a full century.
+  heretic and burned him at the stake, sparking the Hussite Wars and foreshadowing the Protestant
+  Reformation by a full century.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from key_events.council-of-constance-condemns-jan-hus
+  - source_type: scholarship
+    reference: "Catholic Encyclopedia: Council of Constance"
+    url: https://www.newadvent.org/cathen/04288a.htm
+    note: Describes the fifteenth session of 6 July 1415, Hus's refusal to retract, condemnation,
+      degradation, handover to secular authority, execution, and ashes thrown into the Rhine.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:57.035Z
+  rationale: Direct approved source for the Council of Constance's condemnation and execution of Jan Hus.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

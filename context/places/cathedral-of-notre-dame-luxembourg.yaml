@@ -1,37 +1,35 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.cathedral-of-notre-dame-luxembourg
 title: Cathedral of Notre-Dame Luxembourg
 entity_type: institution
 classification: null
-summary: The national cathedral of Luxembourg, a seventeenth-century Jesuit church with a
-  remarkable Gothic-Renaissance fusion that houses the beloved icon of Our Lady, Consoler of the
-  Afflicted, patroness of the Grand Duchy.
+summary: The national cathedral of Luxembourg, a seventeenth-century Jesuit church with a remarkable
+  Gothic-Renaissance fusion that houses the beloved icon of Our Lady, Consoler of the Afflicted,
+  patroness of the Grand Duchy.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.cathedral-of-notre-dame-luxembourg
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, "Luxemburg"
+    url: https://www.newadvent.org/cathen/09465a.htm
+    note: New Advent identifies the former Jesuit church of Our Blessed Lady in Luxembourg city as the
+      present cathedral.
 relationships:
   broader: []
   narrower: []
   related:
     - person.blessed-virgin-mary
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.973Z
+  rationale: Approved source directly supports Notre-Dame Cathedral in Luxembourg.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

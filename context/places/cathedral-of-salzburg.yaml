@@ -1,37 +1,35 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.cathedral-of-salzburg
 title: Salzburg Cathedral (Salzburger Dom)
 entity_type: institution
 classification: null
-summary: A monumental early Baroque cathedral in the heart of Mozart's city, where the composer
-  was baptized, with a grand facade of Untersberg marble, a soaring dome, and a musical
-  tradition that runs unbroken for centuries.
+summary: A monumental early Baroque cathedral in the heart of Mozart's city, where the composer was
+  baptized, with a grand facade of Untersberg marble, a soaring dome, and a musical tradition that
+  runs unbroken for centuries.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.cathedral-of-salzburg
+  - source_type: scholarship
+    reference: "Catholic Encyclopedia: Salzburg"
+    url: https://www.newadvent.org/cathen/13411b.htm
+    note: Describes Salzburg's cathedral, including its construction after the earlier cathedral and
+      architectural features.
 relationships:
   broader: []
   narrower: []
   related:
     - person.st-rupert-of-salzburg
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.85
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:33:56.136Z
+  rationale: Verified New Advent Catholic Encyclopedia locator for Salzburg Cathedral.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

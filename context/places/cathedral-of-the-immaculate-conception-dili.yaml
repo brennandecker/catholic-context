@@ -1,36 +1,40 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.cathedral-of-the-immaculate-conception-dili
 title: Cathedral of the Immaculate Conception
 entity_type: institution
 classification: null
 summary: The cathedral of the Diocese of Dili, a white-walled church facing the Timor Sea that
-  served as a refuge during the Indonesian occupation and remains the spiritual center of one of
-  the most Catholic nations on earth.
+  served as a refuge during the Indonesian occupation and remains the spiritual center of one of the
+  most Catholic nations on earth.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.cathedral-of-the-immaculate-conception-dili
+  - source_type: magisterium
+    reference: "Apostolic Journey to Timor-Leste: Meeting in the Cathedral of the Immaculate Conception"
+    url: https://www.vatican.va/content/francesco/en/speeches/2024/september/documents/20240910-timor-leste-religiosi.html
+    note: Vatican page locates Pope Francis' 2024 meeting in the Cathedral of the Immaculate Conception,
+      Dili.
+  - source_type: magisterium
+    reference: Holy Mass at Tasi-Tolu in Dili, 12 October 1989
+    url: https://www.vatican.va/content/john-paul-ii/en/homilies/1989/documents/hf_jp-ii_hom_19891012_dili.html
+    note: John Paul II homily refers to Mary Immaculate Conception as patroness of the Diocese of Dili
+      and of the new cathedral blessed that day.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.85
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:33:56.055Z
+  rationale: Two Vatican locators confirm the Dili cathedral and connect it to the Immaculate
+    Conception dedication.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

@@ -1,4 +1,3 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.st-vitus-cathedral-prague
 title: St. Vitus Cathedral (Metropolitan Cathedral of Sts. Vitus, Wenceslaus, and Adalbert)
 entity_type: institution
@@ -11,27 +10,27 @@ review:
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.st-vitus-cathedral-prague
+  - source_type: scholarship
+    reference: Benedict XVI, Vespers in the Cathedral of Saints Vitus, Wenceslaus and Adalbert, 26
+      September 2009
+    url: https://www.vatican.va/content/benedict-xvi/en/speeches/2009/september/documents/hf_ben-xvi_spe_20090926_vespri.html
+    note: Vatican text locates the celebration at the Cathedral of Saints Vitus, Wenceslaus and Adalbert
+      in Prague and notes the 80th anniversary of Saint Vitus' Cathedral dedication.
 relationships:
   broader: []
   narrower: []
   related:
     - person.st-wenceslaus
     - person.st-adalbert-of-prague
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:49:18.664Z
+  rationale: Official Vatican locator directly identifies St. Vitus Cathedral in Prague.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

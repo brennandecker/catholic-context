@@ -1,36 +1,34 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.abbey-of-gethsemani-kentucky
 title: Abbey of Our Lady of Gethsemani
 entity_type: institution
 classification: null
-summary: A Trappist monastery in the hills of central Kentucky, famous as the home of Thomas
-  Merton and one of the oldest continuously operating monasteries in the United States.
+summary: A Trappist monastery in the hills of central Kentucky, famous as the home of Thomas Merton
+  and one of the oldest continuously operating monasteries in the United States.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.abbey-of-gethsemani-kentucky
+  - source_type: scholarship
+    reference: "Catholic Encyclopedia: Abbey of Our Lady of Gethsemani"
+    url: https://www.newadvent.org/cathen/06541a.htm
+    note: Describes the Abbey of Our Lady of Gethsemani in Nelson County, Kentucky, founded in 1848 as
+      the first Trappist abbey on American soil.
 relationships:
   broader: []
   narrower: []
   related:
     - person.blessed-virgin-mary
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.85
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:33:56.140Z
+  rationale: Verified New Advent Catholic Encyclopedia locator for the Abbey of Our Lady of Gethsemani.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

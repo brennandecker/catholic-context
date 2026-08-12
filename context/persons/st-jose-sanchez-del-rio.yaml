@@ -1,36 +1,34 @@
-# DRAFT — imported from Supabase; theological review pending
 id: person.st-jose-sanchez-del-rio
 title: St. José Sánchez del Río
 entity_type: person
 classification: null
-summary: A fourteen-year-old boy whose captors sliced the soles of his feet and forced him to
-  walk on salt to the cemetery where they shot him — he shouted 'Viva Cristo Rey!' with every
-  step.
+summary: A fourteen-year-old boy whose captors sliced the soles of his feet and forced him to walk
+  on salt to the cemetery where they shot him — he shouted 'Viva Cristo Rey!' with every step.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from saints.st-jose-sanchez-del-rio
+  - source_type: scholarship
+    reference: "Vatican Congregation for the Causes of Saints: Homily for the beatification thanksgiving
+      Mass of Jose Sanchez del Rio"
+    url: https://www.vatican.va/roman_curia/congregations/csaints/documents/rc_con_csaints_doc_20051121_beatificazione-sanchez-del-rio_sp.html
+    note: Approved Vatican source identifies Jose Sanchez del Rio as a young martyr and recounts his
+      witness with the cry Viva Cristo Rey.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:49:18.764Z
+  rationale: Official Vatican source gives direct martyrdom context; URL verified HTTP 200.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

@@ -1,36 +1,34 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.st-louis-cathedral-new-orleans
 title: Cathedral-Basilica of Saint Louis, King of France
 entity_type: institution
 classification: null
-summary: The oldest continuously active Roman Catholic cathedral in the United States, standing
-  on Jackson Square in the French Quarter since 1727.
+summary: The oldest continuously active Roman Catholic cathedral in the United States, standing on
+  Jackson Square in the French Quarter since 1727.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.st-louis-cathedral-new-orleans
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, "New Orleans"
+    url: https://www.newadvent.org/cathen/11005b.htm
+    note: The New Orleans entry describes Don Andreas Almonaster y Roxas building and donating St. Louis
+      Cathedral after the 1788 fire.
 relationships:
   broader: []
   narrower: []
   related:
     - person.st-louis-ix
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.956Z
+  rationale: Approved diocesan encyclopedia source directly supports the St. Louis Cathedral entity.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

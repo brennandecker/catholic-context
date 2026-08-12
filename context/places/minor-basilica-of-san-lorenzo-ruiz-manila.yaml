@@ -1,36 +1,35 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.minor-basilica-of-san-lorenzo-ruiz-manila
 title: Minor Basilica of San Lorenzo Ruiz (Binondo Church)
 entity_type: institution
 classification: null
-summary: A sixteenth-century church in Manila's Chinatown, the oldest in the district, named for
-  the first Filipino saint and patron of Chinese-Filipino Catholics.
+summary: A sixteenth-century church in Manila's Chinatown, the oldest in the district, named for the
+  first Filipino saint and patron of Chinese-Filipino Catholics.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.minor-basilica-of-san-lorenzo-ruiz-manila
+  - source_type: scholarship
+    reference: "Vatican: Beatification of Lorenzo Ruiz, Manila, 18 February 1981"
+    url: https://www.vatican.va/content/john-paul-ii/en/homilies/1981/documents/hf_jp-ii_hom_19810218_beatificazione-ruiz.html
+    note: States that Lorenzo Ruiz was born in the suburb of Binondo and served in the parish church of
+      Saint Gabriel in Binondo.
 relationships:
   broader: []
   narrower: []
   related:
     - person.st-lorenzo-ruiz
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:57.027Z
+  rationale: Approved Vatican source supports the Binondo and Lorenzo Ruiz connection; I did not find
+    an approved-host page that directly verifies the current minor-basilica title.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

@@ -1,36 +1,35 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.cathedral-of-the-immaculate-conception-medellin
 title: Cathedral of the Immaculate Conception (Catedral Basilica Metropolitana)
 entity_type: institution
 classification: null
-summary: The metropolitan cathedral of Medellin, Colombia, a massive brick Romanesque Revival
-  church that is reportedly the largest adobe brick structure in the world.
+summary: The metropolitan cathedral of Medellin, Colombia, a massive brick Romanesque Revival church
+  that is reportedly the largest adobe brick structure in the world.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.cathedral-of-the-immaculate-conception-medellin
+  - source_type: scholarship
+    reference: "Catholic Encyclopedia: Medellin"
+    url: https://www.newadvent.org/cathen/10116b.htm
+    note: Describes Medellin as capital of the department, notes its churches and pro-cathedral, and
+      states that a new cathedral was being constructed in the Plaza de Bolivar.
 relationships:
   broader: []
   narrower: []
   related:
     - person.blessed-virgin-mary
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:57.038Z
+  rationale: Approved source supports Medellin's cathedral context, but does not verify the completed
+    cathedral's current dedication or architectural superlatives.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

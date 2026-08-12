@@ -1,35 +1,33 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.holy-redeemer-cathedral-belize
 title: Holy Redeemer Cathedral
 entity_type: institution
 classification: null
-summary: The principal Catholic church in Belize City, a modest Caribbean cathedral that serves
-  as the mother church of Central America's only English-speaking Catholic diocese.
+summary: The principal Catholic church in Belize City, a modest Caribbean cathedral that serves as
+  the mother church of Central America's only English-speaking Catholic diocese.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.holy-redeemer-cathedral-belize
+  - source_type: magisterium
+    reference: Holy See Press Office, Other Pontifical Acts (26 January 2017)
+    url: https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2017/01/26/170126b.html
+    note: States Lawrence Sydney Nicasio was pastor of the Cathedral of the Holy Redeemer in Belize City
+      before his appointment as bishop.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.85
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.990Z
+  rationale: Vatican Press source directly names the Cathedral of the Holy Redeemer in Belize City.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

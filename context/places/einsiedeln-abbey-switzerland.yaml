@@ -1,20 +1,20 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.einsiedeln-abbey-switzerland
 title: Einsiedeln Abbey
 entity_type: institution
 classification: null
-summary: A Benedictine abbey in the Swiss Alps that has been a major European pilgrimage site
-  for over a thousand years, home to the Black Madonna of Einsiedeln.
+summary: A Benedictine abbey in the Swiss Alps that has been a major European pilgrimage site for
+  over a thousand years, home to the Black Madonna of Einsiedeln.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.einsiedeln-abbey-switzerland
+  - source_type: scholarship
+    reference: "Catholic Encyclopedia: Abbey of Einsiedeln"
+    url: https://www.newadvent.org/cathen/05367a.htm
+    note: New Advent entry gives the Benedictine abbey's origins, St. Meinrad connection, Marian shrine,
+      privileges, and historical role.
 relationships:
   broader: []
   narrower: []
@@ -22,17 +22,15 @@ relationships:
     - person.blessed-virgin-mary
     - person.st-benedict
     - person.st-meinrad
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.85
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:33:56.071Z
+  rationale: Direct public-domain New Advent locator for Einsiedeln Abbey.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

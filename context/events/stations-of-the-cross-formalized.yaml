@@ -1,4 +1,3 @@
-# DRAFT — imported from Supabase; theological review pending
 id: event.stations-of-the-cross-formalized
 title: Stations of the Cross Formalized
 entity_type: event
@@ -6,36 +5,36 @@ classification:
   claim_type: historical-claim
   certainty: not-applicable
   note: null
-summary: By the early 1700s, the Franciscans had standardized the Stations of the Cross at
-  fourteen scenes from Christ's Passion, turning a centuries-old pilgrimage practice into the
-  devotion still prayed in nearly every Catholic church.
+summary: By the early 1700s, the Franciscans had standardized the Stations of the Cross at fourteen
+  scenes from Christ's Passion, turning a centuries-old pilgrimage practice into the devotion still
+  prayed in nearly every Catholic church.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from key_events.stations-of-the-cross-formalized
+  - source_type: scholarship
+    reference: "Catholic Encyclopedia: Way of the Cross"
+    url: https://www.newadvent.org/cathen/15569a.htm
+    note: New Advent entry describes the Stations/Way of the Cross, notes that fourteen stations are
+      prescribed by authority, and discusses the devotion's spread.
 relationships:
   broader: []
   narrower: []
   related:
     - person.leonard-of-port-maurice
     - person.pope-clement-xii
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.85
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:33:56.084Z
+  rationale: Public-domain New Advent source directly addresses the Stations of the Cross and the
+    standardized fourteen stations.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

@@ -1,35 +1,34 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.holy-name-cathedral-chicago
 title: Holy Name Cathedral
 entity_type: institution
 classification: null
-summary: The seat of the Archdiocese of Chicago, a Gothic Revival cathedral on State Street that
-  has served the city through fire, scandal, and renewal since the 1870s.
+summary: The seat of the Archdiocese of Chicago, a Gothic Revival cathedral on State Street that has
+  served the city through fire, scandal, and renewal since the 1870s.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.holy-name-cathedral-chicago
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, 'Chicago'
+    url: https://www.newadvent.org/cathen/03653a.htm
+    note: States that after St. Mary's Cathedral was destroyed, the new Cathedral of the Holy Name
+      appeared on the site of the old church of that name.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.882Z
+  rationale: Verified approved New Advent URL (HTTP 200); supports the cathedral's post-fire origin
+    and Chicago setting.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

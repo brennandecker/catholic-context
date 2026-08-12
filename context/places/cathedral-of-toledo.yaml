@@ -1,36 +1,38 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.cathedral-of-toledo
 title: Cathedral of Saint Mary of Toledo
 entity_type: institution
 classification: null
-summary: A thirteenth-century Gothic cathedral in the former capital of Spain, known for its
-  soaring interior, the Transparente altarpiece, and an art collection that includes works by El
-  Greco.
+summary: A thirteenth-century Gothic cathedral in the former capital of Spain, known for its soaring
+  interior, the Transparente altarpiece, and an art collection that includes works by El Greco.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.cathedral-of-toledo
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, 'Toledo (Spain)'
+    url: https://www.newadvent.org/cathen/14755a.htm
+    note: Describes Toledo's cathedral as a magnificent five-nave Gothic structure begun in 1227 by St.
+      Ferdinand and Archbishop Jimenez de Rada.
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, 'Mozarabic Rite'
+    url: https://www.newadvent.org/cathen/10611a.htm
+    note: Notes the Mozarabic Rite survives in the Capilla Muzarabe in Toledo Cathedral.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.85
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.994Z
+  rationale: Approved sources directly support Toledo Cathedral's architecture and
+    liturgical-historical significance.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

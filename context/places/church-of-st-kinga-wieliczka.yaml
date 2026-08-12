@@ -1,36 +1,36 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.church-of-st-kinga-wieliczka
 title: Chapel of St. Kinga
 entity_type: institution
 classification: null
-summary: An extraordinary underground chapel carved entirely from rock salt in the Wieliczka
-  Salt Mine near Krakow — chandeliers, altarpieces, and floor all hewn from salt by miners over
-  the course of seventy years.
+summary: An extraordinary underground chapel carved entirely from rock salt in the Wieliczka Salt
+  Mine near Krakow — chandeliers, altarpieces, and floor all hewn from salt by miners over the
+  course of seventy years.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.church-of-st-kinga-wieliczka
+  - source_type: scholarship
+    reference: "Catholic Culture: St. Kinga's Love of the Bridegroom Was Expressed in Countless Works of
+      Charity"
+    url: https://www.catholicculture.org/culture/library/view.cfm?recnum=1151
+    note: John Paul II's canonization homily connects St. Kinga with the rock salt mines of Wieliczka
+      and Bochnia near Krakow.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:57.047Z
+  rationale: Approved source supports the St. Kinga/Wieliczka salt-mine connection; I did not find an
+    approved-host page directly describing the underground chapel.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

@@ -1,4 +1,3 @@
-# DRAFT — imported from Supabase; theological review pending
 id: event.founding-of-the-dominicans
 title: Founding of the Dominicans
 entity_type: event
@@ -6,19 +5,19 @@ classification:
   claim_type: historical-claim
   certainty: not-applicable
   note: null
-summary: Dominic de Guzman founded the Order of Preachers to combat heresy not with force but
-  with education, creating a religious order that would produce some of the Church's greatest
-  thinkers.
+summary: Dominic de Guzman founded the Order of Preachers to combat heresy not with force but with
+  education, creating a religious order that would produce some of the Church's greatest thinkers.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from key_events.founding-of-the-dominicans
+  - source_type: scholarship
+    reference: "Catholic Encyclopedia: Order of Preachers"
+    url: https://www.newadvent.org/cathen/12354c.htm
+    note: Discusses St. Dominic's order, its adoption of the Rule of St. Augustine in 1216, and solemn
+      approval on 22 December 1216.
 relationships:
   broader: []
   narrower: []
@@ -27,17 +26,16 @@ relationships:
     - person.thomas-aquinas
     - person.albert-the-great
     - person.pope-honorius-iii
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.85
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:33:56.147Z
+  rationale: Verified New Advent Catholic Encyclopedia locator for the founding/approval of the
+    Dominican Order.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

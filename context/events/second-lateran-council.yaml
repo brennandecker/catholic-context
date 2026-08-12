@@ -1,4 +1,3 @@
-# DRAFT — imported from Supabase; theological review pending
 id: event.second-lateran-council
 title: Second Lateran Council
 entity_type: event
@@ -6,37 +5,35 @@ classification:
   claim_type: historical-claim
   certainty: not-applicable
   note: null
-summary: In 1139, Pope Innocent II convened the Second Lateran Council to heal the schism caused
-  by the antipope Anacletus II and to enact thirty canons reforming Church discipline, including
-  the definitive requirement of clerical celibacy that remains in effect in the Latin Church
-  today.
+summary: In 1139, Pope Innocent II convened the Second Lateran Council to heal the schism caused by
+  the antipope Anacletus II and to enact thirty canons reforming Church discipline, including the
+  definitive requirement of clerical celibacy that remains in effect in the Latin Church today.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from key_events.second-lateran-council
+  - source_type: ecumenical-council
+    reference: "Catholic Encyclopedia: Second Lateran Council"
+    url: https://www.newadvent.org/cathen/09017a.htm
+    note: New Advent identifies the Second Lateran Council as the tenth ecumenical council, held at the
+      Lateran in April 1139 under Innocent II.
 relationships:
   broader: []
   narrower: []
   related:
     - person.bernard-of-clairvaux
     - person.innocent-ii
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:57.020Z
+  rationale: Approved New Advent locator directly supports the Second Lateran Council entity.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

@@ -1,35 +1,32 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.cathedral-of-monreale
 title: Cathedral of Monreale
 entity_type: institution
 classification: null
-summary: A twelfth-century Norman cathedral above Palermo whose interior walls are covered in
-  more than six thousand square meters of gold-ground mosaics depicting the entire Bible.
+summary: A twelfth-century Norman cathedral above Palermo whose interior walls are covered in more
+  than six thousand square meters of gold-ground mosaics depicting the entire Bible.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.cathedral-of-monreale
+  - source_type: scholarship
+    reference: "Catholic Encyclopedia: Monreale"
+    url: https://www.newadvent.org/cathen/10508a.htm
+    note: Describes Monreale's cathedral/abbey church, mosaics, tombs, and the Archdiocese of Monreale.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.85
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:33:56.126Z
+  rationale: Verified New Advent Catholic Encyclopedia locator for the Cathedral of Monreale.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

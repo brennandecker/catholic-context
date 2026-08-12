@@ -1,4 +1,3 @@
-# DRAFT — imported from Supabase; theological review pending
 id: event.dilexit-nos-encyclical
 title: Dilexit Nos — Pope Francis on the Sacred Heart
 entity_type: event
@@ -7,18 +6,22 @@ classification:
   certainty: not-applicable
   note: null
 summary: On October 24, 2024, Pope Francis issued the encyclical Dilexit Nos ('He Loved Us'),
-  calling the Church back to devotion to the Sacred Heart of Jesus as an answer to a world that
-  has lost its sense of the heart — both human and divine.
+  calling the Church back to devotion to the Sacred Heart of Jesus as an answer to a world that has
+  lost its sense of the heart — both human and divine.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from key_events.dilexit-nos-encyclical
+  - source_type: magisterium
+    reference: Francis, Dilexit nos (24 October 2024)
+    url: https://www.vatican.va/content/francesco/en/encyclicals/documents/20241024-enciclica-dilexit-nos.html
+    note: Primary text of the encyclical on the human and divine love of the Heart of Jesus Christ.
+  - source_type: magisterium
+    reference: Holy See Press Office, Encyclical Letter Dilexit nos (24 October 2024)
+    url: https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2024/10/24/241024b.html
+    note: Publishes the encyclical and its framing around devotion to the Heart of Christ.
 relationships:
   broader: []
   narrower: []
@@ -27,17 +30,15 @@ relationships:
     - person.charles-de-foucauld
     - person.therese-of-lisieux
     - person.pope-francis
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.85
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.989Z
+  rationale: Vatican sources directly provide the encyclical and publication date.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

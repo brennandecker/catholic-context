@@ -1,36 +1,35 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.las-lajas-sanctuary
 title: Las Lajas Sanctuary
 entity_type: institution
 classification: null
-summary: A stunning Gothic Revival basilica built into a canyon wall in southern Colombia,
-  spanning a river gorge 100 meters deep.
+summary: A stunning Gothic Revival basilica built into a canyon wall in southern Colombia, spanning
+  a river gorge 100 meters deep.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.las-lajas-sanctuary
+  - source_type: scholarship
+    reference: Catholic Culture, "Las Lajas, Our Lady of," Catholic Dictionary
+    url: https://www.catholicculture.org/culture/library/dictionary/index.cfm?id=34487
+    note: Catholic Culture dictionary entry identifies Las Lajas as a Colombian Marian shrine containing
+      the image of the Virgin and Child on a sandstone slab.
 relationships:
   broader: []
   narrower: []
   related:
     - person.blessed-virgin-mary
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:49:18.710Z
+  rationale: Verified approved-host URL. Supports shrine identity and Marian pilgrimage context;
+    miracle claims should be attributed as tradition/report.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

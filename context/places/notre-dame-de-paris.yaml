@@ -1,4 +1,3 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.notre-dame-de-paris
 title: Notre-Dame de Paris
 entity_type: institution
@@ -10,27 +9,27 @@ review:
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.notre-dame-de-paris
+  - source_type: scholarship
+    reference: Francis, Message after the fire in Notre-Dame Cathedral, 16 April 2019
+    url: https://www.vatican.va/content/francesco/en/messages/pont-messages/2019/documents/papa-francesco_20190416_messaggio-incendio-notredame.html
+    note: Vatican message calls Notre-Dame a witness of Catholic faith and prayer in Paris, the mother
+      church of the diocese, and part of the architectural and spiritual heritage of Paris, France,
+      and humanity.
 relationships:
   broader: []
   narrower: []
   related:
     - person.blessed-virgin-mary
     - person.st-denis
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:49:18.657Z
+  rationale: Official Vatican locator directly identifies Notre-Dame de Paris and its ecclesial significance.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

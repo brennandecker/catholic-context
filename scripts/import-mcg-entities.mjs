@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
- * Import published My Catholic Guide / Catholic Guidance entity tables from Supabase
- * into Catholic Context YAML under context/.
+ * Bootstrap draft entity YAML from published product DB tables (extract only).
+ * Product databases are NEVER written into sources[] — see docs/ENTITY_SOURCE_LOCATORS.md.
  *
  * Does NOT import explore_topics / live_topics (narrative product content).
  * Skips files that already exist (preserves hand-authored seeds).
@@ -67,7 +67,7 @@ async function fetchAll(table, select) {
   return rows;
 }
 
-function baseObject({ id, title, entityType, summary, claimType, sourceNote, related = [] }) {
+function baseObject({ id, title, entityType, summary, claimType, related = [] }) {
   return {
     id,
     title,
@@ -89,9 +89,10 @@ function baseObject({ id, title, entityType, summary, claimType, sourceNote, rel
     sources: [
       {
         source_type: 'other',
-        reference: 'My Catholic Guide / Catholic Guidance (Supabase)',
+        reference: 'Approved source locator pending',
         url: null,
-        note: sourceNote,
+        note:
+          'Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or public-domain scholarly locator. Product databases are not citable sources.',
       },
     ],
     relationships: {
@@ -100,17 +101,17 @@ function baseObject({ id, title, entityType, summary, claimType, sourceNote, rel
       related,
     },
     notes:
-      'Imported as draft entity metadata from Supabase. Not a narrative product import. Requires source enrichment and theological review before promotion.',
+      'Draft entity metadata. Requires approved public source locators and theological review before promotion. Catholic Context does not cite product databases as sources.',
     source_fidelity: {
       representation: 'entity-metadata',
-      confidence: 0.55,
+      confidence: 0.4,
       needs_theological_review: true,
       linkable_sources: false,
-      assessed_by: 'import-mcg-entities',
+      assessed_by: 'entity-bootstrap',
       assessed_at: NOW,
       rationale:
-        'Bulk-imported entity metadata. Confidence is provisional until official source links are attached.',
-      unresolved_issues: ['Needs resolvable official source URLs', 'Draft import pending human review'],
+        'Entity draft pending approved public locators. The Church’s teaching and historical record stand on their own authority; this score only grades Catholic Context’s sourcing.',
+      unresolved_issues: ['Needs resolvable approved source URLs', 'Draft pending human review'],
     },
   };
 }
@@ -119,7 +120,7 @@ function writeYaml(relPath, object) {
   const abs = join(ROOT, relPath);
   if (existsSync(abs)) return 'skipped';
   mkdirSync(dirname(abs), { recursive: true });
-  const body = `# DRAFT — imported from Supabase; theological review pending\n${stringify(object, {
+  const body = `# DRAFT — source locators pending; theological review pending\n${stringify(object, {
     lineWidth: 96,
   })}`;
   writeFileSync(abs, body, 'utf8');
@@ -155,7 +156,6 @@ async function main() {
         `${row.name} is commemorated as a saint in the Catholic tradition.${feast}${era}`,
       ),
       claimType: null,
-      sourceNote: `Imported from saints.${slug}`,
     });
     const result = writeYaml(`context/persons/${slug}.yaml`, object);
     stats[result] += 1;
@@ -181,7 +181,6 @@ async function main() {
         `${row.papal_name}${row.birth_name ? ` (born ${row.birth_name})` : ''} served as Bishop of Rome.${reign}`,
       ),
       claimType: null,
-      sourceNote: `Imported from popes.${slug}`,
       related: relatedFromSlugs(row.associated_saint_slugs, 'person'),
     });
     const result = writeYaml(`context/persons/${slug}.yaml`, object);
@@ -205,7 +204,6 @@ async function main() {
         `${row.title}${when} is recorded as a significant event in Catholic history.`,
       ),
       claimType: 'historical-claim',
-      sourceNote: `Imported from key_events.${slug}`,
       related: [
         ...relatedFromSlugs(row.associated_saint_slugs, 'person'),
         ...relatedFromSlugs(row.associated_pope_slugs, 'person'),
@@ -232,7 +230,6 @@ async function main() {
         `${row.name} is a Catholic church${where}.`,
       ),
       claimType: null,
-      sourceNote: `Imported from churches.${slug}`,
       related: relatedFromSlugs(row.associated_saint_slugs, 'person'),
     });
     const result = writeYaml(`context/places/${slug}.yaml`, object);

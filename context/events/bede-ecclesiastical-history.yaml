@@ -1,4 +1,3 @@
-# DRAFT — imported from Supabase; theological review pending
 id: event.bede-ecclesiastical-history
 title: Venerable Bede Writes the Ecclesiastical History of the English People
 entity_type: event
@@ -6,35 +5,35 @@ classification:
   claim_type: historical-claim
   certainty: not-applicable
   note: null
-summary: In 731, the Northumbrian monk Bede completed his masterwork, the Ecclesiastical History
-  of the English People, the most important historical text produced in early medieval Europe
-  and still the primary source for the conversion of England.
+summary: In 731, the Northumbrian monk Bede completed his masterwork, the Ecclesiastical History of
+  the English People, the most important historical text produced in early medieval Europe and still
+  the primary source for the conversion of England.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from key_events.bede-ecclesiastical-history
+  - source_type: scholarship
+    reference: "Catholic Encyclopedia: The Venerable Bede"
+    url: https://www.newadvent.org/cathen/02384a.htm
+    note: Identifies Bede's Ecclesiastical History of the English People, written in 731, as his
+      principal historical work.
 relationships:
   broader: []
   narrower: []
   related:
     - person.bede
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.85
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:33:56.124Z
+  rationale: Verified New Advent Catholic Encyclopedia locator for Bede and the Ecclesiastical
+    History; awaiting theological/editorial review.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

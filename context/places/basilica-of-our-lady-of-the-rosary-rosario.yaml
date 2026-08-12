@@ -1,35 +1,33 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.basilica-of-our-lady-of-the-rosary-rosario
 title: Basilica of Our Lady of the Rosary
 entity_type: institution
 classification: null
-summary: A Neoclassical basilica in Rosario, Argentina's third-largest city, elevated to
-  basilica status in 1966 and known for its devotion to the Virgin of the Rosary.
+summary: A Neoclassical basilica in Rosario, Argentina's third-largest city, elevated to basilica
+  status in 1966 and known for its devotion to the Virgin of the Rosary.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.basilica-of-our-lady-of-the-rosary-rosario
+  - source_type: magisterium
+    reference: "Pope Francis: Video Message to the Archdiocese of Rosario"
+    url: https://www.vatican.va/content/francesco/en/messages/pont-messages/2022/documents/20221207-videomessaggio-arcidiocesi-rosario.html
+    note: Identifies the Mother Church, today Cathedral and Basilica, in honor of Our Lady of the
+      Rosary, and the image venerated there.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.84
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.925Z
+  rationale: Verified Vatican locator directly identifying the Rosario Cathedral and Basilica.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

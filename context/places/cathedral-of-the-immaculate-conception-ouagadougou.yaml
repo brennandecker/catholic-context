@@ -1,36 +1,35 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.cathedral-of-the-immaculate-conception-ouagadougou
 title: Cathedral of the Immaculate Conception
 entity_type: institution
 classification: null
 summary: The cathedral of the Archdiocese of Ouagadougou, a striking red laterite church in the
-  capital of Burkina Faso that serves as the heart of one of West Africa's fastest-growing
-  Catholic communities.
+  capital of Burkina Faso that serves as the heart of one of West Africa's fastest-growing Catholic
+  communities.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.cathedral-of-the-immaculate-conception-ouagadougou
+  - source_type: scholarship
+    reference: John Paul II speeches index, January 1990, Vatican
+    url: https://www.vatican.va/content/john-paul-ii/en/speeches/1990/january.html
+    note: Vatican index lists papal addresses to priests, religious, seminarians, catechists, and
+      faithful at the Cathedral of Ouagadougou on January 29, 1990.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:49:18.619Z
+  rationale: Verified Vatican page confirms a Catholic cathedral at Ouagadougou; the approved page
+    does not separately state the Immaculate Conception dedication.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

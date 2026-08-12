@@ -1,36 +1,35 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.san-jose-mission-san-antonio
 title: Mission San José (San Antonio Missions National Historical Park)
 entity_type: institution
 classification: null
-summary: The largest and best-preserved of the San Antonio missions, a UNESCO World Heritage
-  Site called the Queen of the Missions, still an active Catholic parish.
+summary: The largest and best-preserved of the San Antonio missions, a UNESCO World Heritage Site
+  called the Queen of the Missions, still an active Catholic parish.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.san-jose-mission-san-antonio
+  - source_type: scholarship
+    reference: "USCCB, World Youth Day USA: Pope St. John Paul II Papal Visits"
+    url: https://www.usccb.org/resources/Pope-St-John-Paul-II-Visits-and-Itineraries-3.pdf
+    note: USCCB pilgrimage resource lists Mission San Jose, Queen of the Missions, in San Antonio among
+      sites tied to John Paul II's 1987 visit.
 relationships:
   broader: []
   narrower: []
   related:
     - person.st-joseph
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:49:18.720Z
+  rationale: Verified approved-host PDF URL. Supports identification and location of Mission San Jose
+    in San Antonio.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

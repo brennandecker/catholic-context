@@ -1,35 +1,34 @@
-# DRAFT — imported from Supabase; theological review pending
 id: person.st-stephen-of-hungary
 title: St. Stephen of Hungary
 entity_type: person
 classification: null
-summary: He asked the Pope for a crown, built a nation around it, and wrote his son a handbook
-  on how to rule justly. His son died before he could use it.
+summary: He asked the Pope for a crown, built a nation around it, and wrote his son a handbook on
+  how to rule justly. His son died before he could use it.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from saints.st-stephen-of-hungary
+  - source_type: scholarship
+    reference: "Catholic Encyclopedia: St. Stephen"
+    url: https://www.newadvent.org/cathen/14287a.htm
+    note: Approved New Advent entry identifies Stephen as first King of Hungary and credits him with
+      establishing Hungary's Christian and ecclesiastical order.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:49:18.774Z
+  rationale: Dedicated Catholic Encyclopedia article provides a suitable approved locator; URL
+    verified HTTP 200.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

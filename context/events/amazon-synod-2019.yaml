@@ -1,4 +1,3 @@
-# DRAFT — imported from Supabase; theological review pending
 id: event.amazon-synod-2019
 title: Amazon Synod
 entity_type: event
@@ -6,8 +5,8 @@ classification:
   claim_type: historical-claim
   certainty: not-applicable
   note: null
-summary: In October 2019, the Synod of Bishops for the Pan-Amazon Region brought the challenges
-  of the Amazon's Catholic communities to global attention, addressing ecological destruction,
+summary: In October 2019, the Synod of Bishops for the Pan-Amazon Region brought the challenges of
+  the Amazon's Catholic communities to global attention, addressing ecological destruction,
   indigenous rights, and the shortage of priests in remote areas.
 review:
   status: draft
@@ -15,26 +14,26 @@ review:
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from key_events.amazon-synod-2019
+  - source_type: scholarship
+    reference: Final Document of the Synod of Bishops for the Pan-Amazonian Region, 26 October 2019
+    url: https://www.vatican.va/content/dam/wss/roman_curia/synod/documents/rc_synod_doc_20191026_sinodo-amazzonia_en.html
+    note: The Vatican-hosted final document states that the Synod took place in Rome over 21 days in
+      October 2019.
 relationships:
   broader: []
   narrower: []
   related:
     - person.pope-francis
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:49:18.693Z
+  rationale: Verified approved Vatican URL with HTTP GET 200; source directly documents the Amazon
+    Synod proceedings and theme.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

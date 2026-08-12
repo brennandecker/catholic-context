@@ -1,35 +1,33 @@
-# DRAFT — imported from Supabase; theological review pending
 id: person.st-boniface
 title: St. Boniface
 entity_type: person
 classification: null
-summary: He took an axe to Thor’s sacred oak in front of a crowd of armed pagans. When no
-  lightning struck him down, they lined up for baptism.
+summary: He took an axe to Thor’s sacred oak in front of a crowd of armed pagans. When no lightning
+  struck him down, they lined up for baptism.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from saints.st-boniface
+  - source_type: scholarship
+    reference: "Catholic Encyclopedia: St. Boniface"
+    url: https://www.newadvent.org/cathen/02656a.htm
+    note: New Advent provides a dedicated Catholic Encyclopedia article on St. Boniface, missionary and
+      martyr.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:57.004Z
+  rationale: Approved New Advent locator directly supports the St. Boniface entity.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

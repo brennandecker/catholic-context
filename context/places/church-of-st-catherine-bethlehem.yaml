@@ -1,37 +1,36 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.church-of-st-catherine-bethlehem
 title: Church of St. Catherine
 entity_type: institution
 classification: null
-summary: A Franciscan church attached to the Church of the Nativity in Bethlehem, where the
-  Latin Patriarch celebrates Christmas Midnight Mass each year in the town of Christ's birth.
+summary: A Franciscan church attached to the Church of the Nativity in Bethlehem, where the Latin
+  Patriarch celebrates Christmas Midnight Mass each year in the town of Christ's birth.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.church-of-st-catherine-bethlehem
+  - source_type: scholarship
+    reference: Holy See Jubilee 2000 Magazine, 'The Holy Places Make Ready for the Jubilee'
+    url: https://www.vatican.va/jubilee_2000/magazine/documents/ju_mag_june-sept-1996_motta_en.html
+    note: Identifies the Church of Saint Catherine of Alexandria as adjacent to the Basilica of the
+      Nativity in Bethlehem.
 relationships:
   broader: []
   narrower: []
   related:
     - person.st-jerome
     - person.st-catherine-of-alexandria
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.896Z
+  rationale: Verified approved Vatican URL (HTTP 200); supports the church's identity and location
+    beside the Nativity basilica.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

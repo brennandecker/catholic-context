@@ -1,4 +1,3 @@
-# DRAFT — imported from Supabase; theological review pending
 id: event.martyrdom-of-perpetua-and-felicity
 title: Martyrdom of Perpetua and Felicity
 entity_type: event
@@ -7,36 +6,38 @@ classification:
   certainty: not-applicable
   note: null
 summary: In 203 AD, Vibia Perpetua, a young noblewoman, and Felicity, her pregnant slave, were
-  executed in the arena at Carthage during the persecution under Emperor Septimius Severus,
-  leaving behind one of the earliest and most vivid first-person accounts of Christian
-  martyrdom.
+  executed in the arena at Carthage during the persecution under Emperor Septimius Severus, leaving
+  behind one of the earliest and most vivid first-person accounts of Christian martyrdom.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from key_events.martyrdom-of-perpetua-and-felicity
+  - source_type: saint
+    reference: "Catholic Encyclopedia: Sts. Felicitas and Perpetua"
+    url: https://www.newadvent.org/cathen/06029a.htm
+    note: States that Perpetua and Felicity suffered at Carthage on 7 March 203 and summarizes their
+      martyrdom.
+  - source_type: church-father
+    reference: "New Advent Fathers: Passion of Perpetua and Felicity"
+    url: https://www.newadvent.org/fathers/0324.htm
+    note: Provides the ancient Passion text recounting their imprisonment and martyrdom.
 relationships:
   broader: []
   narrower: []
   related:
     - person.perpetua
     - person.felicity
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.86
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.949Z
+  rationale: Verified New Advent Catholic Encyclopedia and Fathers locators for Perpetua and Felicity.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

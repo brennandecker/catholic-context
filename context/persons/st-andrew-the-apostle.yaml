@@ -1,35 +1,33 @@
-# DRAFT — imported from Supabase; theological review pending
 id: person.st-andrew-the-apostle
 title: St. Andrew the Apostle
 entity_type: person
 classification: null
-summary: The first apostle called — a fisherman whose instinct was always to grab someone else
-  and say, ‘You have to meet this man.’
+summary: The first apostle called — a fisherman whose instinct was always to grab someone else and
+  say, ‘You have to meet this man.’
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from saints.st-andrew-the-apostle
+  - source_type: scholarship
+    reference: "Catholic Encyclopedia: St. Andrew"
+    url: https://www.newadvent.org/cathen/01471a.htm
+    note: Identifies Andrew as son of Jonah, brother of Simon Peter, a fisherman from Bethsaida, one of
+      the Twelve, and traditionally martyred by crucifixion in Achaia.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:49:18.668Z
+  rationale: Direct approved New Advent source for St. Andrew the Apostle.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

@@ -1,36 +1,34 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.basilica-of-our-lady-of-peace-yamoussoukro
 title: Basilica of Our Lady of Peace
 entity_type: institution
 classification: null
-summary: The largest church in the world by area, built in the political capital of Ivory Coast
-  in the late 1980s and modeled on St. Peter's Basilica in Rome.
+summary: The largest church in the world by area, built in the political capital of Ivory Coast in
+  the late 1980s and modeled on St. Peter's Basilica in Rome.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.basilica-of-our-lady-of-peace-yamoussoukro
+  - source_type: magisterium
+    reference: Convention concerning the International Foundation of Our Lady of Peace of Yamoussoukro
+    url: https://www.vatican.va/content/dam/wss/roman_curia/secretariat_state/archivio/documents/rc_seg-st_19920520_santa-sede-costa-avorio_fr.html
+    note: Holy See convention concerns the foundation administering the Basilica of Our Lady of Peace
+      and its works at Yamoussoukro.
 relationships:
   broader: []
   narrower: []
   related:
     - person.blessed-virgin-mary
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.85
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:33:56.101Z
+  rationale: Approved Vatican locator verified; source directly concerns the Yamoussoukro basilica foundation.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

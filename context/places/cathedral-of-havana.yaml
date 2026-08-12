@@ -1,36 +1,35 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.cathedral-of-havana
 title: Cathedral of the Virgin Mary of the Immaculate Conception (Havana)
 entity_type: institution
 classification: null
-summary: An asymmetrical Baroque cathedral on a cobblestone plaza in Old Havana, one of the
-  oldest Catholic cathedrals in the Americas.
+summary: An asymmetrical Baroque cathedral on a cobblestone plaza in Old Havana, one of the oldest
+  Catholic cathedrals in the Americas.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.cathedral-of-havana
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, "Havana"
+    url: https://www.newadvent.org/cathen/07153b.htm
+    note: New Advent's Havana entry describes the Cathedral of Havana as the old church of St. Ignatius
+      transformed and enlarged as the diocesan cathedral.
 relationships:
   broader: []
   narrower: []
   related:
     - person.blessed-virgin-mary
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.950Z
+  rationale: Approved New Advent locator directly supports the Havana cathedral and its ecclesiastical
+    context.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

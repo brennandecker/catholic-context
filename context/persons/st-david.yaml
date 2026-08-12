@@ -1,4 +1,4 @@
-# DRAFT — imported from Supabase; theological review pending
+# DRAFT — source locators pending; theological review pending
 id: person.st-david
 title: Saint David
 entity_type: person
@@ -12,24 +12,25 @@ review:
   review_commit: null
 sources:
   - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
+    reference: Approved source locator pending
     url: null
-    note: Imported from saints.st-david
+    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
+      public-domain scholarly locator. Product databases are not citable sources.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires approved public source locators and theological review
+  before promotion. Catholic Context does not cite product databases as sources.
 source_fidelity:
   representation: entity-metadata
   confidence: 0.55
   needs_theological_review: true
   linkable_sources: false
-  assessed_by: import-mcg-entities
+  assessed_by: entity-bootstrap
   assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
+    record stand on their own authority; this score only grades Catholic Context’s sourcing.
   unresolved_issues:
     - Needs resolvable official source URLs
     - Draft import pending human review

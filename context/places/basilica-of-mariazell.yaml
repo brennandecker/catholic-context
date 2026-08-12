@@ -1,36 +1,34 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.basilica-of-mariazell
 title: Basilica of the Birth of the Virgin Mary (Mariazell)
 entity_type: institution
 classification: null
-summary: The most important Marian pilgrimage site in Central Europe, nestled in the Styrian
-  Alps of Austria, where a twelfth-century wooden statue of the Virgin has drawn millions of
-  pilgrims for over eight hundred years.
+summary: The most important Marian pilgrimage site in Central Europe, nestled in the Styrian Alps of
+  Austria, where a twelfth-century wooden statue of the Virgin has drawn millions of pilgrims for
+  over eight hundred years.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.basilica-of-mariazell
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, 'Pilgrimages'
+    url: https://www.newadvent.org/cathen/12085a.htm
+    note: Identifies Mariazell in Styria as a pilgrimage place with a Madonna statue visited by pilgrims
+      from surrounding regions.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.894Z
+  rationale: Verified approved New Advent URL (HTTP 200); supports Mariazell's Marian pilgrimage significance.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

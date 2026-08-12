@@ -1,36 +1,35 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.jasna-gora-czestochowa
 title: Jasna Góra Monastery
 entity_type: institution
 classification: null
-summary: The spiritual capital of Poland, a fortified hilltop monastery in Częstochowa that
-  houses the Black Madonna, the nation's most sacred icon.
+summary: The spiritual capital of Poland, a fortified hilltop monastery in Częstochowa that houses
+  the Black Madonna, the nation's most sacred icon.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.jasna-gora-czestochowa
+  - source_type: scholarship
+    reference: Holy See Press Office, Mass at Jasna Gora shrine for the 1050th anniversary of Poland's
+      baptism, 28 July 2016
+    url: https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2016/07/28/160728e.html
+    note: Identifies Jasna Gora in Czestochowa as Poland's most famous Marian sanctuary, a pilgrimage
+      destination, and the home of the Black Madonna icon.
 relationships:
   broader: []
   narrower: []
   related:
     - person.blessed-virgin-mary
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:49:18.674Z
+  rationale: Approved Vatican-hosted locator directly supports the Jasna Gora/Czestochowa shrine entity.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

@@ -1,36 +1,34 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.basilica-of-our-lady-of-copacabana-bolivia
 title: Basilica of Our Lady of Copacabana
 entity_type: institution
 classification: null
 summary: A Moorish-influenced Renaissance basilica on the shores of Lake Titicaca in Bolivia,
-  housing a dark-skinned Virgin carved by an indigenous artist in 1583, the most venerated
-  Marian image in Bolivia.
+  housing a dark-skinned Virgin carved by an indigenous artist in 1583, the most venerated Marian
+  image in Bolivia.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.basilica-of-our-lady-of-copacabana-bolivia
+  - source_type: scholarship
+    reference: Vatican, Pope Francis remarks to Our Lady of Copacabana, 10 July 2015
+    url: https://www.vatican.va/content/francesco/en/speeches/2015/july/documents/papa-francesco_20150710_bolivia-virgen-de-copacabana.html
+    note: Vatican page identifies Our Lady of Copacabana as Patroness and Queen of Bolivia and refers to
+      her shrine.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.960Z
+  rationale: Official Vatican locator supports the Copacabana devotion and shrine context.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

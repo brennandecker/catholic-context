@@ -1,36 +1,33 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.san-fernando-cathedral
 title: San Fernando Cathedral
 entity_type: institution
 classification: null
-summary: The oldest cathedral sanctuary in the United States, standing at the heart of San
-  Antonio since 1738.
+summary: The oldest cathedral sanctuary in the United States, standing at the heart of San Antonio
+  since 1738.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.san-fernando-cathedral
+  - source_type: scholarship
+    reference: "USCCB: World Youth Day USA Pilgrimage Sites in the U.S."
+    url: https://www.usccb.org/resources/Pilgrimage-sites-in-the-US-2019.pdf
+    note: USCCB pilgrimage resource lists San Fernando Cathedral in San Antonio with its address.
 relationships:
   broader: []
   narrower: []
   related:
     - person.st-ferdinand-iii
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.68
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.934Z
+  rationale: Verified USCCB locator naming San Fernando Cathedral.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

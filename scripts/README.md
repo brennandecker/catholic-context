@@ -2,7 +2,7 @@
 
 ## `import-mcg-entities.mjs`
 
-Pulls **published** entity rows from the Catholic Guidance Supabase project (My Catholic Guide data plane) into draft Catholic Context YAML:
+Bootstraps draft entity YAML from published product-DB tables. **Product databases are extract sources only — never citable `sources[]`.** See [`docs/ENTITY_SOURCE_LOCATORS.md`](../docs/ENTITY_SOURCE_LOCATORS.md).
 
 | Supabase table | Context folder | `entity_type` |
 |---|---|---|

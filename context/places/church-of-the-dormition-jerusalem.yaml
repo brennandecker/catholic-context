@@ -1,4 +1,3 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.church-of-the-dormition-jerusalem
 title: Church and Abbey of the Dormition
 entity_type: institution
@@ -11,26 +10,28 @@ review:
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.church-of-the-dormition-jerusalem
+  - source_type: scholarship
+    reference: Francis, Address to students of the Theologisches Studienjahr of the Abbey of the
+      Dormition of the Blessed Virgin Mary in Jerusalem, 18 December 2020
+    url: https://www.vatican.va/content/francesco/en/speeches/2020/december/documents/papa-francesco_20201218_studenti.html
+    note: Vatican address identifies the Abbey of the Dormition of the Blessed Virgin Mary in Jerusalem
+      and its theological study program connected to biblical sites and the Eastern Churches.
 relationships:
   broader: []
   narrower: []
   related:
     - person.blessed-virgin-mary
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:49:18.678Z
+  rationale: Official Vatican locator directly names the Dormition Abbey in Jerusalem; it supports the
+    Dormition place entity even though it frames it as an abbey rather than only the church
+    building.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

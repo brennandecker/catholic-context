@@ -1,35 +1,33 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.cathedral-of-the-blessed-sacrament-christchurch
 title: Cathedral of the Blessed Sacrament (Christchurch)
 entity_type: institution
 classification: null
-summary: A Renaissance Revival cathedral in Christchurch, New Zealand, severely damaged in the
-  2011 earthquake, now being rebuilt as a symbol of the city's Catholic community and recovery.
+summary: A Renaissance Revival cathedral in Christchurch, New Zealand, severely damaged in the 2011
+  earthquake, now being rebuilt as a symbol of the city's Catholic community and recovery.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.cathedral-of-the-blessed-sacrament-christchurch
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, 'Christchurch'
+    url: https://www.newadvent.org/cathen/03699a.htm
+    note: States that a white stone cathedral in Christchurch opened on 12 February 1905 and was
+      considered one of Australasia's most beautiful religious edifices.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.889Z
+  rationale: Verified approved New Advent URL (HTTP 200); supports the historic Christchurch cathedral entity.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

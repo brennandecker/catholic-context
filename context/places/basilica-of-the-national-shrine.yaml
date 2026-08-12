@@ -1,36 +1,40 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.basilica-of-the-national-shrine
 title: Basilica of the National Shrine of the Immaculate Conception
 entity_type: institution
 classification: null
-summary: The largest Catholic church in North America, honoring Mary under her title as patron
-  of the United States.
+summary: The largest Catholic church in North America, honoring Mary under her title as patron of
+  the United States.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.basilica-of-the-national-shrine
+  - source_type: magisterium
+    reference: "Apostolic Journey to the United States: Celebration of Vespers at the National Shrine of
+      the Immaculate Conception"
+    url: https://www.vatican.va/content/benedict-xvi/en/speeches/2008/april/documents/hf_ben-xvi_spe_20080416_bishops-usa.html
+    note: Benedict XVI address identifies the Basilica dedicated to the Immaculate Conception as a
+      shrine of special significance to American Catholics in Washington, D.C.
+  - source_type: scholarship
+    reference: Inside Basilica before Canonization Mass
+    url: https://www.usccb.org/offices/general-secretariat/inside-basilica-canonization-mass
+    note: USCCB page describes the basilica as the national church for U.S. Roman Catholics, dedicated
+      to Mary and among the largest Catholic churches.
 relationships:
   broader: []
   narrower: []
   related:
     - person.blessed-virgin-mary
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.85
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:33:56.062Z
+  rationale: Vatican and USCCB locators strongly support the National Shrine entity and its Marian dedication.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

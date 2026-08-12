@@ -1,4 +1,3 @@
-# DRAFT — imported from Supabase; theological review pending
 id: event.peace-and-truce-of-god
 title: The Peace and Truce of God Movement
 entity_type: event
@@ -7,34 +6,38 @@ classification:
   certainty: not-applicable
   note: null
 summary: Medieval bishops and monks, tired of watching knights burn farms and kill peasants,
-  launched a grassroots campaign to limit warfare — one of the first organized peace movements
-  in Western history.
+  launched a grassroots campaign to limit warfare — one of the first organized peace movements in
+  Western history.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from key_events.peace-and-truce-of-god
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, 'Truce of God'
+    url: https://www.newadvent.org/cathen/15068a.htm
+    note: Distinguishes the perpetual Peace of God from the temporary Truce of God and describes both as
+      ecclesiastical restraints on feudal violence.
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, 'Third Lateran Council'
+    url: https://www.newadvent.org/cathen/09017b.htm
+    note: Notes Canon 21 of the Third Lateran Council relates to the Truce of God.
 relationships:
   broader: []
   narrower: []
   related:
     - person.pope-urban-ii
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.85
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.998Z
+  rationale: Catholic Encyclopedia sources directly describe the institutions and their medieval
+    ecclesiastical enforcement.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

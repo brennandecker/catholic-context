@@ -1,4 +1,3 @@
-# DRAFT — imported from Supabase; theological review pending
 id: event.seven-sacraments-formally-defined
 title: Formal Definition of the Seven Sacraments
 entity_type: event
@@ -7,19 +6,20 @@ classification:
   certainty: not-applicable
   note: null
 summary: At the Second Council of Lyon in 1274 and the Council of Florence in 1439, the Church
-  formally defined the number of sacraments as seven — Baptism, Confirmation, Eucharist,
-  Penance, Anointing of the Sick, Holy Orders, and Matrimony — settling a question that had been
-  debated for centuries.
+  formally defined the number of sacraments as seven — Baptism, Confirmation, Eucharist, Penance,
+  Anointing of the Sick, Holy Orders, and Matrimony — settling a question that had been debated for
+  centuries.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from key_events.seven-sacraments-formally-defined
+  - source_type: catechism
+    reference: Catechism of the Catholic Church, Part Two, Section Two
+    url: https://www.vatican.va/content/catechism/en/part_two/section_two.html
+    note: States the Church's seven sacraments and provides the doctrinal locator for the formal
+      enumeration.
 relationships:
   broader: []
   narrower: []
@@ -27,17 +27,16 @@ relationships:
     - person.thomas-aquinas
     - person.bonaventure
     - person.pope-gregory-x
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.72
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.917Z
+  rationale: Verified Vatican Catechism locator for the seven sacraments; no council-specific URL was
+    used without direct verification.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

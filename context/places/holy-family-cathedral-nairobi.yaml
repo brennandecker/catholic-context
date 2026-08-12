@@ -1,36 +1,35 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.holy-family-cathedral-nairobi
 title: Holy Family Cathedral
 entity_type: institution
 classification: null
-summary: The principal Catholic church of Nairobi, Kenya, a mid-century modern cathedral in the
-  city center that serves as the seat of the Archbishop and a gathering point for one of
-  Africa's fastest-growing Catholic populations.
+summary: The principal Catholic church of Nairobi, Kenya, a mid-century modern cathedral in the city
+  center that serves as the seat of the Archbishop and a gathering point for one of Africa's
+  fastest-growing Catholic populations.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.holy-family-cathedral-nairobi
+  - source_type: scholarship
+    reference: Catholic Culture, 'News Features' (recnum 20551)
+    url: https://www.catholicculture.org/news/features/index.cfm?recnum=20551
+    note: Mentions the rector of the Holy Family basilica in Nairobi, supporting the Catholic site
+      identity.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.909Z
+  rationale: Verified approved CatholicCulture URL (HTTP 200); supports the Nairobi Holy Family
+    basilica entity, though details are brief.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

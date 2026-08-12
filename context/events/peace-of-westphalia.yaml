@@ -1,4 +1,3 @@
-# DRAFT — imported from Supabase; theological review pending
 id: event.peace-of-westphalia
 title: Peace of Westphalia
 entity_type: event
@@ -6,35 +5,39 @@ classification:
   claim_type: historical-claim
   certainty: not-applicable
   note: null
-summary: After thirty years of war that killed millions and devastated central Europe, Catholic
-  and Protestant powers signed a peace that ended the age of religious wars and began the modern
-  system of nation-states.
+summary: After thirty years of war that killed millions and devastated central Europe, Catholic and
+  Protestant powers signed a peace that ended the age of religious wars and began the modern system
+  of nation-states.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from key_events.peace-of-westphalia
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, 'The Thirty Years War'
+    url: https://www.newadvent.org/cathen/14648b.htm
+    note: States that the Peace of Westphalia with France and Sweden was settled on 24 October 1648.
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, 'The Reformation'
+    url: https://www.newadvent.org/cathen/12700b.htm
+    note: Explains the settlement's effect on Germany's religious schism and territorial religious
+      authority.
 relationships:
   broader: []
   narrower: []
   related:
     - person.pope-innocent-x
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.85
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.980Z
+  rationale: Approved Catholic Encyclopedia entries directly treat Westphalia's historical and
+    confessional significance.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

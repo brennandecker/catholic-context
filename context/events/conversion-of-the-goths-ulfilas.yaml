@@ -1,4 +1,3 @@
-# DRAFT — imported from Supabase; theological review pending
 id: event.conversion-of-the-goths-ulfilas
 title: Conversion of the Goths and the Mission of Ulfilas
 entity_type: event
@@ -6,35 +5,34 @@ classification:
   claim_type: historical-claim
   certainty: not-applicable
   note: null
-summary: Around 340, the bishop Ulfilas began his mission to the Gothic peoples north of the
-  Danube, translating the Bible into Gothic and creating an alphabet to do it — the first time
-  Scripture was rendered in a Germanic language — launching the Christianization of the
-  barbarian nations that would reshape Europe.
+summary: Around 340, the bishop Ulfilas began his mission to the Gothic peoples north of the Danube,
+  translating the Bible into Gothic and creating an alphabet to do it — the first time Scripture was
+  rendered in a Germanic language — launching the Christianization of the barbarian nations that
+  would reshape Europe.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from key_events.conversion-of-the-goths-ulfilas
+  - source_type: scholarship
+    reference: New Advent Catholic Encyclopedia, "Ulfilas"
+    url: https://www.newadvent.org/cathen/15120c.htm
+    note: Supports Ulfilas as apostle of the Goths, missionary bishop, translator of Scripture into
+      Gothic, and inventor of a special alphabet.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:49:18.755Z
+  rationale: Approved source directly supports the event, while also noting Ulfilas's Arian affiliation.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

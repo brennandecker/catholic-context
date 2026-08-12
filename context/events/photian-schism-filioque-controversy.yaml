@@ -1,4 +1,3 @@
-# DRAFT — imported from Supabase; theological review pending
 id: event.photian-schism-filioque-controversy
 title: The Photian Schism and the Filioque Controversy
 entity_type: event
@@ -6,35 +5,34 @@ classification:
   claim_type: historical-claim
   certainty: not-applicable
   note: null
-summary: In 867, Patriarch Photius of Constantinople formally condemned the Western addition of
-  the Filioque ('and the Son') to the Nicene Creed, deepening the rift between the Eastern and
-  Western Churches that would become permanent in 1054.
+summary: In 867, Patriarch Photius of Constantinople formally condemned the Western addition of the
+  Filioque ('and the Son') to the Nicene Creed, deepening the rift between the Eastern and Western
+  Churches that would become permanent in 1054.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from key_events.photian-schism-filioque-controversy
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, "Filioque"
+    url: https://www.newadvent.org/cathen/06073a.htm
+    note: The Filioque entry discusses Photius's opposition to the clause and its role in the Greek
+      schism.
 relationships:
   broader: []
   narrower: []
   related:
     - person.nicholas-i
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.955Z
+  rationale: New Advent source covers both the Filioque theological formula and its Photian-schism context.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

@@ -1,37 +1,35 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.basilica-of-the-annunciation-nazareth
 title: Basilica of the Annunciation
 entity_type: institution
 classification: null
-summary: Built over the traditional site where the Angel Gabriel appeared to Mary, in her
-  hometown of Nazareth.
+summary: Built over the traditional site where the Angel Gabriel appeared to Mary, in her hometown
+  of Nazareth.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.basilica-of-the-annunciation-nazareth
+  - source_type: scholarship
+    reference: John Paul II, Homily at Mass in the Basilica of the Annunciation in Nazareth, 25 Mar. 2000
+    url: https://www.vatican.va/content/john-paul-ii/en/travels/2000/documents/hf_jp-ii_hom_20000325_nazareth.html
+    note: Official Vatican homily identifies the Basilica of the Annunciation in Nazareth and frames it
+      as a holy place of the Incarnation.
 relationships:
   broader: []
   narrower: []
   related:
     - person.blessed-virgin-mary
     - person.st-gabriel-the-archangel
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:49:18.719Z
+  rationale: Verified approved-host URL. Direct official source for the basilica's Catholic significance.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

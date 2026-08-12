@@ -1,4 +1,3 @@
-# DRAFT — imported from Supabase; theological review pending
 id: event.pentecost
 title: Pentecost
 entity_type: event
@@ -14,27 +13,26 @@ review:
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from key_events.pentecost
+  - source_type: scholarship
+    reference: "USCCB Bible: Acts 2"
+    url: https://bible.usccb.org/bible/acts/2
+    note: "Official USCCB Bible text contains the Pentecost narrative: the coming of the Spirit, Peter's
+      speech, and baptisms."
 relationships:
   broader: []
   narrower: []
   related:
     - person.peter
     - person.paul
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:49:18.768Z
+  rationale: Official USCCB Bible page directly supports the scriptural event; URL verified HTTP 200.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

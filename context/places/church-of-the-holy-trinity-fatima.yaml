@@ -1,20 +1,21 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.church-of-the-holy-trinity-fatima
 title: Church of the Most Holy Trinity
 entity_type: institution
 classification: null
-summary: A massive modern church in the Fatima sanctuary complex in Portugal, completed in 2007,
-  the fourth-largest Catholic church in the world by seating capacity.
+summary: A massive modern church in the Fatima sanctuary complex in Portugal, completed in 2007, the
+  fourth-largest Catholic church in the world by seating capacity.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.church-of-the-holy-trinity-fatima
+  - source_type: scholarship
+    reference: Cardinal Tarcisio Bertone, Dedication of the New Marian Church to the Most Holy Trinity,
+      Fatima, 12 October 2007
+    url: https://www.vatican.va/roman_curia/secretariat_state/card-bertone/2007/documents/rc_seg-st_20071012_santissima-trinita_po.html
+    note: Vatican text for the dedication names the new Marian church at Fatima and says the temple was
+      dedicated to the Most Holy Trinity.
 relationships:
   broader: []
   narrower: []
@@ -22,17 +23,15 @@ relationships:
     - person.blessed-virgin-mary
     - person.st-francisco-marto
     - person.st-jacinta-marto
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:49:18.667Z
+  rationale: Official Vatican locator directly supports the Fatima Church of the Most Holy Trinity.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

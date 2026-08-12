@@ -1,35 +1,34 @@
-# DRAFT — imported from Supabase; theological review pending
 id: person.st-pancras-of-rome
 title: St. Pancras of Rome
 entity_type: person
 classification: null
-summary: A fourteen-year-old orphan in Rome who chose death over a pinch of incense — and gave
-  his name to a London train station.
+summary: A fourteen-year-old orphan in Rome who chose death over a pinch of incense — and gave his
+  name to a London train station.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from saints.st-pancras-of-rome
+  - source_type: scholarship
+    reference: "Catholic Encyclopedia: Sts. Nereus and Achilleus, Domitilla and Pancratius"
+    url: https://www.newadvent.org/cathen/10751a.htm
+    note: The entry identifies St. Pancratius/Pancras, his Roman burial on the Via Aurelia, feast, and
+      martyr tradition.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:49:18.698Z
+  rationale: Verified approved New Advent URL with HTTP 200; source supports St. Pancras under the
+    Pancratius title.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

@@ -1,36 +1,41 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.cathedral-of-the-sacred-heart-newark
 title: Cathedral Basilica of the Sacred Heart
 entity_type: institution
 classification: null
-summary: The fifth-largest cathedral in North America, a massive French Gothic structure in
-  Newark whose construction spanned over fifty years and whose stained glass collection is among
-  the finest in the Western Hemisphere.
+summary: The fifth-largest cathedral in North America, a massive French Gothic structure in Newark
+  whose construction spanned over fifty years and whose stained glass collection is among the finest
+  in the Western Hemisphere.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.cathedral-of-the-sacred-heart-newark
+  - source_type: scholarship
+    reference: CatholicCulture.org, 'Visit of Pope John Paul II to the United Nations and the United
+      States (Address at Newark Cathedral)'
+    url: https://www.catholicculture.org/culture/library/view.cfm?recnum=5505
+    note: John Paul II's Newark Cathedral address says the gathering is in the Cathedral dedicated to
+      the Sacred Heart of Jesus.
+  - source_type: magisterium
+    reference: USCCB, U.S. Saints and Blesseds
+    url: https://www.usccb.org/committees/evangelization-catechesis/us-saints-and-blesseds
+    note: Notes Blessed Miriam Teresa Demjanovich was beatified at the Cathedral Basilica of the Sacred
+      Heart in Newark, NJ.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.85
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.997Z
+  rationale: Approved sources directly identify Newark's Sacred Heart cathedral/basilica and major
+    Catholic events there.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

@@ -1,36 +1,39 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.basilica-of-montserrat
 title: Basilica of Montserrat
 entity_type: institution
 classification: null
-summary: A Benedictine monastery tucked into jagged mountain peaks northwest of Barcelona, home
-  to the beloved Black Madonna of Catalonia.
+summary: A Benedictine monastery tucked into jagged mountain peaks northwest of Barcelona, home to
+  the beloved Black Madonna of Catalonia.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.basilica-of-montserrat
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, 'Pilgrimages'
+    url: https://www.newadvent.org/cathen/12085a.htm
+    note: Describes Montserrat, Spain as a major pilgrimage center to the Blessed Virgin, tracing its
+      existence to the tenth century and the present church to 1562.
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, 'The Benedictine Order'
+    url: https://www.newadvent.org/cathen/02443a.htm
+    note: Places Our Lady's Montserrat among restored Benedictine houses of the Spanish province.
 relationships:
   broader: []
   narrower: []
   related:
     - person.blessed-virgin-mary
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.982Z
+  rationale: Approved sources support Montserrat's Marian pilgrimage and Benedictine context; they do
+    not focus on modern basilica-title details.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

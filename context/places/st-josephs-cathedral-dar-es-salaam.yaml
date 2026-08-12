@@ -1,37 +1,35 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.st-josephs-cathedral-dar-es-salaam
 title: St. Joseph's Cathedral
 entity_type: institution
 classification: null
-summary: The principal Catholic church of Dar es Salaam, Tanzania, a Gothic-influenced coral
-  stone cathedral built by German missionaries on the harbor front in 1897 and still anchoring
-  the city's waterfront.
+summary: The principal Catholic church of Dar es Salaam, Tanzania, a Gothic-influenced coral stone
+  cathedral built by German missionaries on the harbor front in 1897 and still anchoring the city's
+  waterfront.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.st-josephs-cathedral-dar-es-salaam
+  - source_type: magisterium
+    reference: John Paul II address at the Cathedral of Saint Joseph, Dar-es-Salaam
+    url: https://www.vatican.va/content/john-paul-ii/en/speeches/1990/september/documents/hf_jp-ii_spe_19900901_fedeli-tanzania.html
+    note: Vatican.va page is an address to the faithful gathered in the Cathedral of Saint Joseph,
+      Dar-es-Salaam.
 relationships:
   broader: []
   narrower: []
   related:
     - person.st-joseph
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.85
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:33:56.104Z
+  rationale: Approved Vatican locator verified; source directly identifies the cathedral.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

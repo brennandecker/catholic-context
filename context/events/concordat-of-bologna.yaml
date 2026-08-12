@@ -1,4 +1,3 @@
-# DRAFT — imported from Supabase; theological review pending
 id: event.concordat-of-bologna
 title: Concordat of Bologna
 entity_type: event
@@ -6,35 +5,34 @@ classification:
   claim_type: historical-claim
   certainty: not-applicable
   note: null
-summary: In 1516, Pope Leo X and King Francis I of France signed the Concordat of Bologna,
-  giving the French crown the power to nominate bishops and abbots in exchange for papal
-  confirmation, a deal that shaped the French Church for nearly three centuries.
+summary: In 1516, Pope Leo X and King Francis I of France signed the Concordat of Bologna, giving
+  the French crown the power to nominate bishops and abbots in exchange for papal confirmation, a
+  deal that shaped the French Church for nearly three centuries.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from key_events.concordat-of-bologna
+  - source_type: scholarship
+    reference: "Catholic Encyclopedia: Pope Leo X"
+    url: https://www.newadvent.org/cathen/09162a.htm
+    note: Approved New Advent entry describes Leo X's 1516 French Concordat with Francis I at Bologna
+      and its effects on French ecclesiastical nominations.
 relationships:
   broader: []
   narrower: []
   related:
     - person.pope-leo-x
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:49:18.780Z
+  rationale: The Leo X article directly discusses the Concordat of Bologna; URL verified HTTP 200.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

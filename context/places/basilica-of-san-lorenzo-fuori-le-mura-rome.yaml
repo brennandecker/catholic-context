@@ -1,37 +1,36 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.basilica-of-san-lorenzo-fuori-le-mura-rome
 title: Basilica of San Lorenzo fuori le Mura
 entity_type: institution
 classification: null
 summary: One of Rome's seven pilgrim basilicas, built over the tomb of the deacon and martyr St.
-  Lawrence, combining a sixth-century church and a thirteenth-century church joined end-to-end
-  in an unusual double-basilica structure.
+  Lawrence, combining a sixth-century church and a thirteenth-century church joined end-to-end in an
+  unusual double-basilica structure.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.basilica-of-san-lorenzo-fuori-le-mura-rome
+  - source_type: scholarship
+    reference: "Catholic Encyclopedia: St. Lawrence"
+    url: https://www.newadvent.org/cathen/09089a.htm
+    note: Discusses the Roman basilica of San Lorenzo, including its construction history and later
+      unification by Honorius III.
 relationships:
   broader: []
   narrower: []
   related:
     - person.st-lawrence
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:33:56.141Z
+  rationale: Verified New Advent Catholic Encyclopedia locator for San Lorenzo fuori le Mura through
+    the St. Lawrence article.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

@@ -1,37 +1,34 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.basilica-of-ottobeuren
 title: Basilica of Ottobeuren
 entity_type: institution
 classification: null
 summary: A Benedictine abbey church in Bavaria whose Rococo interior is an overwhelming burst of
-  white stucco, painted ceilings, and gilded altars — one of the great church interiors in
-  Europe.
+  white stucco, painted ceilings, and gilded altars — one of the great church interiors in Europe.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.basilica-of-ottobeuren
+  - source_type: scholarship
+    reference: '"Ottobeuren," The Catholic Encyclopedia, New Advent'
+    url: https://www.newadvent.org/cathen/11358a.htm
+    note: Article describes Ottobeuren as a Benedictine abbey/priory near Memmingen, founded in 764 and
+      later restored.
 relationships:
   broader: []
   narrower: []
   related:
     - person.st-benedict
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:49:18.631Z
+  rationale: New Advent source supports the Benedictine abbey church context of Ottobeuren Basilica.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

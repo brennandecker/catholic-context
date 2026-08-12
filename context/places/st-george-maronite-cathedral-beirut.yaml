@@ -1,37 +1,36 @@
-# DRAFT — imported from Supabase; theological review pending
 id: institution.st-george-maronite-cathedral-beirut
 title: St. George Maronite Cathedral
 entity_type: institution
 classification: null
 summary: The cathedral of the Maronite Archeparchy of Beirut, a 19th-century church in downtown
-  Beirut that was heavily damaged in the Lebanese Civil War and rebuilt as a sign of the
-  Maronite community's endurance.
+  Beirut that was heavily damaged in the Lebanese Civil War and rebuilt as a sign of the Maronite
+  community's endurance.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: My Catholic Guide / Catholic Guidance (Supabase)
-    url: null
-    note: Imported from churches.st-george-maronite-cathedral-beirut
+  - source_type: scholarship
+    reference: Holy See Press Office, Jubilee of Mercy press conference (4 December 2015)
+    url: https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2015/12/04/0958/02144.html
+    note: Lists San Giorgio in the Maronite Archdiocese of Beirut among cathedrals preparing Holy Doors
+      for the Jubilee of Mercy.
 relationships:
   broader: []
   narrower: []
   related:
     - person.st-george
-notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
-  source enrichment and theological review before promotion.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: import-mcg-entities
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
-    are attached.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T03:42:56.885Z
+  rationale: Verified approved Vatican-domain URL (HTTP 200); supports the cathedral's dedication and
+    Maronite Beirut context.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review
