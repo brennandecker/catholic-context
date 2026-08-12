@@ -470,12 +470,6 @@ textarea.field {
   border-left: 1px solid var(--rule-soft);
 }
 
-.nav-tools .btn {
-  font-size: 12px;
-  min-height: 36px;
-  padding: 0.45rem 0.85rem;
-}
-
 .nav a:hover,
 .nav a[aria-current='page'] {
   color: var(--missal);
