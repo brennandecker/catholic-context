@@ -1,0 +1,35 @@
+# DRAFT — imported from Supabase; theological review pending
+id: institution.basilica-of-superga-turin
+title: Basilica of Superga
+entity_type: institution
+classification: null
+summary: A Baroque basilica perched on a hilltop above Turin, built by Filippo Juvarra as a
+  royal vow fulfilled after the 1706 siege, with sweeping views of the Alps.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: other
+    reference: My Catholic Guide / Catholic Guidance (Supabase)
+    url: null
+    note: Imported from churches.basilica-of-superga-turin
+relationships:
+  broader: []
+  narrower: []
+  related: []
+notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
+  source enrichment and theological review before promotion.
+source_fidelity:
+  representation: entity-metadata
+  confidence: 0.55
+  needs_theological_review: true
+  linkable_sources: false
+  assessed_by: import-mcg-entities
+  assessed_at: 2026-08-12T02:40:18.472Z
+  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
+    are attached.
+  unresolved_issues:
+    - Needs resolvable official source URLs
+    - Draft import pending human review

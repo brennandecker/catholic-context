@@ -1,0 +1,43 @@
+# DRAFT — imported from Supabase; theological review pending
+id: event.gaudium-et-spes-promulgated
+title: Gaudium et Spes Promulgated
+entity_type: event
+classification:
+  claim_type: historical-claim
+  certainty: not-applicable
+  note: null
+summary: In 1965, the Second Vatican Council promulgated Gaudium et Spes, the Pastoral
+  Constitution on the Church in the Modern World, declaring that the joys, hopes, griefs, and
+  anxieties of all people are shared by the Church — a document that redefined how Catholicism
+  relates to the modern world.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: other
+    reference: My Catholic Guide / Catholic Guidance (Supabase)
+    url: null
+    note: Imported from key_events.gaudium-et-spes-promulgated
+relationships:
+  broader: []
+  narrower: []
+  related:
+    - person.john-xxiii
+    - person.paul-vi
+    - person.paul-vi
+notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
+  source enrichment and theological review before promotion.
+source_fidelity:
+  representation: entity-metadata
+  confidence: 0.55
+  needs_theological_review: true
+  linkable_sources: false
+  assessed_by: import-mcg-entities
+  assessed_at: 2026-08-12T02:40:18.472Z
+  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
+    are attached.
+  unresolved_issues:
+    - Needs resolvable official source URLs
+    - Draft import pending human review

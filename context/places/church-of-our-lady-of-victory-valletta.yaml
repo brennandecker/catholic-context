@@ -1,0 +1,35 @@
+# DRAFT — imported from Supabase; theological review pending
+id: institution.church-of-our-lady-of-victory-valletta
+title: Church of Our Lady of Victory (Valletta)
+entity_type: institution
+classification: null
+summary: The first church built in Valletta after the Great Siege of 1565, where the Knights of
+  St. John gave thanks for their survival against the Ottoman fleet.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: other
+    reference: My Catholic Guide / Catholic Guidance (Supabase)
+    url: null
+    note: Imported from churches.church-of-our-lady-of-victory-valletta
+relationships:
+  broader: []
+  narrower: []
+  related: []
+notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
+  source enrichment and theological review before promotion.
+source_fidelity:
+  representation: entity-metadata
+  confidence: 0.55
+  needs_theological_review: true
+  linkable_sources: false
+  assessed_by: import-mcg-entities
+  assessed_at: 2026-08-12T02:40:18.472Z
+  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
+    are attached.
+  unresolved_issues:
+    - Needs resolvable official source URLs
+    - Draft import pending human review

@@ -1,0 +1,42 @@
+# DRAFT — imported from Supabase; theological review pending
+id: event.catechism-of-the-catholic-church-published
+title: Catechism of the Catholic Church Published
+entity_type: event
+classification:
+  claim_type: historical-claim
+  certainty: not-applicable
+  note: null
+summary: In 1992, Pope John Paul II promulgated the Catechism of the Catholic Church, the first
+  comprehensive catechism for the universal Church in over four hundred years, providing a
+  complete summary of Catholic belief, morality, prayer, and sacramental life in a single volume
+  accessible to every Catholic.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: other
+    reference: My Catholic Guide / Catholic Guidance (Supabase)
+    url: null
+    note: Imported from key_events.catechism-of-the-catholic-church-published
+relationships:
+  broader: []
+  narrower: []
+  related:
+    - person.john-paul-ii
+    - person.john-paul-ii
+notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
+  source enrichment and theological review before promotion.
+source_fidelity:
+  representation: entity-metadata
+  confidence: 0.55
+  needs_theological_review: true
+  linkable_sources: false
+  assessed_by: import-mcg-entities
+  assessed_at: 2026-08-12T02:40:18.472Z
+  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
+    are attached.
+  unresolved_issues:
+    - Needs resolvable official source URLs
+    - Draft import pending human review

@@ -1,0 +1,40 @@
+# DRAFT — imported from Supabase; theological review pending
+id: event.ferrara-florence-union-eastern-churches
+title: "Council of Ferrara-Florence: Union with Eastern Churches"
+entity_type: event
+classification:
+  claim_type: historical-claim
+  certainty: not-applicable
+  note: null
+summary: In 1439-1442, the Council of Florence achieved short-lived reunion agreements with the
+  Greek, Armenian, and Coptic churches, the closest the Catholic and Eastern churches came to
+  healing the Great Schism before the modern era.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: other
+    reference: My Catholic Guide / Catholic Guidance (Supabase)
+    url: null
+    note: Imported from key_events.ferrara-florence-union-eastern-churches
+relationships:
+  broader: []
+  narrower: []
+  related:
+    - person.pope-eugene-iv
+notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
+  source enrichment and theological review before promotion.
+source_fidelity:
+  representation: entity-metadata
+  confidence: 0.55
+  needs_theological_review: true
+  linkable_sources: false
+  assessed_by: import-mcg-entities
+  assessed_at: 2026-08-12T02:40:18.472Z
+  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
+    are attached.
+  unresolved_issues:
+    - Needs resolvable official source URLs
+    - Draft import pending human review

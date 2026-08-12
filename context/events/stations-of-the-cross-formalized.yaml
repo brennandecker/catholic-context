@@ -1,0 +1,41 @@
+# DRAFT — imported from Supabase; theological review pending
+id: event.stations-of-the-cross-formalized
+title: Stations of the Cross Formalized
+entity_type: event
+classification:
+  claim_type: historical-claim
+  certainty: not-applicable
+  note: null
+summary: By the early 1700s, the Franciscans had standardized the Stations of the Cross at
+  fourteen scenes from Christ's Passion, turning a centuries-old pilgrimage practice into the
+  devotion still prayed in nearly every Catholic church.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: other
+    reference: My Catholic Guide / Catholic Guidance (Supabase)
+    url: null
+    note: Imported from key_events.stations-of-the-cross-formalized
+relationships:
+  broader: []
+  narrower: []
+  related:
+    - person.leonard-of-port-maurice
+    - person.pope-clement-xii
+notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
+  source enrichment and theological review before promotion.
+source_fidelity:
+  representation: entity-metadata
+  confidence: 0.55
+  needs_theological_review: true
+  linkable_sources: false
+  assessed_by: import-mcg-entities
+  assessed_at: 2026-08-12T02:40:18.472Z
+  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
+    are attached.
+  unresolved_issues:
+    - Needs resolvable official source URLs
+    - Draft import pending human review

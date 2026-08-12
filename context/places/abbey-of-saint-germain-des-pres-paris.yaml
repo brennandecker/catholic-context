@@ -1,0 +1,37 @@
+# DRAFT — imported from Supabase; theological review pending
+id: institution.abbey-of-saint-germain-des-pres-paris
+title: Abbey of Saint-Germain-des-Prés
+entity_type: institution
+classification: null
+summary: The oldest church in Paris, founded in the sixth century on the Left Bank, with
+  Romanesque bones beneath nineteenth-century painted decoration and a long history as a center
+  of Benedictine scholarship.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: other
+    reference: My Catholic Guide / Catholic Guidance (Supabase)
+    url: null
+    note: Imported from churches.abbey-of-saint-germain-des-pres-paris
+relationships:
+  broader: []
+  narrower: []
+  related:
+    - person.st-germanus-of-paris
+notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
+  source enrichment and theological review before promotion.
+source_fidelity:
+  representation: entity-metadata
+  confidence: 0.55
+  needs_theological_review: true
+  linkable_sources: false
+  assessed_by: import-mcg-entities
+  assessed_at: 2026-08-12T02:40:18.472Z
+  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
+    are attached.
+  unresolved_issues:
+    - Needs resolvable official source URLs
+    - Draft import pending human review

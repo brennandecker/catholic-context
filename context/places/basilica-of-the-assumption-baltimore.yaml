@@ -1,0 +1,36 @@
+# DRAFT — imported from Supabase; theological review pending
+id: institution.basilica-of-the-assumption-baltimore
+title: Basilica of the National Shrine of the Assumption of the Blessed Virgin Mary
+entity_type: institution
+classification: null
+summary: The first Catholic cathedral built in the United States, designed by Benjamin Henry
+  Latrobe and completed in 1821, the mother church of American Catholicism.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: other
+    reference: My Catholic Guide / Catholic Guidance (Supabase)
+    url: null
+    note: Imported from churches.basilica-of-the-assumption-baltimore
+relationships:
+  broader: []
+  narrower: []
+  related:
+    - person.st-elizabeth-ann-seton
+notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
+  source enrichment and theological review before promotion.
+source_fidelity:
+  representation: entity-metadata
+  confidence: 0.55
+  needs_theological_review: true
+  linkable_sources: false
+  assessed_by: import-mcg-entities
+  assessed_at: 2026-08-12T02:40:18.472Z
+  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
+    are attached.
+  unresolved_issues:
+    - Needs resolvable official source URLs
+    - Draft import pending human review

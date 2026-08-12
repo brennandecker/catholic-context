@@ -1,0 +1,40 @@
+# DRAFT — imported from Supabase; theological review pending
+id: event.humanae-vitae-controversy
+title: Humanae Vitae and the Birth Control Controversy
+entity_type: event
+classification:
+  claim_type: historical-claim
+  certainty: not-applicable
+  note: null
+summary: In 1968, the pope overruled his own advisory commission and banned artificial
+  contraception. The backlash was immediate, massive, and permanently changed the relationship
+  between Catholic teaching authority and the laity.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: other
+    reference: My Catholic Guide / Catholic Guidance (Supabase)
+    url: null
+    note: Imported from key_events.humanae-vitae-controversy
+relationships:
+  broader: []
+  narrower: []
+  related:
+    - person.pope-paul-vi
+notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
+  source enrichment and theological review before promotion.
+source_fidelity:
+  representation: entity-metadata
+  confidence: 0.55
+  needs_theological_review: true
+  linkable_sources: false
+  assessed_by: import-mcg-entities
+  assessed_at: 2026-08-12T02:40:18.472Z
+  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
+    are attached.
+  unresolved_issues:
+    - Needs resolvable official source URLs
+    - Draft import pending human review

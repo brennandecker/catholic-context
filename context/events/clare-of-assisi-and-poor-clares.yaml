@@ -1,0 +1,43 @@
+# DRAFT — imported from Supabase; theological review pending
+id: event.clare-of-assisi-and-poor-clares
+title: Clare of Assisi Founds the Poor Clares
+entity_type: event
+classification:
+  claim_type: historical-claim
+  certainty: not-applicable
+  note: null
+summary: In 1212, the eighteen-year-old Clare of Assisi left her wealthy family to follow
+  Francis of Assisi's radical call to poverty, eventually founding the Order of Poor Ladies —
+  later called the Poor Clares — the first religious order for women to receive its own written
+  rule authored by a woman.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: other
+    reference: My Catholic Guide / Catholic Guidance (Supabase)
+    url: null
+    note: Imported from key_events.clare-of-assisi-and-poor-clares
+relationships:
+  broader: []
+  narrower: []
+  related:
+    - person.clare-of-assisi
+    - person.francis-of-assisi
+    - person.gregory-ix
+notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
+  source enrichment and theological review before promotion.
+source_fidelity:
+  representation: entity-metadata
+  confidence: 0.55
+  needs_theological_review: true
+  linkable_sources: false
+  assessed_by: import-mcg-entities
+  assessed_at: 2026-08-12T02:40:18.472Z
+  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
+    are attached.
+  unresolved_issues:
+    - Needs resolvable official source URLs
+    - Draft import pending human review

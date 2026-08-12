@@ -1,0 +1,35 @@
+# DRAFT — imported from Supabase; theological review pending
+id: person.st-damien-of-molokai
+title: St. Damien of Molokai
+entity_type: person
+classification: null
+summary: He volunteered for a leper colony where no one was expected to return — and one Sunday,
+  instead of saying ‘my fellow believers,’ he began his homily with ‘We lepers.’
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: other
+    reference: My Catholic Guide / Catholic Guidance (Supabase)
+    url: null
+    note: Imported from saints.st-damien-of-molokai
+relationships:
+  broader: []
+  narrower: []
+  related: []
+notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
+  source enrichment and theological review before promotion.
+source_fidelity:
+  representation: entity-metadata
+  confidence: 0.55
+  needs_theological_review: true
+  linkable_sources: false
+  assessed_by: import-mcg-entities
+  assessed_at: 2026-08-12T02:40:18.472Z
+  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
+    are attached.
+  unresolved_issues:
+    - Needs resolvable official source URLs
+    - Draft import pending human review

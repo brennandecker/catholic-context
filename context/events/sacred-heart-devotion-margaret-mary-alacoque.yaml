@@ -1,0 +1,43 @@
+# DRAFT — imported from Supabase; theological review pending
+id: event.sacred-heart-devotion-margaret-mary-alacoque
+title: Formalization of Sacred Heart Devotion
+entity_type: event
+classification:
+  claim_type: historical-claim
+  certainty: not-applicable
+  note: null
+summary: In the 1670s, a Visitation nun named Margaret Mary Alacoque reported visions of Christ
+  revealing his heart as a symbol of his love for humanity, launching a devotion that would
+  become one of the most widespread in the Catholic world.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: other
+    reference: My Catholic Guide / Catholic Guidance (Supabase)
+    url: null
+    note: Imported from key_events.sacred-heart-devotion-margaret-mary-alacoque
+relationships:
+  broader: []
+  narrower: []
+  related:
+    - person.margaret-mary-alacoque
+    - person.claude-de-la-colombiere
+    - person.pope-pius-ix
+    - person.pope-leo-xiii
+notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
+  source enrichment and theological review before promotion.
+source_fidelity:
+  representation: entity-metadata
+  confidence: 0.55
+  needs_theological_review: true
+  linkable_sources: false
+  assessed_by: import-mcg-entities
+  assessed_at: 2026-08-12T02:40:18.472Z
+  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
+    are attached.
+  unresolved_issues:
+    - Needs resolvable official source URLs
+    - Draft import pending human review

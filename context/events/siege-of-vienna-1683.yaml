@@ -1,0 +1,39 @@
+# DRAFT — imported from Supabase; theological review pending
+id: event.siege-of-vienna-1683
+title: Siege of Vienna (1683)
+entity_type: event
+classification:
+  claim_type: historical-claim
+  certainty: not-applicable
+  note: null
+summary: A coalition of Catholic forces led by the Polish King Jan III Sobieski broke the
+  Ottoman siege of Vienna in 1683, halting the last major Ottoman advance into central Europe.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: other
+    reference: My Catholic Guide / Catholic Guidance (Supabase)
+    url: null
+    note: Imported from key_events.siege-of-vienna-1683
+relationships:
+  broader: []
+  narrower: []
+  related:
+    - person.pope-innocent-xi
+notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
+  source enrichment and theological review before promotion.
+source_fidelity:
+  representation: entity-metadata
+  confidence: 0.55
+  needs_theological_review: true
+  linkable_sources: false
+  assessed_by: import-mcg-entities
+  assessed_at: 2026-08-12T02:40:18.472Z
+  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
+    are attached.
+  unresolved_issues:
+    - Needs resolvable official source URLs
+    - Draft import pending human review

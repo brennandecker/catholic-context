@@ -1,0 +1,41 @@
+# DRAFT — imported from Supabase; theological review pending
+id: event.mary-ward-founds-ibvm
+title: Mary Ward Founds the Institute of the Blessed Virgin Mary
+entity_type: event
+classification:
+  claim_type: historical-claim
+  certainty: not-applicable
+  note: null
+summary: In 1609, the English recusant Mary Ward founded a religious institute for women modeled
+  on the Jesuits, with no enclosure, no choir obligation, and a mission to educate girls — a
+  vision so radical that the Vatican suppressed it in her lifetime, only to see it vindicated
+  centuries later.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: other
+    reference: My Catholic Guide / Catholic Guidance (Supabase)
+    url: null
+    note: Imported from key_events.mary-ward-founds-ibvm
+relationships:
+  broader: []
+  narrower: []
+  related:
+    - person.urban-viii
+notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
+  source enrichment and theological review before promotion.
+source_fidelity:
+  representation: entity-metadata
+  confidence: 0.55
+  needs_theological_review: true
+  linkable_sources: false
+  assessed_by: import-mcg-entities
+  assessed_at: 2026-08-12T02:40:18.472Z
+  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
+    are attached.
+  unresolved_issues:
+    - Needs resolvable official source URLs
+    - Draft import pending human review

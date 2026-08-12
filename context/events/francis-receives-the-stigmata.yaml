@@ -1,0 +1,41 @@
+# DRAFT — imported from Supabase; theological review pending
+id: event.francis-receives-the-stigmata
+title: St. Francis of Assisi Receives the Stigmata
+entity_type: event
+classification:
+  claim_type: historical-claim
+  certainty: not-applicable
+  note: null
+summary: In 1224, while praying on Mount La Verna, Francis of Assisi received the stigmata — the
+  wounds of Christ in his hands, feet, and side — becoming the first recorded person to bear
+  these marks.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: other
+    reference: My Catholic Guide / Catholic Guidance (Supabase)
+    url: null
+    note: Imported from key_events.francis-receives-the-stigmata
+relationships:
+  broader: []
+  narrower: []
+  related:
+    - person.francis-of-assisi
+    - person.pope-gregory-ix
+notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
+  source enrichment and theological review before promotion.
+source_fidelity:
+  representation: entity-metadata
+  confidence: 0.55
+  needs_theological_review: true
+  linkable_sources: false
+  assessed_by: import-mcg-entities
+  assessed_at: 2026-08-12T02:40:18.472Z
+  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
+    are attached.
+  unresolved_issues:
+    - Needs resolvable official source URLs
+    - Draft import pending human review

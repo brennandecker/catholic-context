@@ -1,0 +1,40 @@
+# DRAFT — imported from Supabase; theological review pending
+id: event.pius-xi-catholic-action-movement
+title: Pius XI and the Catholic Action Movement
+entity_type: event
+classification:
+  claim_type: historical-claim
+  certainty: not-applicable
+  note: null
+summary: Throughout his pontificate (1922–1939), Pope Pius XI championed Catholic Action — the
+  organized participation of laypeople in the Church's mission — making it a centerpiece of
+  Catholic life in dozens of countries.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: other
+    reference: My Catholic Guide / Catholic Guidance (Supabase)
+    url: null
+    note: Imported from key_events.pius-xi-catholic-action-movement
+relationships:
+  broader: []
+  narrower: []
+  related:
+    - person.pope-pius-xi
+notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
+  source enrichment and theological review before promotion.
+source_fidelity:
+  representation: entity-metadata
+  confidence: 0.55
+  needs_theological_review: true
+  linkable_sources: false
+  assessed_by: import-mcg-entities
+  assessed_at: 2026-08-12T02:40:18.472Z
+  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
+    are attached.
+  unresolved_issues:
+    - Needs resolvable official source URLs
+    - Draft import pending human review

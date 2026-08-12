@@ -1,0 +1,41 @@
+# DRAFT — imported from Supabase; theological review pending
+id: event.dominus-iesus-interreligious-dialogue
+title: "Dominus Iesus: Christ and Interreligious Dialogue"
+entity_type: event
+classification:
+  claim_type: historical-claim
+  certainty: not-applicable
+  note: null
+summary: In 2000, the Congregation for the Doctrine of the Faith issued Dominus Iesus, a
+  declaration reaffirming that Jesus Christ is the sole and universal savior and that the
+  Catholic Church possesses the fullness of the means of salvation — a statement that caused a
+  furor in ecumenical and interreligious circles.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: other
+    reference: My Catholic Guide / Catholic Guidance (Supabase)
+    url: null
+    note: Imported from key_events.dominus-iesus-interreligious-dialogue
+relationships:
+  broader: []
+  narrower: []
+  related:
+    - person.john-paul-ii
+notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
+  source enrichment and theological review before promotion.
+source_fidelity:
+  representation: entity-metadata
+  confidence: 0.55
+  needs_theological_review: true
+  linkable_sources: false
+  assessed_by: import-mcg-entities
+  assessed_at: 2026-08-12T02:40:18.472Z
+  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
+    are attached.
+  unresolved_issues:
+    - Needs resolvable official source URLs
+    - Draft import pending human review

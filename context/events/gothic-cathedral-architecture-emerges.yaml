@@ -1,0 +1,39 @@
+# DRAFT — imported from Supabase; theological review pending
+id: event.gothic-cathedral-architecture-emerges
+title: Birth of Gothic Cathedral Architecture
+entity_type: event
+classification:
+  claim_type: historical-claim
+  certainty: not-applicable
+  note: null
+summary: In the 1140s, Abbot Suger rebuilt the choir of the Abbey Church of Saint-Denis near
+  Paris using pointed arches, ribbed vaults, and walls of stained glass, launching the Gothic
+  style that would define Catholic architecture for three centuries.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: other
+    reference: My Catholic Guide / Catholic Guidance (Supabase)
+    url: null
+    note: Imported from key_events.gothic-cathedral-architecture-emerges
+relationships:
+  broader: []
+  narrower: []
+  related: []
+notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
+  source enrichment and theological review before promotion.
+source_fidelity:
+  representation: entity-metadata
+  confidence: 0.55
+  needs_theological_review: true
+  linkable_sources: false
+  assessed_by: import-mcg-entities
+  assessed_at: 2026-08-12T02:40:18.472Z
+  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
+    are attached.
+  unresolved_issues:
+    - Needs resolvable official source URLs
+    - Draft import pending human review

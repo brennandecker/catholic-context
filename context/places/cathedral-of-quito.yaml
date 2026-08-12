@@ -1,0 +1,36 @@
+# DRAFT — imported from Supabase; theological review pending
+id: institution.cathedral-of-quito
+title: Cathedral of Quito
+entity_type: institution
+classification: null
+summary: Ecuador's oldest cathedral, standing on the Plaza Grande since the sixteenth century,
+  where conquistadors and saints and ordinary believers have all knelt on the same stone floor.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: other
+    reference: My Catholic Guide / Catholic Guidance (Supabase)
+    url: null
+    note: Imported from churches.cathedral-of-quito
+relationships:
+  broader: []
+  narrower: []
+  related:
+    - person.st-mariana-de-jesus
+notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
+  source enrichment and theological review before promotion.
+source_fidelity:
+  representation: entity-metadata
+  confidence: 0.55
+  needs_theological_review: true
+  linkable_sources: false
+  assessed_by: import-mcg-entities
+  assessed_at: 2026-08-12T02:40:18.472Z
+  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
+    are attached.
+  unresolved_issues:
+    - Needs resolvable official source URLs
+    - Draft import pending human review

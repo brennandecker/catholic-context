@@ -1,0 +1,40 @@
+# DRAFT — imported from Supabase; theological review pending
+id: event.our-lady-of-knock-apparition
+title: Our Lady of Knock Apparition
+entity_type: event
+classification:
+  claim_type: historical-claim
+  certainty: not-applicable
+  note: null
+summary: Fifteen villagers in western Ireland saw a silent apparition of Mary, Joseph, John the
+  Evangelist, and a lamb on an altar against the gable wall of their parish church during a
+  driving rainstorm.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: other
+    reference: My Catholic Guide / Catholic Guidance (Supabase)
+    url: null
+    note: Imported from key_events.our-lady-of-knock-apparition
+relationships:
+  broader: []
+  narrower: []
+  related:
+    - person.pope-john-paul-ii
+notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
+  source enrichment and theological review before promotion.
+source_fidelity:
+  representation: entity-metadata
+  confidence: 0.55
+  needs_theological_review: true
+  linkable_sources: false
+  assessed_by: import-mcg-entities
+  assessed_at: 2026-08-12T02:40:18.472Z
+  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
+    are attached.
+  unresolved_issues:
+    - Needs resolvable official source URLs
+    - Draft import pending human review

@@ -1,0 +1,41 @@
+# DRAFT — imported from Supabase; theological review pending
+id: event.martyrdom-of-justin-martyr
+title: Martyrdom of Justin Martyr
+entity_type: event
+classification:
+  claim_type: historical-claim
+  certainty: not-applicable
+  note: null
+summary: Around 165 AD, Justin, a philosopher who had converted to Christianity and become its
+  most articulate early defender, was beheaded in Rome along with six companions after refusing
+  to sacrifice to the Roman gods, leaving behind writings that shaped how the Church explained
+  its faith to the outside world.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: other
+    reference: My Catholic Guide / Catholic Guidance (Supabase)
+    url: null
+    note: Imported from key_events.martyrdom-of-justin-martyr
+relationships:
+  broader: []
+  narrower: []
+  related:
+    - person.justin-martyr
+notes: Imported as draft entity metadata from Supabase. Not a narrative product import. Requires
+  source enrichment and theological review before promotion.
+source_fidelity:
+  representation: entity-metadata
+  confidence: 0.55
+  needs_theological_review: true
+  linkable_sources: false
+  assessed_by: import-mcg-entities
+  assessed_at: 2026-08-12T02:40:18.472Z
+  rationale: Bulk-imported entity metadata. Confidence is provisional until official source links
+    are attached.
+  unresolved_issues:
+    - Needs resolvable official source URLs
+    - Draft import pending human review
