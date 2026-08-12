@@ -536,6 +536,54 @@ a:hover {
   pointer-events: none;
 }
 
+.knowledge-detail__header {
+  margin-bottom: var(--space-7);
+}
+
+.knowledge-detail__header .meta[aria-label='Breadcrumb'] {
+  margin-bottom: var(--space-5);
+}
+
+.knowledge-detail__title {
+  max-width: 18ch;
+}
+
+.knowledge-detail__layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.knowledge-detail__main {
+  min-width: 0;
+  max-width: var(--reading);
+}
+
+.knowledge-detail__aside-inner {
+  position: static;
+}
+
+@media (min-width: 1024px) {
+  .knowledge-detail__layout {
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+    gap: var(--space-8);
+  }
+
+  .knowledge-detail__main {
+    max-width: none;
+  }
+
+  .knowledge-detail__main .prose {
+    max-width: var(--reading);
+  }
+
+  .knowledge-detail__aside-inner {
+    position: sticky;
+    top: 96px;
+  }
+}
+
 .source-meter {
   margin: 0;
   padding: var(--space-4);

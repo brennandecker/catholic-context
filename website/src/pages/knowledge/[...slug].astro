@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ReviewBadge from '../../components/ReviewBadge.astro';
-import SourceMatchMeter from '../../components/SourceMatchMeter.astro';
 import SourceList from '../../components/SourceList.astro';
 import SourceFidelity from '../../components/SourceFidelity.astro';
 import Provenance from '../../components/Provenance.astro';
@@ -37,96 +36,103 @@ const related = relatedIds
   description={object.summary}
   canonicalPath={`/knowledge/${entry.slug}`}
 >
-  <article class="section-tight shell fade-in">
-    <nav class="meta" aria-label="Breadcrumb" style="margin-bottom: var(--space-5);">
-      <a href="/knowledge">Knowledge</a>
-      {crumbs.slice(0, -1).map((crumb) => (
-        <>
-          <span aria-hidden="true"> / </span>
-          <span>{crumb.replace(/-/g, ' ')}</span>
-        </>
-      ))}
-    </nav>
+  <article class="section-tight shell fade-in knowledge-detail">
+    <header class="knowledge-detail__header">
+      <nav class="meta" aria-label="Breadcrumb">
+        <a href="/knowledge">Knowledge</a>
+        {crumbs.slice(0, -1).map((crumb) => (
+          <>
+            <span aria-hidden="true"> / </span>
+            <span>{crumb.replace(/-/g, ' ')}</span>
+          </>
+        ))}
+      </nav>
 
-    <p class="eyebrow">
-      {crumbs
-        .slice(0, -1)
-        .map((c) => c.replace(/-/g, ' '))
-        .join(' / ')
-        .toUpperCase() || object.entity_type.toUpperCase()}
-    </p>
+      <p class="eyebrow">
+        {crumbs
+          .slice(0, -1)
+          .map((c) => c.replace(/-/g, ' '))
+          .join(' / ')
+          .toUpperCase() || object.entity_type.toUpperCase()}
+      </p>
 
-    <h1 class="h1" style="max-width: 16ch;">{object.title}</h1>
+      <h1 class="h1 knowledge-detail__title">{object.title}</h1>
 
-    <div class="index-row__meta" style="margin-bottom: var(--space-5);">
-      <span class="meta">{object.entity_type}</span>
-      {claim && <span class="meta">{claim}</span>}
-      <ReviewBadge status={object.review.status} />
-    </div>
-
-    {object.source_fidelity && (
-      <div style="max-width: 28rem; margin-bottom: var(--space-6);">
-        <SourceMatchMeter confidence={object.source_fidelity.confidence} />
+      <div class="index-row__meta">
+        <span class="meta">{object.entity_type}</span>
+        {claim && <span class="meta">{claim}</span>}
+        <ReviewBadge status={object.review.status} />
       </div>
-    )}
+    </header>
 
-    <section aria-labelledby="summary-heading" class="prose">
-      <h2 class="h3" id="summary-heading">Summary</h2>
-      <p>{object.summary}</p>
-      {object.classification?.note && (
-        <p class="marginalia">{object.classification.note}</p>
-      )}
-    </section>
-
-    <hr class="rule" />
-
-    <SourceList sources={object.sources} />
-
-    {object.notes && (
-      <>
-        <hr class="rule-soft" />
-        <section aria-labelledby="notes-heading" class="prose">
-          <h2 class="h3" id="notes-heading">Understanding the Teaching</h2>
-          <p>{object.notes}</p>
+    <div class="knowledge-detail__layout">
+      <div class="knowledge-detail__main">
+        <section aria-labelledby="summary-heading" class="prose">
+          <h2 class="h3" id="summary-heading">Summary</h2>
+          <p>{object.summary}</p>
+          {object.classification?.note && (
+            <p class="marginalia">{object.classification.note}</p>
+          )}
         </section>
-      </>
-    )}
 
-    <hr class="rule-soft" />
+        <hr class="rule" />
 
-    <section aria-labelledby="related-heading">
-      <h2 class="h3" id="related-heading">Related Context</h2>
-      {related.length > 0 ? (
-        <ul class="stack" style="list-style:none; padding:0;">
-          {related.map((item) => (
-            <li>
-              <a href={`/knowledge/${item.slug}`}>{item.object.title}</a>
-            </li>
-          ))}
-        </ul>
-      ) : (
+        <SourceList sources={object.sources} />
+
+        {object.notes && (
+          <>
+            <hr class="rule-soft" />
+            <section aria-labelledby="notes-heading" class="prose">
+              <h2 class="h3" id="notes-heading">Understanding the Teaching</h2>
+              <p>{object.notes}</p>
+            </section>
+          </>
+        )}
+
+        <hr class="rule-soft" />
+
+        <section aria-labelledby="related-heading">
+          <h2 class="h3" id="related-heading">Related Context</h2>
+          {related.length > 0 ? (
+            <ul class="stack" style="list-style:none; padding:0;">
+              {related.map((item) => (
+                <li>
+                  <a href={`/knowledge/${item.slug}`}>{item.object.title}</a>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p>
+              Related identifiers are recorded
+              {relatedIds.length > 0 ? ` (${relatedIds.join(', ')})` : ''}, but matching
+              entries are not yet present in the repository.
+            </p>
+          )}
+        </section>
+
+        <hr class="rule-soft" />
+
+        <Provenance entry={entry} />
+
+        <hr class="rule" />
+
         <p>
-          Related identifiers are recorded
-          {relatedIds.length > 0 ? ` (${relatedIds.join(', ')})` : ''}, but matching
-          entries are not yet present in the repository.
+          <a
+            class="btn btn-primary"
+            href={correctionIssueUrl(object.id)}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Suggest a Correction →
+          </a>
         </p>
-      )}
-    </section>
+      </div>
 
-    <hr class="rule-soft" />
-
-    <SourceFidelity fidelity={object.source_fidelity} />
-
-    <hr class="rule-soft" />
-
-    <Provenance entry={entry} />
-
-    <hr class="rule" />
-
-    <p>
-      <a class="btn btn-primary" href={correctionIssueUrl(object.id)} rel="noopener noreferrer" target="_blank">
-        Suggest a Correction →
-      </a>
-    </p>
+      <aside class="knowledge-detail__aside" aria-label="Source fidelity">
+        <div class="knowledge-detail__aside-inner">
+          <SourceFidelity fidelity={object.source_fidelity} />
+        </div>
+      </aside>
+    </div>
   </article>
 </BaseLayout>
