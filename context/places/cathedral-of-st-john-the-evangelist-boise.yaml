@@ -1,37 +1,35 @@
-# DRAFT — source locators pending; theological review pending
 id: institution.cathedral-of-st-john-the-evangelist-boise
 title: Cathedral of St. John the Evangelist
 entity_type: institution
 classification: null
-summary: The cathedral of the Diocese of Boise, a sandstone Romanesque Revival church in
-  downtown Idaho that has served the state's scattered Catholic community since 1921.
+summary: The cathedral of the Diocese of Boise, a sandstone Romanesque Revival church in downtown
+  Idaho that has served the state's scattered Catholic community since 1921.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: "USCCB, Bishops and Dioceses by State: Diocese of Boise"
+    url: https://www.usccb.org/about/bishops-and-dioceses/all-dioceses
+    note: Approved USCCB diocesan locator for Boise; page identifies the Diocese of Boise and bishop but
+      not the cathedral title.
 relationships:
   broader: []
   narrower: []
   related:
     - person.st-john-the-evangelist
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
   confidence: 0.55
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:43:18.711Z
+  rationale: Indirect USCCB diocese locator only; exact approved page naming the Boise cathedral was
+    not found.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

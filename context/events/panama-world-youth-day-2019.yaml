@@ -1,4 +1,3 @@
-# DRAFT — source locators pending; theological review pending
 id: event.panama-world-youth-day-2019
 title: World Youth Day in Panama (2019)
 entity_type: event
@@ -6,36 +5,35 @@ classification:
   claim_type: historical-claim
   certainty: not-applicable
   note: null
-summary: In January 2019, Pope Francis presided over World Youth Day in Panama City, drawing
-  over 700,000 young people and highlighting the growth of the Catholic Church in Latin America
-  and the Global South.
+summary: In January 2019, Pope Francis presided over World Youth Day in Panama City, drawing over
+  700,000 young people and highlighting the growth of the Catholic Church in Latin America and the
+  Global South.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: "Vatican: Apostolic Journey to Panama for the 34th World Youth Day"
+    url: https://www.vatican.va/content/francesco/en/travels/2019/outside/documents/papa-francesco-gmg-panama-2019.html
+    note: Approved Vatican journey page identifies Pope Francis' Panama trip on the occasion of the 34th
+      World Youth Day, 23-28 January 2019.
 relationships:
   broader: []
   narrower: []
   related:
     - person.pope-francis
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.723Z
+  rationale: Official Vatican locator verifies the Panama WYD event and dates; it does not confirm the
+    700,000 attendance figure in the draft summary; URL verified HTTP 200.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

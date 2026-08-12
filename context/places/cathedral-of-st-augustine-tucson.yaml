@@ -1,4 +1,3 @@
-# DRAFT — source locators pending; theological review pending
 id: institution.cathedral-of-st-augustine-tucson
 title: Cathedral of St. Augustine
 entity_type: institution
@@ -11,27 +10,26 @@ review:
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: "CatholicCulture.org, Liturgical Calendar: Memorial of St. Augustine (28 Aug. 2025)"
+    url: https://www.catholicculture.org/culture/liturgicalyear/calendar/day.cfm?date=2025-08-28
+    note: Approved CatholicCulture page lists St. Augustine's patronage of the Diocese of Tucson;
+      indirect support for the Tucson cathedral title.
 relationships:
   broader: []
   narrower: []
   related:
     - person.st-augustine-of-hippo
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
   confidence: 0.55
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:43:18.697Z
+  rationale: Indirect patronage/diocese locator only; exact approved page naming Cathedral of St.
+    Augustine, Tucson was not found.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

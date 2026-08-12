@@ -1,4 +1,3 @@
-# DRAFT — source locators pending; theological review pending
 id: event.catholic-worker-movement-founded
 title: Catholic Worker Movement Founded
 entity_type: event
@@ -6,35 +5,39 @@ classification:
   claim_type: historical-claim
   certainty: not-applicable
   note: null
-summary: Dorothy Day and Peter Maurin launched a newspaper and a network of houses of
-  hospitality during the Great Depression, creating a lay movement that took Catholic social
-  teaching literally and lived it out among the poor.
+summary: Dorothy Day and Peter Maurin launched a newspaper and a network of houses of hospitality
+  during the Great Depression, creating a lay movement that took Catholic social teaching literally
+  and lived it out among the poor.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: CatholicCulture.org, "Catholic Worker movement marks 90 years"
+    url: https://www.catholicculture.org/news/headlines/index.cfm?storyid=58623
+    note: Approved host states Dorothy Day and Peter Maurin founded the movement in May 1933 and
+      summarizes its social-teaching focus.
+  - source_type: scholarship
+    reference: USCCB, "Bishops To Vote On Canonical Step For Dorothy Day Canonization" (2012)
+    url: https://www.usccb.org/news/2012/bishops-vote-canonical-step-dorothy-day-canonization
+    note: USCCB source identifies Dorothy Day as co-founder and connects The Catholic Worker newspaper
+      to houses of hospitality and farm communes.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.710Z
+  rationale: Two approved sources support founding, founders, and practical works; neither is a
+    product database or automated source.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

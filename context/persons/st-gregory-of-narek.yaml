@@ -1,36 +1,37 @@
-# DRAFT — source locators pending; theological review pending
 id: person.st-gregory-of-narek
 title: Gregory of Narek
 entity_type: person
 classification: null
-summary: An Armenian monk and mystical poet whose prayers express profound sorrow for sin and
-  love for God.
+summary: An Armenian monk and mystical poet whose prayers express profound sorrow for sin and love for God.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: Vatican, Decree on the Doctors in the General Roman Calendar
+    url: https://www.vatican.va/roman_curia/congregations/ccdds/documents/rc_con_ccdds_doc_20210125_decreto-dottori_en.html
+    note: Official Vatican decree identifies Saint Gregory of Narek as abbot and Doctor of the Church.
+  - source_type: scholarship
+    reference: New Advent Catholic Encyclopedia, "Armenia"
+    url: https://www.newadvent.org/cathen/01736b.htm
+    note: Mentions Gregory of Narek as an Armenian literary figure whose works include elegies, odes,
+      panegyrics, and homilies.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.672Z
+  rationale: Both approved URLs verified HTTP 200; together they support ecclesial recognition and the
+    Armenian writer-poet summary.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

@@ -25,3 +25,11 @@ cd website && npm run build
 ```
 
 Catholic Context Explore still reads **git YAML at build time**, not Supabase live. Supabase is the extract source; the repo remains canonical for the open knowledge layer.
+
+## `strip-product-attribution.mjs`
+
+Removes My Catholic Guide / Supabase citations from `sources[]` and replaces them with the provisional pending locator.
+
+## `apply-source-research.mjs`
+
+Applies researched approved-host locators from a JSON/JSONL research file into entity YAML (`source_type` / `reference` / `url` / `note`).

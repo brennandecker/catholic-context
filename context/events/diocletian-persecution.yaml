@@ -1,4 +1,3 @@
-# DRAFT — source locators pending; theological review pending
 id: event.diocletian-persecution
 title: The Great Persecution under Diocletian
 entity_type: event
@@ -6,20 +5,20 @@ classification:
   claim_type: historical-claim
   certainty: not-applicable
   note: null
-summary: The Roman Empire launched its most systematic attempt to wipe out Christianity.
-  Churches were destroyed, Scriptures burned, and thousands were killed. A decade later, the
-  persecution was over and the empire was Christian.
+summary: The Roman Empire launched its most systematic attempt to wipe out Christianity. Churches
+  were destroyed, Scriptures burned, and thousands were killed. A decade later, the persecution was
+  over and the empire was Christian.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: Aveling, Francis. "Diocletian." The Catholic Encyclopedia. New Advent.
+    url: https://www.newadvent.org/cathen/05007b.htm
+    note: Entry describes the persecution edicts, destruction of churches and Scriptures, and the
+      persecution's severity.
 relationships:
   broader: []
   narrower: []
@@ -28,17 +27,15 @@ relationships:
     - person.st-agnes
     - person.st-lucy
     - person.pope-marcellinus
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.699Z
+  rationale: Approved source supports the Great Persecution narrative and notes Galerius's major role.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

@@ -1,36 +1,33 @@
-# DRAFT — source locators pending; theological review pending
 id: person.st-paschal-baylon
 title: St. Paschal Baylon
 entity_type: person
 classification: null
-summary: A shepherd boy who taught himself to read using books borrowed from passing travelers —
-  and spent the rest of his life kneeling before the tabernacle.
+summary: A shepherd boy who taught himself to read using books borrowed from passing travelers — and
+  spent the rest of his life kneeling before the tabernacle.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: New Advent Catholic Encyclopedia, "St. Pascal Baylon"
+    url: https://www.newadvent.org/cathen/11512a.htm
+    note: Identifies Paschal/Pascal Baylon as a Franciscan lay brother known for Eucharistic devotion
+      and later patronage of Eucharistic congresses.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.677Z
+  rationale: Approved New Advent URL verified HTTP 200; spelling variant Pascal/Paschal matches the entity.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

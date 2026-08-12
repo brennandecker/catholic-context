@@ -1,4 +1,3 @@
-# DRAFT — source locators pending; theological review pending
 id: event.mary-ward-founds-ibvm
 title: Mary Ward Founds the Institute of the Blessed Virgin Mary
 entity_type: event
@@ -6,37 +5,35 @@ classification:
   claim_type: historical-claim
   certainty: not-applicable
   note: null
-summary: In 1609, the English recusant Mary Ward founded a religious institute for women modeled
-  on the Jesuits, with no enclosure, no choir obligation, and a mission to educate girls — a
-  vision so radical that the Vatican suppressed it in her lifetime, only to see it vindicated
-  centuries later.
+summary: In 1609, the English recusant Mary Ward founded a religious institute for women modeled on
+  the Jesuits, with no enclosure, no choir obligation, and a mission to educate girls — a vision so
+  radical that the Vatican suppressed it in her lifetime, only to see it vindicated centuries later.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: "Catholic Encyclopedia: Mary Ward"
+    url: https://www.newadvent.org/cathen/15551c.htm
+    note: Covers Mary Ward's 1609 St-Omer community, schools, Jesuit-inspired active model, lack of
+      enclosure, and opposition to the institute.
 relationships:
   broader: []
   narrower: []
   related:
     - person.urban-viii
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.627Z
+  rationale: Verified 200. Direct biography supports the foundation, non-enclosed active model, and
+    controversy; use cautiously for later vindication details.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

@@ -1,4 +1,3 @@
-# DRAFT — source locators pending; theological review pending
 id: event.divino-afflante-spiritu-modern-biblical-studies
 title: Divino Afflante Spiritu Opens Modern Biblical Studies
 entity_type: event
@@ -7,36 +6,34 @@ classification:
   certainty: not-applicable
   note: null
 summary: In 1943, Pope Pius XII issued Divino Afflante Spiritu, an encyclical that encouraged
-  Catholic scholars to use modern historical and literary methods to study the Bible,
-  effectively reversing decades of suspicion toward critical scholarship and launching a new era
-  of Catholic biblical studies.
+  Catholic scholars to use modern historical and literary methods to study the Bible, effectively
+  reversing decades of suspicion toward critical scholarship and launching a new era of Catholic
+  biblical studies.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: Vatican, Pius XII, "Divino Afflante Spiritu"
+    url: https://www.vatican.va/content/pius-xii/en/encyclicals/documents/hf_p-xii_enc_30091943_divino-afflante-spiritu.html
+    note: Official encyclical text supports the 1943 issuance and encouragement of Catholic biblical
+      scholarship using original languages and literary-historical study.
 relationships:
   broader: []
   narrower: []
   related:
     - person.pius-xii
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.755Z
+  rationale: Approved Vatican URL verified; official primary text directly supports the event.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

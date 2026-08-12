@@ -1,38 +1,36 @@
-# DRAFT — source locators pending; theological review pending
 id: institution.cathedral-of-dubrovnik
 title: Cathedral of the Assumption of the Virgin Mary (Dubrovnik)
 entity_type: institution
 classification: null
-summary: A Baroque cathedral in the walled city of Dubrovnik, rebuilt after the catastrophic
-  1667 earthquake, housing a treasury of medieval reliquaries including a reliquary of the head
-  of St. Blaise, the city's patron.
+summary: A Baroque cathedral in the walled city of Dubrovnik, rebuilt after the catastrophic 1667
+  earthquake, housing a treasury of medieval reliquaries including a reliquary of the head of St.
+  Blaise, the city's patron.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: "Vatican, Pope Francis letters index (2015): St. Blaise celebrations, Dubrovnik"
+    url: https://www.vatican.va/content/francesco/en/letters/2015.html
+    note: Approved Vatican index lists a letter for celebrations in Dubrovnik commemorating St. Blaise,
+      patron of the Diocese of Dubrovnik; it does not name the cathedral building.
 relationships:
   broader: []
   narrower: []
   related:
     - person.st-blaise
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
   confidence: 0.55
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:43:18.715Z
+  rationale: Indirect diocesan/patron locator for Dubrovnik only; exact approved cathedral-title
+    source not found.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

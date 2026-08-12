@@ -1,4 +1,3 @@
-# DRAFT — source locators pending; theological review pending
 id: event.canonization-process-reformed
 title: Reform of the Canonization Process
 entity_type: event
@@ -6,35 +5,33 @@ classification:
   claim_type: historical-claim
   certainty: not-applicable
   note: null
-summary: In 1983, John Paul II overhauled how the Church makes saints, streamlining a process
-  that had become so slow and expensive that holiness needed a budget to be recognized.
+summary: In 1983, John Paul II overhauled how the Church makes saints, streamlining a process that
+  had become so slow and expensive that holiness needed a budget to be recognized.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: John Paul II, Apostolic Constitution Divinus Perfectionis Magister (25 January 1983)
+    url: https://www.vatican.va/content/john-paul-ii/en/apost_constitutions/documents/hf_jp-ii_apc_25011983_divinus-perfectionis-magister.html
+    note: Primary Vatican text promulgating the 1983 reform of procedures for causes of canonization and
+      beatification.
 relationships:
   broader: []
   narrower: []
   related:
     - person.pope-john-paul-ii
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.840Z
+  rationale: Verified Vatican document directly supports the reform event and date.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

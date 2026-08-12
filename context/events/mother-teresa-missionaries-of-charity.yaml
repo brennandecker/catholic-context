@@ -1,4 +1,3 @@
-# DRAFT — source locators pending; theological review pending
 id: event.mother-teresa-missionaries-of-charity
 title: Mother Teresa Founds the Missionaries of Charity
 entity_type: event
@@ -6,37 +5,36 @@ classification:
   claim_type: historical-claim
   certainty: not-applicable
   note: null
-summary: A small Albanian nun left her teaching order to serve the dying poor of Calcutta,
-  founding a religious community that grew into one of the most recognized Catholic institutions
-  in the modern world.
+summary: A small Albanian nun left her teaching order to serve the dying poor of Calcutta, founding
+  a religious community that grew into one of the most recognized Catholic institutions in the
+  modern world.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: "Vatican biography: Mother Teresa of Calcutta"
+    url: https://www.vatican.va/news_services/liturgy/saints/ns_lit_doc_20031019_madre-teresa_en.html
+    note: Official Vatican biography recounts Mother Teresa's call within a call, permission to begin,
+      and establishment of the Missionaries of Charity for the poorest of the poor.
 relationships:
   broader: []
   narrower: []
   related:
     - person.mother-teresa
     - person.pope-pius-xii
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.637Z
+  rationale: Verified 200. Vatican source supports the foundation narrative and the community's
+    mission in Calcutta.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

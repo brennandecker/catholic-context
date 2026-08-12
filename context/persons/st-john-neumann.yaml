@@ -1,37 +1,35 @@
-# DRAFT — source locators pending; theological review pending
 id: person.st-john-neumann
 title: St. John Neumann
 entity_type: person
 classification: null
 summary: A Bohemian immigrant who spoke twelve languages, walked Philadelphia's streets in a
-  threadbare coat, and built nearly a hundred Catholic schools before dropping dead at
-  forty-eight.
+  threadbare coat, and built nearly a hundred Catholic schools before dropping dead at forty-eight.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: Vatican, Paul VI, Canonization of John Nepomucene Neumann (June 19, 1977)
+    url: https://www.vatican.va/content/paul-vi/en/homilies/1977/documents/hf_p-vi_hom_19770619.html
+    note: Official Vatican canonization homily identifying John Nepomucene Neumann as Bishop of
+      Philadelphia, immigrant missionary from Bohemia, Redemptorist, and first canonized U.S.
+      bishop.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:09:13.350Z
+  rationale: Approved Vatican source directly verifies canonization and key biographical claims for
+    St. John Neumann.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

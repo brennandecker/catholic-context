@@ -1,36 +1,32 @@
-# DRAFT — source locators pending; theological review pending
 id: person.st-margaret-of-scotland
 title: St. Margaret of Scotland
 entity_type: person
 classification: null
-summary: A refugee princess washed beggars' feet and reformed a nation's liturgy — all while
-  raising eight children and managing a warrior king.
+summary: A refugee princess washed beggars' feet and reformed a nation's liturgy — all while raising
+  eight children and managing a warrior king.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, "St. Margaret of Scotland," New Advent
+    url: https://www.newadvent.org/cathen/09655c.htm
+    note: Entry covers Margaret's royal life, charity, reforms, family, death, and veneration.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.853Z
+  rationale: Verified New Advent Catholic Encyclopedia article directly matches the entity.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

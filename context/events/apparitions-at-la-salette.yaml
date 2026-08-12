@@ -1,4 +1,3 @@
-# DRAFT — source locators pending; theological review pending
 id: event.apparitions-at-la-salette
 title: Apparitions at La Salette
 entity_type: event
@@ -6,35 +5,34 @@ classification:
   claim_type: historical-claim
   certainty: not-applicable
   note: null
-summary: In 1846, two young shepherd children in the French Alps reported seeing the Blessed
-  Virgin Mary weeping, delivering a message of repentance that became one of the earliest
-  approved Marian apparitions of the modern era.
+summary: In 1846, two young shepherd children in the French Alps reported seeing the Blessed Virgin
+  Mary weeping, delivering a message of repentance that became one of the earliest approved Marian
+  apparitions of the modern era.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: Vatican, John Paul II, "To the Missionaries de Notre-Dame de la Salette"
+    url: https://www.vatican.va/content/john-paul-ii/en/speeches/2000/apr-jun/documents/hf_jp-ii_spe_20000504_notre-dame.html
+    note: References the 150th anniversary of the apparition of Our Lady of La Salette and summarizes
+      its message of hope and conversion.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.667Z
+  rationale: Approved Vatican URL verified HTTP 200; supports the apparition and its recognized
+    pastoral message.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

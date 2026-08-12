@@ -1,4 +1,3 @@
-# DRAFT — source locators pending; theological review pending
 id: event.theodosius-destroys-pagan-temples
 title: Theodosius Orders Destruction of Pagan Temples
 entity_type: event
@@ -7,36 +6,36 @@ classification:
   certainty: not-applicable
   note: null
 summary: In 391, Emperor Theodosius I issued a series of decrees banning pagan worship and
-  authorizing the closure or destruction of temples across the Roman Empire, effectively ending
-  the old Roman religion.
+  authorizing the closure or destruction of temples across the Roman Empire, effectively ending the
+  old Roman religion.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: "Catholic Encyclopedia: Theodosius I"
+    url: https://www.newadvent.org/cathen/14577d.htm
+    note: Approved New Advent entry states that in 388 a prefect was sent to destroy temples and that
+      Theodosius's laws put an end to open public pagan cult.
 relationships:
   broader: []
   narrower: []
   related:
     - person.ambrose-of-milan
     - person.pope-siricius
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.735Z
+  rationale: Dedicated Catholic Encyclopedia article supports Theodosius's anti-pagan temple and
+    public-cult policy, though the entity's 391 framing is broader than the source's 388-391
+    sequence; URL verified HTTP 200.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

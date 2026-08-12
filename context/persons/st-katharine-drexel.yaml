@@ -1,36 +1,33 @@
-# DRAFT — source locators pending; theological review pending
 id: person.st-katharine-drexel
 title: St. Katharine Drexel
 entity_type: person
 classification: null
-summary: One of the richest women in America asked the Pope what to do about racial injustice —
-  he told her to do it herself. She spent $20 million and founded 145 missions.
+summary: One of the richest women in America asked the Pope what to do about racial injustice — he
+  told her to do it herself. She spent $20 million and founded 145 missions.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: Vatican, "Katharine Drexel"
+    url: https://www.vatican.va/news_services/liturgy/saints/ns_lit_doc_20001001_katharine-drexel_en.html
+    note: Vatican biography identifies Katharine Drexel, her founding of the Sisters of the Blessed
+      Sacrament, and her service to Native and African Americans.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.656Z
+  rationale: Approved Vatican URL verified HTTP 200; direct official biography.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

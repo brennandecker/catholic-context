@@ -1,4 +1,3 @@
-# DRAFT — source locators pending; theological review pending
 id: event.synod-on-synodality
 title: Synod on Synodality
 entity_type: event
@@ -7,35 +6,33 @@ classification:
   certainty: not-applicable
   note: null
 summary: Pope Francis launched the most ambitious consultative process in modern Church history,
-  asking Catholics at every level — from parish groups to a global assembly — how the Church
-  should listen, discern, and walk together.
+  asking Catholics at every level — from parish groups to a global assembly — how the Church should
+  listen, discern, and walk together.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: Pope Francis, Address for the Opening of the Synod (9 October 2021)
+    url: https://www.vatican.va/content/francesco/en/speeches/2021/october/documents/20211009-apertura-camminosinodale.html
+    note: Official Vatican address opens the synodal journey and frames the process around listening,
+      encounter, and discernment.
 relationships:
   broader: []
   narrower: []
   related:
     - person.pope-francis
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.702Z
+  rationale: Verified Vatican source supports the launch/opening and core themes of the Synod on Synodality.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

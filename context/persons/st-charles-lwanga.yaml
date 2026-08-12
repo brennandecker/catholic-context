@@ -1,36 +1,34 @@
-# DRAFT — source locators pending; theological review pending
 id: person.st-charles-lwanga
 title: St. Charles Lwanga
 entity_type: person
 classification: null
-summary: He replaced the king’s chief page to protect the younger boys from sexual abuse — and
-  was burned alive at twenty-six for refusing to stop teaching them the faith.
+summary: He replaced the king’s chief page to protect the younger boys from sexual abuse — and was
+  burned alive at twenty-six for refusing to stop teaching them the faith.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: Vatican, Pope Francis, Homily for the Martyrs of Uganda (Nov. 28, 2015)
+    url: https://www.vatican.va/content/francesco/en/homilies/2015/documents/papa-francesco_20151128_uganda-omelia-martiri.html
+    note: Official Vatican homily commemorating the Uganda Martyrs, naming Saints Joseph Mkasa and
+      Charles Lwanga and describing their witness unto death.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:09:13.335Z
+  rationale: Approved Vatican source verifies Charles Lwanga among the Uganda Martyrs and supports the
+    martyr/witness context.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

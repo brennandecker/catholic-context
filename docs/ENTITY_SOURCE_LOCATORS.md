@@ -40,6 +40,8 @@ sources:
 
 Set `source_fidelity.linkable_sources: false` until at least one `url` resolves.
 
+A small residual set of imported entities (mostly obscure local churches or sparsely documented saints) may still carry this provisional locator after research passes. That is correct: leave them pending rather than inventing URLs or citing product databases.
+
 ## Research bar for agents
 
 1. Identify the entity precisely (name, dates, office, place).

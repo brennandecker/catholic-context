@@ -1,4 +1,3 @@
-# DRAFT — source locators pending; theological review pending
 id: event.nostra-aetate-jewish-catholic-dialogue
 title: Nostra Aetate and the Beginning of Jewish-Catholic Dialogue
 entity_type: event
@@ -6,8 +5,8 @@ classification:
   claim_type: historical-claim
   certainty: not-applicable
   note: null
-summary: In 1965, the Second Vatican Council issued Nostra Aetate, which repudiated the charge
-  of collective Jewish guilt for the death of Christ and launched a new era of dialogue between
+summary: In 1965, the Second Vatican Council issued Nostra Aetate, which repudiated the charge of
+  collective Jewish guilt for the death of Christ and launched a new era of dialogue between
   Catholics and Jews.
 review:
   status: draft
@@ -15,11 +14,11 @@ review:
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: Second Vatican Council, Nostra aetate
+    url: https://www.vatican.va/content/dam/wss/archive/hist_councils/ii_vatican_council/documents/vat-ii_decl_19651028_nostra-aetate_en.html
+    note: Council declaration, especially no. 4, teaches on the Church's bond with the Jewish people and
+      rejects antisemitism.
 relationships:
   broader: []
   narrower: []
@@ -27,17 +26,16 @@ relationships:
     - person.john-xxiii
     - person.pope-john-xxiii
     - person.pope-paul-vi
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.777Z
+  rationale: Approved Vatican URL verified HTTP 200 via GET; primary magisterial source for
+    Catholic-Jewish dialogue.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

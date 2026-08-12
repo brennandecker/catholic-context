@@ -1,4 +1,3 @@
-# DRAFT — source locators pending; theological review pending
 id: event.anti-modernist-oath-required
 title: The Anti-Modernist Oath Required of Catholic Clergy
 entity_type: event
@@ -7,37 +6,35 @@ classification:
   certainty: not-applicable
   note: null
 summary: In 1910, Pope Pius X required all Catholic clergy, seminary professors, and religious
-  superiors to swear the Oath Against Modernism, a formal rejection of theological positions
-  that treated Catholic doctrine as historically evolving rather than divinely revealed and
-  fixed.
+  superiors to swear the Oath Against Modernism, a formal rejection of theological positions that
+  treated Catholic doctrine as historically evolving rather than divinely revealed and fixed.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: Pius X, "The Oath Against Modernism" (Papal Encyclicals)
+    url: https://www.papalencyclicals.net/pius10/p10moath.htm
+    note: Approved Papal Encyclicals page presenting the oath text and its 1 September 1910 attribution
+      to Pius X.
 relationships:
   broader: []
   narrower: []
   related:
     - person.pius-x
     - person.pius-x
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.586Z
+  rationale: Verified approved Papal Encyclicals URL. Direct source for oath content and doctrinal
+    rejection of modernist propositions.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

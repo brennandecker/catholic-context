@@ -1,36 +1,35 @@
-# DRAFT — source locators pending; theological review pending
 id: institution.cathedral-of-the-immaculate-conception-castries
 title: Cathedral of the Immaculate Conception
 entity_type: institution
 classification: null
-summary: The cathedral of the Archdiocese of Castries in Saint Lucia, a large wooden church with
-  a painted interior that is the Caribbean island's most prominent Catholic landmark.
+summary: The cathedral of the Archdiocese of Castries in Saint Lucia, a large wooden church with a
+  painted interior that is the Caribbean island's most prominent Catholic landmark.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: "Vatican Press Office, Resignations and Appointments: metropolitan archbishop of
+      Castries, Saint Lucia (11 Feb. 2022)"
+    url: https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2022/02/11/220211b.pdf
+    note: Approved Vatican locator for the metropolitan Archdiocese of Castries; it supports the
+      see/city but does not name the cathedral building.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
   confidence: 0.55
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:43:18.672Z
+  rationale: Used as an indirect diocesan locator for the cathedral of the Castries see; no approved
+    exact church-name page found.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

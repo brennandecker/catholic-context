@@ -1,36 +1,34 @@
-# DRAFT — source locators pending; theological review pending
 id: person.st-edmund-of-abingdon
 title: St. Edmund of Abingdon
 entity_type: person
 classification: null
-summary: An Oxford professor who became Archbishop of Canterbury, stood up to King Henry III,
-  and died in exile rather than compromise.
+summary: An Oxford professor who became Archbishop of Canterbury, stood up to King Henry III, and
+  died in exile rather than compromise.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: "Catholic Encyclopedia: St. Edmund Rich"
+    url: https://www.newadvent.org/cathen/05294a.htm
+    note: Identifies St. Edmund Rich as Archbishop of Canterbury, born at Abingdon, and records his
+      conflict with Henry III and death in France.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:09:13.363Z
+  rationale: Direct approved New Advent biography matches Edmund of Abingdon/Edmund Rich and supports
+    the draft summary.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

@@ -1,4 +1,3 @@
-# DRAFT — source locators pending; theological review pending
 id: event.irish-penal-laws
 title: Irish Penal Laws
 entity_type: event
@@ -7,35 +6,33 @@ classification:
   certainty: not-applicable
   note: null
 summary: The British Parliament passed a series of laws designed to crush Irish Catholicism by
-  banning priests, seizing land, and denying Catholics the right to vote, hold office, or
-  educate their children.
+  banning priests, seizing land, and denying Catholics the right to vote, hold office, or educate
+  their children.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, Penal Laws
+    url: https://www.newadvent.org/cathen/11611c.htm
+    note: Entry traces anti-Catholic penal legislation, restrictions on worship and civic life, and
+      later relief measures.
 relationships:
   broader: []
   narrower: []
   related:
     - person.oliver-plunkett
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.787Z
+  rationale: Approved New Advent URL verified HTTP 200; direct historical locator for the legal regime.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

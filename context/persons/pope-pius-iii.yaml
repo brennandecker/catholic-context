@@ -1,36 +1,33 @@
-# DRAFT — source locators pending; theological review pending
 id: person.pope-pius-iii
 title: Pius III
 entity_type: person
 classification: null
-summary: The nephew of Pius II who was elected as a reform candidate but died just twenty-six
-  days after his coronation.
+summary: The nephew of Pius II who was elected as a reform candidate but died just twenty-six days
+  after his coronation.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: "Catholic Encyclopedia: Pope Pius III"
+    url: https://www.newadvent.org/cathen/12128a.htm
+    note: Documents Francesco Todeschini Piccolomini's election as Pius III, short pontificate, poor
+      health, and death in 1503.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:09:13.397Z
+  rationale: Direct approved New Advent papal biography supports the draft summary.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

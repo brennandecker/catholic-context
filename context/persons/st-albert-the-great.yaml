@@ -1,36 +1,34 @@
-# DRAFT — source locators pending; theological review pending
 id: person.st-albert-the-great
 title: St. Albert the Great
 entity_type: person
 classification: null
-summary: The Dominican friar who dissected insects, catalogued minerals, and taught Thomas
-  Aquinas everything he knew.
+summary: The Dominican friar who dissected insects, catalogued minerals, and taught Thomas Aquinas
+  everything he knew.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: "Catholic Encyclopedia: St. Albertus Magnus"
+    url: https://www.newadvent.org/cathen/01264a.htm
+    note: Identifies Albert the Great as scientist, philosopher, theologian, Doctor Universalis, and
+      teacher of St. Thomas Aquinas.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:09:13.370Z
+  rationale: Direct approved New Advent biography supports Albert's learning, Dominican identity, and
+    relation to Aquinas.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

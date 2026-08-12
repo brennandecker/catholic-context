@@ -1,36 +1,33 @@
-# DRAFT — source locators pending; theological review pending
 id: person.st-josaphat-kuntsevych
 title: St. Josaphat Kuntsevych
 entity_type: person
 classification: null
-summary: An Eastern Catholic archbishop dragged from his residence and killed by a mob — the
-  first Eastern saint formally canonized by Rome.
+summary: An Eastern Catholic archbishop dragged from his residence and killed by a mob — the first
+  Eastern saint formally canonized by Rome.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: Markevyc, Josaphat. "St. Josaphat Kuncevyc." The Catholic Encyclopedia. New Advent.
+    url: https://www.newadvent.org/cathen/08503b.htm
+    note: Entry covers Josaphat's Basilian life, archbishopric, martyrdom in 1623, beatification, and
+      canonization.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.690Z
+  rationale: Direct New Advent article supports the Eastern Catholic martyr identity and chronology.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

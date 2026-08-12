@@ -1,38 +1,35 @@
-# DRAFT — source locators pending; theological review pending
 id: institution.basilica-of-our-lady-of-dolours-thrissur
 title: Basilica of Our Lady of Dolours
 entity_type: institution
 classification: null
 summary: A minor basilica in Thrissur, Kerala, and the largest church in India, a massive
-  Indo-Gothic structure that serves the Syro-Malabar Catholic community and hosts the
-  spectacular Thrissur Pooram-adjacent festival.
+  Indo-Gothic structure that serves the Syro-Malabar Catholic community and hosts the spectacular
+  Thrissur Pooram-adjacent festival.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: Vatican, Letter of Cardinal Ignace Moussa Daoud to Trichur (11 Jan. 2004)
+    url: https://www.vatican.va/roman_curia/congregations/orientchurch/interventi/rc_con_corient_doc_20040111_moussa_daoud_saluto_public_receptions_trichur.html
+    note: Approved Vatican page names the Archeparchy of Trichur and the Dolours Basilica, whose spires
+      rise up towards God.
 relationships:
   broader: []
   narrower: []
   related:
     - person.st-thomas-the-apostle
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:43:18.702Z
+  rationale: Exact approved Vatican locator for Dolours Basilica/Trichur found.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

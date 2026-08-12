@@ -1,4 +1,3 @@
-# DRAFT — source locators pending; theological review pending
 id: event.joint-declaration-on-justification-1999
 title: Joint Declaration on the Doctrine of Justification
 entity_type: event
@@ -6,36 +5,37 @@ classification:
   claim_type: historical-claim
   certainty: not-applicable
   note: null
-summary: In 1999, the Catholic Church and the Lutheran World Federation signed a joint
-  declaration stating that on basic truths of justification, the two traditions no longer
-  condemn each other — a milestone in healing the central theological rift of the Reformation.
+summary: In 1999, the Catholic Church and the Lutheran World Federation signed a joint declaration
+  stating that on basic truths of justification, the two traditions no longer condemn each other — a
+  milestone in healing the central theological rift of the Reformation.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: John Paul II, Angelus on the Joint Declaration on the Doctrine of Justification (31
+      October 1999)
+    url: https://www.vatican.va/content/john-paul-ii/en/angelus/1999/documents/hf_jp-ii_ang_31101999.html
+    note: Vatican text states that Catholic and Lutheran representatives were signing the Joint
+      Declaration at Augsburg on justification by faith and calls it a milestone for Christian
+      unity.
 relationships:
   broader: []
   narrower: []
   related:
     - person.pope-john-paul-ii
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.842Z
+  rationale: Verified Vatican page. The original Joint Declaration URL found during search returned
+    404, so this uses a contemporaneous Vatican papal reference instead.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

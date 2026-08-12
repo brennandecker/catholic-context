@@ -1,10 +1,9 @@
-# DRAFT — source locators pending; theological review pending
 id: institution.cathedral-of-the-holy-saviour-luanda
 title: Cathedral of the Holy Saviour
 entity_type: institution
 classification: null
-summary: The oldest church in sub-Saharan Africa built by Europeans, founded by the Portuguese
-  in 1628 in Luanda, Angola, and still serving as the seat of the Archbishop after nearly four
+summary: The oldest church in sub-Saharan Africa built by Europeans, founded by the Portuguese in
+  1628 in Luanda, Angola, and still serving as the seat of the Archbishop after nearly four
   centuries.
 review:
   status: draft
@@ -12,26 +11,25 @@ review:
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: Vatican Press Office, Cardinal Alexandre do Nascimento biography
+    url: https://press.vatican.va/content/salastampa/en/documentation/cardinali_biografie/cardinali_bio_do-nascimento_a.html
+    note: Approved Vatican biography names the cathedral of Luanda as a site of homilies and episcopal
+      ordination; it does not give the Holy Saviour title.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
   confidence: 0.55
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:43:18.710Z
+  rationale: Approved Vatican locator for the cathedral of Luanda found, but exact Holy Saviour
+    dedication not confirmed on approved hosts.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

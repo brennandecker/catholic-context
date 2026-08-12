@@ -1,4 +1,3 @@
-# DRAFT — source locators pending; theological review pending
 id: event.our-lady-of-knock-apparition
 title: Our Lady of Knock Apparition
 entity_type: event
@@ -7,35 +6,34 @@ classification:
   certainty: not-applicable
   note: null
 summary: Fifteen villagers in western Ireland saw a silent apparition of Mary, Joseph, John the
-  Evangelist, and a lamb on an altar against the gable wall of their parish church during a
-  driving rainstorm.
+  Evangelist, and a lamb on an altar against the gable wall of their parish church during a driving
+  rainstorm.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: Pope Francis, Video Message for the elevation of the Shrine of Knock (19 March 2021)
+    url: https://www.vatican.va/content/francesco/en/messages/pont-messages/2021/documents/papa-francesco_20210319_videomessaggio-santuario-knock.html
+    note: Vatican message recounts the 21 August 1879 apparition of Mary with St. Joseph and St. John
+      and its silent character.
 relationships:
   broader: []
   narrower: []
   related:
     - person.pope-john-paul-ii
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.696Z
+  rationale: Verified Vatican source supports the apparition date, figures, and devotional
+    significance; details about the lamb/altar would need an additional approved source.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

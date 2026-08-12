@@ -1,4 +1,3 @@
-# DRAFT — source locators pending; theological review pending
 id: event.fratelli-tutti-encyclical
 title: Fratelli Tutti Published
 entity_type: event
@@ -6,37 +5,36 @@ classification:
   claim_type: historical-claim
   certainty: not-applicable
   note: null
-summary: On October 3, 2020, Pope Francis signed his third encyclical, Fratelli Tutti, calling
-  for universal fraternity, renewed solidarity, and a politics rooted in love of neighbor —
-  written during the COVID-19 pandemic as the world grappled with isolation and inequality.
+summary: On October 3, 2020, Pope Francis signed his third encyclical, Fratelli Tutti, calling for
+  universal fraternity, renewed solidarity, and a politics rooted in love of neighbor — written
+  during the COVID-19 pandemic as the world grappled with isolation and inequality.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: Pope Francis, Fratelli tutti (3 October 2020)
+    url: https://www.vatican.va/content/francesco/en/encyclicals/documents/papa-francesco_20201003_enciclica-fratelli-tutti.html
+    note: Official Vatican text identifies the encyclical and its themes of fraternity and social
+      friendship.
 relationships:
   broader: []
   narrower: []
   related:
     - person.francis-of-assisi
     - person.pope-francis
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.685Z
+  rationale: Official Vatican document supports the entity title, date, author, and core theme;
+    signing context can be further supplemented if needed.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

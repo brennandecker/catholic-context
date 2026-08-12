@@ -1,36 +1,41 @@
-# DRAFT — source locators pending; theological review pending
 id: person.st-bartholomew-of-braga
 title: Bartholomew of Braga
 entity_type: person
 classification: null
-summary: A Dominican friar who became Archbishop of Braga and championed Catholic reform during
-  the Counter-Reformation in Portugal.
+summary: A Dominican friar who became Archbishop of Braga and championed Catholic reform during the
+  Counter-Reformation in Portugal.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: Kirsch, Johann Peter. "Ven. Bartholomew of Braga." The Catholic Encyclopedia, 1907.
+    url: https://www.newadvent.org/cathen/02314b.htm
+    note: Verified page covers Bartholomew Fernandes as a Dominican, Archbishop of Braga, Council of
+      Trent participant, reformer, charitable pastor, and author of Stimulus Pastorum.
+  - source_type: scholarship
+    reference: Office of Papal Liturgical Celebrations. "Bartolomeu Fernandes dos Martires (1514-1590)."
+      Vatican.
+    url: https://www.vatican.va/news_services/liturgy/documents/ns_lit_doc_20011104_beat-fernandes_en.html
+    note: Verified Vatican page summarizes his Dominican formation, appointment to Braga, Tridentine
+      reform work, pastoral visits, seminary foundation, writings, and reputation as Holy
+      Archbishop.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:09:13.408Z
+  rationale: Approved New Advent and Vatican pages resolved; they support the Dominican, Braga, Trent,
+    reform, and pastoral-charity details.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

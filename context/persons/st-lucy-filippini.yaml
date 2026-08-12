@@ -1,36 +1,34 @@
-# DRAFT — source locators pending; theological review pending
 id: person.st-lucy-filippini
 title: Lucy Filippini
 entity_type: person
 classification: null
-summary: Italian educator who founded schools for girls and established the Maestre Pie
-  Filippini congregation.
+summary: Italian educator who founded schools for girls and established the Maestre Pie Filippini
+  congregation.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: "Vatican: Address to pilgrims from the Maestre Pie Filippini"
+    url: https://www.vatican.va/content/francesco/en/speeches/2022/may/documents/20220514-maestre-pie-filippini.html
+    note: Approved Vatican address marks the 350th anniversary of Saint Lucy Filippini and links her
+      educational mission to the Institute of the Maestre Pie Filippini.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.736Z
+  rationale: Official Vatican locator supports Lucy Filippini's saintly identity and
+    educator/institute context; URL verified HTTP 200.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

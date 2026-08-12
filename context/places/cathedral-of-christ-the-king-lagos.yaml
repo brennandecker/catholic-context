@@ -1,36 +1,35 @@
-# DRAFT — source locators pending; theological review pending
 id: institution.cathedral-of-christ-the-king-lagos
 title: Cathedral of the Holy Cross (Lagos)
 entity_type: institution
 classification: null
-summary: The principal Catholic cathedral in Lagos, Nigeria — a colonial-era church that has
-  grown with one of Africa's most vibrant Catholic communities.
+summary: The principal Catholic cathedral in Lagos, Nigeria — a colonial-era church that has grown
+  with one of Africa's most vibrant Catholic communities.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: Holy See Press Office, Cardinal Anthony Olubunmi Okogie biography
+    url: https://press.vatican.va/content/salastampa/en/documentation/cardinali_biografie/cardinali_bio_okogie_ao.html
+    note: Vatican biography of the Archbishop emeritus of Lagos states that after ordination Cardinal
+      Okogie served as pastoral assistant at Holy Cross Cathedral in Lagos and later served again at
+      the Cathedral.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:43:18.722Z
+  rationale: The batch path title appears mismatched; the approved Vatican locator identifies Holy
+    Cross Cathedral in Lagos, matching the YAML's corrected title rather than Christ the King.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

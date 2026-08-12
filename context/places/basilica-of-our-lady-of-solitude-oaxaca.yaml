@@ -1,37 +1,34 @@
-# DRAFT — source locators pending; theological review pending
 id: institution.basilica-of-our-lady-of-solitude-oaxaca
 title: Basilica of Our Lady of Solitude
 entity_type: institution
 classification: null
-summary: A seventeenth-century Baroque church in Oaxaca, Mexico, dedicated to the patroness of
-  the state and home to a beloved colonial-era statue of the Virgin.
+summary: A seventeenth-century Baroque church in Oaxaca, Mexico, dedicated to the patroness of the
+  state and home to a beloved colonial-era statue of the Virgin.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: "Vatican, John XXIII Apostolic Letters index (1959): Religionis domicilium"
+    url: https://www.vatican.va/content/john-xxiii/pt/apost_letters/1959.html
+    note: Approved Vatican index entry states that the church of Nuestra Senora de la Soledad of Oaxaca
+      de Juarez, Archdiocese of Antequera, Mexico, was raised to minor basilica on 17 July 1959.
 relationships:
   broader: []
   narrower: []
   related:
     - person.blessed-virgin-mary
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:43:18.685Z
+  rationale: Exact approved-host locator found via the Vatican apostolic letters index.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

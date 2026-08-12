@@ -1,36 +1,33 @@
-# DRAFT — source locators pending; theological review pending
 id: person.st-felix-iv
 title: St. Felix IV
 entity_type: person
 classification: null
-summary: Appointed with Ostrogothic royal backing, he converted a Roman temple into the Basilica
-  of Saints Cosmas and Damian.
+summary: Appointed with Ostrogothic royal backing, he converted a Roman temple into the Basilica of
+  Saints Cosmas and Damian.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: Kirsch, Johann Peter. "Pope Felix IV." The Catholic Encyclopedia. New Advent.
+    url: https://www.newadvent.org/cathen/06031a.htm
+    note: Entry covers Felix IV's Ostrogothic context and conversion of Roman Forum buildings into SS.
+      Cosmas and Damian.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.695Z
+  rationale: Direct entry supports the appointment context, Roman basilica work, and doctrinal activity.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

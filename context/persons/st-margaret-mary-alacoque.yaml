@@ -1,36 +1,39 @@
-# DRAFT — source locators pending; theological review pending
 id: person.st-margaret-mary-alacoque
 title: St. Margaret Mary Alacoque
 entity_type: person
 classification: null
-summary: Her own community thought she was delusional — but her visions of Christ's heart
-  reshaped Catholic devotion worldwide.
+summary: Her own community thought she was delusional — but her visions of Christ's heart reshaped
+  Catholic devotion worldwide.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, "St. Margaret Mary Alacoque" (New Advent)
+    url: https://www.newadvent.org/cathen/09653a.htm
+    note: Direct profile naming her a Visitandine religious and apostle of the Sacred Heart devotion,
+      with visions and community trials.
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, "Devotion to the Sacred Heart of Jesus" (New Advent)
+    url: https://www.newadvent.org/cathen/07163a.htm
+    note: Devotional history article identifies Margaret Mary Alacoque's revelations as central to the
+      spread of the Sacred Heart devotion.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.578Z
+  rationale: Verified approved New Advent URLs. Together they support the personal biography and the
+    devotion's wider influence.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

@@ -1,36 +1,33 @@
-# DRAFT — source locators pending; theological review pending
 id: person.st-justin-martyr
 title: St. Justin Martyr
 entity_type: person
 classification: null
-summary: The philosopher who tried every school of thought, found Christ in all of them, and
-  lost his head for saying so.
+summary: The philosopher who tried every school of thought, found Christ in all of them, and lost
+  his head for saying so.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: Catholic Encyclopedia, "St. Justin Martyr" (New Advent)
+    url: https://www.newadvent.org/cathen/08580c.htm
+    note: Direct article identifying Justin as philosopher, apologist, convert, teacher in Rome, author
+      of Apologies/Dialogues, and martyr.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.596Z
+  rationale: Verified approved New Advent URL. Strong match for philosopher-apologist and martyr profile.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

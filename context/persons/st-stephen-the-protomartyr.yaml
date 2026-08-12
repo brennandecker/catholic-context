@@ -1,36 +1,34 @@
-# DRAFT — source locators pending; theological review pending
 id: person.st-stephen-the-protomartyr
 title: St. Stephen the Protomartyr
 entity_type: person
 classification: null
-summary: The first Christian killed for the faith died the same way Jesus did — forgiving the
-  people throwing stones at him.
+summary: The first Christian killed for the faith died the same way Jesus did — forgiving the people
+  throwing stones at him.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: "USCCB Bible: Acts 7"
+    url: https://bible.usccb.org/bible/acts/7
+    note: Acts 7:54-60 gives Stephen's stoning, his prayer that Jesus receive his spirit, and his plea
+      that the sin not be held against his killers.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.643Z
+  rationale: Verified 200. Approved Scripture locator directly supports the first martyr and
+    forgiveness-at-death claims.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

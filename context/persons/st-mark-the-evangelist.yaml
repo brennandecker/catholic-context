@@ -1,36 +1,33 @@
-# DRAFT — source locators pending; theological review pending
 id: person.st-mark-the-evangelist
 title: St. Mark the Evangelist
 entity_type: person
 classification: null
-summary: The young man who panicked and ran away from Jesus’ arrest naked — then came back and
-  wrote the first Gospel.
+summary: The young man who panicked and ran away from Jesus’ arrest naked — then came back and wrote
+  the first Gospel.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: New Advent Catholic Encyclopedia, "St. Mark"
+    url: https://www.newadvent.org/cathen/09672c.htm
+    note: Identifies St. Mark with John Mark, the interpreter of Peter, traditional evangelist, and
+      founder of the Church of Alexandria.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.661Z
+  rationale: Approved New Advent URL verified HTTP 200; direct article distinguishes him from Pope St. Mark.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

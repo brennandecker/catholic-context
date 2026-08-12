@@ -1,37 +1,35 @@
-# DRAFT — source locators pending; theological review pending
 id: person.sabinian
 title: Sabinian
 entity_type: person
 classification: null
-summary: Succeeded Gregory the Great but reversed some of his policies, drawing anger from
-  Romans during a famine.
+summary: Succeeded Gregory the Great but reversed some of his policies, drawing anger from Romans
+  during a famine.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: Mann, Horace. "Pope Sabinianus." The Catholic Encyclopedia. New Advent.
+    url: https://www.newadvent.org/cathen/13291a.htm
+    note: Catholic Encyclopedia entry covers Sabinian's pontificate, famine context, granary policy, and
+      relationship to Gregory the Great.
 relationships:
   broader: []
   narrower: []
   related:
     - person.st-gregory-i-the-great
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.686Z
+  rationale: New Advent provides a direct biographical entry and distinguishes later hostile legends
+    from firmer historical details.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review

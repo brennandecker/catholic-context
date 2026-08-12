@@ -1,36 +1,33 @@
-# DRAFT — source locators pending; theological review pending
 id: person.st-kateri-tekakwitha
 title: St. Kateri Tekakwitha
 entity_type: person
 classification: null
-summary: Orphaned by smallpox, half-blinded, and scarred — her own village turned on her when
-  she was baptized, so she walked two hundred miles through the forest to find a place to pray.
+summary: Orphaned by smallpox, half-blinded, and scarred — her own village turned on her when she
+  was baptized, so she walked two hundred miles through the forest to find a place to pray.
 review:
   status: draft
   reviewed_by: null
   reviewed_at: null
   review_commit: null
 sources:
-  - source_type: other
-    reference: Approved source locator pending
-    url: null
-    note: Draft entity awaiting a resolvable Vatican, Scriptural, catechetical, liturgical, or
-      public-domain scholarly locator. Product databases are not citable sources.
+  - source_type: scholarship
+    reference: Benedict XVI, Homily for canonization of Kateri Tekakwitha, 21 Oct. 2012
+    url: https://www.vatican.va/content/benedict-xvi/en/homilies/2012/documents/hf_ben-xvi_hom_20121021_canonizzazioni.html
+    note: Official Vatican homily covers Kateri's birth, baptism, persecution, mission life, death, and
+      canonization.
 relationships:
   broader: []
   narrower: []
   related: []
-notes: Draft entity metadata. Requires approved public source locators and theological review
-  before promotion. Catholic Context does not cite product databases as sources.
+notes: Draft entity metadata. Requires theological review before promotion. Sources use approved
+  public locators only.
 source_fidelity:
   representation: entity-metadata
-  confidence: 0.55
+  confidence: 0.7
   needs_theological_review: true
-  linkable_sources: false
-  assessed_by: entity-bootstrap
-  assessed_at: 2026-08-12T02:40:18.472Z
-  rationale: Entity draft pending approved public locators. The Church’s teaching and historical
-    record stand on their own authority; this score only grades Catholic Context’s sourcing.
+  linkable_sources: true
+  assessed_by: research-entity-sources
+  assessed_at: 2026-08-12T04:04:27.828Z
+  rationale: Approved Vatican URL verified with HTTP 200 and directly supports the entity.
   unresolved_issues:
-    - Needs resolvable official source URLs
     - Draft import pending human review
