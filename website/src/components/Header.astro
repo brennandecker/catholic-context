@@ -1,5 +1,5 @@
 ---
-import { NAV, SITE } from '../lib/site';
+import { NAV, NAV_MORE, SITE } from '../lib/site';
 
 const pathname = Astro.url.pathname.replace(/\/$/, '') || '/';
 
@@ -13,19 +13,20 @@ function isCurrent(href: string): boolean {
   <div class="shell site-header__inner">
     <a class="brand" href="/">{SITE.name}</a>
 
-    <nav class="nav nav-desktop" aria-label="Primary">
-      {NAV.map((item) => (
-        <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
-          {item.label}
-        </a>
-      ))}
-      <a href={SITE.githubUrl} rel="noopener noreferrer" target="_blank">
-        GitHub ↗
-      </a>
-      <a href="/review">Review</a>
-      <a href="/login">Sign in</a>
-      <a class="btn btn-secondary" href="/search">Search</a>
-    </nav>
+    <div class="nav-cluster">
+      <nav class="nav nav-desktop" aria-label="Primary">
+        {NAV.map((item) => (
+          <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
+            {item.label}
+          </a>
+        ))}
+      </nav>
+
+      <div class="nav-tools nav-desktop" aria-label="Account">
+        <a href="/login">Sign in</a>
+        <a class="btn btn-secondary" href="/search">Search</a>
+      </div>
+    </div>
 
     <button
       class="nav-toggle"
@@ -43,7 +44,11 @@ function isCurrent(href: string): boolean {
           {item.label}
         </a>
       ))}
-      <a href="/review">Review</a>
+      {NAV_MORE.map((item) => (
+        <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
+          {item.label}
+        </a>
+      ))}
       <a href="/login">Sign in</a>
       <a href="/search">Search</a>
       <a href={SITE.githubUrl} rel="noopener noreferrer" target="_blank">

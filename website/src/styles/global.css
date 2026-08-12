@@ -425,14 +425,6 @@ textarea.field {
   padding-block: var(--space-3);
 }
 
-.nav-desktop {
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  row-gap: var(--space-2);
-  column-gap: var(--space-4);
-  max-width: min(100%, 52rem);
-}
-
 .brand {
   font-family: var(--font-ui);
   font-size: 15px;
@@ -447,6 +439,13 @@ textarea.field {
   color: var(--missal);
 }
 
+.nav-cluster {
+  display: none;
+  align-items: center;
+  gap: var(--space-5);
+  margin-left: auto;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -455,7 +454,7 @@ textarea.field {
 
 .nav a {
   font-family: var(--font-ui);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
@@ -463,8 +462,16 @@ textarea.field {
   white-space: nowrap;
 }
 
-.nav .btn {
-  font-size: 11px;
+.nav-tools {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding-left: var(--space-4);
+  border-left: 1px solid var(--rule-soft);
+}
+
+.nav-tools .btn {
+  font-size: 12px;
   min-height: 36px;
   padding: 0.45rem 0.85rem;
 }
@@ -873,14 +880,25 @@ body.nav-open {
   color: var(--muted);
 }
 
+@media (min-width: 1024px) {
+  .nav-cluster {
+    display: flex;
+  }
+}
+
 @media (max-width: 1180px) and (min-width: 1024px) {
-  .nav-desktop {
-    column-gap: var(--space-3);
-    max-width: 46rem;
+  .nav {
+    gap: var(--space-3);
   }
 
   .nav a {
+    font-size: 11px;
     letter-spacing: 0.08em;
+  }
+
+  .nav-tools {
+    gap: var(--space-3);
+    padding-left: var(--space-3);
   }
 
   .brand {
@@ -898,7 +916,7 @@ body.nav-open {
     gap: var(--space-6);
   }
 
-  .nav-desktop {
+  .nav-cluster {
     display: none;
   }
 
@@ -906,6 +924,7 @@ body.nav-open {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    margin-left: auto;
   }
 
   .site-header__inner {

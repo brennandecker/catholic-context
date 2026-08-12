@@ -9,6 +9,7 @@ export const SITE = {
   myCatholicGuideUrl: 'https://mycatholicguide.com/',
 } as const;
 
+/** Primary header links — keep short; secondary destinations live in the footer / mobile menu. */
 export const NAV = [
   { href: '/knowledge', label: 'Explore' },
   { href: '/sources', label: 'Sources' },
@@ -16,7 +17,12 @@ export const NAV = [
   { href: '/evals', label: 'Evals' },
   { href: '/open', label: 'Contribute' },
   { href: '/governance', label: 'Governance' },
+] as const;
+
+export const NAV_MORE = [
   { href: '/developers', label: 'Developers' },
+  { href: '/about', label: 'About' },
+  { href: '/review', label: 'Review' },
 ] as const;
 
 export const TOPIC_LINKS = [
