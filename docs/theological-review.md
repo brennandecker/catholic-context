@@ -46,3 +46,9 @@ A material theological change to previously reviewed content should trigger re-r
 ## Transparency
 
 Review metadata should eventually record reviewer identity or reviewer-group identity, date, revision/commit, and review rationale where appropriate.
+
+## Correction and panel workflow (planned)
+
+The path from in-site correction proposals to GitHub pull requests, in-UI review by appointed reviewers, and (later) Persona identity verification for panelists is specified in [`REVIEWER_CORRECTION_WORKFLOW.md`](REVIEWER_CORRECTION_WORKFLOW.md).
+
+Identity verification, when introduced, confirms personhood for trust-and-safety. It does not confer Church authority or replace reviewer qualifications and appointment.
