@@ -16,7 +16,7 @@ const initialResults = searchKnowledge(documents, initialQuery);
   title={initialQuery ? `Search: ${initialQuery}` : 'Search'}
   description="Search source-grounded Catholic Context knowledge by topic, source, or natural-language question."
 >
-  <section class="section-tight shell fade-in">
+  <section class="section-tight shell-list fade-in">
     <p class="eyebrow">✦ Search</p>
     <h1 class="h1">Search Catholic Context</h1>
     <p class="lede">
@@ -26,7 +26,7 @@ const initialResults = searchKnowledge(documents, initialQuery);
     <SearchForm query={initialQuery} autofocus />
   </section>
 
-  <section class="shell" style="padding-bottom: var(--space-9);" aria-live="polite">
+  <section class="shell-list" style="padding-bottom: var(--space-9);" aria-live="polite">
     <p class="meta" id="result-count" data-result-count>
       {initialQuery
         ? `${initialResults.length} result${initialResults.length === 1 ? '' : 's'} for “${initialQuery}”`
@@ -37,13 +37,15 @@ const initialResults = searchKnowledge(documents, initialQuery);
     <div id="results" data-results>
       {initialResults.map((doc) => (
         <a class="index-row" href={`/knowledge/${doc.slug}`}>
-          <h2 class="index-row__title">{doc.title}</h2>
-          <p class="index-row__summary">{doc.summary}</p>
-          <div class="index-row__meta">
-            <span class="meta">{doc.entity_type}</span>
-            {doc.claim_type && <span class="meta">{formatClaimType(doc.claim_type)}</span>}
-            <ReviewBadge status={doc.review_status as ReviewStatus} />
-            {doc.sources.length > 0 && <span class="meta">{doc.sources.join(' · ')}</span>}
+          <div class="index-row__main">
+            <h2 class="index-row__title">{doc.title}</h2>
+            <p class="index-row__summary">{doc.summary}</p>
+            <div class="index-row__meta">
+              <span class="meta">{doc.entity_type}</span>
+              {doc.claim_type && <span class="meta">{formatClaimType(doc.claim_type)}</span>}
+              <ReviewBadge status={doc.review_status as ReviewStatus} />
+              {doc.sources.length > 0 && <span class="meta">{doc.sources.join(' · ')}</span>}
+            </div>
           </div>
         </a>
       ))}
@@ -125,13 +127,15 @@ const initialResults = searchKnowledge(documents, initialQuery);
         const sources = doc.sources.length ? `<span class="meta">${doc.sources.join(' · ')}</span>` : '';
         return `
           <a class="index-row" href="/knowledge/${doc.slug}">
-            <h2 class="index-row__title">${doc.title}</h2>
-            <p class="index-row__summary">${doc.summary}</p>
-            <div class="index-row__meta">
-              <span class="meta">${doc.entity_type}</span>
-              ${claim ? `<span class="meta">${claim}</span>` : ''}
-              <span class="${badgeClass(doc.review_status)}">${reviewLabel(doc.review_status)}</span>
-              ${sources}
+            <div class="index-row__main">
+              <h2 class="index-row__title">${doc.title}</h2>
+              <p class="index-row__summary">${doc.summary}</p>
+              <div class="index-row__meta">
+                <span class="meta">${doc.entity_type}</span>
+                ${claim ? `<span class="meta">${claim}</span>` : ''}
+                <span class="${badgeClass(doc.review_status)}">${reviewLabel(doc.review_status)}</span>
+                ${sources}
+              </div>
             </div>
           </a>
         `;

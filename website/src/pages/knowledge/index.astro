@@ -12,7 +12,7 @@ const types = [...new Set(entries.map((e) => e.object.entity_type))].sort();
   title="Knowledge"
   description="Browse source-grounded Catholic Context knowledge with review status and citations."
 >
-  <section class="section-tight shell fade-in">
+  <section class="section-tight shell-list fade-in">
     <p class="eyebrow">✦ Knowledge</p>
     <h1 class="h1">What does the Church teach?</h1>
     <p class="lede">
@@ -27,7 +27,7 @@ const types = [...new Set(entries.map((e) => e.object.entity_type))].sort();
     )}
   </section>
 
-  <section class="shell" style="padding-bottom: var(--space-9);">
+  <section class="shell-list" style="padding-bottom: var(--space-9);">
     <hr class="rule-soft" />
     {entries.length === 0 ? (
       <p>No knowledge objects are available yet.</p>
