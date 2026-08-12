@@ -4,46 +4,60 @@ import { SITE } from '../lib/site';
 ---
 
 <BaseLayout
-  title="Open"
-  description="Catholic Context is built in the open — inspectable knowledge, Harness, Evals, schemas, and website source."
+  title="Contribute"
+  description="Help preserve Catholic knowledge for humans and AI — an open-source project grounded in human agency."
 >
   <section class="section-tight shell fade-in">
-    <p class="eyebrow">✦ Open Foundation</p>
-    <h1 class="h1">Built in the open.</h1>
+    <p class="eyebrow">✦ Contribute</p>
+    <h1 class="h1">Work with us in the open.</h1>
     <p class="lede">
-      The knowledge layer, Harness, Evals, schemas, governance, public documentation, and
-      this website belong to the open foundation.
+      Catholic Context is an open-source project. We build tools for AI and keep the human
+      person at the center — so we can enable technology while preserving meaningful agency,
+      and steward together the Church’s teaching as a shared inheritance.
     </p>
   </section>
 
   <section class="section shell prose">
-    <h2 class="h2">What openness means</h2>
-    <ul>
-      <li>Inspect canonical repository content and revision history</li>
-      <li>Fork and reuse under published licenses and third-party rights</li>
-      <li>Open issues and pull requests</li>
-      <li>Propose corrections with sources</li>
-      <li>Build applications on the same public foundation</li>
-    </ul>
-
-    <h2 class="h2">What openness does not mean</h2>
-    <ul>
-      <li>Uncontrolled direct editing of canonical Catholic Context</li>
-      <li>Public merge access to production content</li>
-      <li>Votes determining doctrinal status</li>
-      <li>A claim of ecclesiastical endorsement</li>
-    </ul>
-
+    <h2 class="h2">Why contribute</h2>
     <p>
-      Open source means transparency and participation. Canonical changes still flow through
-      maintainer review, and theological changes may require qualified theological review.
+      The greatest collection of knowledge in the world deserves careful hands. Contribution
+      here is human stewardship: clarify wording, strengthen sources, surface problems, and
+      help software stay faithful without replacing conscience or judgment.
+    </p>
+    <p>
+      Principles from <em>Magnifica Humanitas</em> guide how Catholic-grounded AI should
+      behave — especially the duty to preserve human dignity and agency. Read them in the
+      <a href="/harness#humanitas-heading">Harness</a>.
+    </p>
+
+    <h2 class="h2">Ways to help</h2>
+    <ul>
+      <li>Propose corrections with sources on any knowledge page</li>
+      <li>Improve citations, summaries, and classifications</li>
+      <li>Suggest new knowledge objects that belong in the collection</li>
+      <li>Strengthen Harness principles and public Evals</li>
+      <li>Build applications on the open foundation</li>
+      <li>Review documentation and schemas for clarity</li>
+    </ul>
+
+    <h2 class="h2">How change becomes canonical</h2>
+    <p>
+      Anyone may inspect, fork, and propose. Merges remain reviewed. Theological material
+      may require qualified review. Votes and popularity never decide doctrine — sources
+      and responsible human judgment do.
     </p>
 
     <div style="display:flex; flex-wrap:wrap; gap: var(--space-3); margin-top: var(--space-6);">
-      <a class="btn btn-primary" href={SITE.githubUrl} rel="noopener noreferrer" target="_blank">
+      <a class="btn btn-primary" href="/knowledge">Start from Knowledge →</a>
+      <a class="btn btn-secondary" href={SITE.githubUrl} rel="noopener noreferrer" target="_blank">
         View repository ↗
       </a>
-      <a class="btn btn-secondary" href={`${SITE.githubUrl}/blob/main/CONTRIBUTING.md`} rel="noopener noreferrer" target="_blank">
+      <a
+        class="btn btn-secondary"
+        href={`${SITE.githubUrl}/blob/main/CONTRIBUTING.md`}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
         Contributing guide ↗
       </a>
     </div>

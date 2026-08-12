@@ -1,8 +1,8 @@
 export const SITE = {
   name: 'Catholic Context',
-  tagline: 'Open Catholic knowledge for humans and AI.',
+  tagline: 'Open Catholic knowledge — for humans, for AI, with human agency intact.',
   description:
-    'Catholic Context is open infrastructure for Catholic knowledge, Catholic-grounded AI behavior, and measurable theological integrity.',
+    'An open-source project for Catholic knowledge and Catholic-grounded AI, guided by human-centered principles that preserve meaningful agency.',
   url: 'https://catholiccontext.org',
   githubRepo: 'brennandecker/catholic-context',
   githubUrl: 'https://github.com/brennandecker/catholic-context',
@@ -14,6 +14,7 @@ export const NAV = [
   { href: '/sources', label: 'Sources' },
   { href: '/harness', label: 'Harness' },
   { href: '/evals', label: 'Evals' },
+  { href: '/open', label: 'Contribute' },
   { href: '/governance', label: 'Governance' },
   { href: '/developers', label: 'Developers' },
 ] as const;

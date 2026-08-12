@@ -6,17 +6,17 @@ import { SITE, TOPIC_LINKS } from '../lib/site';
 
 <BaseLayout
   title="Open Catholic Knowledge"
-  description="Explore source-grounded Catholic teaching with transparent citations, provenance, and theological review."
+  description="An open-source project to preserve Catholic teaching for humans and AI — with human agency at the center."
 >
   <section class="hero shell fade-in">
-    <p class="eyebrow">✦ Open Catholic Knowledge</p>
+    <p class="eyebrow">✦ Catholic Context</p>
     <h1 class="display">What does the Catholic Church teach?</h1>
     <p class="lede">
-      Explore source-grounded Catholic teaching with transparent citations, provenance,
-      and theological review.
+      An open collection of source-grounded Catholic knowledge — built so humans and AI
+      can learn faithfully, and so persons remain responsible for judgment and conscience.
     </p>
     <SearchForm />
-    <p class="hero-support">Free · Open Source · Built for Humans and AI</p>
+    <p class="hero-support">Open Source · Contribute · Preserve Human Agency</p>
     <div class="topic-links" aria-label="Suggested topics">
       {TOPIC_LINKS.map((topic) => (
         <a href={topic.href}>{topic.label}</a>
@@ -28,14 +28,14 @@ import { SITE, TOPIC_LINKS } from '../lib/site';
 
   <section class="section shell" aria-labelledby="layers-heading">
     <p class="eyebrow">✦ Three Layers</p>
-    <h2 class="h2" id="layers-heading">Open infrastructure for Catholic-grounded AI</h2>
+    <h2 class="h2" id="layers-heading">Build AI. Enable AI. Keep the human person central.</h2>
     <div class="columns-3" style="margin-top: var(--space-7);">
       <article>
         <h3 class="h3">Knowledge</h3>
         <p>What does the Church teach?</p>
         <p>
           Structured Catholic teaching with citations, classification, relationships,
-          and review metadata.
+          and review metadata — a shared foundation anyone can inspect.
         </p>
         <a class="btn btn-text" href="/knowledge">Explore Knowledge →</a>
       </article>
@@ -43,8 +43,8 @@ import { SITE, TOPIC_LINKS } from '../lib/site';
         <h3 class="h3">Harness</h3>
         <p>How should Catholic-grounded AI behave?</p>
         <p>
-          Source grounding, authority distinctions, moral reasoning, uncertainty,
-          and pastoral boundaries.
+          Grounding, authority, moral reasoning, and human-centered principles for the
+          AI era — including meaningful human agency.
         </p>
         <a class="btn btn-text" href="/harness">Read the Harness →</a>
       </article>
@@ -60,34 +60,39 @@ import { SITE, TOPIC_LINKS } from '../lib/site';
     </div>
   </section>
 
-  <section class="section shell" aria-labelledby="governance-heading">
-    <p class="eyebrow">✦ Accountable by Design</p>
-    <h2 class="h2" id="governance-heading">Truth is not determined by popularity.</h2>
+  <section class="section shell" aria-labelledby="humanitas-heading">
+    <p class="eyebrow">✦ Magnifica Humanitas</p>
+    <h2 class="h2" id="humanitas-heading">
+      Human-centered principles for the AI era.
+    </h2>
     <p class="lede">
-      Community contribution can improve clarity and surface problems. It does not
-      establish Catholic doctrine.
+      Drawn from <em>Magnifica Humanitas</em>, our Harness insists that AI may assist
+      judgment but must not erase conscience, responsibility, or the dignity of the person.
+      We can build and enable AI while working together to protect the greatest collection
+      of knowledge in the world — without surrendering human agency.
     </p>
-    <ol class="flow-list">
-      <li><span class="arrow">↓</span><span>Catholic Sources</span></li>
-      <li><span class="arrow">↓</span><span>Structured Context</span></li>
-      <li><span class="arrow">↓</span><span>Community Contribution</span></li>
-      <li><span class="arrow">↓</span><span>Theological Review</span></li>
-      <li><span class="arrow">✦</span><span>Open Versioned Knowledge</span></li>
-    </ol>
-    <p style="margin-top: var(--space-6);">
-      <a class="btn btn-secondary" href="/governance">Read Governance →</a>
+    <p style="margin-top: var(--space-5);">
+      <a class="btn btn-secondary" href="/harness#humanitas-heading">Read the principles →</a>
     </p>
   </section>
 
-  <section class="section shell" aria-labelledby="open-heading">
-    <p class="eyebrow">✦ Built in the Open</p>
-    <h2 class="h2" id="open-heading">Catholic knowledge should be inspectable.</h2>
+  <section class="section shell" aria-labelledby="contribute-heading">
+    <p class="eyebrow">✦ Contribute</p>
+    <h2 class="h2" id="contribute-heading">This is an open-source project. Join the work.</h2>
     <p class="lede">
-      Read, inspect, download, fork, build, propose corrections, and follow revision
-      history. Open source means transparency — not uncontrolled editing of canonical content.
+      Correct citations. Improve clarity. Propose new entries. Build tools on the
+      foundation. Every contribution is a human act of stewardship — reviewed in the open,
+      never decided by popularity.
     </p>
-    <div style="display:flex; flex-wrap:wrap; gap: var(--space-3); margin-top: var(--space-5);">
-      <a class="btn btn-primary" href="/open">Explore Open Foundation →</a>
+    <ol class="flow-list">
+      <li><span class="arrow">↓</span><span>Catholic Sources</span></li>
+      <li><span class="arrow">↓</span><span>Shared Context</span></li>
+      <li><span class="arrow">↓</span><span>Human Contribution</span></li>
+      <li><span class="arrow">↓</span><span>Theological Review</span></li>
+      <li><span class="arrow">✦</span><span>Open Versioned Knowledge</span></li>
+    </ol>
+    <div style="display:flex; flex-wrap:wrap; gap: var(--space-3); margin-top: var(--space-6);">
+      <a class="btn btn-primary" href="/open">How to contribute →</a>
       <a class="btn btn-secondary" href={SITE.githubUrl} rel="noopener noreferrer" target="_blank">
         View on GitHub ↗
       </a>

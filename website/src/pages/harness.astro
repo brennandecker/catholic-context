@@ -9,15 +9,16 @@ const principles = harness.principles ?? [];
 
 <BaseLayout
   title="Harness"
-  description="How should Catholic-grounded AI reason, cite, express uncertainty, and respect pastoral boundaries?"
+  description="How Catholic-grounded AI should behave — including Magnifica Humanitas principles that preserve human agency."
 >
   <section class="section-tight shell fade-in">
     <p class="eyebrow">✦ Catholic Harness</p>
     <h1 class="h1">How should Catholic-grounded AI behave?</h1>
     <p class="lede">
       The Harness is a model-agnostic framework for source grounding, authority,
-      theological distinctions, moral reasoning, uncertainty, citations, pastoral
-      boundaries, and escalation to human guidance.
+      moral reasoning, pastoral boundaries — and, from <em>Magnifica Humanitas</em>,
+      human-centered principles that preserve dignity and meaningful human agency
+      in the age of AI.
     </p>
   </section>
 
@@ -34,9 +35,10 @@ const principles = harness.principles ?? [];
     <p class="eyebrow">✦ Magnifica Humanitas</p>
     <h2 class="h2" id="humanitas-heading">Human-centered principles for the AI era</h2>
     <p class="lede">
-      Draft principles derived from <em>{String(harness.document?.title ?? 'Magnifica Humanitas')}</em>
-      {' '}translate Catholic sources into inspectable engineering requirements. Status:
-      {` ${String(harness.status?.maturity ?? 'draft')} · theological review ${String(harness.status?.theological_review ?? 'pending')}`}.
+      AI may assist judgment; it must not erase conscience or responsibility. These draft
+      principles, derived from <em>{String(harness.document?.title ?? 'Magnifica Humanitas')}</em>,
+      turn that conviction into inspectable engineering requirements
+      {` (${String(harness.status?.maturity ?? 'draft')}; theological review ${String(harness.status?.theological_review ?? 'pending')})`}.
     </p>
 
     <div style="margin-top: var(--space-7);">
