@@ -42,10 +42,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <p><span class="meta">Email</span><br>${payload.user?.email || '—'}</p>
           <p><span class="meta">Username</span><br><strong>${username}</strong></p>
           <p><span class="meta">Status</span><br>${role}</p>
-          <p style="display:flex; gap:1rem; flex-wrap:wrap;">
+          <div class="actions">
             <a class="btn btn-primary" href="/review">Review queue</a>
             <button class="btn btn-secondary" type="button" id="sign-out">Sign out</button>
-          </p>
+          </div>
         `;
         document.getElementById('sign-out')?.addEventListener('click', async () => {
           await supabase.auth.signOut();

@@ -64,11 +64,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           <hr class="rule-soft" />
           <label class="meta" for="notes">Review notes</label>
           <textarea class="field" id="notes" rows="4">${escapeHtml(p.review_notes || '')}</textarea>
-          <p style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:var(--space-4);">
+          <div class="actions">
             <button class="btn btn-primary" data-action="approve" type="button">Approve</button>
             <button class="btn btn-secondary" data-action="request_changes" type="button">Request changes</button>
             <button class="btn btn-secondary" data-action="comment" type="button">Comment on PR</button>
-          </p>
+          </div>
           <p id="action-status" class="marginalia" role="status"></p>
         `;
 

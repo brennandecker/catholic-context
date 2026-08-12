@@ -37,7 +37,7 @@ function isCurrent(href: string): boolean {
       Menu
     </button>
 
-    <nav class="nav nav-mobile" id="mobile-nav" aria-label="Mobile" data-mobile-nav>
+    <nav class="nav nav-mobile" id="mobile-nav" aria-label="Mobile" data-mobile-nav hidden>
       {NAV.map((item) => (
         <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
           {item.label}
@@ -56,11 +56,26 @@ function isCurrent(href: string): boolean {
 <script>
   const toggle = document.querySelector('[data-nav-toggle]');
   const menu = document.querySelector('[data-mobile-nav]');
+
+  function setOpen(open: boolean) {
+    if (!(toggle instanceof HTMLButtonElement) || !(menu instanceof HTMLElement)) return;
+    menu.classList.toggle('is-open', open);
+    menu.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.textContent = open ? 'Close' : 'Menu';
+    document.body.classList.toggle('nav-open', open);
+  }
+
   if (toggle instanceof HTMLButtonElement && menu instanceof HTMLElement) {
+    menu.hidden = true;
     toggle.addEventListener('click', () => {
-      const open = menu.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded', String(open));
-      toggle.textContent = open ? 'Close' : 'Menu';
+      setOpen(!menu.classList.contains('is-open'));
+    });
+    menu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => setOpen(false));
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') setOpen(false);
     });
   }
 </script>
