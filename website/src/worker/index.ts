@@ -162,9 +162,8 @@ export default {
             env,
             proposal.github_pr_number,
             [
-              `Catholic Context reviewer \`${auth.profile.public_username}\` ${verb} this proposal in the site UI.`,
+              `\`${auth.profile.public_username}\` ${verb} this proposal.`,
               notes ? `\n\n${notes}` : '',
-              '\n\n_(Platform username — reviewer does not need a GitHub account.)_',
             ].join(''),
           );
         }

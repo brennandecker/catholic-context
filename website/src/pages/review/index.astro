@@ -2,16 +2,11 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout
-  title="Review queue"
-  description="Appointed reviewers review correction proposals. GitHub pull requests mirror status for open-source visibility."
->
+<BaseLayout title="Review queue" description="Review open correction proposals.">
   <article class="section-tight shell fade-in">
-    <p class="eyebrow">REVIEWER TOOLS</p>
+    <p class="eyebrow">REVIEW</p>
     <h1 class="h1">Review queue</h1>
-    <p class="lede reading">
-      Platform reviewers only. Actions here are mirrored onto GitHub PRs by the proposal bot.
-    </p>
+    <p class="lede reading">Open correction proposals awaiting review.</p>
     <div id="review-root" style="margin-top: var(--space-6);">
       <p>Loading…</p>
     </div>

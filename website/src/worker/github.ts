@@ -15,7 +15,7 @@ status: ${proposal.status}
 # Correction proposal
 
 **Context:** ${proposal.context_title ?? proposal.context_slug}  
-**Proposed by:** \`${proposal.proposer_public_username}\` (Catholic Context platform username — not a GitHub account)
+**Proposed by:** \`${proposal.proposer_public_username}\`
 
 ## Category
 
@@ -44,9 +44,6 @@ ${proposal.supporting_sources?.trim() || '_None provided._'}
 - [ ] Material theological change: **${proposal.material_change ? 'yes' : 'no'}**
 - [ ] Requires theological re-review if previously reviewed
 
----
-
-Opened by the Catholic Context proposal bot for change management and open-source visibility.
 `;
 }
 
@@ -125,15 +122,13 @@ export async function openProposalPullRequest(
       head: branch,
       base,
       body: [
-        `Proposed by Catholic Context platform user **\`${proposal.proposer_public_username}\`** (unique platform ID; reviewer does not need a GitHub account).`,
+        `Proposed by **\`${proposal.proposer_public_username}\`**`,
         '',
         `Proposal id: \`${proposal.id}\``,
         `Context: \`${proposal.context_id}\``,
         `Material change: **${proposal.material_change ? 'yes' : 'no'}**`,
         '',
-        'See the added file under `proposals/open/` for the full structured proposal.',
-        '',
-        'Reviewers should use the Catholic Context `/review` UI; maintainers merge on GitHub.',
+        'Full proposal: see `proposals/open/` in this branch.',
       ].join('\n'),
     }),
   });

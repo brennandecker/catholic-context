@@ -40,9 +40,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           : 'Not appointed (browse-only account)';
         root.innerHTML = `
           <p><span class="meta">Email</span><br>${payload.user?.email || '—'}</p>
-          <p><span class="meta">Platform public username</span><br><strong>${username}</strong></p>
-          <p class="marginalia">This username appears on GitHub pull requests opened by the proposal bot. It is not a GitHub login.</p>
-          <p><span class="meta">Reviewer status</span><br>${role}</p>
+          <p><span class="meta">Username</span><br><strong>${username}</strong></p>
+          <p><span class="meta">Status</span><br>${role}</p>
           <p style="display:flex; gap:1rem; flex-wrap:wrap;">
             <a class="btn btn-primary" href="/review">Review queue</a>
             <button class="btn btn-secondary" type="button" id="sign-out">Sign out</button>

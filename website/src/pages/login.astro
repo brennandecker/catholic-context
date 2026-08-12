@@ -2,16 +2,11 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout
-  title="Sign in"
-  description="Sign in to Catholic Context with an email magic link. Reviewers do not need a GitHub account."
->
+<BaseLayout title="Sign in" description="Sign in to Catholic Context with an email magic link.">
   <article class="section-tight shell fade-in reading">
-    <p class="eyebrow">PLATFORM</p>
+    <p class="eyebrow">ACCOUNT</p>
     <h1 class="h1">Sign in</h1>
-    <p class="lede">
-      Email magic link. Appointed reviewers propose and review here; GitHub accounts are not required.
-    </p>
+    <p class="lede">Enter your email and we will send a one-time sign-in link.</p>
 
     <form id="login-form" class="stack" style="margin-top: var(--space-6); max-width: 28rem;">
       <label class="meta" for="email">Email</label>
@@ -20,11 +15,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <p id="login-status" class="marginalia" role="status" aria-live="polite"></p>
     </form>
 
-    <hr class="rule-soft" />
-    <p>
-      After signing in, open <a href="/account">Account</a>. Reviewers use
-      <a href="/review">Review</a> and Propose from knowledge pages.
-    </p>
   </article>
 </BaseLayout>
 
