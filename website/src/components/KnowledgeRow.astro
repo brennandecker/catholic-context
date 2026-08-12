@@ -17,7 +17,12 @@ const sourcePreview = object.sources
   .join(' · ');
 ---
 
-<a class="index-row fade-in" href={`/knowledge/${slug}`}>
+<a
+  class="index-row fade-in"
+  href={`/knowledge/${slug}`}
+  data-entity-type={object.entity_type}
+  data-knowledge-row
+>
   <div class="index-row__main">
     <h2 class="index-row__title">{object.title}</h2>
     <p class="index-row__summary">{object.summary}</p>

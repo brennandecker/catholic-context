@@ -5,7 +5,12 @@ import SearchForm from '../../components/SearchForm.astro';
 import { loadKnowledgeEntries } from '../../lib/content';
 
 const entries = loadKnowledgeEntries();
-const types = [...new Set(entries.map((e) => e.object.entity_type))].sort();
+const typeCounts = entries.reduce<Record<string, number>>((acc, entry) => {
+  const type = entry.object.entity_type;
+  acc[type] = (acc[type] ?? 0) + 1;
+  return acc;
+}, {});
+const types = Object.keys(typeCounts).sort();
 ---
 
 <BaseLayout
@@ -20,19 +25,121 @@ const types = [...new Set(entries.map((e) => e.object.entity_type))].sort();
       classification, and review state.
     </p>
     <SearchForm />
+
     {types.length > 0 && (
-      <p class="meta" style="margin-top: var(--space-5);">
-        Entity types: {types.join(' · ')}
-      </p>
+      <div class="filter-chips" style="margin-top: var(--space-5);">
+        <p class="meta" id="entity-filter-label">Entity type</p>
+        <div
+          class="chip-row"
+          role="group"
+          aria-labelledby="entity-filter-label"
+          data-entity-filters
+        >
+          <button
+            type="button"
+            class="chip is-active"
+            data-entity-filter="all"
+            aria-pressed="true"
+          >
+            All
+            <span class="chip__count">{entries.length}</span>
+          </button>
+          {types.map((type) => (
+            <button
+              type="button"
+              class="chip"
+              data-entity-filter={type}
+              aria-pressed="false"
+            >
+              {type.replace(/-/g, ' ')}
+              <span class="chip__count">{typeCounts[type]}</span>
+            </button>
+          ))}
+        </div>
+      </div>
     )}
   </section>
 
   <section class="shell-list" style="padding-bottom: var(--space-9);">
     <hr class="rule-soft" />
+    <p class="meta" data-filter-status style="margin: var(--space-4) 0 0;">
+      {entries.length} {entries.length === 1 ? 'entry' : 'entries'}
+    </p>
     {entries.length === 0 ? (
       <p>No knowledge objects are available yet.</p>
     ) : (
-      entries.map((entry) => <KnowledgeRow entry={entry} />)
+      <div data-knowledge-list>
+        {entries.map((entry) => (
+          <KnowledgeRow entry={entry} />
+        ))}
+      </div>
     )}
+    <p data-filter-empty class="marginalia" hidden style="margin-top: var(--space-5);">
+      No entries for this selection.
+    </p>
   </section>
 </BaseLayout>
+
+<script>
+  const filterRoot = document.querySelector('[data-entity-filters]');
+  const rows = Array.from(document.querySelectorAll('[data-knowledge-row]'));
+  const status = document.querySelector('[data-filter-status]');
+  const empty = document.querySelector('[data-filter-empty]');
+  const chips = filterRoot
+    ? Array.from(filterRoot.querySelectorAll('[data-entity-filter]'))
+    : [];
+
+  /** @type {Set<string>} */
+  const selected = new Set();
+
+  function applyFilter() {
+    const active = selected.size > 0 ? selected : null;
+    let visible = 0;
+
+    for (const row of rows) {
+      if (!(row instanceof HTMLElement)) continue;
+      const type = row.dataset.entityType || '';
+      const show = !active || active.has(type);
+      row.hidden = !show;
+      if (show) visible += 1;
+    }
+
+    if (status instanceof HTMLElement) {
+      const label =
+        !active || active.size === 0
+          ? `${visible} ${visible === 1 ? 'entry' : 'entries'}`
+          : `${visible} ${visible === 1 ? 'entry' : 'entries'} · ${[...active].join(' · ')}`;
+      status.textContent = label;
+    }
+
+    if (empty instanceof HTMLElement) {
+      empty.hidden = visible > 0;
+    }
+
+    for (const chip of chips) {
+      if (!(chip instanceof HTMLButtonElement)) continue;
+      const value = chip.dataset.entityFilter || '';
+      const isAll = value === 'all';
+      const on = isAll ? selected.size === 0 : selected.has(value);
+      chip.classList.toggle('is-active', on);
+      chip.setAttribute('aria-pressed', String(on));
+    }
+  }
+
+  for (const chip of chips) {
+    chip.addEventListener('click', () => {
+      if (!(chip instanceof HTMLButtonElement)) return;
+      const value = chip.dataset.entityFilter || '';
+      if (value === 'all') {
+        selected.clear();
+      } else if (selected.has(value)) {
+        selected.delete(value);
+      } else {
+        selected.add(value);
+      }
+      applyFilter();
+    });
+  }
+
+  applyFilter();
+</script>

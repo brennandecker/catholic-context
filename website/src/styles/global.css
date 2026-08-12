@@ -300,6 +300,68 @@ textarea.field {
   color: var(--ink-dark);
 }
 
+.filter-chips .meta {
+  margin: 0 0 var(--space-3);
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 40px;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--near-paper);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease;
+}
+
+.chip:hover {
+  background: var(--highlight);
+  color: var(--ink-dark);
+  border-color: var(--rule);
+}
+
+.chip.is-active {
+  background: var(--missal);
+  border-color: var(--missal);
+  color: var(--near-paper);
+}
+
+.chip.is-active:hover {
+  background: var(--ink-dark);
+  border-color: var(--ink-dark);
+  color: var(--near-paper);
+}
+
+.chip__count {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  letter-spacing: 0;
+  text-transform: none;
+  opacity: 0.85;
+}
+
+.chip.is-active .chip__count {
+  opacity: 0.9;
+}
+
+.index-row[hidden] {
+  display: none;
+}
+
 .badge-draft {
   border-color: var(--brown);
   color: var(--brown);
