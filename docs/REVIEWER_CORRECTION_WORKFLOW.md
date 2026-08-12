@@ -18,7 +18,7 @@ Git remains the source of truth. The website never silently mutates doctrine.
 
 1. **Truth is not determined by vote** — UI review is qualified judgment, not a poll.
 2. **Sources + theological review govern** — proposals must cite sources; status changes follow governance.
-3. **Identity ≠ competence** — Persona IDV proves a real person (and optionally document claims). Theological panel membership still requires published qualifications, COI disclosure, and appointment.
+3. **Identity ≠ competence** — Persona IDV proves a real person (and optionally document claims). Theological panel membership still requires **manual appointment by the founder** (during the founding stage), plus whatever qualifications and COI disclosure the project publishes. Automation never auto-admits reviewers.
 4. **Commercial independence** — funding (including free Persona credits) must not buy review outcomes.
 5. **Open audit trail** — every canonical change lands as a Git commit/PR; provenance fields point at that history.
 
@@ -29,9 +29,11 @@ Git remains the source of truth. The website never silently mutates doctrine.
 | **Public** | Anyone | Suggest correction → GitHub Issue (current) | None |
 | **Authenticated contributor** | Signed-in user | Richer proposal form; draft PR via bot | GitHub OAuth |
 | **Maintainer** | Repo maintainers | Merge technical/safe changes; administer infra | GitHub team |
-| **Community reviewer** | Appointed | Approve non-doctrinal / source-structure improvements; may set path toward `community-reviewed` | Allowlist + published criteria |
-| **Theological reviewer** | Qualified panelist | Approve representation/classification/framing; may set `theologically-reviewed` when process allows | Qualifications + appointment (+ later Persona IDV) |
-| **Verified theological reviewer** (long-term) | Panelist with completed IDV | Same as theological reviewer; UI shows verified identity badge on *panel membership*, not on doctrine | Persona inquiry passed + still appointed |
+| **Community reviewer** | Appointed | Approve non-doctrinal / source-structure improvements; may set path toward `community-reviewed` | **Founder manual approval** → allowlist |
+| **Theological reviewer** | Qualified panelist | Approve representation/classification/framing; may set `theologically-reviewed` when process allows | **Founder manual approval** (+ later Persona IDV after appointment) |
+| **Verified theological reviewer** (long-term) | Panelist with completed IDV | Same as theological reviewer; UI shows verified identity badge on *panel membership*, not on doctrine | Founder-appointed **and** Persona inquiry passed |
+
+**Founding-stage decision (locked):** the repository founder **manually approves every reviewer**. No self-serve elevation, no automatic admission from IDV, credentials upload, or GitHub org membership alone.
 
 Badge copy must never imply “Church-approved” or “Vatican-verified.” Prefer: **“Identity verified · Project panelist.”**
 
@@ -64,9 +66,9 @@ On merge (GitHub webhook → Worker):
 ### D. Panel onboarding (long-term + Persona)
 
 1. Candidate applies (CV/ordination/academic credentials, diocese/order if applicable, COI, areas of competence).
-2. Governance appointing body reviews qualifications (human process).
-3. Conditional offer → **Persona IDV** (government ID + optional selfie).
-4. On `approved` inquiry: mark `identity_verified_at` in private reviewer directory (not in open YAML).
+2. **Founder manually approves or rejects** (founding stage). Later stages may delegate appointment per published governance, but never remove the human gate.
+3. After approval → optional/required **Persona IDV** (government ID + optional selfie) when Phase 4 is live.
+4. On `approved` inquiry: mark `identity_verified_at` in private reviewer directory (not in open YAML). IDV success without prior founder approval does nothing.
 5. Publish public panel listing: display name, role, competence areas, verification status — **no** government ID numbers, address, DOB, or document images in git.
 
 ## Phased roadmap
@@ -92,7 +94,7 @@ Keep current public Issue CTA. Add reviewer path:
 | Piece | Notes |
 |---|---|
 | GitHub OAuth on site | Login for contributors/reviewers |
-| Allowlist of reviewer GitHub usernames | Config in private env or encrypted store; bootstrap with founder-appointed list |
+| Allowlist of reviewer GitHub usernames | Private config; **only founder-approved** accounts; no auto-add from applications |
 | Correction form on knowledge pages | Prefills context id/slug; validates required fields |
 | GitHub App | Opens PR from bot account; labels `correction`, `needs-theological-review` when flagged |
 | Minimal `/review` page | Lists open correction PRs via GitHub API; links to GitHub for approve/merge if UI actions not ready |
@@ -236,7 +238,7 @@ Private directory maps `panel:liturgy-2026` → people. Optional public display 
 Create under `governance/` (planned in [governance/README.md](../governance/README.md)):
 
 1. **Reviewer qualifications** — education, faculties, publication, pastoral roles; Catholic identity requirements if any; competence tags
-2. **Appointment & removal** — who appoints during founding stage vs mature stage
+2. **Appointment & removal** — founding stage: founder manually approves/removes everyone; document any later delegation without removing a human gate
 3. **Conflicts of interest** — disclosure, recusal
 4. **Evidence standards** — what a reviewer must cite to approve
 5. **Appeals & disputed content**
@@ -280,13 +282,18 @@ When ready for Phase 4:
 
 Not success metrics: upvotes, likes, or traffic-weighted doctrine.
 
+## Decisions
+
+| Topic | Decision |
+|---|---|
+| Founding appointing authority | **Founder manually approves everyone** (no auto-admission) |
+
 ## Open questions
 
-1. Founding appointing authority: founder-only until a board/panel charter exists?
-2. Must theological reviewers be clergy, or may qualified lay theologians serve?
-3. Public visibility of individual reviewer names on each object vs panel-level attribution?
-4. Host proposal UI on the open Worker vs a small private “review console” app?
-5. Dual approval rule for material doctrinal edits — hard requirement from day one of Phase 2?
+1. Must theological reviewers be clergy, or may qualified lay theologians serve?
+2. Public visibility of individual reviewer names on each object vs panel-level attribution?
+3. Host proposal UI on the open Worker vs a small private “review console” app?
+4. Dual approval rule for material doctrinal edits — hard requirement from day one of Phase 2?
 
 ## Related documents
 
