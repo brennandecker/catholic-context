@@ -231,6 +231,66 @@ Cloudflare Worker (or equivalent BFF)
 - Stable identifier for open-source visibility without requiring GitHub
 - Legal name may stay private; public username is the attribution handle (display name optional and separate)
 
+## User authentication (platform)
+
+Reviewers and other signed-in users authenticate **only with Catholic Context**. GitHub is never the IdP for reviewers.
+
+### Recommended MVP: email magic link (Supabase Auth)
+
+Catholic Context already has a Supabase project in play for product work; reuse it as the auth + private data plane (kept out of the open knowledge repo).
+
+```text
+1. User enters email on catholiccontext.org/login
+2. Supabase Auth sends a one-time magic link (or OTP)
+3. User clicks link → session cookies / JWT established with the Worker/BFF
+4. Platform creates or loads account row:
+     - internal user id (UUID)
+     - platform public username (unique handle for PRs/provenance)
+     - email (private)
+     - role flags from founder allowlist (reviewer / none)
+5. Subsequent requests: session proves identity; allowlist proves reviewer powers
+```
+
+**Why magic link first**
+
+- No password database to babysit for a tiny founding panel
+- No GitHub account required
+- Easy for Channing and later panelists
+- Fits Cloudflare Worker + Supabase pattern
+
+**Optional later**
+
+- Passkeys / WebAuthn
+- Persona IDV step-up for panelists (Phase 4) — binds a verified person to an existing platform account; does not replace login
+- Password only if someone needs it; not the default
+
+### What auth grants (and does not)
+
+| After login | Meaning |
+|---|---|
+| Valid session | “This browser is user X” |
+| Founder allowlist | “User X may propose/review” |
+| Persona verified (later) | “User X’s personhood was IDV-checked” |
+
+Login alone never grants review powers. Founder appointment does.
+
+### Session shape
+
+- HttpOnly secure cookie (or Supabase SSR cookie pattern) on `catholiccontext.org`
+- Short-lived access + refresh; revoke on founder removal from panel
+- Server checks: `user_id ∈ reviewer_allowlist` before `/propose` and `/review` mutations
+
+### Account bootstrap for Channing (first reviewer)
+
+1. Founder (or invite flow) creates / invites email → magic link
+2. Platform assigns `platform public username` (chosen or generated, unique)
+3. Founder flips allowlist: theological reviewer
+4. Channing signs in with email forever after — still no GitHub
+
+### Public site remains open
+
+Browsing knowledge, search, and **Suggest a Correction → GitHub Issue** stay available without signing in. Auth is only for platform proposal/review tooling.
+
 ## Schema / metadata additions (later)
 
 Keep knowledge objects free of PII. Prefer:
