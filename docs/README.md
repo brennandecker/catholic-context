@@ -17,6 +17,7 @@ Recommended reading order:
 7. [`../GOVERNANCE.md`](../GOVERNANCE.md) — founding governance principles
 8. [`theological-review.md`](theological-review.md) — theological review workflow
 9. [`authority-model.md`](authority-model.md) — source/authority modeling approach
+9b. [`REVIEWER_CORRECTION_WORKFLOW.md`](REVIEWER_CORRECTION_WORKFLOW.md) — UI corrections → GitHub PRs → in-UI review; Persona IDV panel plan
 10. [`../harness/README.md`](../harness/README.md) — Catholic Harness foundation
 11. [`../evals/README.md`](../evals/README.md) — Catholic Evals foundation
 12. [`../schema/catholic-context.schema.json`](../schema/catholic-context.schema.json) — canonical knowledge-object schema
@@ -39,6 +40,7 @@ Recommended reading order:
 
 - `theological-review.md`
 - `authority-model.md`
+- `REVIEWER_CORRECTION_WORKFLOW.md`
 - root `GOVERNANCE.md`
 
 ### Open-source implementation

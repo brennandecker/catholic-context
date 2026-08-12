@@ -17,5 +17,10 @@ Planned standards include:
 - correction and appeals process
 - relationship between community voting and formal review
 - financial independence of theological governance
+- identity verification policy for panelists (personhood / anti-fraud — not Magisterial authority)
+
+Product/engineering plan for the UI correction → GitHub PR → in-UI review loop, including a long-term Persona IDV path for a verified reviewer panel:
+
+- [`docs/REVIEWER_CORRECTION_WORKFLOW.md`](../docs/REVIEWER_CORRECTION_WORKFLOW.md)
 
 Until these standards are established, theological material should be treated conservatively and labeled according to its actual review status.
