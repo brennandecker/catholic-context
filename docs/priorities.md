@@ -61,7 +61,7 @@ Until then, the community layer **is** GitHub Issues, pull requests, and appoint
 
 ## The next five things
 
-These are ordered by mission leverage, not by how large they feel. Do the first well before using later ones as a reason to delay it.
+These are ordered by mission leverage, not by how large they feel. Do the first well before using later ones as a reason to delay it. Concrete files, branch inputs, and acceptance criteria are in [`feature-plan.md`](feature-plan.md).
 
 ### 1. Land the public website as an honest window
 

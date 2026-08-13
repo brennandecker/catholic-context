@@ -17,18 +17,19 @@ Before making architectural or UI changes, read in this order:
 5. `docs/related-projects.md`
 6. `docs/API.md`
 7. `docs/priorities.md`
-8. `docs/DESIGN_FIDELITY.md`
-9. `docs/DESIGN_SYSTEM.md`
-10. `docs/WEBSITE_IMPLEMENTATION.md`
-11. `GOVERNANCE.md`
-12. `docs/theological-review.md`
-13. `docs/authority-model.md`
-14. `harness/README.md`
-15. `evals/README.md`
-16. `schema/catholic-context.schema.json`
-17. `LICENSING.md`
-18. `docs/SOURCE_RIGHTS.md`
-19. `sources/README.md`
+8. `docs/feature-plan.md`
+9. `docs/DESIGN_FIDELITY.md`
+10. `docs/DESIGN_SYSTEM.md`
+11. `docs/WEBSITE_IMPLEMENTATION.md`
+12. `GOVERNANCE.md`
+13. `docs/theological-review.md`
+14. `docs/authority-model.md`
+15. `harness/README.md`
+16. `evals/README.md`
+17. `schema/catholic-context.schema.json`
+18. `LICENSING.md`
+19. `docs/SOURCE_RIGHTS.md`
+20. `sources/README.md`
 
 These documents are the current product and implementation source of truth.
 

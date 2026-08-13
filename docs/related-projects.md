@@ -81,7 +81,7 @@ Catholic Context should remain useful if CatholicOS IDs change or the org goes q
 
 ## What to do next
 
-The ordered near-term work is in [`priorities.md`](priorities.md): land the public website, write a catechetical spine, make review real, make Evals and the Harness runnable, and open corrections without turning knowledge pages into a perspective forum.
+The ordered near-term work is in [`priorities.md`](priorities.md). The engineering slices, files, and acceptance criteria are in [`feature-plan.md`](feature-plan.md).
 
 Do not start by building a hosted API. There is not yet enough canonical knowledge for an API to be more than an empty wrapper.
 
