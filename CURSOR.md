@@ -16,18 +16,19 @@ Before making architectural or UI changes, read in this order:
 4. `docs/COMMERCIAL_MODEL.md`
 5. `docs/related-projects.md`
 6. `docs/API.md`
-7. `docs/DESIGN_FIDELITY.md`
-8. `docs/DESIGN_SYSTEM.md`
-9. `docs/WEBSITE_IMPLEMENTATION.md`
-10. `GOVERNANCE.md`
-11. `docs/theological-review.md`
-12. `docs/authority-model.md`
-13. `harness/README.md`
-14. `evals/README.md`
-15. `schema/catholic-context.schema.json`
-16. `LICENSING.md`
-17. `docs/SOURCE_RIGHTS.md`
-18. `sources/README.md`
+7. `docs/priorities.md`
+8. `docs/DESIGN_FIDELITY.md`
+9. `docs/DESIGN_SYSTEM.md`
+10. `docs/WEBSITE_IMPLEMENTATION.md`
+11. `GOVERNANCE.md`
+12. `docs/theological-review.md`
+13. `docs/authority-model.md`
+14. `harness/README.md`
+15. `evals/README.md`
+16. `schema/catholic-context.schema.json`
+17. `LICENSING.md`
+18. `docs/SOURCE_RIGHTS.md`
+19. `sources/README.md`
 
 These documents are the current product and implementation source of truth.
 
@@ -144,7 +145,7 @@ The public may inspect, fork, open issues, and submit pull requests. Public cont
 Do not add these unless explicitly requested:
 
 - authentication
-- proprietary voting backend
+- native voting backend
 - vector database
 - embeddings
 - AI chat

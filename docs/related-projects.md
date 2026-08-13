@@ -81,23 +81,9 @@ Catholic Context should remain useful if CatholicOS IDs change or the org goes q
 
 ## What to do next
 
-Do not start by building a hosted API. There is not yet enough canonical knowledge for an API to be more than an empty wrapper, and both neighbors already occupy adjacent API niches (New Advent as a human library; CatholicOS as calendar/identifier services).
+The ordered near-term work is in [`priorities.md`](priorities.md): land the public website, write a catechetical spine, make review real, make Evals and the Harness runnable, and open corrections without turning knowledge pages into a perspective forum.
 
-Recommended sequence:
-
-1. **Keep Git as the canonical record.** The website, any future API, and any index must be generated from repository objects.
-2. **Make the consume rules real in the schema.** Optional `external_ids` for CDCF crosswalks; source `url` used as an access link with edition notes. Do not add a full-text field.
-3. **Write a small number of high-quality knowledge objects** that demonstrate the difference: a teaching with Catechism plus *Summa* access URLs; a person with a `doct:` alias; a council with an `oec:` alias. Default `review.status: draft`.
-4. **Ship the public website** as the first consumer of those objects, with provenance and review state visible. That is the v0.1 interface.
-5. **Then publish an API contract** that returns the same objects the website already renders. See [`API.md`](API.md).
-6. **Build a hosted API only when a real consumer needs it** (My Catholic Guide, another app, or self-hosting demand). Charge for hosting and convenience, not for the teaching.
-
-Work that looks productive but would blur the differences:
-
-- Mirroring New Advent into the repo
-- Vendoring the CatholicOS ontology as our authority model
-- Standing up search/inference/MCP hosting before there is reviewed context to serve
-- Duplicating the liturgical calendar API
+Do not start by building a hosted API. There is not yet enough canonical knowledge for an API to be more than an empty wrapper.
 
 ## API timing
 

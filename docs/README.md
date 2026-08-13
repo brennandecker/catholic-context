@@ -13,18 +13,19 @@ Recommended reading order:
 3. [`COMMERCIAL_MODEL.md`](COMMERCIAL_MODEL.md) — canonical open-source vs managed-commercial boundary
 4. [`related-projects.md`](related-projects.md) — how Catholic Context differs from New Advent and CatholicOS
 5. [`API.md`](API.md) — API contract thinking; no hosted API in v0.1
-6. [`DESIGN_FIDELITY.md`](DESIGN_FIDELITY.md) — locked high-fidelity My Catholic Guide-derived visual tokens and precedence
-7. [`DESIGN_SYSTEM.md`](DESIGN_SYSTEM.md) — CatholicContext.org UX/design principles and page guidance
-8. [`WEBSITE_IMPLEMENTATION.md`](WEBSITE_IMPLEMENTATION.md) — website implementation and MVP acceptance criteria
-9. [`../GOVERNANCE.md`](../GOVERNANCE.md) — founding governance principles
-10. [`theological-review.md`](theological-review.md) — theological review workflow
-11. [`authority-model.md`](authority-model.md) — source/authority modeling approach
-12. [`SOURCE_RIGHTS.md`](SOURCE_RIGHTS.md) — third-party source rights and ingestion limits
-13. [`../sources/README.md`](../sources/README.md) — source registry and candidate-source evaluations
-14. [`../harness/README.md`](../harness/README.md) — Catholic Harness foundation
-15. [`../evals/README.md`](../evals/README.md) — Catholic Evals foundation
-16. [`../schema/catholic-context.schema.json`](../schema/catholic-context.schema.json) — canonical knowledge-object schema
-17. [`../LICENSING.md`](../LICENSING.md) — licensing model and third-party content boundary
+6. [`priorities.md`](priorities.md) — community decision and the next five mission-ordered works
+7. [`DESIGN_FIDELITY.md`](DESIGN_FIDELITY.md) — locked high-fidelity My Catholic Guide-derived visual tokens and precedence
+8. [`DESIGN_SYSTEM.md`](DESIGN_SYSTEM.md) — CatholicContext.org UX/design principles and page guidance
+9. [`WEBSITE_IMPLEMENTATION.md`](WEBSITE_IMPLEMENTATION.md) — website implementation and MVP acceptance criteria
+10. [`../GOVERNANCE.md`](../GOVERNANCE.md) — founding governance principles
+11. [`theological-review.md`](theological-review.md) — theological review workflow
+12. [`authority-model.md`](authority-model.md) — source/authority modeling approach
+13. [`SOURCE_RIGHTS.md`](SOURCE_RIGHTS.md) — third-party source rights and ingestion limits
+14. [`../sources/README.md`](../sources/README.md) — source registry and candidate-source evaluations
+15. [`../harness/README.md`](../harness/README.md) — Catholic Harness foundation
+16. [`../evals/README.md`](../evals/README.md) — Catholic Evals foundation
+17. [`../schema/catholic-context.schema.json`](../schema/catholic-context.schema.json) — canonical knowledge-object schema
+18. [`../LICENSING.md`](../LICENSING.md) — licensing model and third-party content boundary
 
 ## Documentation roles
 
@@ -34,6 +35,7 @@ Recommended reading order:
 - `COMMERCIAL_MODEL.md`
 - `related-projects.md`
 - `API.md`
+- `priorities.md`
 - `WEBSITE_IMPLEMENTATION.md`
 
 ### Design
