@@ -24,6 +24,8 @@ Before making architectural or UI changes, read in this order:
 12. `evals/README.md`
 13. `schema/catholic-context.schema.json`
 14. `LICENSING.md`
+15. `docs/SOURCE_RIGHTS.md`
+16. `sources/README.md`
 
 These documents are the current product and implementation source of truth.
 

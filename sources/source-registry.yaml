@@ -1,31 +1,201 @@
 # Catholic Context source registry
 #
-# This file identifies source families and metadata conventions. It does not
-# grant redistribution rights to the underlying texts.
+# This file identifies source families, access hubs, and related infrastructure.
+# It does not grant redistribution rights to the underlying texts.
+# Project-use evaluations live under sources/evaluations/.
+#
+# Fields:
+#   id, name, type, role, publisher, url, evaluation, status, rights, notes
+#
+# role:
+#   primary-source-family  — ordinary citation family for knowledge objects
+#   historical-scholarship — secondary scholarship, not Magisterium
+#   translation-edition    — a specific translation of a primary work
+#   access-hub             — host/index for other works; not itself a teaching source
+#   related-infrastructure — identifiers, ontologies, APIs; not a teaching source
+#   news-commentary        — must not ground teaching claims
+#
+# status:
+#   candidate | accepted-for-citation | related-infrastructure | do-not-ground-doctrine | rejected
 
 sources:
   - id: catechism-catholic-church
     name: Catechism of the Catholic Church
     type: catechism
+    role: primary-source-family
     publisher: Holy See
+    url: https://www.vatican.va/archive/ENG0015/_INDEX.HTM
+    status: accepted-for-citation
+    rights:
+      status: third-party-copyrighted
+      redistribution: restricted
+      full_text_in_repository: false
+      excerpts: source-terms-dependent
+      attribution_required: true
     notes: Cite paragraph numbers. Do not assume permission to reproduce full text.
 
   - id: sacred-scripture
     name: Sacred Scripture
     type: scripture
+    role: primary-source-family
+    status: accepted-for-citation
+    rights:
+      status: unknown
+      redistribution: restricted
+      full_text_in_repository: false
+      notes: Translation copyright must be handled per edition.
     notes: Record book, chapter, and verse. Translation copyright must be handled separately.
 
   - id: ecumenical-councils
     name: Ecumenical Councils
     type: ecumenical-council
+    role: primary-source-family
+    status: accepted-for-citation
+    rights:
+      status: unknown
+      redistribution: restricted
+      full_text_in_repository: false
     notes: Identify council, document/session where applicable, and section/canon.
 
   - id: magisterial-documents
     name: Magisterial Documents
     type: magisterium
-    notes: Identify authoring authority, document title, date where useful, and paragraph/section.
+    role: primary-source-family
+    publisher: Holy See
+    url: https://www.vatican.va/
+    status: accepted-for-citation
+    rights:
+      status: unknown
+      redistribution: restricted
+      full_text_in_repository: false
+    notes: Identify authoring authority, document title, date where useful, and paragraph/section. Prefer authorized Holy See destinations over secondary hosts.
 
   - id: code-canon-law
     name: Code of Canon Law
     type: canon-law
+    role: primary-source-family
+    publisher: Holy See
+    status: accepted-for-citation
+    rights:
+      status: third-party-copyrighted
+      redistribution: restricted
+      full_text_in_repository: false
     notes: Cite canon number and applicable code/edition.
+
+  - id: church-fathers
+    name: Church Fathers
+    type: church-father
+    role: primary-source-family
+    status: accepted-for-citation
+    evaluation: sources/evaluations/new-advent.md
+    rights:
+      status: unknown
+      redistribution: restricted
+      full_text_in_repository: false
+      notes: Many 19th-century English translations are public domain in the US; later translations are not. Identify author, work, and edition.
+    notes: Cite author, work, and book/chapter where applicable. Presence in a patristic library does not make every proposition definitive teaching. See New Advent evaluation for a common public-domain access hub.
+
+  - id: summa-theologiae-dominican-1920
+    name: Summa Theologiae (Dominican Fathers translation, 1920)
+    type: doctor-of-the-church
+    role: translation-edition
+    publisher: Fathers of the English Dominican Province
+    url: https://www.newadvent.org/summa/
+    status: accepted-for-citation
+    evaluation: sources/evaluations/new-advent.md
+    rights:
+      status: public-domain
+      redistribution: permitted-for-1920-translation-text
+      full_text_in_repository: false
+      notes: US public-domain determination for the 1920 translation text. New Advent's online edition/presentation remains third-party copyrighted. Do not copy the website compilation.
+    notes: Cite part, question, and article. The Summa is theological science by a Doctor of the Church, not a substitute for the Magisterium or Catechism.
+
+  - id: catholic-encyclopedia-1913
+    name: Catholic Encyclopedia (1907–1913)
+    type: scholarship
+    role: historical-scholarship
+    url: https://www.newadvent.org/cathen/
+    status: accepted-for-citation
+    evaluation: sources/evaluations/new-advent.md
+    rights:
+      status: public-domain
+      redistribution: permitted-for-1913-print-text
+      full_text_in_repository: false
+      notes: US public-domain determination for the original 1907–1913 print text. New Advent HTML/compilation remains third-party copyrighted. Later encyclopedias are different works.
+    notes: Use for historical scholarship, biography, and older terminology. Do not treat 1913 encyclopedia articles as current Church teaching. Prefer primary magisterial, conciliar, catechetical, or canonical sources for what the Church teaches now.
+
+  - id: knox-bible
+    name: Knox Bible
+    type: scripture
+    role: translation-edition
+    publisher: Westminster Diocese / Baronius Press
+    url: https://www.newadvent.org/bible/
+    status: accepted-for-citation
+    evaluation: sources/evaluations/new-advent.md
+    rights:
+      status: third-party-copyrighted
+      redistribution: restricted
+      full_text_in_repository: false
+      excerpts: source-terms-dependent
+      attribution_required: true
+      notes: Knox Translation Copyright © 2013 Westminster Diocese. Do not ingest or redistribute.
+    notes: A Catholic English translation hosted on New Advent. Cite Scripture by book, chapter, and verse; do not store Knox text. Do not use New Advent as Catholic Context's canonical Bible edition.
+
+  - id: new-advent
+    name: New Advent
+    type: other
+    role: access-hub
+    publisher: New Advent LLC
+    url: https://www.newadvent.org/
+    status: related-infrastructure
+    evaluation: sources/evaluations/new-advent.md
+    rights:
+      status: third-party-copyrighted
+      redistribution: restricted
+      full_text_in_repository: false
+      notes: Site presentation, compilation, and several hosted translations are copyrighted even where some underlying historical works are public domain.
+    notes: Discovery and access hub for several collections evaluated separately. Cite the underlying work and edition, not New Advent as the authority. Do not scrape or commit the site. Homepage news/commentary must not ground teaching claims.
+
+  - id: catholicos-cdcf
+    name: CatholicOS / Catholic Digital Commons Foundation
+    type: other
+    role: related-infrastructure
+    publisher: Catholic Digital Commons Foundation
+    url: https://github.com/orgs/CatholicOS
+    status: related-infrastructure
+    evaluation: sources/evaluations/catholicos.md
+    rights:
+      status: open-license
+      redistribution: license-dependent-per-repository
+      full_text_in_repository: false
+      notes: Many identifier/API repos are Apache-2.0; some are MIT; several are unlicensed. Underlying liturgical, scriptural, and magisterial texts remain third-party.
+    notes: Peer identifier, ontology, and API commons. Optional external-ID crosswalks for councils, pontiffs, Doctors, Churches sui iuris, and liturgical data are in scope. Do not import ontology authority weights or CDCF summaries as Catholic Context teaching.
+
+  - id: catholicos-identifier-registries
+    name: CDCF common identifier registries
+    type: other
+    role: related-infrastructure
+    publisher: Catholic Digital Commons Foundation
+    url: https://github.com/orgs/CatholicOS
+    status: related-infrastructure
+    evaluation: sources/evaluations/catholicos.md
+    rights:
+      status: open-license
+      redistribution: license-dependent-per-repository
+      full_text_in_repository: false
+    notes: "Draft canonical IDs including oec: (councils), rp: (Roman Pontiffs), doct: (Doctors), and related liturgical/magisterial registries. Record as optional external identifiers only. IDs are draft pending CDCF committee review."
+
+  - id: catholicos-semantic-canon
+    name: Catholic Semantic Canon ontology
+    type: other
+    role: related-infrastructure
+    publisher: Catholic Digital Commons Foundation
+    url: https://github.com/CatholicOS/ontology-semantic-canon
+    status: related-infrastructure
+    evaluation: sources/evaluations/catholicos.md
+    rights:
+      status: open-license
+      redistribution: restricted
+      full_text_in_repository: false
+      notes: Apache-2.0 repository license covers the ontology artifacts, not Church documents modeled by them.
+    notes: OWL/RDF engineering model of Catholic sources and relationships. Compare for interoperability. Do not vendor the graph as canonical theology or copy authority weights into knowledge-object classification.

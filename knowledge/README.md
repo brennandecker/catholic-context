@@ -30,3 +30,5 @@ knowledge/
 ```
 
 All substantive theological knowledge should carry explicit review metadata and source provenance. The current machine-readable schema lives under `schema/` while the format remains pre-alpha.
+
+Source families, access hubs, and related identifier commons are recorded in `sources/source-registry.yaml`. Candidate sources should be evaluated under `sources/evaluations/` before they become ordinary citation or ingestion targets.

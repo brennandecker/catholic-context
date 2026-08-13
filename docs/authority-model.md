@@ -38,6 +38,16 @@ Similarly, Catholic Context should distinguish among concepts such as:
 
 The exact taxonomy and any hierarchy-of-authority model should be established with qualified theological review before being treated as normative by downstream systems.
 
+## Access hubs and related infrastructure
+
+A website, identifier commons, ontology, or API may be useful without being a Catholic source type.
+
+- An **access hub** (for example New Advent) may host Scripture, Fathers, the *Summa*, encyclopedia articles, magisterial documents, and news. Cite the underlying work and edition, not the hub.
+- **Historical scholarship** (for example the 1907–1913 *Catholic Encyclopedia*) may inform persons, history, and older vocabulary. It does not determine current Church teaching.
+- **Related infrastructure** (for example CatholicOS / CDCF identifier registries and ontologies) may supply optional external IDs or comparison models. It is not Magisterium and must not be imported as an authority ranking.
+
+See `sources/source-registry.yaml` and `sources/evaluations/` for current project-use evaluations.
+
 ## Design objective
 
 A downstream application or AI system should eventually be able to answer not only **what sources support this context?**, but also **what kind of claim is this, what kind of sources are being cited, and what review has the Catholic Context representation received?**

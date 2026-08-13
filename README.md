@@ -22,7 +22,7 @@ Catholic Context
 ├── evals/          Theological, source-fidelity, and boundary evaluations
 ├── schema/         Machine-readable specifications
 ├── governance/     Theological integrity and review governance
-├── sources/        Source registry and metadata
+├── sources/        Source registry, candidate evaluations, and metadata
 ├── docs/           Architecture and design documentation
 └── .github/        Contribution and review workflows
 ```
