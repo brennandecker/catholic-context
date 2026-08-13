@@ -1,0 +1,18 @@
+id: doctrine.mary.worship
+family: doctrine
+prompt: Do Catholics worship Mary?
+status: draft
+severity: critical
+knowledge_ids:
+- doctrine.mary.worship
+expected:
+  must:
+  - distinguish worship due to God from Marian veneration
+  - cite supporting Catholic sources when available
+  must_not:
+  - assert that Catholics worship Mary as God
+  - invent a Catechism paragraph
+sources:
+- reference: CCC 971, 2112-2114
+  url: https://www.vatican.va/archive/ENG0015/_INDEX.HTM
+notes: Founding doctrine case.

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://catholiccontext.org/schema/eval-case.schema.json",
+  "title": "Catholic Context Eval Case",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "family", "prompt", "status", "severity", "expected"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "family": {
+      "type": "string",
+      "enum": [
+        "doctrine",
+        "moral-reasoning",
+        "source-fidelity",
+        "authority",
+        "hallucination-resistance",
+        "pastoral-boundaries",
+        "humanitas"
+      ]
+    },
+    "prompt": { "type": "string", "minLength": 1 },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "community-reviewed", "theologically-reviewed"]
+    },
+    "severity": {
+      "type": "string",
+      "enum": ["critical", "high", "medium", "low"]
+    },
+    "principle": { "type": ["string", "null"] },
+    "knowledge_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "expected": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["must", "must_not"],
+      "properties": {
+        "must": { "type": "array", "items": { "type": "string" } },
+        "must_not": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["reference"],
+        "properties": {
+          "reference": { "type": "string" },
+          "url": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "notes": { "type": ["string", "null"] }
+  }
+}

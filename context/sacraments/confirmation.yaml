@@ -1,0 +1,40 @@
+# DRAFT — theological review pending
+id: sacrament.confirmation
+title: Confirmation
+entity_type: sacrament
+classification:
+  claim_type: doctrine
+  certainty: null
+  note: >-
+    The exact theological classification and certainty vocabulary are provisional and require qualified theological review.
+summary: >-
+  Confirmation completes baptismal grace by a special outpouring of the Holy
+  Spirit, strengthening the baptized for witness and fuller participation in
+  the Church's mission.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: catechism
+    reference: CCC 1285
+    url: null
+    note: >-
+      Confirmation as one of the sacraments of initiation.
+  - source_type: catechism
+    reference: CCC 1302-1305
+    url: null
+    note: >-
+      Effects of Confirmation.
+relationships:
+  broader:
+    - concept.sacrament
+  narrower: []
+  related:
+    - sacrament.baptism
+    - doctrine.holy-spirit
+notes: >-
+  Draft seed object distilled for Catholic Context from My Catholic Guide /
+  Supabase metadata (not a full narrative import). Presence here does not
+  imply ecclesiastical approval or completed theological review.

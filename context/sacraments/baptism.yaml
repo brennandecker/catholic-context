@@ -1,0 +1,40 @@
+# DRAFT — theological review pending
+id: sacrament.baptism
+title: Baptism
+entity_type: sacrament
+classification:
+  claim_type: doctrine
+  certainty: null
+  note: >-
+    The exact theological classification and certainty vocabulary are provisional and require qualified theological review.
+summary: >-
+  Baptism is the sacrament of entrance into the life of Christ and his Church.
+  It washes away original sin (and personal sin in those able to commit it),
+  incorporates the person into Christ, and makes one a member of the Church.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: catechism
+    reference: CCC 1213
+    url: null
+    note: >-
+      Baptism as the basis of the Christian life.
+  - source_type: catechism
+    reference: CCC 1263-1267
+    url: null
+    note: >-
+      Effects of Baptism.
+relationships:
+  broader:
+    - concept.sacrament
+  narrower: []
+  related:
+    - sacrament.confirmation
+    - liturgy.mass
+notes: >-
+  Draft seed object distilled for Catholic Context from My Catholic Guide /
+  Supabase metadata (not a full narrative import). Presence here does not
+  imply ecclesiastical approval or completed theological review.

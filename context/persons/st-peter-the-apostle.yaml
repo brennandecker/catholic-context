@@ -1,0 +1,42 @@
+# DRAFT — theological review pending
+id: person.st-peter-the-apostle
+title: St. Peter the Apostle
+entity_type: person
+classification: null
+summary: >-
+  Simon Peter, apostle of Jesus Christ, is remembered as the rock upon whom
+  Christ built his Church. Catholic teaching holds that the Pope is his
+  successor in the pastoral office.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: scripture
+    reference: Matthew 16:16-19
+    url: null
+    note: >-
+      Peter's confession and the keys.
+  - source_type: scripture
+    reference: John 21:15-17
+    url: null
+    note: >-
+      Peter's restoration and charge to feed the sheep.
+  - source_type: catechism
+    reference: CCC 880-882
+    url: null
+    note: >-
+      Apostolic college and the Pope as Peter's successor.
+relationships:
+  broader:
+    []
+  narrower: []
+  related:
+    - doctrine.papacy.infallibility
+    - place.st-peters-basilica
+notes: >-
+  Entity summary adapted from My Catholic Guide saints record `st-peter-the-
+  apostle`. Draft seed object distilled for Catholic Context from My Catholic
+  Guide / Supabase metadata (not a full narrative import). Presence here does
+  not imply ecclesiastical approval or completed theological review.

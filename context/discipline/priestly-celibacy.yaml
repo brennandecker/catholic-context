@@ -1,0 +1,55 @@
+# DRAFT — theological review pending
+id: doctrine.discipline.priestly-celibacy
+title: Priestly celibacy in the Latin Church
+entity_type: teaching
+classification:
+  claim_type: discipline
+  certainty: null
+  note: >-
+    The exact theological classification and certainty vocabulary are provisional and require
+    qualified theological review.
+summary: >-
+  Priestly celibacy in the Latin Church is a disciplinary law of great spiritual value, not
+  a dogma. The Church has authority to bind Latin-rite candidates for the priesthood to celibacy
+  while recognizing that married priests exist in Eastern Catholic Churches and, in limited
+  cases, in the Latin Church. Calling celibacy a dogma confuses a changeable ecclesiastical
+  discipline with revealed doctrine.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+source_fidelity:
+  representation: summary
+  confidence: 0.78
+  needs_theological_review: true
+  linkable_sources: true
+  assessed_by: founding-spine-draft
+  assessed_at: '2026-08-13T00:00:00Z'
+  rationale: Draft follows CCC 1579-1580 and Presbyterorum Ordinis 16 on celibacy as Latin
+    discipline.
+  unresolved_issues:
+  - Theological review pending.
+  - Classification vocabulary is provisional.
+sources:
+- source_type: catechism
+  reference: CCC 1579-1580
+  url: https://www.vatican.va/archive/ENG0015/_INDEX.HTM
+  note: Celibacy in the Latin Church; married clergy in Eastern Churches.
+- source_type: ecumenical-council
+  reference: Presbyterorum Ordinis 16
+  url: >-
+    https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19651207_presbyterorum-ordinis_en.html
+  note: Vatican II on priestly celibacy as a law of the Latin Church.
+- source_type: canon-law
+  reference: CIC can. 277
+  url: https://www.vatican.va/archive/cod-iuris-canonici/cic_index_en.html
+  note: Latin-rite obligation of clerical continence and celibacy.
+relationships:
+  broader:
+  - sacrament.holy-orders
+  narrower: []
+  related:
+  - doctrine.papacy.infallibility
+notes: >-
+  Founding spine object for 'Is priestly celibacy a dogma?' Draft; theological review pending.

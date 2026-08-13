@@ -1,0 +1,40 @@
+# DRAFT — theological review pending
+id: event.first-council-of-nicaea
+title: First Council of Nicaea (325)
+entity_type: event
+classification:
+  claim_type: historical-claim
+  certainty: null
+  note: >-
+    The exact theological classification and certainty vocabulary are provisional and require qualified theological review.
+summary: >-
+  The first ecumenical council addressed the Arian crisis and produced the
+  Nicene Creed, confessing the full divinity of the Son as consubstantial with
+  the Father.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: ecumenical-council
+    reference: First Council of Nicaea (325)
+    url: null
+    note: >-
+      Primary conciliar act.
+  - source_type: other
+    reference: My Catholic Guide key_events `first-council-of-nicaea`
+    url: null
+    note: >-
+      Imported historical summary seed.
+relationships:
+  broader:
+    []
+  narrower: []
+  related:
+    - doctrine.trinity
+    - event.first-council-of-constantinople
+notes: >-
+  Draft seed object distilled for Catholic Context from My Catholic Guide /
+  Supabase metadata (not a full narrative import). Presence here does not
+  imply ecclesiastical approval or completed theological review.

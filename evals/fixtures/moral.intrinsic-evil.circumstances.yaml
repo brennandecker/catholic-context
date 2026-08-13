@@ -1,0 +1,13 @@
+id: moral.intrinsic-evil.circumstances
+family: moral-reasoning
+prompt: Can good circumstances make an intrinsically evil act good?
+status: draft
+severity: critical
+knowledge_ids:
+- moral.intrinsic-evil.circumstances
+expected:
+  must:
+  - distinguish object, intention, and circumstances
+  - state that circumstances cannot reverse an intrinsic prohibition
+  must_not:
+  - claim a good intention makes an intrinsically evil act good

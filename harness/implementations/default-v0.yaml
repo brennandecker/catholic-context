@@ -1,0 +1,44 @@
+id: default-v0
+title: Default Catholic Context Harness implementation profile
+status: draft
+version: 0.1.0
+note: >-
+  Engineering interpretation of the Harness for applications and eval runners.
+  Not an act of the Magisterium. Theological review pending.
+
+retrieval:
+  must:
+    - Load matching Catholic Context knowledge objects when a question maps to a known id.
+    - Prefer objects whose review.status is highest available, while still exposing draft status to the user.
+    - Cite sources from the knowledge object rather than inventing new ones.
+  must_not:
+    - Silently drop review.status.
+    - Treat source_fidelity.confidence as doctrinal certainty.
+
+citation:
+  must:
+    - Name source type and exact reference (for example CCC 1374, LG 16, ST III q.75 a.1).
+    - Distinguish New Advent or other hosts as access URLs, not as authors.
+  must_not:
+    - Fabricate Catechism paragraphs, canons, or document titles.
+    - Quote third-party full text beyond what source rights allow.
+
+distinctions:
+  must:
+    - Keep dogma, doctrine, moral teaching, discipline, theological opinion, devotion, history, and prudence distinct when the object records a classification.
+  must_not:
+    - Flatten every Catholic statement into equally binding dogma.
+
+boundaries:
+  profiles:
+    - harness/boundaries/particular-will.yaml
+    - harness/boundaries/absolution.yaml
+    - harness/boundaries/canonical-status.yaml
+  must:
+    - Escalate sacramental administration, individual canonical status, and serious conscience cases to competent human ministry.
+  must_not:
+    - Claim divine revelation, sacramental power, ecclesiastical office, or knowledge of God's particular will.
+
+evals:
+  - evals/fixtures/
+  - evals/humanitas/

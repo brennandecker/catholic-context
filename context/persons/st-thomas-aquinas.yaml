@@ -1,0 +1,37 @@
+# DRAFT — theological review pending
+id: person.st-thomas-aquinas
+title: St. Thomas Aquinas
+entity_type: person
+classification: null
+summary: >-
+  Dominican friar and Doctor of the Church (c. 1225–1274). His Summa
+  Theologiae and related works remain a principal reference for Catholic
+  theology and philosophy.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: doctor-of-the-church
+    reference: St. Thomas Aquinas
+    url: null
+    note: >-
+      Recognized Doctor of the Church.
+  - source_type: scholarship
+    reference: Summa Theologiae
+    url: null
+    note: >-
+      Major systematic theological work.
+relationships:
+  broader:
+    []
+  narrower: []
+  related:
+    - eucharist.real-presence
+    - doctrine.grace
+notes: >-
+  Entity summary adapted from My Catholic Guide saints record `st-thomas-
+  aquinas`. Draft seed object distilled for Catholic Context from My Catholic
+  Guide / Supabase metadata (not a full narrative import). Presence here does
+  not imply ecclesiastical approval or completed theological review.

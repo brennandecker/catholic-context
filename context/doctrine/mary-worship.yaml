@@ -1,0 +1,53 @@
+# DRAFT — theological review pending
+id: doctrine.mary.worship
+title: Worship of God and veneration of Mary
+entity_type: teaching
+classification:
+  claim_type: doctrine
+  certainty: null
+  note: >-
+    The exact theological classification and certainty vocabulary are provisional and require
+    qualified theological review.
+summary: >-
+  The Catholic Church does not worship Mary. Worship, or latria, is due to God alone. Mary
+  is honored with a unique veneration, traditionally called hyperdulia, because of her unique
+  role as Mother of God. This honor is relative to Christ and must never be confused with
+  the adoration given to the Trinity.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+source_fidelity:
+  representation: summary
+  confidence: 0.82
+  needs_theological_review: true
+  linkable_sources: true
+  assessed_by: founding-spine-draft
+  assessed_at: '2026-08-13T00:00:00Z'
+  rationale: >-
+    Draft restates CCC and Lumen Gentium distinctions between adoration of God and Marian
+    veneration without quoting full paragraphs.
+  unresolved_issues:
+  - Theological review pending.
+  - Classification vocabulary is provisional.
+sources:
+- source_type: catechism
+  reference: CCC 971, 2112-2114, 2675
+  url: https://www.vatican.va/archive/ENG0015/_INDEX.HTM
+  note: Catechetical teaching on Marian devotion and the first commandment.
+- source_type: ecumenical-council
+  reference: Lumen Gentium 66-67
+  url: >-
+    https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19641121_lumen-gentium_en.html
+  note: Vatican II on the cult of the Blessed Virgin.
+relationships:
+  broader:
+  - person.blessed-virgin-mary
+  narrower: []
+  related:
+  - doctrine.mary.theotokos
+  - doctrine.communion.of-saints
+notes: >-
+  Founding spine object for the eval prompt 'Do Catholics worship Mary?' Draft; theological
+  review pending.

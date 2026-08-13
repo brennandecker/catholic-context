@@ -1,0 +1,40 @@
+# DRAFT — theological review pending
+id: sacrament.penance
+title: Sacrament of Penance (Reconciliation)
+entity_type: sacrament
+classification:
+  claim_type: doctrine
+  certainty: null
+  note: >-
+    The exact theological classification and certainty vocabulary are provisional and require qualified theological review.
+summary: >-
+  The Sacrament of Penance is the ordinary means by which the baptized who
+  have fallen into sin after Baptism receive God's forgiveness through
+  contrition, confession, absolution, and satisfaction.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: catechism
+    reference: CCC 1446
+    url: null
+    note: >-
+      Christ instituted the sacrament for conversion after Baptism.
+  - source_type: catechism
+    reference: CCC 1456
+    url: null
+    note: >-
+      Confession of sins to a priest.
+relationships:
+  broader:
+    - concept.sacrament
+  narrower: []
+  related:
+    - doctrine.grace
+    - liturgy.mass
+notes: >-
+  Draft seed object distilled for Catholic Context from My Catholic Guide /
+  Supabase metadata (not a full narrative import). Presence here does not
+  imply ecclesiastical approval or completed theological review.

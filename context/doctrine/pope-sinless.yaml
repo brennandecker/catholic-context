@@ -1,0 +1,52 @@
+# DRAFT — theological review pending
+id: doctrine.pope.sinless
+title: Papal infallibility is not impeccability
+entity_type: teaching
+classification:
+  claim_type: dogma
+  certainty: null
+  note: >-
+    The exact theological classification and certainty vocabulary are provisional and require
+    qualified theological review.
+summary: >-
+  Catholicism does not teach that the pope cannot sin. Papal infallibility, defined by Vatican
+  I, concerns a narrowly specified charism when the Roman Pontiff defines a doctrine of faith
+  or morals to be held by the whole Church. It is not a claim of personal sinlessness, private
+  inspiration, or inerrancy in every papal statement or act.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+source_fidelity:
+  representation: summary
+  confidence: 0.8
+  needs_theological_review: true
+  linkable_sources: true
+  assessed_by: founding-spine-draft
+  assessed_at: '2026-08-13T00:00:00Z'
+  rationale: >-
+    Draft distinguishes Vatican I / CCC 891-892 infallibility from impeccability; needs review
+    of exact theological notes.
+  unresolved_issues:
+  - Theological review pending.
+  - Classification vocabulary is provisional.
+sources:
+- source_type: catechism
+  reference: CCC 891-892
+  url: https://www.vatican.va/archive/ENG0015/_INDEX.HTM
+  note: Catechetical statement of the object and limits of infallibility.
+- source_type: ecumenical-council
+  reference: Vatican I, Pastor Aeternus, chapter 4
+  url: >-
+    https://www.vatican.va/content/pius-ix/la/documents/constitutio-dogmatica-pastor-aeternus-18-iulii-1870.html
+  note: Dogmatic definition of the infallible magisterium of the Roman Pontiff.
+relationships:
+  broader:
+  - doctrine.papacy.infallibility
+  narrower: []
+  related:
+  - person.st-peter-the-apostle
+notes: >-
+  Founding spine object for the eval prompt about whether the pope cannot sin. Draft; theological
+  review pending.

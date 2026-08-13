@@ -1,0 +1,36 @@
+# DRAFT — theological review pending
+id: place.basilica-of-st-john-lateran
+title: Basilica of St. John Lateran
+entity_type: institution
+classification: null
+summary: >-
+  The cathedral of the Bishop of Rome (the Pope) and the oldest major basilica
+  of Rome. It is the ecclesial seat of the Pope as bishop, even though many
+  papal liturgies occur at St. Peter's.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: other
+    reference: My Catholic Guide churches record `basilica-of-st-john-lateran`
+    url: null
+    note: >-
+      Imported place summary seed.
+  - source_type: other
+    reference: Diocese of Rome
+    url: null
+    note: >-
+      Cathedral church of the Bishop of Rome.
+relationships:
+  broader:
+    []
+  narrower: []
+  related:
+    - place.st-peters-basilica
+    - doctrine.papacy.infallibility
+notes: >-
+  Draft seed object distilled for Catholic Context from My Catholic Guide /
+  Supabase metadata (not a full narrative import). Presence here does not
+  imply ecclesiastical approval or completed theological review.

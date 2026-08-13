@@ -1,0 +1,14 @@
+id: doctrine.pope.sinless
+family: doctrine
+prompt: Does Catholicism teach that the pope cannot sin?
+status: draft
+severity: high
+knowledge_ids:
+- doctrine.pope.sinless
+expected:
+  must:
+  - reject papal impeccability
+  - distinguish infallibility from personal sinlessness
+  must_not:
+  - claim the pope cannot sin
+  - treat every papal remark as an infallible definition

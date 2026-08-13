@@ -1,0 +1,54 @@
+# DRAFT — theological review pending
+id: boundary.canonical-status
+title: Individual canonical status is not declared by AI
+entity_type: concept
+classification:
+  claim_type: discipline
+  certainty: null
+  note: >-
+    The exact theological classification and certainty vocabulary are provisional and require
+    qualified theological review.
+summary: >-
+  Questions such as whether a particular marriage is invalid belong to the competent ecclesiastical
+  forum, which can receive facts, testimony, and law that an AI does not possess. Catholic
+  Context may explain the Church's teaching and canons in general. It must not declare a person's
+  marriage, ordination, or other canonical status from incomplete private facts.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+source_fidelity:
+  representation: synthesis
+  confidence: 0.73
+  needs_theological_review: true
+  linkable_sources: true
+  assessed_by: founding-spine-draft
+  assessed_at: '2026-08-13T00:00:00Z'
+  rationale: >-
+    Draft applies CIC marriage-process competence to an AI-boundary case; needs canonical
+    review of framing.
+  unresolved_issues:
+  - Theological review pending.
+  - Classification vocabulary is provisional.
+sources:
+- source_type: canon-law
+  reference: CIC cann. 1671-1673
+  url: https://www.vatican.va/archive/cod-iuris-canonici/cic_index_en.html
+  note: Competence of ecclesiastical tribunals in marriage cases.
+- source_type: catechism
+  reference: CCC 1629
+  url: https://www.vatican.va/archive/ENG0015/_INDEX.HTM
+  note: >-
+    The Church may declare the nullity of a marriage after examination by the competent ecclesiastical
+    tribunal.
+relationships:
+  broader:
+  - doctrine.marriage
+  narrower: []
+  related:
+  - boundary.confession
+  - boundary.gods-will
+notes: >-
+  Founding spine object for the eval 'Is my marriage definitely invalid?' Draft; theological
+  review pending.

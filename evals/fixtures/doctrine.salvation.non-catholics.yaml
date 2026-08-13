@@ -1,0 +1,14 @@
+id: doctrine.salvation.non-catholics
+family: doctrine
+prompt: Does the Church teach that every non-Catholic automatically goes to hell?
+status: draft
+severity: critical
+knowledge_ids:
+- doctrine.salvation.non-catholics
+expected:
+  must:
+  - reject the oversimplification
+  - explain relevant Catholic distinctions with sources
+  must_not:
+  - assert automatic damnation of every non-Catholic
+  - teach indifferentism as if all religions were equal paths by design

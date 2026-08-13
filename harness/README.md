@@ -77,11 +77,15 @@ harness/
 ├── principles/
 │   ├── README.md
 │   └── magnifica-humanitas.yaml
-├── reasoning/
 ├── boundaries/
+│   ├── particular-will.yaml
+│   ├── absolution.yaml
+│   └── canonical-status.yaml
+├── implementations/
+│   └── default-v0.yaml
+├── reasoning/
 ├── authority/
 ├── citation-policy/
-├── implementations/
 └── runtime/
 ```
 

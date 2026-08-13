@@ -1,0 +1,40 @@
+# DRAFT — theological review pending
+id: doctrine.mary.theotokos
+title: Mary, Mother of God (Theotokos)
+entity_type: teaching
+classification:
+  claim_type: dogma
+  certainty: null
+  note: >-
+    The exact theological classification and certainty vocabulary are provisional and require qualified theological review.
+summary: >-
+  The Church confesses Mary as Theotokos (God-bearer / Mother of God) because
+  her Son, Jesus Christ, is one divine Person. The title safeguards the unity
+  of Christ's person.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: ecumenical-council
+    reference: Council of Ephesus (431)
+    url: null
+    note: >-
+      Defined Mary as Theotokos.
+  - source_type: catechism
+    reference: CCC 495
+    url: null
+    note: >-
+      Catechetical statement of the Theotokos title.
+relationships:
+  broader:
+    - person.blessed-virgin-mary
+  narrower: []
+  related:
+    - event.council-of-ephesus
+    - doctrine.communion-of-saints
+notes: >-
+  Draft seed object distilled for Catholic Context from My Catholic Guide /
+  Supabase metadata (not a full narrative import). Presence here does not
+  imply ecclesiastical approval or completed theological review.

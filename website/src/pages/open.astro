@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../lib/site';
+---
+
+<BaseLayout
+  title="Open"
+  description="Catholic Context is built in the open — inspectable knowledge, Harness, Evals, schemas, and website source."
+>
+  <section class="section-tight shell fade-in">
+    <p class="eyebrow">✦ Open Foundation</p>
+    <h1 class="h1">Built in the open.</h1>
+    <p class="lede">
+      The knowledge layer, Harness, Evals, schemas, governance, public documentation, and
+      this website belong to the open foundation.
+    </p>
+  </section>
+
+  <section class="section shell prose">
+    <h2 class="h2">What openness means</h2>
+    <ul>
+      <li>Inspect canonical repository content and revision history</li>
+      <li>Fork and reuse under published licenses and third-party rights</li>
+      <li>Open issues and pull requests</li>
+      <li>Propose corrections with sources</li>
+      <li>Build applications on the same public foundation</li>
+    </ul>
+
+    <h2 class="h2">What openness does not mean</h2>
+    <ul>
+      <li>Uncontrolled direct editing of canonical Catholic Context</li>
+      <li>Public merge access to production content</li>
+      <li>Votes determining doctrinal status</li>
+      <li>A claim of ecclesiastical endorsement</li>
+    </ul>
+
+    <p>
+      Open source means transparency and participation. Canonical changes still flow through
+      maintainer review, and theological changes may require qualified theological review.
+    </p>
+
+    <div style="display:flex; flex-wrap:wrap; gap: var(--space-3); margin-top: var(--space-6);">
+      <a class="btn btn-primary" href={SITE.githubUrl} rel="noopener noreferrer" target="_blank">
+        View repository ↗
+      </a>
+      <a class="btn btn-secondary" href={`${SITE.githubUrl}/blob/main/CONTRIBUTING.md`} rel="noopener noreferrer" target="_blank">
+        Contributing guide ↗
+      </a>
+    </div>
+  </section>
+</BaseLayout>

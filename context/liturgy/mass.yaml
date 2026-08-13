@@ -1,0 +1,40 @@
+# DRAFT — theological review pending
+id: liturgy.mass
+title: The Mass (Holy Eucharist as Sacrifice and Sacrament)
+entity_type: liturgy
+classification:
+  claim_type: doctrine
+  certainty: null
+  note: >-
+    The exact theological classification and certainty vocabulary are provisional and require qualified theological review.
+summary: >-
+  The Mass makes present the one sacrifice of Christ. In the Liturgy of the
+  Word and the Liturgy of the Eucharist, the Church is nourished by Scripture
+  and by Christ's Body and Blood.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: catechism
+    reference: CCC 1366-1367
+    url: null
+    note: >-
+      The sacrificial character of the Eucharist.
+  - source_type: catechism
+    reference: CCC 1346
+    url: null
+    note: >-
+      Essential structure of the Mass.
+relationships:
+  broader:
+    - sacrament.eucharist
+  narrower: []
+  related:
+    - eucharist.real-presence
+    - sacrament.baptism
+notes: >-
+  Draft seed object distilled for Catholic Context from My Catholic Guide /
+  Supabase metadata (not a full narrative import). Presence here does not
+  imply ecclesiastical approval or completed theological review.

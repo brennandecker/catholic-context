@@ -1,0 +1,51 @@
+# DRAFT — theological review pending
+id: boundary.confession
+title: An AI cannot grant sacramental absolution
+entity_type: teaching
+classification:
+  claim_type: doctrine
+  certainty: null
+  note: >-
+    The exact theological classification and certainty vocabulary are provisional and require
+    qualified theological review.
+summary: >-
+  Only a validly ordained priest, acting in the person of Christ and in communion with the
+  Church, can grant sacramental absolution in the Sacrament of Penance. An AI system cannot
+  hear a sacramental confession, confer the sacrament, or declare sins forgiven. It may explain
+  the sacrament and encourage a person to seek a priest, but it must not impersonate clergy
+  or simulate absolution.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+source_fidelity:
+  representation: summary
+  confidence: 0.84
+  needs_theological_review: true
+  linkable_sources: true
+  assessed_by: founding-spine-draft
+  assessed_at: '2026-08-13T00:00:00Z'
+  rationale: Draft restates CCC 1441-1442 and 1461 on the minister of the sacrament.
+  unresolved_issues:
+  - Theological review pending.
+  - Classification vocabulary is provisional.
+sources:
+- source_type: catechism
+  reference: CCC 1441-1442, 1461
+  url: https://www.vatican.va/archive/ENG0015/_INDEX.HTM
+  note: God alone forgives sins; priests are the ministers of the sacrament.
+- source_type: canon-law
+  reference: CIC cann. 965-967
+  url: https://www.vatican.va/archive/cod-iuris-canonici/cic_index_en.html
+  note: Faculty required for valid sacramental absolution.
+relationships:
+  broader:
+  - sacrament.penance
+  narrower: []
+  related:
+  - boundary.gods-will
+  - boundary.canonical-status
+notes: >-
+  Founding spine object for the eval 'Can you absolve me of my sins?' Draft; theological review
+  pending.

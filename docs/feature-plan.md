@@ -29,6 +29,18 @@ Hard findings the features must respect:
 
 Landing order: **1 → 2 → 3 → 4 → 5**. Do not let Features 3–5 expand the encyclopedia before the spine exists.
 
+## Implementation status (this branch)
+
+Features 1–4 are implemented on this branch as a first cut. Feature 5 is the patch helper, contribute page, and workflow docs — not the full platform-auth Worker (still on `cursor/reviewer-platform-auth-b569`, and still must be taught to patch YAML).
+
+- Public Astro site under `website/`
+- Catechetical spine objects under `context/` plus the curated 25
+- Schema v0.4: `source_fidelity` + `external_ids`; fidelity UI on knowledge pages
+- `evals/fixtures/`, `evals/humanitas/`, `harness/implementations/default-v0.yaml`, `scripts/run-evals.py`
+- `scripts/apply-proposal.py`, `/contribute`, `docs/REVIEWER_CORRECTION_WORKFLOW.md`
+
+Do not merge the 1,196-entity import from the reviewer-auth branch onto `main`.
+
 ---
 
 ## Feature 1 — Public knowledge site on `main`

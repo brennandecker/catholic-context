@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../lib/site';
+
+const capabilities = [
+  { name: 'Git repository', status: 'Available now', kind: 'now' },
+  { name: 'Structured YAML / JSON knowledge objects', status: 'Available now', kind: 'now' },
+  { name: 'JSON Schema', status: 'Available now', kind: 'now' },
+  { name: 'Public website source', status: 'Available now', kind: 'now' },
+  { name: 'Harness principles', status: 'Early development', kind: 'early' },
+  { name: 'Evals suite', status: 'Fixtures available', kind: 'early' },
+  { name: 'Managed API', status: 'Planned', kind: 'planned' },
+  { name: 'MCP hosting', status: 'Planned', kind: 'planned' },
+  { name: 'SDKs', status: 'Planned', kind: 'planned' },
+];
+---
+
+<BaseLayout
+  title="Developers"
+  description="Build with Catholic Context — open knowledge, schemas, Harness, and Evals for any application."
+>
+  <section class="section-tight shell fade-in">
+    <p class="eyebrow">✦ Build with Catholic Context</p>
+    <h1 class="h1">Catholic context for any application.</h1>
+    <p class="lede">
+      Use the open foundation directly. Managed cloud services may offer convenience later;
+      they are not required to inspect or reuse the commons.
+    </p>
+  </section>
+
+  <section class="section shell tech">
+    <h2 class="h2">Capabilities</h2>
+    <div style="margin-top: var(--space-5);">
+      {capabilities.map((item) => (
+        <div class="capability-row">
+          <span>{item.name}</span>
+          <span class={`meta status-${item.kind}`}>{item.status}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="section shell prose">
+    <h2 class="h2">Start here</h2>
+    <ul>
+      <li>
+        <a href={`${SITE.githubUrl}`} rel="noopener noreferrer" target="_blank">Repository</a>
+        — canonical Git record
+      </li>
+      <li>
+        <a href={`${SITE.githubUrl}/blob/main/schema/catholic-context.schema.json`} rel="noopener noreferrer" target="_blank">
+          Schema
+        </a>
+        — knowledge object contract
+      </li>
+      <li>
+        <a href={`${SITE.githubUrl}/blob/main/docs/COMMERCIAL_MODEL.md`} rel="noopener noreferrer" target="_blank">
+          Commercial model
+        </a>
+        — open foundation vs managed services
+      </li>
+      <li>
+        <a href="/harness">Harness</a> and <a href="/evals">Evals</a> — behavioral and test layers
+      </li>
+    </ul>
+    <p>
+      A future paid managed API should be described as an optional hosted service rather
+      than the only way to access Catholic Context.
+    </p>
+  </section>
+</BaseLayout>

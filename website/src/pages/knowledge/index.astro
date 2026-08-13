@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import KnowledgeRow from '../../components/KnowledgeRow.astro';
+import SearchForm from '../../components/SearchForm.astro';
+import { loadKnowledgeEntries } from '../../lib/content';
+
+const entries = loadKnowledgeEntries();
+const types = [...new Set(entries.map((e) => e.object.entity_type))].sort();
+---
+
+<BaseLayout
+  title="Knowledge"
+  description="Browse source-grounded Catholic Context knowledge with review status and citations."
+>
+  <section class="section-tight shell fade-in">
+    <p class="eyebrow">✦ Knowledge</p>
+    <h1 class="h1">What does the Church teach?</h1>
+    <p class="lede">
+      Browse structured Catholic Context entries. Every object preserves sources,
+      classification, and review state.
+    </p>
+    <SearchForm />
+    {types.length > 0 && (
+      <p class="meta" style="margin-top: var(--space-5);">
+        Entity types: {types.join(' · ')}
+      </p>
+    )}
+  </section>
+
+  <section class="shell" style="padding-bottom: var(--space-9);">
+    <hr class="rule-soft" />
+    {entries.length === 0 ? (
+      <p>No knowledge objects are available yet.</p>
+    ) : (
+      entries.map((entry) => <KnowledgeRow entry={entry} />)
+    )}
+  </section>
+</BaseLayout>

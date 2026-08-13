@@ -18,10 +18,23 @@ review:
   reviewed_by: null
   reviewed_at: null
   review_commit: null
+source_fidelity:
+  representation: summary
+  confidence: 0.8
+  needs_theological_review: true
+  linkable_sources: true
+  assessed_by: founding-spine-draft
+  assessed_at: "2026-08-13T00:00:00Z"
+  rationale: >-
+    Draft restates CCC 1374 on substantial presence and points to ST III q.75
+    as a Doctor of the Church, with New Advent as access hub only.
+  unresolved_issues:
+    - Theological review pending.
+    - Classification vocabulary is provisional.
 sources:
   - source_type: catechism
     reference: CCC 1374
-    url: null
+    url: https://www.vatican.va/archive/ENG0015/_INDEX.HTM
     note: Primary catechetical reference for the wording of this draft summary.
   - source_type: doctor-of-the-church
     reference: ST III q.75 a.1
