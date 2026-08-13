@@ -105,6 +105,25 @@
         }
       }
     },
+    "external_ids": {
+      "description": "Optional aliases in related identifier commons. These do not replace the Catholic Context id and are not teaching sources.",
+      "type": ["array", "null"],
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["system", "id"],
+        "properties": {
+          "system": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Identifier commons, e.g. catholicos-cdoctdr, catholicos-coecdr, catholicos-crpdr."
+          },
+          "id": { "type": "string", "minLength": 1 },
+          "url": { "type": ["string", "null"], "format": "uri" },
+          "note": { "type": ["string", "null"] }
+        }
+      }
+    },
     "relationships": {
       "type": "object",
       "additionalProperties": false,

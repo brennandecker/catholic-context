@@ -46,3 +46,5 @@ These statuses are project-use classifications. They are not theological grades.
 
 - [`new-advent.md`](new-advent.md) — New Advent as an access hub and the collections it hosts
 - [`catholicos.md`](catholicos.md) — CatholicOS / Catholic Digital Commons Foundation identifier and ontology commons
+
+How Catholic Context differs from those projects, what "consume" means, and when an API is appropriate: [`docs/related-projects.md`](../../docs/related-projects.md) and [`docs/API.md`](../../docs/API.md).

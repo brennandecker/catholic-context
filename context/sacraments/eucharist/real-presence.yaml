@@ -23,6 +23,13 @@ sources:
     reference: CCC 1374
     url: null
     note: Primary catechetical reference for the wording of this draft summary.
+  - source_type: doctor-of-the-church
+    reference: ST III q.75 a.1
+    url: https://www.newadvent.org/summa/4075.htm
+    note: >-
+      Dominican Fathers 1920 translation. New Advent is the access hub, not the
+      author. Aquinas is cited as a Doctor, not as a replacement for the
+      Catechism or Magisterium.
 relationships:
   broader:
     - sacrament.eucharist

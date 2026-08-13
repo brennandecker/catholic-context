@@ -14,18 +14,20 @@ Before making architectural or UI changes, read in this order:
 2. `CURSOR.md`
 3. `docs/architecture.md`
 4. `docs/COMMERCIAL_MODEL.md`
-5. `docs/DESIGN_FIDELITY.md`
-6. `docs/DESIGN_SYSTEM.md`
-7. `docs/WEBSITE_IMPLEMENTATION.md`
-8. `GOVERNANCE.md`
-9. `docs/theological-review.md`
-10. `docs/authority-model.md`
-11. `harness/README.md`
-12. `evals/README.md`
-13. `schema/catholic-context.schema.json`
-14. `LICENSING.md`
-15. `docs/SOURCE_RIGHTS.md`
-16. `sources/README.md`
+5. `docs/related-projects.md`
+6. `docs/API.md`
+7. `docs/DESIGN_FIDELITY.md`
+8. `docs/DESIGN_SYSTEM.md`
+9. `docs/WEBSITE_IMPLEMENTATION.md`
+10. `GOVERNANCE.md`
+11. `docs/theological-review.md`
+12. `docs/authority-model.md`
+13. `harness/README.md`
+14. `evals/README.md`
+15. `schema/catholic-context.schema.json`
+16. `LICENSING.md`
+17. `docs/SOURCE_RIGHTS.md`
+18. `sources/README.md`
 
 These documents are the current product and implementation source of truth.
 
@@ -37,7 +39,7 @@ Catholic Context has three primary open layers:
 - **Harness** — How should Catholic-grounded AI reason and behave?
 - **Evals** — Does the AI faithfully represent Catholic teaching and respect its boundaries?
 
-Git is the canonical versioned record during the initial project stage.
+Git is the canonical versioned record during the initial project stage. A hosted API is not a v0.1 goal; see `docs/API.md`.
 
 ## Open versus commercial boundary
 
@@ -135,6 +137,7 @@ The public may inspect, fork, open issues, and submit pull requests. Public cont
 - do not add infrastructure before a concrete use case requires it
 - keep future API/MCP/SDK concerns separable from the website
 - keep managed commercial infrastructure separable from the open foundation
+- do not implement a hosted API until the website already renders the same objects; see `docs/API.md`
 
 ## v0.1 non-goals
 
