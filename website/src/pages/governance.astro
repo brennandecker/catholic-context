@@ -1,6 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ReviewBadge from '../components/ReviewBadge.astro';
+import { loadKnowledgeEntries, reviewLabel } from '../lib/content';
 import { SITE } from '../lib/site';
+
+const entries = loadKnowledgeEntries();
+const drafts = entries.filter((e) => e.object.review.status === 'draft').length;
 ---
 
 <BaseLayout
@@ -61,10 +66,37 @@ import { SITE } from '../lib/site';
       Catholic Context deliberately avoids labels such as “Church-approved” or “official”
       unless an actual ecclesiastical process would justify such a claim.
     </p>
-    <p style="margin-top: var(--space-5);">
+    <p style="margin-top: var(--space-5); display:flex; flex-wrap:wrap; gap: var(--space-3);">
       <a class="btn btn-secondary" href={`${SITE.githubUrl}/blob/main/GOVERNANCE.md`} rel="noopener noreferrer" target="_blank">
         Read GOVERNANCE.md ↗
       </a>
+      <a class="btn btn-secondary" href={`${SITE.githubUrl}/blob/main/docs/REVIEW_CHECKLIST.md`} rel="noopener noreferrer" target="_blank">
+        Review checklist ↗
+      </a>
+    </p>
+  </section>
+
+  <section class="section shell">
+    <h2 class="h2">Corpus review status</h2>
+    <p class="lede">
+      {drafts} of {entries.length} knowledge objects are still draft. Nothing on this
+      site is labeled theologically reviewed until a named appointed reviewer records
+      evidence in Git.
+    </p>
+    <div style="margin-top: var(--space-5);">
+      {entries.map((entry) => (
+        <a class="index-row" href={`/knowledge/${entry.slug}`}>
+          <h3 class="index-row__title">{entry.object.title}</h3>
+          <div class="index-row__meta">
+            <span class="meta">{entry.object.id}</span>
+            <ReviewBadge status={entry.object.review.status} />
+            <span class="sr-only">{reviewLabel(entry.object.review.status)}</span>
+          </div>
+        </a>
+      ))}
+    </div>
+    <p style="margin-top: var(--space-5);">
+      <a class="btn btn-primary" href="/review">Appointed reviewer queue →</a>
     </p>
   </section>
 </BaseLayout>

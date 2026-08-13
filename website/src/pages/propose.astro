@@ -1,0 +1,141 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const slug = Astro.url.searchParams.get('slug') || '';
+const contextId = Astro.url.searchParams.get('id') || '';
+const title = Astro.url.searchParams.get('title') || '';
+---
+
+<BaseLayout
+  title="Propose a correction"
+  description="Propose a structured correction to a Catholic Context knowledge entry."
+  robots="noindex, nofollow"
+>
+  <article class="section-tight shell fade-in reading">
+    <p class="eyebrow">REVIEW</p>
+    <h1 class="h1">Propose a correction</h1>
+    <p class="lede">Submit a sourced correction for review.</p>
+
+    <div id="propose-gate" class="stack" style="margin-top: var(--space-5);"></div>
+
+    <form id="propose-form" class="stack" style="margin-top: var(--space-5); display:none; max-width: 40rem;">
+      <input type="hidden" name="context_slug" value={slug} />
+      <input type="hidden" name="context_id" value={contextId} />
+      <input type="hidden" name="context_title" value={title} />
+
+      <p class="meta">Context</p>
+      <p><strong>{title || slug || 'Unknown'}</strong><br /><span class="marginalia">{contextId}</span></p>
+
+      <label class="meta" for="category">Category</label>
+      <select class="field" id="category" name="category" required>
+        <option value="source">Source / citation</option>
+        <option value="wording">Wording / fidelity</option>
+        <option value="classification">Classification</option>
+        <option value="factual">Factual correction</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label class="meta" for="problem">What is wrong</label>
+      <textarea class="field" id="problem" name="problem" rows="4" required></textarea>
+
+      <label class="meta" for="proposed_change">Proposed change</label>
+      <textarea class="field" id="proposed_change" name="proposed_change" rows="6" required></textarea>
+
+      <label class="meta" for="set_summary">Replace summary (optional YAML patch)</label>
+      <textarea class="field" id="set_summary" name="set_summary" rows="4" placeholder="If filled, the PR patches summary on the knowledge object and resets review.status to draft."></textarea>
+
+      <label class="meta" for="add_source_type">Add source type (optional)</label>
+      <input class="field" id="add_source_type" name="add_source_type" placeholder="catechism" />
+
+      <label class="meta" for="add_source_reference">Add source reference (optional)</label>
+      <input class="field" id="add_source_reference" name="add_source_reference" placeholder="CCC 1374" />
+
+      <label class="meta" for="add_source_url">Add source URL (optional)</label>
+      <input class="field" id="add_source_url" name="add_source_url" type="url" placeholder="https://www.vatican.va/..." />
+
+      <label class="meta" for="rationale">Rationale</label>
+      <textarea class="field" id="rationale" name="rationale" rows="4" required></textarea>
+
+      <label class="meta" for="supporting_sources">Supporting sources</label>
+      <textarea class="field" id="supporting_sources" name="supporting_sources" rows="3"></textarea>
+
+      <label class="meta" style="display:flex; gap:0.75rem; align-items:center; text-transform:none; letter-spacing:0;">
+        <input type="checkbox" name="material_change" value="1" />
+        Material theological change (may require re-review)
+      </label>
+
+      <button class="btn btn-primary" type="submit">Submit proposal</button>
+      <p id="propose-status" class="marginalia" role="status" aria-live="polite"></p>
+    </form>
+  </article>
+</BaseLayout>
+
+<script>
+  import { apiFetch, getSupabaseBrowserClient, hasSupabaseConfig } from '../lib/supabaseBrowser';
+
+  const gate = document.getElementById('propose-gate');
+  const form = document.getElementById('propose-form');
+  const status = document.getElementById('propose-status');
+
+  if (
+    !(gate instanceof HTMLElement) ||
+    !(form instanceof HTMLFormElement) ||
+    !(status instanceof HTMLElement)
+  ) {
+    // no-op
+  } else if (!hasSupabaseConfig()) {
+    gate.innerHTML = '<p>Auth is not configured.</p>';
+  } else {
+    const supabase = getSupabaseBrowserClient();
+    const { data } = await supabase.auth.getSession();
+    if (!data.session) {
+      const next = encodeURIComponent(window.location.pathname + window.location.search);
+      gate.innerHTML = `<p>Sign in required. <a href="/login">Sign in</a> then return here.</p><p class="marginalia"><a href="/login">Continue to sign in</a> (next=${next})</p>`;
+    } else {
+      const me = await apiFetch('/api/me');
+      const payload = await me.json();
+      if (!me.ok || !payload.reviewer) {
+        gate.innerHTML =
+          '<p>Your account is signed in, but the founder has not appointed you as a reviewer.</p><p><a href="/account">Account</a></p>';
+      } else {
+        gate.innerHTML = `<p class="marginalia">Signed in as <strong>${payload.profile.public_username}</strong> (${payload.reviewer.role}).</p>`;
+        form.style.display = 'grid';
+        form.addEventListener('submit', async (event) => {
+          event.preventDefault();
+          status.textContent = 'Submitting…';
+          const fd = new FormData(form);
+          const body = {
+            context_id: String(fd.get('context_id') || ''),
+            context_slug: String(fd.get('context_slug') || ''),
+            context_title: String(fd.get('context_title') || ''),
+            category: String(fd.get('category') || ''),
+            problem: String(fd.get('problem') || ''),
+            proposed_change: String(fd.get('proposed_change') || ''),
+            rationale: String(fd.get('rationale') || ''),
+            supporting_sources: String(fd.get('supporting_sources') || ''),
+            material_change: fd.get('material_change') === '1',
+            set_summary: String(fd.get('set_summary') || ''),
+            add_source_type: String(fd.get('add_source_type') || ''),
+            add_source_reference: String(fd.get('add_source_reference') || ''),
+            add_source_url: String(fd.get('add_source_url') || ''),
+          };
+          const res = await apiFetch('/api/proposals', {
+            method: 'POST',
+            body: JSON.stringify(body),
+          });
+          const result = await res.json();
+          if (!res.ok) {
+            status.textContent = result.error || 'Submit failed';
+            return;
+          }
+          const pr = result.proposal?.github_pr_url;
+          const warning = result.warning ? ` ${result.warning}` : '';
+          status.innerHTML = pr
+            ? `Proposal submitted. <a href="/review/proposal?id=${result.proposal.id}">Open in review</a> · <a href="${pr}" target="_blank" rel="noopener">GitHub PR</a>`
+            : `Proposal saved.${warning} <a href="/review/proposal?id=${result.proposal.id}">Open in review</a>`;
+          form.reset();
+        });
+      }
+    }
+  }
+</script>

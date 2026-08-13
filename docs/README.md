@@ -20,6 +20,7 @@ Recommended reading order:
 10. [`WEBSITE_IMPLEMENTATION.md`](WEBSITE_IMPLEMENTATION.md) — website implementation and MVP acceptance criteria
 11. [`../GOVERNANCE.md`](../GOVERNANCE.md) — founding governance principles
 12. [`theological-review.md`](theological-review.md) — theological review workflow
+12a. [`REVIEW_CHECKLIST.md`](REVIEW_CHECKLIST.md) — evidence required to change `review.status`
 13. [`authority-model.md`](authority-model.md) — source/authority modeling approach
 14. [`SOURCE_RIGHTS.md`](SOURCE_RIGHTS.md) — third-party source rights and ingestion limits
 15. [`../sources/README.md`](../sources/README.md) — source registry and candidate-source evaluations

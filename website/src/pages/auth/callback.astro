@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Completing sign-in" description="Finishing your Catholic Context sign-in." robots="noindex, nofollow">
+  <article class="section-tight shell fade-in reading">
+    <h1 class="h1">Completing sign-in</h1>
+    <p id="callback-status" class="lede" role="status">Confirming your session…</p>
+  </article>
+</BaseLayout>
+
+<script>
+  import { getSupabaseBrowserClient, hasSupabaseConfig } from '../../lib/supabaseBrowser';
+
+  const status = document.getElementById('callback-status');
+  if (!(status instanceof HTMLElement)) {
+    // no-op
+  } else if (!hasSupabaseConfig()) {
+    status.textContent = 'Auth is not configured.';
+  } else {
+    const supabase = getSupabaseBrowserClient();
+    const next = new URLSearchParams(window.location.search).get('next') || '/account';
+
+    supabase.auth.getSession().then(({ data, error }) => {
+      if (error) {
+        status.textContent = error.message;
+        return;
+      }
+      if (data.session) {
+        status.textContent = 'Signed in. Redirecting…';
+        window.location.replace(next);
+        return;
+      }
+      // Magic links may arrive as hash tokens; supabase-js detects them asynchronously.
+      setTimeout(async () => {
+        const again = await supabase.auth.getSession();
+        if (again.data.session) {
+          window.location.replace(next);
+        } else {
+          status.innerHTML = 'Could not complete sign-in. <a href="/login">Try again</a>.';
+        }
+      }, 800);
+    });
+  }
+</script>

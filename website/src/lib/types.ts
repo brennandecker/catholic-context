@@ -93,6 +93,8 @@ export interface KnowledgeEntry {
   slug: string;
   /** Taxonomy crumbs derived from filesystem path */
   crumbs: string[];
+  /** ISO timestamp from the YAML file mtime, used for sitemap lastmod and JSON-LD. */
+  lastModified: string;
 }
 
 export interface SearchDocument {

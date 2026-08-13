@@ -19,3 +19,11 @@ python3 scripts/apply-proposal.py --proposal proposal.json --dry-run
 ```
 
 A later GitHub App / Worker should use these same rules instead of opening markdown-only PRs.
+
+## `review-status.py`
+
+Print review-status and source-URL gaps for every knowledge object. Does not change `review.status`.
+
+```bash
+python3 scripts/review-status.py
+```

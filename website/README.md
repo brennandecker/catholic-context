@@ -37,7 +37,23 @@ npm run deploy
 
 Requires `CLOUDFLARE_API_TOKEN` (and optionally `CLOUDFLARE_ACCOUNT_ID`).
 
-Worker name: `catholiccontext` (see `wrangler.jsonc`).
+Worker name: `catholiccontext` (see `wrangler.jsonc`). `www.catholiccontext.org` 301s to the apex domain. Static discovery files (`/sitemap.xml`, `/robots.txt`, `/llms.txt`) are generated at build time from `context/**/*.yaml` so crawlers never depend on a runtime filesystem.
+
+Pushes to `main` deploy via `.github/workflows/deploy-website.yml` once these GitHub Actions secrets exist:
+
+- `CLOUDFLARE_API_TOKEN`
+- `CLOUDFLARE_ACCOUNT_ID`
+- optional `PUBLIC_GOOGLE_SITE_VERIFICATION` (Search Console HTML-tag content)
+
+After the first production deploy, add `https://catholiccontext.org/sitemap.xml` in Google Search Console and Bing Webmaster Tools. Do not request indexing of `/login`, `/account`, `/propose`, or `/review/proposal`.
+
+Worker secrets for the appointed-reviewer loop (`wrangler secret put` in `website/`):
+
+- `SUPABASE_SERVICE_ROLE_KEY`
+- `GITHUB_TOKEN` (contents + pull_requests)
+- `FOUNDER_ADMIN_TOKEN`
+
+Apply `supabase/migrations/001_reviewer_platform.sql` to the Supabase project before appointing reviewers. Public corrections still use GitHub Issues with no account.
 
 ## Content boundary
 

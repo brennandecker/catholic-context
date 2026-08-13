@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Account"
+  description="Your Catholic Context account."
+  robots="noindex, nofollow"
+>
+  <article class="section-tight shell fade-in reading">
+    <p class="eyebrow">PLATFORM</p>
+    <h1 class="h1">Account</h1>
+    <div id="account-root" class="stack" style="margin-top: var(--space-5);">
+      <p class="lede">Loading…</p>
+    </div>
+  </article>
+</BaseLayout>
+
+<script>
+  import { apiFetch, getSupabaseBrowserClient, hasSupabaseConfig } from '../lib/supabaseBrowser';
+
+  const root = document.getElementById('account-root');
+  if (!(root instanceof HTMLElement)) {
+    // no-op
+  } else if (!hasSupabaseConfig()) {
+    root.innerHTML = '<p>Auth is not configured.</p>';
+  } else {
+    const supabase = getSupabaseBrowserClient();
+    const { data } = await supabase.auth.getSession();
+    if (!data.session) {
+      root.innerHTML = '<p>You are signed out. <a href="/login">Sign in</a>.</p>';
+    } else {
+      const res = await apiFetch('/api/me');
+      const payload = await res.json();
+      if (!res.ok) {
+        root.innerHTML = `<p>${payload.error || 'Unable to load account.'}</p>`;
+      } else {
+        const username = payload.profile?.public_username || 'pending';
+        const role = payload.reviewer?.role
+          ? `${payload.reviewer.role} reviewer`
+          : 'Not appointed (browse-only account)';
+        root.innerHTML = `
+          <p><span class="meta">Email</span><br>${payload.user?.email || '—'}</p>
+          <p><span class="meta">Username</span><br><strong>${username}</strong></p>
+          <p><span class="meta">Status</span><br>${role}</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="/review">Review queue</a>
+            <button class="btn btn-secondary" type="button" id="sign-out">Sign out</button>
+          </div>
+        `;
+        document.getElementById('sign-out')?.addEventListener('click', async () => {
+          await supabase.auth.signOut();
+          window.location.href = '/login';
+        });
+      }
+    }
+  }
+</script>
