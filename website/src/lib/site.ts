@@ -7,6 +7,7 @@ export const SITE = {
   githubRepo: 'brennandecker/catholic-context',
   githubUrl: 'https://github.com/brennandecker/catholic-context',
   myCatholicGuideUrl: 'https://mycatholicguide.com/',
+  ogImage: '/og.jpg',
 } as const;
 
 export const NAV = [

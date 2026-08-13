@@ -34,10 +34,13 @@ import { SITE } from '../lib/site';
   <section class="section shell prose">
     <h2 class="h2">Appointed review</h2>
     <p>
-      Founder-appointed reviewers may later propose YAML patches through a platform UI. Those
-      proposals must become GitHub pull requests that change <code>context/**/*.yaml</code>.
-      Merge remains maintainer-controlled. Automation must not set
-      <code>theologically-reviewed</code>.
+      Appointed reviewers may propose YAML patches after signing in. Those proposals
+      become GitHub pull requests that change <code>context/**/*.yaml</code> when a
+      summary or source patch is supplied. Merge remains maintainer-controlled.
+      Automation must not set <code>theologically-reviewed</code>.
+    </p>
+    <p>
+      <a class="btn btn-secondary" href="/login">Reviewer sign in →</a>
     </p>
     <p>
       Local helper for the same patch rules:

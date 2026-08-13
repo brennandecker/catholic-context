@@ -1,4 +1,4 @@
-import { readFileSync, readdirSync, existsSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { join, relative, resolve } from 'node:path';
 import { parse as parseYaml } from 'yaml';
 import Ajv2020 from 'ajv/dist/2020.js';
@@ -98,6 +98,7 @@ export function loadKnowledgeEntries(): KnowledgeEntry[] {
       repoPath,
       slug,
       crumbs: slugToCrumbs(slug),
+      lastModified: statSync(file).mtime.toISOString(),
     });
   }
 

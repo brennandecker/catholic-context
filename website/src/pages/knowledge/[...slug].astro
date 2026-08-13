@@ -9,6 +9,7 @@ import {
   getKnowledgeById,
   loadKnowledgeEntries,
 } from '../../lib/content';
+import { knowledgeJsonLd } from '../../lib/seo';
 import { correctionIssueUrl } from '../../lib/site';
 
 export function getStaticPaths() {
@@ -35,6 +36,8 @@ const related = relatedIds
   title={object.title}
   description={object.summary}
   canonicalPath={`/knowledge/${entry.slug}`}
+  ogType="article"
+  jsonLd={knowledgeJsonLd(entry)}
 >
   <article class="section-tight shell fade-in">
     <nav class="meta" aria-label="Breadcrumb" style="margin-bottom: var(--space-5);">
@@ -116,9 +119,15 @@ const related = relatedIds
 
     <hr class="rule" />
 
-    <p>
+    <p style="display:flex; flex-wrap:wrap; gap: var(--space-3);">
       <a class="btn btn-primary" href={correctionIssueUrl(object.id)} rel="noopener noreferrer" target="_blank">
         Suggest a Correction →
+      </a>
+      <a
+        class="btn btn-secondary"
+        href={`/propose?slug=${encodeURIComponent(entry.slug)}&id=${encodeURIComponent(object.id)}&title=${encodeURIComponent(object.title)}`}
+      >
+        Appointed reviewers →
       </a>
     </p>
   </article>

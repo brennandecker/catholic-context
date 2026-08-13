@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Sign in" description="Sign in to Catholic Context with an email magic link." robots="noindex, nofollow">
+  <article class="section-tight shell fade-in reading">
+    <p class="eyebrow">ACCOUNT</p>
+    <h1 class="h1">Sign in</h1>
+    <p class="lede">Enter your email and we will send a one-time sign-in link.</p>
+
+    <form id="login-form" class="stack" style="margin-top: var(--space-6); max-width: 28rem;">
+      <label class="meta" for="email">Email</label>
+      <input class="field" id="email" name="email" type="email" autocomplete="email" required />
+      <button class="btn btn-primary" type="submit">Send magic link</button>
+      <p id="login-status" class="marginalia" role="status" aria-live="polite"></p>
+    </form>
+
+  </article>
+</BaseLayout>
+
+<script>
+  import { getSupabaseBrowserClient, hasSupabaseConfig } from '../lib/supabaseBrowser';
+
+  const form = document.getElementById('login-form');
+  const status = document.getElementById('login-status');
+
+  if (!(form instanceof HTMLFormElement) || !(status instanceof HTMLElement)) {
+    // no-op
+  } else if (!hasSupabaseConfig()) {
+    status.textContent = 'Auth is not configured for this build.';
+  } else {
+    const supabase = getSupabaseBrowserClient();
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      status.textContent = 'Sending link…';
+      const email = new FormData(form).get('email');
+      if (typeof email !== 'string') return;
+      const redirectTo = `${window.location.origin}/auth/callback`;
+      const { error } = await supabase.auth.signInWithOtp({
+        email: email.trim(),
+        options: { emailRedirectTo: redirectTo },
+      });
+      status.textContent = error
+        ? error.message
+        : 'Check your email for the magic link. You can close this tab.';
+    });
+  }
+</script>

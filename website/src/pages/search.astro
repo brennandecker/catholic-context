@@ -15,6 +15,7 @@ const initialResults = searchKnowledge(documents, initialQuery);
 <BaseLayout
   title={initialQuery ? `Search: ${initialQuery}` : 'Search'}
   description="Search source-grounded Catholic Context knowledge by topic, source, or natural-language question."
+  robots={initialQuery ? 'noindex, follow' : 'index, follow'}
 >
   <section class="section-tight shell fade-in">
     <p class="eyebrow">✦ Search</p>

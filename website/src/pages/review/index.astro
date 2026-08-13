@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Review queue" description="Review open correction proposals." robots="noindex, nofollow">
+  <article class="section-tight shell fade-in">
+    <p class="eyebrow">REVIEW</p>
+    <h1 class="h1">Review queue</h1>
+    <p class="lede reading">Open correction proposals awaiting review.</p>
+    <div id="review-root" style="margin-top: var(--space-6);">
+      <p>Loading…</p>
+    </div>
+  </article>
+</BaseLayout>
+
+<script>
+  import { apiFetch, getSupabaseBrowserClient, hasSupabaseConfig } from '../../lib/supabaseBrowser';
+
+  const root = document.getElementById('review-root');
+  if (!(root instanceof HTMLElement)) {
+    // no-op
+  } else if (!hasSupabaseConfig()) {
+    root.innerHTML = '<p>Auth is not configured.</p>';
+  } else {
+    const supabase = getSupabaseBrowserClient();
+    const { data } = await supabase.auth.getSession();
+    if (!data.session) {
+      root.innerHTML = '<p>Sign in required. <a href="/login">Sign in</a>.</p>';
+    } else {
+      const me = await apiFetch('/api/me');
+      const mePayload = await me.json();
+      if (!me.ok || !mePayload.reviewer) {
+        root.innerHTML =
+          '<p>Founder appointment required. <a href="/account">Account</a></p>';
+      } else {
+        const res = await apiFetch('/api/proposals');
+        const payload = await res.json();
+        if (!res.ok) {
+          root.innerHTML = `<p>${payload.error || 'Unable to load proposals.'}</p>`;
+        } else if (!payload.proposals?.length) {
+          root.innerHTML = '<p>No proposals yet.</p>';
+        } else {
+          root.innerHTML = `<ul class="stack" style="list-style:none;padding:0;">${payload.proposals
+            .map(
+              (p) => `
+            <li class="index-row">
+              <a href="/review/proposal?id=${p.id}" style="text-decoration:none;color:inherit;display:block;">
+                <div class="index-row__meta">
+                  <span class="meta">${p.status.replace('_', ' ')}</span>
+                  <span class="meta">@${p.proposer_public_username}</span>
+                </div>
+                <h2 class="index-row__title">${p.context_title || p.context_slug}</h2>
+                <p class="marginalia">${p.category} · ${new Date(p.created_at).toLocaleString()}</p>
+              </a>
+            </li>`,
+            )
+            .join('')}</ul>`;
+        }
+      }
+    }
+  }
+</script>

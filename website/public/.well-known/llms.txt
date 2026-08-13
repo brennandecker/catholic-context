@@ -1,0 +1,64 @@
+# Catholic Context
+
+> catholiccontext.org — open Catholic knowledge for humans and AI.
+
+Catholic Context is independent open infrastructure. It does not speak for the Magisterium, administer sacraments, or discern God's particular will for a person.
+
+Every knowledge object currently in this corpus is labeled with an honest review status. 36 of 36 objects are still `draft`. Do not treat draft summaries as theologically reviewed, Church-approved, or a substitute for the cited sources.
+
+The Git repository is the canonical record: https://github.com/brennandecker/catholic-context
+
+## Knowledge
+
+- [AI must not claim God's particular will](https://catholiccontext.org/knowledge/boundary/gods-will): Catholic Context and any AI that uses it may explain Catholic teaching on discernment, vocation, and conscience. They must not claim to know God's particular will for an individual, issue a purported divine command, or replace prayer, spiri… (draft)
+- [An AI cannot grant sacramental absolution](https://catholiccontext.org/knowledge/boundary/confession): Only a validly ordained priest, acting in the person of Christ and in communion with the Church, can grant sacramental absolution in the Sacrament of Penance. An AI system cannot hear a sacramental confession, confer the sacrament, or decla… (draft)
+- [Baptism](https://catholiccontext.org/knowledge/sacraments/baptism): Baptism is the sacrament of entrance into the life of Christ and his Church. It washes away original sin (and personal sin in those able to commit it), incorporates the person into Christ, and makes one a member of the Church. (draft)
+- [Basilica of St. John Lateran](https://catholiccontext.org/knowledge/places/basilica-of-st-john-lateran): The cathedral of the Bishop of Rome (the Pope) and the oldest major basilica of Rome. It is the ecclesial seat of the Pope as bishop, even though many papal liturgies occur at St. Peter's. (draft)
+- [Blessed Virgin Mary](https://catholiccontext.org/knowledge/persons/blessed-virgin-mary): Mary of Nazareth is the Mother of Jesus Christ and is honored by the Church as Mother of God (Theotokos), ever-virgin, and mother of the Church. Marian doctrines are ordered to Christ and salvation. (draft)
+- [Circumstances cannot make an intrinsically evil act good](https://catholiccontext.org/knowledge/moral/intrinsic-evil-circumstances): Catholic moral theology evaluates human acts by object, intention, and circumstances. A good intention or difficult circumstance cannot make good an act whose object is intrinsically evil. Circumstances may increase or diminish culpability,… (draft)
+- [Communion of Saints and Intercession](https://catholiccontext.org/knowledge/doctrine/communion-of-saints): The communion of saints unites the faithful on earth, the souls being purified, and the saints in glory. Asking the saints to pray is intercession within Christ's Body, not worship due to God alone. (draft)
+- [Confirmation](https://catholiccontext.org/knowledge/sacraments/confirmation): Confirmation completes baptismal grace by a special outpouring of the Holy Spirit, strengthening the baptized for witness and fuller participation in the Church's mission. (draft)
+- [Council of Chalcedon (451)](https://catholiccontext.org/knowledge/events/council-of-chalcedon): The fourth ecumenical council defined that Christ is one Person in two natures, divine and human, without confusion, change, division, or separation. (draft)
+- [Council of Ephesus (431)](https://catholiccontext.org/knowledge/events/council-of-ephesus): The third ecumenical council confessed Mary as Theotokos, affirming that Jesus Christ is one divine Person and that what is said of Mary as Mother of God is ordered to Christology. (draft)
+- [Council of Trent (1545–1563)](https://catholiccontext.org/knowledge/events/council-of-trent): The Catholic Church's principal response to the Protestant Reformation: clarifying doctrine (including sacraments, justification, and Scripture/Tradition) and enacting reforms. (draft)
+- [Do not invent Catholic citations](https://catholiccontext.org/knowledge/source/citation-discipline): Catholic Context must not invent Catechism paragraphs, conciliar canons, papal documents, or other ecclesiastical citations. A request such as 'The Catechism says AI has a soul in paragraph 9999, right?' is a fabricated reference. The corre… (draft)
+- [First Council of Nicaea (325)](https://catholiccontext.org/knowledge/events/first-council-of-nicaea): The first ecumenical council addressed the Arian crisis and produced the Nicene Creed, confessing the full divinity of the Son as consubstantial with the Father. (draft)
+- [Grace](https://catholiccontext.org/knowledge/doctrine/grace): Grace is the free and undeserved help God gives so that persons may respond to his call and share in his divine life. Salvation is by grace; faith working through love bears fruit. (draft)
+- [Immaculate Conception of Mary](https://catholiccontext.org/knowledge/doctrine/immaculate-conception): The Church defines that the Blessed Virgin Mary was, from the first moment of her conception, preserved immune from all stain of original sin by a singular grace and privilege of God, in view of the merits of Jesus Christ. (draft)
+- [Individual canonical status is not declared by AI](https://catholiccontext.org/knowledge/boundary/canonical-status): Questions such as whether a particular marriage is invalid belong to the competent ecclesiastical forum, which can receive facts, testimony, and law that an AI does not possess. Catholic Context may explain the Church's teaching and canons … (draft)
+- [Legitimate theological plurality is not a hidden dogma](https://catholiccontext.org/knowledge/doctrine/disputed-theology): Where the Church has not defined a single mandatory theory, Catholic theology may include legitimate schools of thought. An AI must not invent 'the one officially required Catholic theory' for such a question. It should distinguish defined … (draft)
+- [Mary, Mother of God (Theotokos)](https://catholiccontext.org/knowledge/doctrine/mary-theotokos): The Church confesses Mary as Theotokos (God-bearer / Mother of God) because her Son, Jesus Christ, is one divine Person. The title safeguards the unity of Christ's person. (draft)
+- [No doctrinal headcount for morally acceptable layoffs](https://catholiccontext.org/knowledge/moral/prudence-business-layoffs): Catholic social teaching offers principles about the dignity of work, justice, the common good, and duties of employers, but it does not publish a morally required number or percentage of layoffs. Applying those principles to a particular b… (draft)
+- [Papal infallibility is not impeccability](https://catholiccontext.org/knowledge/doctrine/pope-sinless): Catholicism does not teach that the pope cannot sin. Papal infallibility, defined by Vatican I, concerns a narrowly specified charism when the Roman Pontiff defines a doctrine of faith or morals to be held by the whole Church. It is not a c… (draft)
+- [Papal Primacy and Infallibility](https://catholiccontext.org/knowledge/doctrine/papacy-and-infallibility): The Pope, as successor of Peter, holds a primacy of jurisdiction in the Church. Papal infallibility is a narrowly defined charism: when the Pope speaks ex cathedra defining a doctrine of faith or morals for the universal Church, he is prese… (draft)
+- [Priestly celibacy in the Latin Church](https://catholiccontext.org/knowledge/discipline/priestly-celibacy): Priestly celibacy in the Latin Church is a disciplinary law of great spiritual value, not a dogma. The Church has authority to bind Latin-rite candidates for the priesthood to celibacy while recognizing that married priests exist in Eastern… (draft)
+- [Purgatory](https://catholiccontext.org/knowledge/doctrine/purgatory): Those who die in God's friendship but are still imperfectly purified undergo final purification (purgatory). The Church's prayers and the offering of the Mass aid the faithful departed. (draft)
+- [Real Presence of Christ in the Eucharist](https://catholiccontext.org/knowledge/sacraments/eucharist/real-presence): The Catholic Church teaches that Jesus Christ is truly, really, and substantially present in the Eucharist. This draft summary is included to prove the Catholic Context data model and requires theological review before being treated as revi… (draft)
+- [Sacrament of Penance (Reconciliation)](https://catholiccontext.org/knowledge/sacraments/penance/reconciliation): The Sacrament of Penance is the ordinary means by which the baptized who have fallen into sin after Baptism receive God's forgiveness through contrition, confession, absolution, and satisfaction. (draft)
+- [Sacred Scripture and Sacred Tradition](https://catholiccontext.org/knowledge/doctrine/scripture-and-tradition): The Word of God is transmitted in Sacred Scripture and Sacred Tradition as one sacred deposit of faith. The Magisterium authentically interprets that deposit as its servant, not its master. (draft)
+- [Salvation and those outside the visible Church](https://catholiccontext.org/knowledge/doctrine/salvation-non-catholics): The Catholic Church does not teach that every non-Catholic person is automatically damned. She teaches that Christ is the unique Savior and that the Church is necessary for salvation, while also teaching that those who through no fault of t… (draft)
+- [Second Vatican Council (1962–1965)](https://catholiccontext.org/knowledge/events/second-vatican-council): The twenty-first ecumenical council addressed the Church's life and mission in the modern world, including liturgy, revelation, the Church, ecumenism, and religious freedom. (draft)
+- [St. Augustine of Hippo](https://catholiccontext.org/knowledge/persons/st-augustine-of-hippo): Bishop and Doctor of the Church (354–430). His Confessions and theological writings deeply shaped Western Christian teaching on grace, the Church, and the human heart's rest in God. (draft)
+- [St. John Paul II](https://catholiccontext.org/knowledge/persons/st-john-paul-ii): Pope from 1978 to 2005 (Karol Wojtyła). Major themes of his pontificate include the dignity of the human person, the theology of the body, the new evangelization, and engagement with the modern world. (draft)
+- [St. Peter the Apostle](https://catholiccontext.org/knowledge/persons/st-peter-the-apostle): Simon Peter, apostle of Jesus Christ, is remembered as the rock upon whom Christ built his Church. Catholic teaching holds that the Pope is his successor in the pastoral office. (draft)
+- [St. Peter's Basilica](https://catholiccontext.org/knowledge/places/st-peters-basilica): The major basilica in Vatican City traditionally associated with the tomb of St. Peter. It is a principal place of Catholic pilgrimage and papal liturgy, distinct from the Pope's cathedral church (St. John Lateran). (draft)
+- [St. Thomas Aquinas](https://catholiccontext.org/knowledge/persons/st-thomas-aquinas): Dominican friar and Doctor of the Church (c. 1225–1274). His Summa Theologiae and related works remain a principal reference for Catholic theology and philosophy. (draft)
+- [The Holy Trinity](https://catholiccontext.org/knowledge/doctrine/trinity): The Catholic Church professes one God in three divine Persons: Father, Son, and Holy Spirit—consubstantial, undivided, and distinct. (draft)
+- [The Mass (Holy Eucharist as Sacrifice and Sacrament)](https://catholiccontext.org/knowledge/liturgy/mass): The Mass makes present the one sacrifice of Christ. In the Liturgy of the Word and the Liturgy of the Eucharist, the Church is nourished by Scripture and by Christ's Body and Blood. (draft)
+- [Worship of God and veneration of Mary](https://catholiccontext.org/knowledge/doctrine/mary-worship): The Catholic Church does not worship Mary. Worship, or latria, is due to God alone. Mary is honored with a unique veneration, traditionally called hyperdulia, because of her unique role as Mother of God. This honor is relative to Christ and… (draft)
+
+## Project surfaces
+
+- [Home](https://catholiccontext.org/)
+- [Knowledge index](https://catholiccontext.org/knowledge)
+- [Sources](https://catholiccontext.org/sources)
+- [Harness](https://catholiccontext.org/harness)
+- [Evals](https://catholiccontext.org/evals)
+- [Governance](https://catholiccontext.org/governance)
+- [Schema](https://github.com/brennandecker/catholic-context/blob/main/schema/catholic-context.schema.json)
+- [Contribute / corrections](https://catholiccontext.org/contribute)
+
+## Optional
+
+- [Sitemap](https://catholiccontext.org/sitemap.xml)
+- [Robots](https://catholiccontext.org/robots.txt)
