@@ -19,3 +19,5 @@ Planned standards include:
 - financial independence of theological governance
 
 Until these standards are established, theological material should be treated conservatively and labeled according to its actual review status.
+
+Founding-stage reviewer appointment is recorded in [`founding-reviewer-panel.md`](founding-reviewer-panel.md). The correction loop is specified in [`../docs/REVIEWER_CORRECTION_WORKFLOW.md`](../docs/REVIEWER_CORRECTION_WORKFLOW.md). YAML patches for that loop should go through `scripts/apply-proposal.py` rather than markdown-only PRs.

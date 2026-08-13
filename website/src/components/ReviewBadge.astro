@@ -1,0 +1,19 @@
+---
+import { reviewLabel } from '../lib/content';
+import type { ReviewStatus } from '../lib/types';
+
+interface Props {
+  status: ReviewStatus;
+}
+
+const { status } = Astro.props;
+const label = reviewLabel(status);
+const className =
+  status === 'draft'
+    ? 'badge badge-draft'
+    : status === 'community-reviewed'
+      ? 'badge badge-community'
+      : 'badge badge-reviewed';
+---
+
+<span class={className}>{label}</span>

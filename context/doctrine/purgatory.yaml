@@ -1,0 +1,40 @@
+# DRAFT — theological review pending
+id: doctrine.purgatory
+title: Purgatory
+entity_type: teaching
+classification:
+  claim_type: doctrine
+  certainty: null
+  note: >-
+    The exact theological classification and certainty vocabulary are provisional and require qualified theological review.
+summary: >-
+  Those who die in God's friendship but are still imperfectly purified undergo
+  final purification (purgatory). The Church's prayers and the offering of the
+  Mass aid the faithful departed.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: catechism
+    reference: CCC 1030-1032
+    url: null
+    note: >-
+      Final purification / purgatory and the Church's suffrages.
+  - source_type: ecumenical-council
+    reference: Council of Trent, Decree on Purgatory
+    url: null
+    note: >-
+      Reaffirmation of the Church's teaching on purgatory.
+relationships:
+  broader:
+    - doctrine.last-things
+  narrower: []
+  related:
+    - doctrine.communion-of-saints
+    - liturgy.mass
+notes: >-
+  Draft seed object distilled for Catholic Context from My Catholic Guide /
+  Supabase metadata (not a full narrative import). Presence here does not
+  imply ecclesiastical approval or completed theological review.

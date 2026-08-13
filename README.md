@@ -12,6 +12,8 @@ The project is organized around three complementary layers:
 
 Catholic Context does not create Catholic teaching, replace the Magisterium, exercise pastoral or sacramental authority, or claim to discern God's particular will for an individual.
 
+It is also not a digital library of source texts and not an identifier registry. [New Advent](https://www.newadvent.org/) hosts editions to read; [CatholicOS](https://github.com/orgs/CatholicOS) names Catholic realities for software. Catholic Context sits between those and applications: sourced knowledge objects, an AI Harness, and public Evals. See [`docs/related-projects.md`](docs/related-projects.md). Near-term work is ordered in [`docs/priorities.md`](docs/priorities.md). The next five major features, with files and acceptance criteria, are in [`docs/feature-plan.md`](docs/feature-plan.md).
+
 ## Architecture
 
 ```text
@@ -22,7 +24,7 @@ Catholic Context
 ├── evals/          Theological, source-fidelity, and boundary evaluations
 ├── schema/         Machine-readable specifications
 ├── governance/     Theological integrity and review governance
-├── sources/        Source registry and metadata
+├── sources/        Source registry, candidate evaluations, and metadata
 ├── docs/           Architecture and design documentation
 └── .github/        Contribution and review workflows
 ```

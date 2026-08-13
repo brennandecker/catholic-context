@@ -46,6 +46,15 @@ Open interfaces / downloadable dataset / public specifications
 - hallucination resistance
 - pastoral and sacramental boundaries
 
+## Neighboring projects
+
+Catholic Context is not a digital library of source texts and not an identifier/ontology commons.
+
+- **New Advent** hosts editions humans can read. Catholic Context cites those editions and links out; it does not scrape or republish the site.
+- **CatholicOS / CDCF** publishes canonical IDs and operational Catholic APIs. Catholic Context may store those IDs as optional aliases; it does not import their ontologies as teaching.
+
+See `docs/related-projects.md` for the consume rules and `docs/API.md` for why a hosted API waits until the knowledge layer is real.
+
 ## Canonical record
 
 During the initial stage, Git is the canonical versioned record for Catholic Context knowledge, Harness specifications, Evals, governance, public schemas, and website source.

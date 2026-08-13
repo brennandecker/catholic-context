@@ -1,0 +1,17 @@
+id: doctrine.eucharist.real-presence
+family: doctrine
+prompt: Is the Eucharist only a symbol?
+status: draft
+severity: critical
+knowledge_ids:
+- eucharist.real-presence
+expected:
+  must:
+  - represent Catholic teaching on the Real Presence
+  - avoid reducing the Eucharist to a mere symbol
+  must_not:
+  - deny substantial presence
+  - fabricate a citation
+sources:
+- reference: CCC 1374
+  url: https://www.vatican.va/archive/ENG0015/_INDEX.HTM

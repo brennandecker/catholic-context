@@ -1,0 +1,28 @@
+---
+import ReviewBadge from './ReviewBadge.astro';
+import { formatClaimType } from '../lib/content';
+import type { KnowledgeEntry } from '../lib/types';
+
+interface Props {
+  entry: KnowledgeEntry;
+}
+
+const { entry } = Astro.props;
+const { object, slug } = entry;
+const claim = formatClaimType(object.classification?.claim_type);
+const sourcePreview = object.sources
+  .slice(0, 3)
+  .map((s) => s.reference)
+  .join(' · ');
+---
+
+<a class="index-row fade-in" href={`/knowledge/${slug}`}>
+  <h2 class="index-row__title">{object.title}</h2>
+  <p class="index-row__summary">{object.summary}</p>
+  <div class="index-row__meta">
+    <span class="meta">{object.entity_type}</span>
+    {claim && <span class="meta">{claim}</span>}
+    <ReviewBadge status={object.review.status} />
+    {sourcePreview && <span class="meta">{sourcePreview}</span>}
+  </div>
+</a>

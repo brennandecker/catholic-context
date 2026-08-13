@@ -1,0 +1,49 @@
+---
+interface Props {
+  confidence: number;
+  compact?: boolean;
+}
+
+const { confidence, compact = false } = Astro.props;
+const clamped = Math.max(0, Math.min(1, confidence));
+const percent = Math.round(clamped * 100);
+const level = clamped >= 0.85 ? 'high' : clamped >= 0.6 ? 'medium' : 'low';
+const label =
+  level === 'high'
+    ? 'Strong source match'
+    : level === 'medium'
+      ? 'Moderate source match'
+      : 'Weak source match';
+---
+
+<figure
+  class:list={['source-meter', compact && 'source-meter--compact', `source-meter--${level}`]}
+  aria-label={`Source match confidence ${percent} percent: ${label}`}
+>
+  <div class="source-meter__head">
+    <figcaption class="source-meter__caption">
+      <span class="source-meter__glyph" aria-hidden="true">✦</span>
+      Source match
+    </figcaption>
+    <span class="source-meter__score">{percent}%</span>
+  </div>
+  <div
+    class="source-meter__track"
+    role="meter"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    aria-valuenow={percent}
+    aria-valuetext={`${percent} percent source match. ${label}. Grades how faithfully Catholic Context restates the cited Church source.`}
+  >
+    <div class="source-meter__fill" style={`width: ${percent}%`}></div>
+    <span class="source-meter__ticks" aria-hidden="true">
+      <i></i><i></i><i></i><i></i>
+    </span>
+  </div>
+  {!compact && (
+    <p class="source-meter__note">
+      {label}. The Church’s teaching stands on its own authority. This meter only grades how
+      faithfully Catholic Context restates the cited source.
+    </p>
+  )}
+</figure>

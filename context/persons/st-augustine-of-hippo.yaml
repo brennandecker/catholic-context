@@ -1,0 +1,37 @@
+# DRAFT — theological review pending
+id: person.st-augustine-of-hippo
+title: St. Augustine of Hippo
+entity_type: person
+classification: null
+summary: >-
+  Bishop and Doctor of the Church (354–430). His Confessions and theological
+  writings deeply shaped Western Christian teaching on grace, the Church, and
+  the human heart's rest in God.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: church-father
+    reference: Augustine, Confessions
+    url: null
+    note: >-
+      Primary autobiographical and theological witness.
+  - source_type: doctor-of-the-church
+    reference: St. Augustine of Hippo
+    url: null
+    note: >-
+      Recognized Doctor of the Church.
+relationships:
+  broader:
+    []
+  narrower: []
+  related:
+    - doctrine.grace
+    - event.council-of-ephesus
+notes: >-
+  Entity summary adapted from My Catholic Guide saints record `st-augustine-
+  of-hippo`. Draft seed object distilled for Catholic Context from My Catholic
+  Guide / Supabase metadata (not a full narrative import). Presence here does
+  not imply ecclesiastical approval or completed theological review.

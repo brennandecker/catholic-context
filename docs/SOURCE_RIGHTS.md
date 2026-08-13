@@ -108,7 +108,7 @@ A work's theological authority and its copyright status are separate questions.
 
 ## Public-domain sources
 
-When a source is believed to be public domain, document why before bulk inclusion.
+When a source is believed to be public domain, document why before bulk inclusion. Current edition-level determinations for New Advent-hosted historical works are recorded in `sources/evaluations/new-advent.md` and `sources/source-registry.yaml`. Those determinations cover specified print texts, not the New Advent website compilation.
 
 Prefer recording:
 

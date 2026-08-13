@@ -21,6 +21,7 @@ Community consensus does not establish Catholic teaching. When proposing a theol
 3. Provide supporting sources whenever possible.
 4. Prefer authoritative Catholic sources over secondary commentary.
 5. Clearly distinguish doctrine, discipline, theological opinion, devotional practice, and historical claims.
+6. If proposing a new recurring source family, access hub, or identifier commons, add or update an evaluation under `sources/evaluations/` rather than citing the hub as if it were the Magisterium.
 
 ## Content status
 

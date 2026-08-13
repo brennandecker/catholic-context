@@ -1,0 +1,53 @@
+# DRAFT — theological review pending
+id: moral.intrinsic-evil.circumstances
+title: Circumstances cannot make an intrinsically evil act good
+entity_type: teaching
+classification:
+  claim_type: moral-teaching
+  certainty: null
+  note: >-
+    The exact theological classification and certainty vocabulary are provisional and require
+    qualified theological review.
+summary: >-
+  Catholic moral theology evaluates human acts by object, intention, and circumstances. A
+  good intention or difficult circumstance cannot make good an act whose object is intrinsically
+  evil. Circumstances may increase or diminish culpability, but they do not reverse the moral
+  species of such an act.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+source_fidelity:
+  representation: summary
+  confidence: 0.8
+  needs_theological_review: true
+  linkable_sources: true
+  assessed_by: founding-spine-draft
+  assessed_at: '2026-08-13T00:00:00Z'
+  rationale: Draft follows CCC 1755-1756 and Veritatis Splendor 80-82 on intrinsically evil
+    acts.
+  unresolved_issues:
+  - Theological review pending.
+  - Classification vocabulary is provisional.
+sources:
+- source_type: catechism
+  reference: CCC 1755-1756
+  url: https://www.vatican.va/archive/ENG0015/_INDEX.HTM
+  note: Object, intention, and circumstances; intrinsically disordered acts.
+- source_type: magisterium
+  reference: Veritatis Splendor 80-82
+  url: >-
+    https://www.vatican.va/content/john-paul-ii/en/encyclicals/documents/hf_jp-ii_enc_06081993_veritatis-splendor.html
+  note: >-
+    John Paul II on intrinsically evil acts and the insufficiency of circumstances to justify
+    them.
+relationships:
+  broader:
+  - doctrine.moral-law
+  narrower: []
+  related:
+  - moral.prudence.business-layoffs
+notes: >-
+  Founding spine object for the eval on whether good circumstances can make an intrinsically
+  evil act good. Draft; theological review pending.

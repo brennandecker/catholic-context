@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { correctionIssueUrl } from '../lib/site';
+import { SITE } from '../lib/site';
+---
+
+<BaseLayout
+  title="Contribute"
+  description="Suggest corrections and source improvements. Community contribution does not determine Catholic teaching."
+>
+  <section class="section-tight shell fade-in">
+    <p class="eyebrow">✦ Contribute</p>
+    <h1 class="h1">Help make the representation more accurate.</h1>
+    <p class="lede">
+      Catholic Context’s community layer is correction, sources, translations, and evals —
+      not a perspective forum on the knowledge object. Votes do not determine doctrine.
+    </p>
+  </section>
+
+  <section class="section shell prose">
+    <h2 class="h2">Public corrections</h2>
+    <p>
+      Anyone may suggest a correction. The form opens a structured GitHub Issue. Maintainers
+      and appointed reviewers decide what is merged. Public users do not edit canonical YAML
+      directly.
+    </p>
+    <p>
+      <a class="btn btn-primary" href={correctionIssueUrl()} rel="noopener noreferrer" target="_blank">
+        Suggest a Correction →
+      </a>
+    </p>
+  </section>
+
+  <section class="section shell prose">
+    <h2 class="h2">Appointed review</h2>
+    <p>
+      Founder-appointed reviewers may later propose YAML patches through a platform UI. Those
+      proposals must become GitHub pull requests that change <code>context/**/*.yaml</code>.
+      Merge remains maintainer-controlled. Automation must not set
+      <code>theologically-reviewed</code>.
+    </p>
+    <p>
+      Local helper for the same patch rules:
+      <code>python3 scripts/apply-proposal.py --proposal proposal.json --dry-run</code>
+    </p>
+    <p>
+      <a href={`${SITE.githubUrl}/blob/main/docs/REVIEWER_CORRECTION_WORKFLOW.md`}>Read the reviewer workflow</a>
+    </p>
+  </section>
+</BaseLayout>

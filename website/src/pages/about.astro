@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../lib/site';
+---
+
+<BaseLayout
+  title="About"
+  description="Catholic Context is open infrastructure for Catholic knowledge and Catholic-grounded AI — source-grounded, accountable, and independent."
+>
+  <section class="section-tight shell fade-in">
+    <p class="eyebrow">✦ About</p>
+    <h1 class="h1">A modern Catholic library built for the AI era.</h1>
+    <p class="lede">
+      Catholic Context is open infrastructure for representing Catholic knowledge,
+      Catholic-grounded AI behavior, and measurable theological integrity.
+    </p>
+  </section>
+
+  <section class="section shell prose">
+    <h2 class="h2">Mission</h2>
+    <p>
+      Help humans and software faithfully understand what the Catholic Church teaches —
+      with transparent sources, review states, and governance that resists popularity-driven
+      theology.
+    </p>
+
+    <h2 class="h2">Relationship to My Catholic Guide</h2>
+    <p>
+      <a href={SITE.myCatholicGuideUrl} rel="noopener noreferrer" target="_blank">My Catholic Guide</a>
+      is a separate commercial end-user application for personal formation and prayer.
+      Catholic Context is the open scholarly and infrastructural foundation it can build on —
+      and that others may use without it.
+    </p>
+
+    <h2 class="h2">Theological humility</h2>
+    <p>
+      Catholic Context does not create Catholic teaching, replace the Magisterium, exercise
+      pastoral or sacramental authority, or claim to discern God's particular will for an
+      individual. Draft content remains draft until reviewed.
+    </p>
+
+    <h2 class="h2">Open-source commitment</h2>
+    <p>
+      Knowledge, Harness specifications, Evals, schemas, governance standards, and the
+      public website are intended to remain freely accessible and reusable subject to
+      published licenses and third-party rights.
+    </p>
+
+    <p style="margin-top: var(--space-6);">
+      <a class="btn btn-secondary" href="/governance">Read governance →</a>
+    </p>
+  </section>
+</BaseLayout>

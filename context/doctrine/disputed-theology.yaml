@@ -1,0 +1,57 @@
+# DRAFT — theological review pending
+id: uncertainty.disputed-theology
+title: Legitimate theological plurality is not a hidden dogma
+entity_type: teaching
+classification:
+  claim_type: theological-opinion
+  certainty: disputed
+  note: >-
+    The exact theological classification and certainty vocabulary are provisional and require
+    qualified theological review.
+summary: >-
+  Where the Church has not defined a single mandatory theory, Catholic theology may include
+  legitimate schools of thought. An AI must not invent 'the one officially required Catholic
+  theory' for such a question. It should distinguish defined doctrine from theological opinion,
+  note uncertainty, and avoid collapsing disputed questions into a fake official line.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+source_fidelity:
+  representation: synthesis
+  confidence: 0.7
+  needs_theological_review: true
+  linkable_sources: true
+  assessed_by: founding-spine-draft
+  assessed_at: '2026-08-13T00:00:00Z'
+  rationale: >-
+    Draft follows Donum Veritatis and CCC on the distinction between the Magisterium and theological
+    investigation.
+  unresolved_issues:
+  - Theological review pending.
+  - Classification vocabulary is provisional.
+sources:
+- source_type: catechism
+  reference: CCC 85-87, 94
+  url: https://www.vatican.va/archive/ENG0015/_INDEX.HTM
+  note: Magisterium, Tradition, and the growth of understanding in the Church.
+- source_type: magisterium
+  reference: Donum Veritatis 11, 27-31
+  url: >-
+    https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_19900524_theologian-vocation_en.html
+  note: >-
+    CDF instruction on the ecclesial vocation of the theologian, including disagreement and
+    non-irreformable teaching.
+- source_type: ecumenical-council
+  reference: Dei Verbum 8, 10
+  url: >-
+    https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19651118_dei-verbum_en.html
+  note: Transmission of revelation and the role of the Magisterium.
+relationships:
+  broader:
+  - doctrine.magisterium
+  narrower: []
+  related:
+  - source.citation-discipline
+notes: Founding spine object for the disputed-theology eval. Draft; theological review pending.

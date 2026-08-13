@@ -1,0 +1,39 @@
+# DRAFT — theological review pending
+id: doctrine.trinity
+title: The Holy Trinity
+entity_type: teaching
+classification:
+  claim_type: dogma
+  certainty: null
+  note: >-
+    The exact theological classification and certainty vocabulary are provisional and require qualified theological review.
+summary: >-
+  The Catholic Church professes one God in three divine Persons: Father, Son,
+  and Holy Spirit—consubstantial, undivided, and distinct.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: catechism
+    reference: CCC 253
+    url: null
+    note: >-
+      Catechetical summary of Trinitarian dogma.
+  - source_type: ecumenical-council
+    reference: First Council of Constantinople (381)
+    url: null
+    note: >-
+      Expanded Nicene confession concerning the Holy Spirit.
+relationships:
+  broader:
+    - doctrine.god
+  narrower: []
+  related:
+    - event.first-council-of-nicaea
+    - event.first-council-of-constantinople
+notes: >-
+  Draft seed object distilled for Catholic Context from My Catholic Guide /
+  Supabase metadata (not a full narrative import). Presence here does not
+  imply ecclesiastical approval or completed theological review.

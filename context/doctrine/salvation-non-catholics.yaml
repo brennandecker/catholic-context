@@ -1,0 +1,53 @@
+# DRAFT — theological review pending
+id: doctrine.salvation.non-catholics
+title: Salvation and those outside the visible Church
+entity_type: teaching
+classification:
+  claim_type: doctrine
+  certainty: null
+  note: >-
+    The exact theological classification and certainty vocabulary are provisional and require
+    qualified theological review.
+summary: >-
+  The Catholic Church does not teach that every non-Catholic person is automatically damned.
+  She teaches that Christ is the unique Savior and that the Church is necessary for salvation,
+  while also teaching that those who through no fault of their own do not know the Gospel
+  or the Church, yet seek God sincerely and follow the grace given them, may attain salvation.
+  This is not indifferentism: the Church still has the duty to evangelize.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+source_fidelity:
+  representation: synthesis
+  confidence: 0.72
+  needs_theological_review: true
+  linkable_sources: true
+  assessed_by: founding-spine-draft
+  assessed_at: '2026-08-13T00:00:00Z'
+  rationale: >-
+    Draft synthesizes LG 14-16 and CCC 846-848; this area is pastorally and theologically
+    sensitive and requires review.
+  unresolved_issues:
+  - Theological review pending.
+  - Classification vocabulary is provisional.
+sources:
+- source_type: catechism
+  reference: CCC 846-848
+  url: https://www.vatican.va/archive/ENG0015/_INDEX.HTM
+  note: Necessity of the Church and those who do not know the Gospel without fault.
+- source_type: ecumenical-council
+  reference: Lumen Gentium 14-16
+  url: >-
+    https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19641121_lumen-gentium_en.html
+  note: Vatican II on the Church and those outside her visible bounds.
+relationships:
+  broader:
+  - doctrine.church
+  narrower: []
+  related:
+  - doctrine.grace
+notes: >-
+  Founding spine object against the cartoon that every non-Catholic automatically goes to
+  hell. Draft; theological review pending.

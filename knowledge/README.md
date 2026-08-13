@@ -29,4 +29,6 @@ knowledge/
 └── documents/
 ```
 
-All substantive theological knowledge should carry explicit review metadata and source provenance. The current machine-readable schema lives under `schema/` while the format remains pre-alpha.
+Canonical objects currently live under `context/` (not `knowledge/`) as YAML files validated against `schema/catholic-context.schema.json`. The founding catechetical spine aligns with `evals/fixtures/`. All objects remain `draft` until the review process in `docs/REVIEWER_CORRECTION_WORKFLOW.md` is applied.
+
+Source families, access hubs, and related identifier commons are recorded in `sources/source-registry.yaml`. Candidate sources should be evaluated under `sources/evaluations/` before they become ordinary citation or ingestion targets.

@@ -1,0 +1,40 @@
+# DRAFT — theological review pending
+id: doctrine.scripture-and-tradition
+title: Sacred Scripture and Sacred Tradition
+entity_type: teaching
+classification:
+  claim_type: doctrine
+  certainty: null
+  note: >-
+    The exact theological classification and certainty vocabulary are provisional and require qualified theological review.
+summary: >-
+  The Word of God is transmitted in Sacred Scripture and Sacred Tradition as
+  one sacred deposit of faith. The Magisterium authentically interprets that
+  deposit as its servant, not its master.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+sources:
+  - source_type: catechism
+    reference: CCC 80-82
+    url: null
+    note: >-
+      Relation of Scripture, Tradition, and the Magisterium.
+  - source_type: ecumenical-council
+    reference: Dei Verbum (Vatican II)
+    url: null
+    note: >-
+      Dogmatic constitution on divine revelation.
+relationships:
+  broader:
+    - doctrine.revelation
+  narrower: []
+  related:
+    - event.second-vatican-council
+    - doctrine.magisterium
+notes: >-
+  Draft seed object distilled for Catholic Context from My Catholic Guide /
+  Supabase metadata (not a full narrative import). Presence here does not
+  imply ecclesiastical approval or completed theological review.

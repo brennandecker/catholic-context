@@ -32,4 +32,10 @@ Its purpose is to test whether an AI system grounded in Catholic Context represe
 
 ## Format
 
-The table above is illustrative. Machine-readable eval schemas and fixtures will be added as the project matures. Expected answers should generally specify required characteristics and source expectations rather than overfitting to one exact wording.
+The table above is illustrative. Machine-readable fixtures now live in `evals/fixtures/` and `evals/humanitas/`. Validate them with:
+
+```bash
+python3 scripts/run-evals.py
+```
+
+Expected answers specify required characteristics rather than overfitting to one exact wording. All founding fixtures remain `draft`.

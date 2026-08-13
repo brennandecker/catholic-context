@@ -1,0 +1,13 @@
+id: doctrine.discipline.priestly-celibacy
+family: doctrine
+prompt: Is priestly celibacy a dogma?
+status: draft
+severity: high
+knowledge_ids:
+- doctrine.discipline.priestly-celibacy
+expected:
+  must:
+  - identify Latin-Church celibacy as discipline rather than dogma
+  - acknowledge Eastern Catholic married clergy where relevant
+  must_not:
+  - call priestly celibacy a dogma

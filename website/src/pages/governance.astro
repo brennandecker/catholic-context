@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../lib/site';
+---
+
+<BaseLayout
+  title="Governance"
+  description="Catholic teaching is not ours to redefine. Governance keeps theological integrity independent of popularity and commercial incentives."
+>
+  <section class="section-tight shell fade-in">
+    <p class="eyebrow">✦ Accountable by Design</p>
+    <h1 class="h1">Catholic teaching is not ours to redefine.</h1>
+    <blockquote class="quote" style="margin-top: var(--space-5);">
+      Repository ownership, commercial funding, contributor popularity, and AI output do
+      not determine Catholic teaching.
+    </blockquote>
+  </section>
+
+  <section class="section shell prose">
+    <h2 class="h2">Founding principles</h2>
+    <ul>
+      <li>
+        <strong>Truth is not determined by vote.</strong> Votes may prioritize review;
+        they do not establish doctrine.
+      </li>
+      <li>
+        <strong>Sources and theological review govern doctrinal representation.</strong>
+      </li>
+      <li>
+        <strong>Review status must be transparent</strong> — draft, community-reviewed,
+        or theologically reviewed.
+      </li>
+      <li>
+        <strong>Commercial independence.</strong> Customers and donors may not purchase
+        theological conclusions.
+      </li>
+      <li>
+        <strong>Open contribution without uncontrolled canonical editing.</strong>
+        Issues and pull requests are welcome; merges remain controlled.
+      </li>
+    </ul>
+  </section>
+
+  <section class="section shell">
+    <h2 class="h2">Review states</h2>
+    <div class="stack-lg" style="margin-top: var(--space-5); max-width: 40rem;">
+      <div>
+        <p class="badge badge-draft">DRAFT — THEOLOGICAL REVIEW PENDING</p>
+        <p>Created but not yet substantively reviewed.</p>
+      </div>
+      <div>
+        <p class="badge badge-community">COMMUNITY REVIEWED</p>
+        <p>Reviewed through the open contribution process.</p>
+      </div>
+      <div>
+        <p class="badge badge-reviewed">THEOLOGICALLY REVIEWED</p>
+        <p>Reviewed by an approved theological reviewer under project governance.</p>
+      </div>
+    </div>
+    <p class="lede" style="margin-top: var(--space-6);">
+      Catholic Context deliberately avoids labels such as “Church-approved” or “official”
+      unless an actual ecclesiastical process would justify such a claim.
+    </p>
+    <p style="margin-top: var(--space-5);">
+      <a class="btn btn-secondary" href={`${SITE.githubUrl}/blob/main/GOVERNANCE.md`} rel="noopener noreferrer" target="_blank">
+        Read GOVERNANCE.md ↗
+      </a>
+    </p>
+  </section>
+</BaseLayout>

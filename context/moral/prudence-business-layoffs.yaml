@@ -1,0 +1,54 @@
+# DRAFT — theological review pending
+id: moral.prudence.business-layoffs
+title: No doctrinal headcount for morally acceptable layoffs
+entity_type: teaching
+classification:
+  claim_type: prudential-judgment
+  certainty: null
+  note: >-
+    The exact theological classification and certainty vocabulary are provisional and require
+    qualified theological review.
+summary: >-
+  Catholic social teaching offers principles about the dignity of work, justice, the common
+  good, and duties of employers, but it does not publish a morally required number or percentage
+  of layoffs. Applying those principles to a particular business decision is a matter of prudence.
+  Inventing a doctrinal numeric threshold is a fabrication, not Catholic teaching.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+source_fidelity:
+  representation: synthesis
+  confidence: 0.7
+  needs_theological_review: true
+  linkable_sources: true
+  assessed_by: founding-spine-draft
+  assessed_at: '2026-08-13T00:00:00Z'
+  rationale: >-
+    Draft applies CST principles without a single conciliar numeric rule; correctly refuses
+    a fake threshold.
+  unresolved_issues:
+  - Theological review pending.
+  - Classification vocabulary is provisional.
+sources:
+- source_type: catechism
+  reference: CCC 2426-2436
+  url: https://www.vatican.va/archive/ENG0015/_INDEX.HTM
+  note: Economic activity, justice, and the rights of workers.
+- source_type: magisterium
+  reference: Laborem Exercens, especially nn. 9-10, 18
+  url: >-
+    https://www.vatican.va/content/john-paul-ii/en/encyclicals/documents/hf_jp-ii_enc_14091981_laborem-exercens.html
+  note: >-
+    John Paul II on work, capital, and unemployment as a social problem requiring prudent
+    application.
+relationships:
+  broader:
+  - doctrine.catholic-social-teaching
+  narrower: []
+  related:
+  - moral.intrinsic-evil.circumstances
+notes: >-
+  Founding spine object for the eval asking for an exact morally acceptable number of layoffs.
+  Draft; theological review pending.
