@@ -684,11 +684,29 @@ a:hover {
 }
 
 .takeover-lede {
-  max-width: 28rem;
+  max-width: 36rem;
   font-size: clamp(1.15rem, 2vw, 1.4rem);
+  font-style: italic;
   line-height: 1.45;
   color: color-mix(in srgb, var(--near-paper) 86%, var(--rule));
   margin: 0 0 var(--space-6);
+}
+
+.takeover-lede p {
+  margin: 0;
+}
+
+.takeover-lede footer {
+  margin-top: var(--space-3);
+}
+
+.takeover-lede cite {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-style: normal;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--near-paper) 62%, var(--muted));
 }
 
 .takeover-actions {
