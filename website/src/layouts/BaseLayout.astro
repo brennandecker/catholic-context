@@ -12,6 +12,7 @@ interface Props {
   robots?: string;
   jsonLd?: unknown;
   ogType?: string;
+  takeover?: boolean;
 }
 
 const {
@@ -21,6 +22,7 @@ const {
   robots = 'index, follow',
   jsonLd,
   ogType = 'website',
+  takeover = false,
 } = Astro.props;
 
 const pageTitle = title ? `${title} · ${SITE.name}` : `${SITE.name} — ${SITE.tagline}`;
@@ -68,8 +70,8 @@ const structured = jsonLd ?? websiteJsonLd();
     />
     <script type="application/ld+json" set:html={jsonLdScript(structured)} />
   </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+  <body class:list={[{ 'has-takeover': takeover }]}>
+    <a class="skip-link" href={takeover ? '#library' : '#main'}>Skip to content</a>
     <Header />
     <main id="main">
       <slot />
