@@ -1,12 +1,12 @@
 ---
-import { FEATURED_VIDEO } from '../lib/site';
+import { FEATURED_VIDEO, type SiteVideo } from '../lib/site';
 
 interface Props {
+  video?: SiteVideo;
   caption?: string;
 }
 
-const { caption } = Astro.props;
-const video = FEATURED_VIDEO;
+const { video = FEATURED_VIDEO, caption } = Astro.props;
 ---
 
 <figure class="video-embed">

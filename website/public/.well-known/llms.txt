@@ -53,7 +53,8 @@ The Git repository is the canonical record: https://github.com/brennandecker/cat
 - [Knowledge index](https://catholiccontext.org/knowledge)
 - [Sources](https://catholiccontext.org/sources)
 - [Harness](https://catholiccontext.org/harness)
-- [Magnifica Humanitas video](https://www.youtube.com/watch?v=O244WhIpdLg) — EWTN News recording of the official Vatican presentation, also embedded on the home and Harness pages
+- [Magnifica Humanitas presentation](https://www.youtube.com/watch?v=O244WhIpdLg) — EWTN News recording of the official Vatican presentation film, embedded on the home page
+- [Pope Leo XIV full speech](https://www.youtube.com/watch?v=q_mUHi2mpIQ) — full address at the Magnifica Humanitas Vatican launch, embedded on /harness
 - [Evals](https://catholiccontext.org/evals)
 - [Governance](https://catholiccontext.org/governance)
 - [Schema](https://github.com/brennandecker/catholic-context/blob/main/schema/catholic-context.schema.json)

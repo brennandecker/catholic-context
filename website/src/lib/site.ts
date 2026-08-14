@@ -22,6 +22,25 @@ export const FEATURED_VIDEO = {
   thumbnailUrl: 'https://i.ytimg.com/vi/O244WhIpdLg/hqdefault.jpg',
 } as const;
 
+/** EWTN News recording of Pope Leo XIV’s full address at the Magnifica Humanitas launch. */
+export const HUMANITAS_SPEECH = {
+  id: 'q_mUHi2mpIQ',
+  title: 'Pope Leo XIV Full Speech at Magnifica Humanitas Vatican Launch',
+  publisher: 'EWTN News',
+  watchUrl: 'https://www.youtube.com/watch?v=q_mUHi2mpIQ',
+  embedUrl: 'https://www.youtube-nocookie.com/embed/q_mUHi2mpIQ',
+  thumbnailUrl: 'https://i.ytimg.com/vi/q_mUHi2mpIQ/hqdefault.jpg',
+} as const;
+
+export type SiteVideo = {
+  id: string;
+  title: string;
+  publisher: string;
+  watchUrl: string;
+  embedUrl: string;
+  thumbnailUrl: string;
+};
+
 export const NAV = [
   { href: '/knowledge', label: 'Explore' },
   { href: '/sources', label: 'Sources' },
