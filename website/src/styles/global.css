@@ -677,30 +677,18 @@ a:hover {
 
 .takeover-headline {
   color: var(--near-paper);
-  font-size: clamp(3.1rem, 8.4vw, 6.4rem);
-  max-width: 13ch;
-  margin: 0 0 var(--space-5);
-  text-wrap: balance;
+  font-size: clamp(1.7rem, 4.4vw, 3.05rem);
+  line-height: 1.16;
+  max-width: 28ch;
+  margin: 0 0 var(--space-4);
+  text-wrap: pretty;
 }
 
-.takeover-lede {
-  max-width: 36rem;
-  font-size: clamp(1.15rem, 2vw, 1.4rem);
-  font-style: italic;
-  line-height: 1.45;
-  color: color-mix(in srgb, var(--near-paper) 86%, var(--rule));
+.takeover-cite {
   margin: 0 0 var(--space-6);
 }
 
-.takeover-lede p {
-  margin: 0;
-}
-
-.takeover-lede footer {
-  margin-top: var(--space-3);
-}
-
-.takeover-lede cite {
+.takeover-cite cite {
   font-family: var(--font-ui);
   font-size: 11px;
   font-style: normal;
