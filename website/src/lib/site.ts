@@ -17,6 +17,8 @@ export const FEATURED_VIDEO = {
   publisher: 'EWTN News',
   watchUrl: 'https://www.youtube.com/watch?v=O244WhIpdLg',
   embedUrl: 'https://www.youtube-nocookie.com/embed/O244WhIpdLg',
+  embedCoverUrl:
+    'https://www.youtube-nocookie.com/embed/O244WhIpdLg?autoplay=1&mute=1&controls=0&playsinline=1&loop=1&playlist=O244WhIpdLg&modestbranding=1&rel=0&iv_load_policy=3&disablekb=1',
   thumbnailUrl: 'https://i.ytimg.com/vi/O244WhIpdLg/hqdefault.jpg',
 } as const;
 

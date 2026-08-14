@@ -1,0 +1,49 @@
+---
+import { FEATURED_VIDEO } from '../lib/site';
+
+const video = FEATURED_VIDEO;
+---
+
+<section class="takeover" data-takeover aria-label="Opening film">
+  <div class="takeover-media" aria-hidden="true">
+    <iframe
+      src={video.embedCoverUrl}
+      title=""
+      tabindex="-1"
+      allow="autoplay; encrypted-media; picture-in-picture"
+      referrerpolicy="strict-origin-when-cross-origin"
+    ></iframe>
+  </div>
+  <div class="takeover-shade" aria-hidden="true"></div>
+
+  <div class="takeover-copy shell">
+    <p class="eyebrow takeover-eyebrow">✦ Magnifica Humanitas</p>
+    <h1 class="display takeover-headline">Help us protect humanity brick by brick.</h1>
+    <p class="takeover-lede">
+      One sourced object. One honest review. One boundary an AI must not cross.
+      That is how the commons holds.
+    </p>
+    <div class="takeover-actions">
+      <a class="btn btn-primary" href="#library">Enter the archive</a>
+      <a class="btn btn-ghost" href={video.watchUrl} rel="noopener noreferrer" target="_blank">
+        Watch with sound ↗
+      </a>
+    </div>
+    <p class="takeover-credit">
+      {video.title}. {video.publisher}.
+    </p>
+  </div>
+</section>
+
+<script>
+  const takeover = document.querySelector('[data-takeover]');
+  if (takeover instanceof HTMLElement) {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        document.body.classList.toggle('is-scrolled', !entry.isIntersecting);
+      },
+      { threshold: 0.55 },
+    );
+    observer.observe(takeover);
+  }
+</script>
