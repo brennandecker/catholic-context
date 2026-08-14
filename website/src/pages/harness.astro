@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import YouTubeEmbed from '../components/YouTubeEmbed.astro';
 import { loadHarnessPrinciples, loadHarnessProfile } from '../lib/content';
-import { SITE } from '../lib/site';
+import { FEATURED_VIDEO, HUMANITAS_SPEECH, SITE } from '../lib/site';
 
 const harness = loadHarnessPrinciples();
 const principles = harness.principles ?? [];
@@ -41,7 +41,20 @@ const profile = loadHarnessProfile();
       {` ${String(harness.status?.maturity ?? 'draft')} · theological review ${String(harness.status?.theological_review ?? 'pending')}`}.
     </p>
     <div style="margin-top: var(--space-6); max-width: 52rem;">
-      <YouTubeEmbed />
+      <h3 class="h3">The full address</h3>
+      <p>
+        Pope Leo XIV’s complete speech at the Vatican launch of <em>Magnifica Humanitas</em>,
+        recorded by EWTN News. The Harness interprets these principles for software. The
+        speech remains the Holy Father’s own words.
+      </p>
+      <YouTubeEmbed video={HUMANITAS_SPEECH} />
+    </div>
+    <div style="margin-top: var(--space-7); max-width: 52rem;">
+      <h3 class="h3">Presentation film</h3>
+      <p>
+        The shorter official presentation used on the home page.
+      </p>
+      <YouTubeEmbed video={FEATURED_VIDEO} />
     </div>
 
     <div style="margin-top: var(--space-7);">

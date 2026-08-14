@@ -1,4 +1,4 @@
-import { FEATURED_VIDEO, SITE } from './site';
+import { FEATURED_VIDEO, HUMANITAS_SPEECH, SITE, type SiteVideo } from './site';
 import type { KnowledgeEntry } from './types';
 
 export const OG_IMAGE_PATH = '/og.jpg';
@@ -15,6 +15,26 @@ export function absoluteUrl(path: string): string {
 
 export function ogImageUrl(): string {
   return absoluteUrl(OG_IMAGE_PATH);
+}
+
+export function videoJsonLd(
+  video: SiteVideo,
+  options: { id: string; description: string },
+) {
+  return {
+    '@type': 'VideoObject',
+    '@id': `${SITE.url}/#${options.id}`,
+    name: video.title,
+    description: options.description,
+    thumbnailUrl: video.thumbnailUrl,
+    embedUrl: video.embedUrl,
+    contentUrl: video.watchUrl,
+    publisher: {
+      '@type': 'Organization',
+      name: video.publisher,
+    },
+    isAccessibleForFree: true,
+  };
 }
 
 export function websiteJsonLd() {
@@ -46,21 +66,16 @@ export function websiteJsonLd() {
           'query-input': 'required name=search_term_string',
         },
       },
-      {
-        '@type': 'VideoObject',
-        '@id': `${SITE.url}/#magnifica-humanitas-video`,
-        name: FEATURED_VIDEO.title,
+      videoJsonLd(FEATURED_VIDEO, {
+        id: 'magnifica-humanitas-video',
         description:
           'EWTN News recording of the official Vatican presentation of Magnifica Humanitas, the human-centered principles the Catholic Context Harness interprets for Catholic-grounded AI.',
-        thumbnailUrl: FEATURED_VIDEO.thumbnailUrl,
-        embedUrl: FEATURED_VIDEO.embedUrl,
-        contentUrl: FEATURED_VIDEO.watchUrl,
-        publisher: {
-          '@type': 'Organization',
-          name: FEATURED_VIDEO.publisher,
-        },
-        isAccessibleForFree: true,
-      },
+      }),
+      videoJsonLd(HUMANITAS_SPEECH, {
+        id: 'magnifica-humanitas-speech',
+        description:
+          'EWTN News recording of Pope Leo XIV’s full address at the Magnifica Humanitas Vatican launch.',
+      }),
     ],
   };
 }
