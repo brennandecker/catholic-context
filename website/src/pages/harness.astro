@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import YouTubeEmbed from '../components/YouTubeEmbed.astro';
 import { loadHarnessPrinciples, loadHarnessProfile } from '../lib/content';
-import { FEATURED_VIDEO, HUMANITAS_SPEECH, SITE } from '../lib/site';
+import { HUMANITAS_SPEECH, SITE } from '../lib/site';
 
 const harness = loadHarnessPrinciples();
 const principles = harness.principles ?? [];
@@ -17,10 +17,12 @@ const profile = loadHarnessProfile();
     <p class="eyebrow">✦ Catholic Harness</p>
     <h1 class="h1">How should Catholic-grounded AI behave?</h1>
     <p class="lede">
-      The Harness is a model-agnostic framework for source grounding, authority,
-      theological distinctions, moral reasoning, uncertainty, citations, pastoral
-      boundaries, and escalation to human guidance.
+      Hear Pope Leo XIV’s full address at the Vatican launch of <em>Magnifica Humanitas</em>,
+      then read how the Harness turns those principles into inspectable rules for software.
     </p>
+    <div class="harness-speech">
+      <YouTubeEmbed video={HUMANITAS_SPEECH} />
+    </div>
   </section>
 
   <section class="shell" style="padding-bottom: var(--space-7);">
@@ -39,23 +41,9 @@ const profile = loadHarnessProfile();
       Draft principles derived from <em>{String(harness.document?.title ?? 'Magnifica Humanitas')}</em>
       {' '}translate Catholic sources into inspectable engineering requirements. Status:
       {` ${String(harness.status?.maturity ?? 'draft')} · theological review ${String(harness.status?.theological_review ?? 'pending')}`}.
+      The speech above remains the Holy Father’s own words. The Harness is an engineering
+      interpretation.
     </p>
-    <div style="margin-top: var(--space-6); max-width: 52rem;">
-      <h3 class="h3">The full address</h3>
-      <p>
-        Pope Leo XIV’s complete speech at the Vatican launch of <em>Magnifica Humanitas</em>,
-        recorded by EWTN News. The Harness interprets these principles for software. The
-        speech remains the Holy Father’s own words.
-      </p>
-      <YouTubeEmbed video={HUMANITAS_SPEECH} />
-    </div>
-    <div style="margin-top: var(--space-7); max-width: 52rem;">
-      <h3 class="h3">Presentation film</h3>
-      <p>
-        The shorter official presentation used on the home page.
-      </p>
-      <YouTubeEmbed video={FEATURED_VIDEO} />
-    </div>
 
     <div style="margin-top: var(--space-7);">
       {principles.map((principle) => (

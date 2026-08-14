@@ -1115,3 +1115,8 @@ body.has-takeover.is-scrolled .nav-toggle {
   color: var(--muted);
   max-width: 40rem;
 }
+
+.harness-speech {
+  margin-top: var(--space-6);
+  max-width: 58rem;
+}
