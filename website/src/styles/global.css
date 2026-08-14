@@ -706,6 +706,53 @@ a:hover {
   color: color-mix(in srgb, var(--near-paper) 55%, var(--muted));
 }
 
+.video-dialog {
+  width: min(100% - 2rem, 64rem);
+  max-width: 64rem;
+  padding: 0;
+  border: 1px solid var(--rule);
+  background: #1a0f0a;
+  color: var(--near-paper);
+  box-shadow: var(--shadow-paper);
+}
+
+.video-dialog::backdrop {
+  background: rgba(26, 15, 10, 0.82);
+}
+
+.video-dialog__panel {
+  padding: var(--space-4);
+}
+
+.video-dialog__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+.video-dialog__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  color: var(--near-paper);
+}
+
+.video-dialog__credit {
+  margin: var(--space-3) 0 0;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--near-paper) 55%, var(--muted));
+}
+
+.video-dialog .video-frame {
+  border-color: var(--rule);
+}
+
 body.has-takeover .site-header {
   position: absolute;
   inset: 0 0 auto;

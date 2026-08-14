@@ -1,4 +1,5 @@
 ---
+import VideoDialog from './VideoDialog.astro';
 import { FEATURED_VIDEO } from '../lib/site';
 
 const video = FEATURED_VIDEO;
@@ -7,6 +8,7 @@ const video = FEATURED_VIDEO;
 <section class="takeover" data-takeover aria-label="Opening film">
   <div class="takeover-media" aria-hidden="true">
     <iframe
+      data-cover-frame
       src={video.embedCoverUrl}
       title=""
       tabindex="-1"
@@ -25,9 +27,9 @@ const video = FEATURED_VIDEO;
     </p>
     <div class="takeover-actions">
       <a class="btn btn-primary" href="#library">Enter the archive</a>
-      <a class="btn btn-ghost" href={video.watchUrl} rel="noopener noreferrer" target="_blank">
-        Watch with sound ↗
-      </a>
+      <button class="btn btn-ghost" type="button" data-open-player>
+        View full video
+      </button>
     </div>
     <p class="takeover-credit">
       {video.title}. {video.publisher}.
@@ -35,8 +37,16 @@ const video = FEATURED_VIDEO;
   </div>
 </section>
 
+<VideoDialog video={video} playerSrc={video.embedPlayerUrl} />
+
 <script>
   const takeover = document.querySelector('[data-takeover]');
+  const dialog = document.querySelector('[data-video-dialog]');
+  const openBtn = document.querySelector('[data-open-player]');
+  const closeBtn = document.querySelector('[data-close-player]');
+  const player = document.querySelector('[data-player-frame]');
+  const cover = document.querySelector('[data-cover-frame]');
+
   if (takeover instanceof HTMLElement) {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -45,5 +55,50 @@ const video = FEATURED_VIDEO;
       { threshold: 0.55 },
     );
     observer.observe(takeover);
+  }
+
+  function playerSrc(): string {
+    return player instanceof HTMLIFrameElement ? player.dataset.playerSrc ?? '' : '';
+  }
+
+  function coverSrc(): string {
+    return cover instanceof HTMLIFrameElement ? cover.getAttribute('data-src') || cover.src : '';
+  }
+
+  if (cover instanceof HTMLIFrameElement && !cover.dataset.src) {
+    cover.dataset.src = cover.src;
+  }
+
+  function openPlayer() {
+    if (!(dialog instanceof HTMLDialogElement) || !(player instanceof HTMLIFrameElement)) return;
+    player.src = playerSrc();
+    if (cover instanceof HTMLIFrameElement) cover.src = 'about:blank';
+    dialog.showModal();
+    document.body.classList.add('has-video-dialog');
+  }
+
+  function closePlayer() {
+    if (!(dialog instanceof HTMLDialogElement) || !(player instanceof HTMLIFrameElement)) return;
+    dialog.close();
+    player.src = '';
+    if (cover instanceof HTMLIFrameElement) cover.src = coverSrc();
+    document.body.classList.remove('has-video-dialog');
+  }
+
+  if (openBtn instanceof HTMLButtonElement) {
+    openBtn.addEventListener('click', openPlayer);
+  }
+  if (closeBtn instanceof HTMLButtonElement) {
+    closeBtn.addEventListener('click', closePlayer);
+  }
+  if (dialog instanceof HTMLDialogElement) {
+    dialog.addEventListener('click', (event) => {
+      if (event.target === dialog) closePlayer();
+    });
+    dialog.addEventListener('close', () => {
+      if (player instanceof HTMLIFrameElement) player.src = '';
+      if (cover instanceof HTMLIFrameElement) cover.src = coverSrc();
+      document.body.classList.remove('has-video-dialog');
+    });
   }
 </script>

@@ -1,0 +1,30 @@
+---
+import type { SiteVideo } from '../lib/site';
+
+interface Props {
+  video: SiteVideo;
+  playerSrc: string;
+}
+
+const { video, playerSrc } = Astro.props;
+---
+
+<dialog class="video-dialog" data-video-dialog aria-labelledby="video-dialog-title">
+  <div class="video-dialog__panel">
+    <div class="video-dialog__bar">
+      <p class="video-dialog__title" id="video-dialog-title">{video.title}</p>
+      <button class="btn btn-ghost" type="button" data-close-player>Close</button>
+    </div>
+    <div class="video-frame">
+      <iframe
+        data-player-frame
+        data-player-src={playerSrc}
+        title={video.title}
+        allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <p class="video-dialog__credit">{video.title}. Published by {video.publisher}.</p>
+  </div>
+</dialog>

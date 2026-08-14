@@ -24,8 +24,6 @@ const { video = FEATURED_VIDEO, caption } = Astro.props;
     {caption ?? (
       <>
         {video.title}. Published by {video.publisher}.
-        {' '}
-        <a href={video.watchUrl} rel="noopener noreferrer" target="_blank">Watch on YouTube ↗</a>
       </>
     )}
   </figcaption>
