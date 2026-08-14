@@ -1,4 +1,4 @@
-import { SITE } from './site';
+import { FEATURED_VIDEO, SITE } from './site';
 import type { KnowledgeEntry } from './types';
 
 export const OG_IMAGE_PATH = '/og.jpg';
@@ -45,6 +45,21 @@ export function websiteJsonLd() {
           },
           'query-input': 'required name=search_term_string',
         },
+      },
+      {
+        '@type': 'VideoObject',
+        '@id': `${SITE.url}/#magnifica-humanitas-video`,
+        name: FEATURED_VIDEO.title,
+        description:
+          'EWTN News recording of the official Vatican presentation of Magnifica Humanitas, the human-centered principles the Catholic Context Harness interprets for Catholic-grounded AI.',
+        thumbnailUrl: FEATURED_VIDEO.thumbnailUrl,
+        embedUrl: FEATURED_VIDEO.embedUrl,
+        contentUrl: FEATURED_VIDEO.watchUrl,
+        publisher: {
+          '@type': 'Organization',
+          name: FEATURED_VIDEO.publisher,
+        },
+        isAccessibleForFree: true,
       },
     ],
   };

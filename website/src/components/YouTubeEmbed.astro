@@ -1,0 +1,32 @@
+---
+import { FEATURED_VIDEO } from '../lib/site';
+
+interface Props {
+  caption?: string;
+}
+
+const { caption } = Astro.props;
+const video = FEATURED_VIDEO;
+---
+
+<figure class="video-embed">
+  <div class="video-frame">
+    <iframe
+      src={video.embedUrl}
+      title={video.title}
+      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+      loading="lazy"
+    ></iframe>
+  </div>
+  <figcaption>
+    {caption ?? (
+      <>
+        {video.title}. Published by {video.publisher}.
+        {' '}
+        <a href={video.watchUrl} rel="noopener noreferrer" target="_blank">Watch on YouTube ↗</a>
+      </>
+    )}
+  </figcaption>
+</figure>

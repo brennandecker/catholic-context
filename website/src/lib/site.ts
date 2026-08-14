@@ -10,6 +10,16 @@ export const SITE = {
   ogImage: '/og.jpg',
 } as const;
 
+/** EWTN News recording of the official Vatican presentation of Magnifica Humanitas. */
+export const FEATURED_VIDEO = {
+  id: 'O244WhIpdLg',
+  title: 'Magnifica Humanitas: Official Vatican Presentation Video',
+  publisher: 'EWTN News',
+  watchUrl: 'https://www.youtube.com/watch?v=O244WhIpdLg',
+  embedUrl: 'https://www.youtube-nocookie.com/embed/O244WhIpdLg',
+  thumbnailUrl: 'https://i.ytimg.com/vi/O244WhIpdLg/hqdefault.jpg',
+} as const;
+
 export const NAV = [
   { href: '/knowledge', label: 'Explore' },
   { href: '/sources', label: 'Sources' },

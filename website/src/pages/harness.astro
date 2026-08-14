@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import YouTubeEmbed from '../components/YouTubeEmbed.astro';
 import { loadHarnessPrinciples, loadHarnessProfile } from '../lib/content';
 import { SITE } from '../lib/site';
 
@@ -39,6 +40,9 @@ const profile = loadHarnessProfile();
       {' '}translate Catholic sources into inspectable engineering requirements. Status:
       {` ${String(harness.status?.maturity ?? 'draft')} · theological review ${String(harness.status?.theological_review ?? 'pending')}`}.
     </p>
+    <div style="margin-top: var(--space-6); max-width: 52rem;">
+      <YouTubeEmbed />
+    </div>
 
     <div style="margin-top: var(--space-7);">
       {principles.map((principle) => (
