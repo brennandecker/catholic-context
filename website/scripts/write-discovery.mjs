@@ -122,6 +122,7 @@ function writeLlmsTxt(entries) {
     `- [Knowledge index](${SITE}/knowledge)`,
     `- [Sources](${SITE}/sources)`,
     `- [Harness](${SITE}/harness)`,
+    `- [Magnifica Humanitas video](https://www.youtube.com/watch?v=O244WhIpdLg) — EWTN News recording of the official Vatican presentation, also embedded on the home and Harness pages`,
     `- [Evals](${SITE}/evals)`,
     `- [Governance](${SITE}/governance)`,
     `- [Schema](https://github.com/brennandecker/catholic-context/blob/main/schema/catholic-context.schema.json)`,

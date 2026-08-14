@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SearchForm from '../components/SearchForm.astro';
+import YouTubeEmbed from '../components/YouTubeEmbed.astro';
 import { SITE, TOPIC_LINKS } from '../lib/site';
 ---
 
@@ -22,6 +23,22 @@ import { SITE, TOPIC_LINKS } from '../lib/site';
         <a href={topic.href}>{topic.label}</a>
       ))}
     </div>
+  </section>
+
+  <section class="section shell" aria-labelledby="humanitas-video-heading">
+    <p class="eyebrow">✦ Magnifica Humanitas</p>
+    <h2 class="h2" id="humanitas-video-heading">Protect the human person in the age of AI.</h2>
+    <p class="lede">
+      EWTN News recorded the official Vatican presentation of <em>Magnifica Humanitas</em> —
+      the human-centered principles the Harness interprets so Catholic-grounded software
+      can assist without replacing conscience, work, or the dignity of the person.
+    </p>
+    <div style="margin-top: var(--space-6); max-width: 52rem;">
+      <YouTubeEmbed />
+    </div>
+    <p style="margin-top: var(--space-5);">
+      <a class="btn btn-text" href="/harness">Read the Harness principles →</a>
+    </p>
   </section>
 
   <hr class="rule shell" />
