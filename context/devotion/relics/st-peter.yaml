@@ -1,0 +1,74 @@
+# DRAFT — theological review pending
+id: relic.st-peter
+title: Relics of St. Peter in the Vatican
+entity_type: devotion
+classification:
+  claim_type: historical-claim
+  certainty: provisional
+  note: >-
+    The Church honors remains beneath the Vatican basilica as relics of the Apostle.
+    Paul VI announced that identification in 1968 as a judgment he believed convincing,
+    while saying research and discussion would continue. This entry is a draft historical
+    summary, not a closed archaeological verdict.
+summary: >-
+  First-class relics. Beneath the high altar of St. Peter's Basilica, excavations begun
+  under Pius XII uncovered a second-century tropaion and a tomb the Church takes to be
+  Peter's. In a Christmas address of 1950, Pius XII said the tomb had been found and left
+  the question of the bones open. On 26 June 1968, Paul VI told a general audience that
+  patient investigation had identified, in a manner he believed convincing, mortal remains
+  of the Prince of the Apostles, few but sacred, while admitting that research and
+  controversy would not end. Those remains are first-class relics if the identification
+  holds: they are part of a saint's body. Catholic veneration here is ordered to the
+  confession of Peter and to the resurrection, not to a museum claim that every scholar
+  must accept.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+source_fidelity:
+  representation: summary
+  confidence: 0.74
+  needs_theological_review: true
+  linkable_sources: true
+  assessed_by: ocia-relics-draft
+  assessed_at: '2026-08-15T00:00:00Z'
+  rationale: >-
+    Follows Pius XII (1950) and Paul VI (26 June 1968) on tomb and bones, and the 2017
+    instruction on significant relics, without treating later journalism as a teaching
+    source.
+  unresolved_issues:
+    - Theological review pending.
+    - Archaeological debate continues and is not settled by this draft.
+sources:
+  - source_type: magisterium
+    reference: Pius XII, Radio Message, 23 December 1950
+    url: null
+    note: Announced that the tomb of St. Peter had been found; left the relics question open.
+  - source_type: magisterium
+    reference: Paul VI, General Audience, 26 June 1968
+    url: >-
+      https://www.vatican.va/content/paul-vi/en/audiences/1968.index.html
+    note: >-
+      Announced identification of remains he believed to be St. Peter's, while saying
+      research and discussion would continue.
+  - source_type: magisterium
+    reference: Relics in the Church, Authenticity and Preservation (8 December 2017), Introduction
+    url: >-
+      https://www.vatican.va/roman_curia/congregations/csaints/documents/rc_con_csaints_doc_20171208_istruzione-reliquie_en.html
+    note: The body or notable parts of a saint are significant, first-class relics.
+  - source_type: scripture
+    reference: Matthew 16:16-19
+    url: null
+    note: Peter's confession, to which the Vatican shrine is ordered.
+relationships:
+  broader:
+    - doctrine.relics
+  narrower: []
+  related:
+    - person.st-peter-the-apostle
+    - place.st-peters-basilica
+    - doctrine.communion-of-saints
+notes: |
+  Draft. Presence here does not imply completed theological review or a claim that
+  every bone fragment in the Vatican necropolis is beyond historical question.

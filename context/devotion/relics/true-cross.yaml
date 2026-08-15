@@ -1,0 +1,75 @@
+# DRAFT — theological review pending
+id: relic.true-cross
+title: Relics of the True Cross
+entity_type: devotion
+classification:
+  claim_type: historical-claim
+  certainty: disputed
+  note: >-
+    The Church liturgically exalts the Cross and has long venerated fragments said to
+    be of the wood on which Christ died. The authenticity of any given fragment is a
+    historical question and is often uncertain. This draft does not authenticate a
+    particular piece.
+summary: >-
+  First-class relics of the Passion, in popular catechesis. From late antiquity the
+  Church has honored fragments believed to be of the Cross found in Jerusalem and
+  associated, in Christian memory, with St. Helena. Major pieces have been kept at
+  Santa Croce in Gerusalemme in Rome and in many other churches. The liturgical feast
+  of the Exaltation of the Holy Cross (14 September) venerates the saving work of
+  Christ, not a laboratory certificate for each sliver. Because so many fragments
+  circulate, and because medieval piety sometimes multiplied them, a particular relic
+  of the Cross should be received only with an ecclesiastical certificate, and doubtful
+  pieces should be withdrawn. Even a genuine fragment is not a charm. It is a sign of
+  the one sacrifice of the Lord.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+source_fidelity:
+  representation: synthesis
+  confidence: 0.68
+  needs_theological_review: true
+  linkable_sources: true
+  assessed_by: ocia-relics-draft
+  assessed_at: '2026-08-15T00:00:00Z'
+  rationale: >-
+    Distinguishes liturgical exaltation of the Cross from the historical status of
+    individual fragments. Relies on Trent and the Directory's authenticity rules rather
+    than on a single church's inventory.
+  unresolved_issues:
+    - Theological review pending.
+    - No attempt is made here to catalogue or authenticate surviving fragments.
+sources:
+  - source_type: scripture
+    reference: John 19:17-19
+    url: null
+    note: The crucifixion, the event to which relics of the Cross refer.
+  - source_type: liturgy
+    reference: Roman Calendar, 14 September, Exaltation of the Holy Cross
+    url: null
+    note: The Church's public worship of the Cross of Christ.
+  - source_type: ecumenical-council
+    reference: >-
+      Council of Trent, Session 25 (3 December 1563), Decree on Invocation, Veneration,
+      and Relics of Saints, and on Sacred Images
+    url: null
+    note: Veneration of relics, with a warning against superstition.
+  - source_type: magisterium
+    reference: Directory on Popular Piety and the Liturgy 236-237
+    url: >-
+      https://www.vatican.va/roman_curia/congregations/ccdds/documents/rc_con_ccdds_doc_20020513_vers-direttorio_en.html
+    note: Authentic relics only; doubtful relics are to be withdrawn with pastoral prudence.
+relationships:
+  broader:
+    - doctrine.relics
+  narrower: []
+  related:
+    - relic.crown-of-thorns
+    - liturgy.mass
+notes: |
+  Draft. A church tour may show a Cross relic in a reliquary or altar stone. Ask
+  whether it has a certificate. The class (first-class Passion relic) describes the
+  kind of object claimed, not a proof that this sliver is from Golgotha.
+
+  Presence here does not imply completed theological review.

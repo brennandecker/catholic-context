@@ -39,6 +39,7 @@ relationships:
   related:
     - person.blessed-virgin-mary
     - doctrine.purgatory
+    - doctrine.relics
 notes: >-
   Draft seed object distilled for Catholic Context from My Catholic Guide /
   Supabase metadata (not a full narrative import). Presence here does not

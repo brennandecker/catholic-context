@@ -1,0 +1,69 @@
+# DRAFT — theological review pending
+id: relic.st-bernadette
+title: Body of St. Bernadette Soubirous
+entity_type: devotion
+classification:
+  claim_type: historical-claim
+  certainty: provisional
+  note: >-
+    The body at Nevers is the saint's body, publicly identified by the Church after
+    canonical recognitions. "Incorrupt" is a descriptive report from those recognitions,
+    not a separate dogma.
+summary: >-
+  First-class relic. The body of St. Bernadette, the visionary of Lourdes, is kept in
+  a glass reliquary in the chapel of the former convent of Saint-Gildard at Nevers,
+  France, where she lived as a Sister of Charity. Canonical recognitions in 1909, 1919,
+  and 1925 identified the body and described it as remarkably preserved. An entire body,
+  or a notable part of a body, is what the 2001 Directory and the 2017 instruction call
+  a significant relic, and what parish catechesis calls first-class. Pilgrims who kneel
+  there are not worshipping Bernadette. They are asking the girl of Lourdes to pray, and
+  they are looking at a body the Church believes will rise.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+source_fidelity:
+  representation: summary
+  confidence: 0.73
+  needs_theological_review: true
+  linkable_sources: true
+  assessed_by: ocia-relics-draft
+  assessed_at: '2026-08-15T00:00:00Z'
+  rationale: >-
+    Ties the Nevers shrine to the Directory and 2017 definitions of a significant
+    (first-class) relic. Does not reproduce medical reports from the recognitions.
+  unresolved_issues:
+    - Theological review pending.
+    - Dates of recognitions should be checked against the diocesan acts if this entry is reviewed.
+sources:
+  - source_type: magisterium
+    reference: Directory on Popular Piety and the Liturgy 236
+    url: >-
+      https://www.vatican.va/roman_curia/congregations/ccdds/documents/rc_con_ccdds_doc_20020513_vers-direttorio_en.html
+    note: Relics principally signify the bodies or notable parts of the bodies of the saints.
+  - source_type: magisterium
+    reference: Relics in the Church, Authenticity and Preservation (8 December 2017), Introduction
+    url: >-
+      https://www.vatican.va/roman_curia/congregations/csaints/documents/rc_con_csaints_doc_20171208_istruzione-reliquie_en.html
+    note: The body of a saint is a significant relic and may be shown only with a certificate of authenticity.
+  - source_type: other
+    reference: Espace Bernadette Soubirous, Nevers
+    url: https://sainte-bernadette-soubirous-nevers.com/
+    note: Present shrine of the body at the former Saint-Gildard convent.
+  - source_type: catechism
+    reference: CCC 828
+    url: https://www.vatican.va/archive/ENG0015/_INDEX.HTM
+    note: The Church honors authentic relics of those she has canonized.
+relationships:
+  broader:
+    - doctrine.relics
+  narrower: []
+  related:
+    - person.blessed-virgin-mary
+    - doctrine.communion-of-saints
+notes: |
+  Draft. "Incorrupt" is not a required Catholic belief and is not the reason the relic
+  is first-class. The class follows from this being her body.
+
+  Presence here does not imply completed theological review.

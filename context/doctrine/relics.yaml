@@ -1,0 +1,138 @@
+# DRAFT — theological review pending
+id: doctrine.relics
+title: Relics of the Saints
+entity_type: teaching
+classification:
+  claim_type: doctrine
+  certainty: null
+  note: >-
+    Veneration of authentic relics is conciliar and catechetical teaching. The popular
+    first-, second-, and third-class labels are a pastoral sorting of that practice, not
+    a defined ranking of holiness. Classification vocabulary here is provisional and
+    requires qualified theological review.
+summary: >-
+  The Church venerates authentic relics of the saints because their bodies were, on
+  earth, living temples of the Holy Spirit and instruments of holiness, and are destined
+  for resurrection. This honor is relative to Christ. It is not worship, which is due to
+  God alone. Parish catechesis often sorts relics into three classes: first class, a body
+  or notable part of a body, or an instrument of the Lord's Passion; second class, an
+  object the saint used or owned; and third class, an object that has touched a body,
+  a tomb, or another relic. Recent Roman documents speak in a closely related way of
+  significant relics and non-significant relics, and they require a certificate of
+  authenticity before relics are set out for public veneration. The sale of relics is
+  forbidden. Doubtful relics are to be withdrawn with pastoral prudence, and relics
+  must not be treated as charms or placed on the altar mensa reserved for the Eucharist.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+source_fidelity:
+  representation: synthesis
+  confidence: 0.78
+  needs_theological_review: true
+  linkable_sources: true
+  assessed_by: ocia-relics-draft
+  assessed_at: '2026-08-15T00:00:00Z'
+  rationale: >-
+    Draft restates Trent, Sacrosanctum Concilium 111, CCC 828 and 1674-1676, the 2001
+    Directory nn. 236-237, canon 1190, and the 2017 relics instruction without quoting
+    those texts at length. The three-class scheme is taken from the Directory's own
+    description of bodies, personal objects, and touched cloths, matched to ordinary
+    OCIA language.
+  unresolved_issues:
+    - Theological review pending.
+    - Classification vocabulary is provisional.
+    - Particular relic identifications belong on the example objects, not on this teaching entry.
+sources:
+  - source_type: scripture
+    reference: 2 Kings 13:21
+    url: null
+    note: >-
+      A dead man is raised after touching the bones of Elisha. The Church reads this as
+      a scriptural witness that God may act through the remains of the holy, not as a
+      proof that every relic works a miracle.
+  - source_type: scripture
+    reference: Acts 19:11-12
+    url: null
+    note: >-
+      Cloths that had touched Paul are carried to the sick. This is the biblical pattern
+      later named, in popular speech, a third-class relic.
+  - source_type: ecumenical-council
+    reference: >-
+      Council of Trent, Session 25 (3 December 1563), Decree on Invocation, Veneration,
+      and Relics of Saints, and on Sacred Images
+    url: null
+    note: >-
+      The Council defends the veneration of relics and condemns those who deny it, while
+      rejecting superstition and the seeking of filthy lucre.
+  - source_type: ecumenical-council
+    reference: Sacrosanctum Concilium 111
+    url: >-
+      https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19631204_sacrosanctum-concilium_en.html
+    note: >-
+      Vatican II repeats that the saints are honored in the Church and that their authentic
+      relics and images are held in veneration.
+  - source_type: catechism
+    reference: CCC 828, 1674-1676
+    url: https://www.vatican.va/archive/ENG0015/_INDEX.HTM
+    note: >-
+      Canonization, authentic relics, and relics among the forms of popular piety that
+      surround the sacramental life without replacing the liturgy.
+  - source_type: magisterium
+    reference: Directory on Popular Piety and the Liturgy 236-237 (17 December 2001)
+    url: >-
+      https://www.vatican.va/roman_curia/congregations/ccdds/documents/rc_con_ccdds_doc_20020513_vers-direttorio_en.html
+    note: >-
+      Names bodies or notable parts, objects that belonged to the saints, and objects
+      that have touched their bodies or tombs. Requires authenticity, forbids trafficking
+      and superstition, and keeps relics off the altar mensa.
+  - source_type: magisterium
+    reference: >-
+      Congregation for the Causes of Saints, Instruction Relics in the Church
+      Authenticity and Preservation (8 December 2017)
+    url: >-
+      https://www.vatican.va/roman_curia/congregations/csaints/documents/rc_con_csaints_doc_20171208_istruzione-reliquie_en.html
+    note: >-
+      Distinguishes significant relics (the body, notable parts, or ashes) from
+      non-significant relics (small fragments and objects that touched the person).
+      Public veneration requires a certificate of authenticity. Commerce and sale are
+      prohibited.
+  - source_type: canon-law
+    reference: CIC 1186, 1190
+    url: >-
+      https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib4-cann1166-1190_en.html
+    note: >-
+      Veneration of the saints; it is absolutely forbidden to sell sacred relics.
+      Relics of great significance may not be alienated without Apostolic See permission.
+relationships:
+  broader:
+    - doctrine.communion-of-saints
+  narrower:
+    - relic.st-peter
+    - relic.true-cross
+    - relic.crown-of-thorns
+    - relic.st-bernadette
+    - relic.st-therese
+    - relic.st-pio
+    - relic.st-francis-habit
+    - relic.st-john-vianney
+    - relic.brandea
+    - relic.third-class-st-therese
+  related:
+    - doctrine.mary.worship
+    - person.st-peter-the-apostle
+    - place.st-peters-basilica
+notes: |
+  Draft for inquirers who meet relics on a church tour. The numbered classes are a
+  teaching aid. They do not mean a first-class relic is "more holy" than a third-class
+  one. Holiness is the saint's, and the honor given to a relic is meant to pass to
+  God who made the saint holy.
+
+  Instruments of the Passion (a fragment of the Cross, the Crown of Thorns) are treated
+  in popular catechesis as first-class relics of the Lord. The 2017 instruction is
+  written for relics of blesseds and saints, so those Passion objects are related by
+  analogy, not by that document's legal categories.
+
+  Presence here does not imply ecclesiastical approval of this wording or completed
+  theological review.

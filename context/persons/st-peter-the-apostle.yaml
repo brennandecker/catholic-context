@@ -35,6 +35,8 @@ relationships:
   related:
     - doctrine.papacy.infallibility
     - place.st-peters-basilica
+    - relic.st-peter
+    - doctrine.relics
 notes: >-
   Entity summary adapted from My Catholic Guide saints record `st-peter-the-
   apostle`. Draft seed object distilled for Catholic Context from My Catholic

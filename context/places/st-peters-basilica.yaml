@@ -30,6 +30,8 @@ relationships:
   related:
     - person.st-peter-the-apostle
     - place.basilica-of-st-john-lateran
+    - relic.st-peter
+    - doctrine.relics
 notes: >-
   Draft seed object distilled for Catholic Context from My Catholic Guide /
   Supabase metadata (not a full narrative import). Presence here does not

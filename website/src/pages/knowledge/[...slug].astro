@@ -86,8 +86,16 @@ const related = relatedIds
       <>
         <hr class="rule-soft" />
         <section aria-labelledby="notes-heading" class="prose">
-          <h2 class="h3" id="notes-heading">Understanding the Teaching</h2>
-          <p>{object.notes}</p>
+          <h2 class="h3" id="notes-heading">
+            {object.entity_type === 'teaching' ? 'Understanding the Teaching' : 'Notes'}
+          </h2>
+          {object.notes
+            .split(/\n\n+/)
+            .map((para) => para.trim())
+            .filter(Boolean)
+            .map((para) => (
+              <p>{para}</p>
+            ))}
         </section>
       </>
     )}

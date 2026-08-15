@@ -48,6 +48,7 @@ relationships:
   related:
   - doctrine.mary.theotokos
   - doctrine.communion.of-saints
+  - doctrine.relics
 notes: >-
   Founding spine object for the eval prompt 'Do Catholics worship Mary?' Draft; theological
   review pending.

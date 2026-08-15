@@ -1,0 +1,65 @@
+# DRAFT — theological review pending
+id: relic.st-pio
+title: Body of St. Pio of Pietrelcina
+entity_type: devotion
+classification:
+  claim_type: historical-claim
+  certainty: provisional
+  note: >-
+    The body exposed at San Giovanni Rotondo after the 2008 recognition is the saint's
+    body as identified by the Church. This draft records the class and the shrine, not
+    a medical narrative of the stigmata.
+summary: >-
+  First-class relic. St. Pio of Pietrelcina (Padre Pio) is buried at the sanctuary in
+  San Giovanni Rotondo. After a canonical recognition in 2008, his body was placed
+  where pilgrims can see it. An entire body of a canonized saint is a significant,
+  first-class relic. People who come there often come because they know the story of
+  the stigmata and of confession. The relic does not replace those facts, and it does
+  not work as a charm. It is the body of a priest the Church has named a saint, kept
+  for veneration and for prayer, under the same rules that govern every public relic:
+  authenticity, no sale, no superstition, and no placing of the relic on the altar
+  mensa reserved for the Eucharist.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+source_fidelity:
+  representation: summary
+  confidence: 0.72
+  needs_theological_review: true
+  linkable_sources: true
+  assessed_by: ocia-relics-draft
+  assessed_at: '2026-08-15T00:00:00Z'
+  rationale: >-
+    Applies the 2017 instruction on significant relics and canonical recognition to the
+    publicly known San Giovanni Rotondo shrine. Does not treat popular Padre Pio
+    literature as a source.
+  unresolved_issues:
+    - Theological review pending.
+    - The 2008 recognition should be cited from diocesan or congregation acts when reviewed.
+sources:
+  - source_type: magisterium
+    reference: Relics in the Church, Authenticity and Preservation (8 December 2017), Introduction and Arts. 13-20
+    url: >-
+      https://www.vatican.va/roman_curia/congregations/csaints/documents/rc_con_csaints_doc_20171208_istruzione-reliquie_en.html
+    note: Significant relics; canonical recognition of a saint's body.
+  - source_type: magisterium
+    reference: Directory on Popular Piety and the Liturgy 236-237
+    url: >-
+      https://www.vatican.va/roman_curia/congregations/ccdds/documents/rc_con_ccdds_doc_20020513_vers-direttorio_en.html
+    note: Bodies of the saints; authenticity; relics not on the altar mensa.
+  - source_type: other
+    reference: Santuario di San Pio da Pietrelcina, San Giovanni Rotondo
+    url: https://www.operapadrepio.it/
+    note: Present shrine of the body.
+relationships:
+  broader:
+    - doctrine.relics
+  narrower: []
+  related:
+    - doctrine.communion-of-saints
+    - boundary.confession
+notes: |
+  Draft. Presence here does not imply completed theological review. The stigmata are
+  not treated in this entry.

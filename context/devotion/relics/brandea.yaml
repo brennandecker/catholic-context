@@ -1,0 +1,73 @@
+# DRAFT — theological review pending
+id: relic.brandea
+title: Brandea and cloths from the tombs of the saints
+entity_type: devotion
+classification:
+  claim_type: historical-claim
+  certainty: provisional
+  note: >-
+    Brandea are the ancient form of what parish catechesis now calls third-class relics.
+    This entry is about the practice, not one surviving cloth.
+summary: >-
+  Third-class relics, in popular catechesis. In early Rome the Church was reluctant to
+  divide the bodies of the apostles. Gregory the Great wrote to the Empress Constantina
+  that instead of sending a bodily relic, the Romans were accustomed to lower a cloth
+  to the tomb and then send that cloth, called a brandeum, as a relic. The 2001 Directory
+  still names, as relics, objects that have touched the bodies or tombs of the saints,
+  such as oils, cloths, and images. That is the ancestor of the small third-class cloth
+  given at a shrine today. The honor is the same kind of honor: not worship of fabric,
+  but veneration that passes to the saint and to God. A brandeum without a serious
+  claim of contact and without ecclesiastical recognition is only a piece of cloth.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+source_fidelity:
+  representation: summary
+  confidence: 0.76
+  needs_theological_review: true
+  linkable_sources: true
+  assessed_by: ocia-relics-draft
+  assessed_at: '2026-08-15T00:00:00Z'
+  rationale: >-
+    Directory 236 names cloths that have touched bodies or tombs. Gregory the Great's
+    letter to Constantina is the classic Roman explanation of brandea. Acts 19 is the
+    scriptural analogue, not a proof-text that every cloth is a relic.
+  unresolved_issues:
+    - Theological review pending.
+    - A critical-edition citation for Registrum 4.30 should be confirmed at review.
+sources:
+  - source_type: church-father
+    reference: Gregory the Great, Registrum epistularum 4.30, to Empress Constantina
+    url: null
+    note: >-
+      Explains the Roman custom of sending cloths placed at the tombs of the apostles
+      rather than dividing their bodies.
+  - source_type: scripture
+    reference: Acts 19:11-12
+    url: null
+    note: Cloths that had touched Paul are brought to the sick.
+  - source_type: magisterium
+    reference: Directory on Popular Piety and the Liturgy 236
+    url: >-
+      https://www.vatican.va/roman_curia/congregations/ccdds/documents/rc_con_ccdds_doc_20020513_vers-direttorio_en.html
+    note: Objects which have touched the saints' bodies or tombs, such as oils, cloths, and images, are also considered relics.
+  - source_type: ecumenical-council
+    reference: Sacrosanctum Concilium 111
+    url: >-
+      https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19631204_sacrosanctum-concilium_en.html
+    note: Authentic relics are held in veneration.
+relationships:
+  broader:
+    - doctrine.relics
+  narrower: []
+  related:
+    - relic.third-class-st-therese
+    - relic.st-peter
+    - doctrine.communion-of-saints
+notes: |
+  Draft. Third-class relics are rarely famous as single objects. They are famous as a
+  practice. Brandea are the name the early Church gave that practice.
+
+  Presence here does not imply completed theological review.

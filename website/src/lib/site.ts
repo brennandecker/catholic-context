@@ -58,6 +58,7 @@ export const TOPIC_LINKS = [
   { href: '/knowledge/doctrine/pope-sinless', label: 'Papacy' },
   { href: '/knowledge/boundary/confession', label: 'Confession' },
   { href: '/knowledge/doctrine/salvation-non-catholics', label: 'Salvation' },
+  { href: '/knowledge/doctrine/relics', label: 'Relics' },
   { href: '/knowledge/source/citation-discipline', label: 'Citations' },
 ] as const;
 

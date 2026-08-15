@@ -1,0 +1,72 @@
+# DRAFT — theological review pending
+id: relic.crown-of-thorns
+title: The Crown of Thorns
+entity_type: devotion
+classification:
+  claim_type: historical-claim
+  certainty: provisional
+  note: >-
+    The object now kept at Notre-Dame de Paris has a continuous medieval custody from
+    Constantinople to Louis IX (1239) to the Sainte-Chapelle and then to the cathedral.
+    Whether every circlet in that object is from the Passion is a historical question.
+    This draft records the shrine and the class, not a scientific demonstration.
+summary: >-
+  First-class relic of the Passion, in popular catechesis. The Gospels say the soldiers
+  wove a crown of thorns and placed it on Jesus. A relic honored as that crown was
+  brought from Constantinople to Paris in 1239 by St. Louis IX, who built the
+  Sainte-Chapelle to house it. It later passed to Notre-Dame, was carried out of the
+  2019 fire, and has been returned to the restored cathedral. The Church venerates it
+  as a sign of Christ's mockery and kingship. Like other Passion relics, it is treated
+  as first-class not because it is a saint's bone, but because it is honored as an
+  instrument of the Lord's suffering. Public veneration still depends on ecclesiastical
+  custody and should not slide into superstition.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+source_fidelity:
+  representation: summary
+  confidence: 0.7
+  needs_theological_review: true
+  linkable_sources: true
+  assessed_by: ocia-relics-draft
+  assessed_at: '2026-08-15T00:00:00Z'
+  rationale: >-
+    Gospel reference, liturgical veneration of the Passion, and the well-attested
+    Paris custody since 1239. Does not treat news coverage of the 2019 fire as a
+    teaching source.
+  unresolved_issues:
+    - Theological review pending.
+    - Historical continuity of the Paris object is stronger than a proof of first-century origin.
+sources:
+  - source_type: scripture
+    reference: Matthew 27:27-31
+    url: null
+    note: The crowning with thorns.
+  - source_type: scripture
+    reference: John 19:1-5
+    url: null
+    note: Jesus presented wearing the crown of thorns.
+  - source_type: liturgy
+    reference: Roman Calendar, Friday of the Passion of the Lord
+    url: null
+    note: The Church's public remembrance of the Passion, to which this relic is ordered.
+  - source_type: magisterium
+    reference: Directory on Popular Piety and the Liturgy 236-237
+    url: >-
+      https://www.vatican.va/roman_curia/congregations/ccdds/documents/rc_con_ccdds_doc_20020513_vers-direttorio_en.html
+    note: Authenticity, dignity, and the refusal of superstition in relic piety.
+  - source_type: other
+    reference: Cathédrale Notre-Dame de Paris, shrine of the Crown of Thorns
+    url: https://www.notredamedeparis.fr/
+    note: Present place of custody after the Sainte-Chapelle period and the 2019 fire.
+relationships:
+  broader:
+    - doctrine.relics
+  narrower: []
+  related:
+    - relic.true-cross
+notes: |
+  Draft. Presence here does not imply completed theological review or a claim that
+  every thorn associated with this shrine is from the first Good Friday.

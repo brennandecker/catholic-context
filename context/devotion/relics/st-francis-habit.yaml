@@ -1,0 +1,65 @@
+# DRAFT — theological review pending
+id: relic.st-francis-habit
+title: Habit of St. Francis of Assisi
+entity_type: devotion
+classification:
+  claim_type: historical-claim
+  certainty: provisional
+  note: >-
+    Clothing the saint wore is a second-class relic. More than one tunic at Assisi and
+    elsewhere is attributed to Francis; this draft names the class and the Assisi
+    custody, not a thread-by-thread authentication of every garment.
+summary: >-
+  Second-class relic. The 2001 Directory counts as relics not only bodies, but objects
+  that belonged to the saints, including clothes. A habit worn by St. Francis is that
+  kind of relic: it touched his person in life, but it is not part of his body. Tunics
+  attributed to him are kept at the Sacro Convento in Assisi and in related Franciscan
+  houses. They speak the same poverty he preached. Veneration of the habit is veneration
+  of the saint, and through him of Christ. It is not worship of cloth. As with every
+  relic set out for the faithful, authenticity should be certified, and the object
+  should not be sold or treated as a charm.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+source_fidelity:
+  representation: summary
+  confidence: 0.7
+  needs_theological_review: true
+  linkable_sources: true
+  assessed_by: ocia-relics-draft
+  assessed_at: '2026-08-15T00:00:00Z'
+  rationale: >-
+    Directory 236 explicitly includes clothes among relics. The Assisi custody is
+    traditional; particular tunics remain a historical question.
+  unresolved_issues:
+    - Theological review pending.
+    - Which Assisi garments are Francis's own should be checked against the convent's documentation.
+sources:
+  - source_type: magisterium
+    reference: Directory on Popular Piety and the Liturgy 236
+    url: >-
+      https://www.vatican.va/roman_curia/congregations/ccdds/documents/rc_con_ccdds_doc_20020513_vers-direttorio_en.html
+    note: Objects which belonged to the saints, such as personal objects and clothes, are also considered relics.
+  - source_type: magisterium
+    reference: Relics in the Church, Authenticity and Preservation (8 December 2017), Introduction
+    url: >-
+      https://www.vatican.va/roman_curia/congregations/csaints/documents/rc_con_csaints_doc_20171208_istruzione-reliquie_en.html
+    note: Objects that came in direct contact with the person are non-significant relics, still to be honored without superstition or trade.
+  - source_type: other
+    reference: Sacro Convento di San Francesco, Assisi
+    url: https://www.sanfrancescoassisi.org/
+    note: Franciscan custody of garments attributed to the saint.
+relationships:
+  broader:
+    - doctrine.relics
+  narrower: []
+  related:
+    - relic.st-john-vianney
+    - doctrine.communion-of-saints
+notes: |
+  Draft. Second-class does not mean second-rate. It means the object is from the
+  saint's use, not from the saint's body.
+
+  Presence here does not imply completed theological review.

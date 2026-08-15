@@ -2,51 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://catholiccontext.org</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-08-14</lastmod>
   </url>
   <url>
     <loc>https://catholiccontext.org/search</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-08-14</lastmod>
   </url>
   <url>
     <loc>https://catholiccontext.org/knowledge</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-08-14</lastmod>
   </url>
   <url>
     <loc>https://catholiccontext.org/sources</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-08-14</lastmod>
   </url>
   <url>
     <loc>https://catholiccontext.org/harness</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-08-14</lastmod>
   </url>
   <url>
     <loc>https://catholiccontext.org/evals</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-08-14</lastmod>
   </url>
   <url>
     <loc>https://catholiccontext.org/governance</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-08-14</lastmod>
   </url>
   <url>
     <loc>https://catholiccontext.org/developers</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-08-14</lastmod>
   </url>
   <url>
     <loc>https://catholiccontext.org/open</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-08-14</lastmod>
   </url>
   <url>
     <loc>https://catholiccontext.org/about</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-08-14</lastmod>
   </url>
   <url>
     <loc>https://catholiccontext.org/contribute</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-08-14</lastmod>
   </url>
   <url>
     <loc>https://catholiccontext.org/llms.txt</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-08-14</lastmod>
   </url>
   <url>
     <loc>https://catholiccontext.org/knowledge/boundary/canonical-status</loc>
@@ -61,12 +61,52 @@
     <lastmod>2026-08-13</lastmod>
   </url>
   <url>
+    <loc>https://catholiccontext.org/knowledge/devotion/relics/brandea</loc>
+    <lastmod>2026-08-15</lastmod>
+  </url>
+  <url>
+    <loc>https://catholiccontext.org/knowledge/devotion/relics/crown-of-thorns</loc>
+    <lastmod>2026-08-15</lastmod>
+  </url>
+  <url>
+    <loc>https://catholiccontext.org/knowledge/devotion/relics/st-bernadette</loc>
+    <lastmod>2026-08-15</lastmod>
+  </url>
+  <url>
+    <loc>https://catholiccontext.org/knowledge/devotion/relics/st-francis-habit</loc>
+    <lastmod>2026-08-15</lastmod>
+  </url>
+  <url>
+    <loc>https://catholiccontext.org/knowledge/devotion/relics/st-john-vianney</loc>
+    <lastmod>2026-08-15</lastmod>
+  </url>
+  <url>
+    <loc>https://catholiccontext.org/knowledge/devotion/relics/st-peter</loc>
+    <lastmod>2026-08-15</lastmod>
+  </url>
+  <url>
+    <loc>https://catholiccontext.org/knowledge/devotion/relics/st-pio</loc>
+    <lastmod>2026-08-15</lastmod>
+  </url>
+  <url>
+    <loc>https://catholiccontext.org/knowledge/devotion/relics/st-therese</loc>
+    <lastmod>2026-08-15</lastmod>
+  </url>
+  <url>
+    <loc>https://catholiccontext.org/knowledge/devotion/relics/third-class-st-therese</loc>
+    <lastmod>2026-08-15</lastmod>
+  </url>
+  <url>
+    <loc>https://catholiccontext.org/knowledge/devotion/relics/true-cross</loc>
+    <lastmod>2026-08-15</lastmod>
+  </url>
+  <url>
     <loc>https://catholiccontext.org/knowledge/discipline/priestly-celibacy</loc>
     <lastmod>2026-08-13</lastmod>
   </url>
   <url>
     <loc>https://catholiccontext.org/knowledge/doctrine/communion-of-saints</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-08-15</lastmod>
   </url>
   <url>
     <loc>https://catholiccontext.org/knowledge/doctrine/disputed-theology</loc>
@@ -86,7 +126,7 @@
   </url>
   <url>
     <loc>https://catholiccontext.org/knowledge/doctrine/mary-worship</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-08-15</lastmod>
   </url>
   <url>
     <loc>https://catholiccontext.org/knowledge/doctrine/papacy-and-infallibility</loc>
@@ -99,6 +139,10 @@
   <url>
     <loc>https://catholiccontext.org/knowledge/doctrine/purgatory</loc>
     <lastmod>2026-08-13</lastmod>
+  </url>
+  <url>
+    <loc>https://catholiccontext.org/knowledge/doctrine/relics</loc>
+    <lastmod>2026-08-15</lastmod>
   </url>
   <url>
     <loc>https://catholiccontext.org/knowledge/doctrine/salvation-non-catholics</loc>
@@ -158,7 +202,7 @@
   </url>
   <url>
     <loc>https://catholiccontext.org/knowledge/persons/st-peter-the-apostle</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-08-15</lastmod>
   </url>
   <url>
     <loc>https://catholiccontext.org/knowledge/persons/st-thomas-aquinas</loc>
@@ -170,7 +214,7 @@
   </url>
   <url>
     <loc>https://catholiccontext.org/knowledge/places/st-peters-basilica</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-08-15</lastmod>
   </url>
   <url>
     <loc>https://catholiccontext.org/knowledge/sacraments/baptism</loc>

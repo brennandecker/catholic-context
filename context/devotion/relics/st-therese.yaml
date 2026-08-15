@@ -1,0 +1,69 @@
+# DRAFT — theological review pending
+id: relic.st-therese
+title: Relics of St. Thérèse of Lisieux
+entity_type: devotion
+classification:
+  claim_type: historical-claim
+  certainty: provisional
+  note: >-
+    The bones and other first-class relics kept at Lisieux, and those sent on pilgrimage
+    in a sealed reliquary, are treated by the Church as relics of the canonized saint.
+    This draft does not inventory every fragment.
+summary: >-
+  First-class relics. St. Thérèse of the Child Jesus died at the Lisieux Carmel in 1897
+  and was canonized in 1925. Her bones are kept at Lisieux and have been carried in
+  pilgrimage to many dioceses in a sealed reliquary. Those remains are significant,
+  first-class relics: they are parts of her body. The tours are a modern form of an old
+  instinct, that the communion of saints is not only an idea. A visiting reliquary is
+  not a substitute for the Eucharist, and it is not a charm. It is a chance to ask the
+  Little Flower to pray, and to remember that the body the Church buries is destined
+  for glory.
+review:
+  status: draft
+  reviewed_by: null
+  reviewed_at: null
+  review_commit: null
+source_fidelity:
+  representation: summary
+  confidence: 0.74
+  needs_theological_review: true
+  linkable_sources: true
+  assessed_by: ocia-relics-draft
+  assessed_at: '2026-08-15T00:00:00Z'
+  rationale: >-
+    Uses the 2017 instruction on significant relics and relic pilgrimages, and the
+    Directory on authenticity, without quoting Thérèse's writings as if they defined
+    relic classes.
+  unresolved_issues:
+    - Theological review pending.
+sources:
+  - source_type: magisterium
+    reference: Relics in the Church, Authenticity and Preservation (8 December 2017), Introduction and Part III
+    url: >-
+      https://www.vatican.va/roman_curia/congregations/csaints/documents/rc_con_csaints_doc_20171208_istruzione-reliquie_en.html
+    note: Significant relics; rules for the pilgrimage of relics from diocese to diocese.
+  - source_type: magisterium
+    reference: Directory on Popular Piety and the Liturgy 236-237
+    url: >-
+      https://www.vatican.va/roman_curia/congregations/ccdds/documents/rc_con_ccdds_doc_20020513_vers-direttorio_en.html
+    note: Bodies and notable parts; pastoral cautions about authenticity and superstition.
+  - source_type: other
+    reference: Sanctuaire de Lisieux
+    url: https://www.therese-de-lisieux.catholique.fr/
+    note: Shrine that keeps and sends the relics of St. Thérèse.
+  - source_type: catechism
+    reference: CCC 828, 956
+    url: https://www.vatican.va/archive/ENG0015/_INDEX.HTM
+    note: Canonization, authentic relics, and the intercession of the saints.
+relationships:
+  broader:
+    - doctrine.relics
+  narrower: []
+  related:
+    - relic.third-class-st-therese
+    - doctrine.communion-of-saints
+notes: |
+  Draft. Cloths touched to these relics are third-class and are treated in a separate
+  entry. Hair, bone, and other parts of the body remain first-class.
+
+  Presence here does not imply completed theological review.
